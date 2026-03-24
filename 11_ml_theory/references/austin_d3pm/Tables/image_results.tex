@@ -1,0 +1,31 @@
+\begin{table}[t]
+  \caption{Inception scores (IS), Frechet Inception Distance (FID) and negative log-likehood (NLL) on the image dataset CIFAR-10.  The NLL is reported on the test set in bits per dimension. We report our results as averages with standard deviations, obtained by training five models with different seeds.}
+  \label{tab:cifar10}
+  \scriptsize
+  \centering
+  \begin{tabular}{llll}
+    \toprule
+    \multicolumn{1}{l}{Model}  & IS ($\uparrow$)    & FID ($\downarrow$) & NLL ($\downarrow$)        \\
+    \midrule
+    Sparse Transformer \citep{child2019generating}    &        &       & 2.80\\
+    NCSN  \citep{song_2019}                 & $8.87\pm0.12$ & 25.32  &\\
+    NCSNv2  \citep{song2020improved}        & $8.40\pm0.07$ & 10.87  &\\
+    StyleGAN2 + ADA  \citep{karras2020training}      & $9.74\pm0.05$ & 3.26 &\\
+    \midrule
+    Diffusion (original), $L_{\mathrm{vb}}$ \citep{sohl2015deep}  & & & $\leq 5.40$ \\
+    DDPM $L_{\mathrm{vb}}$ \citep{ho2020denoising}  & $7.67 \pm 0.13$  &  $13.51$ & $\leq 3.70$  \\
+    DDPM $L_{\mathrm{simple}}$ \citep{ho2020denoising} & $9.46 \pm 0.11$  &  $3.17$ & $\leq 3.75$ \\
+    Improved DDPM $L_{\mathrm{vb}}$ \citep{nichol2021improved} &   & $11.47$ & $\leq 2.94$ \\
+    Improved DDPM $L_{\mathrm{simple}}$ \citep{nichol2021improved} &   & $2.90$ & $\leq 3.37$ \\
+    DDPM++ cont \citep{song2020_sde} &   &  $2.92$ & $2.99$ \\
+    NCSN++ cont. \citep{song2020_sde}  & $9.89$ & $2.20$ & \\
+    \midrule
+    D3PM uniform $L_{\mathrm{vb}}$ & $5.99 \pm 0.14$  &  $51.27 \pm 2.15$ & $\leq 5.08 \pm 0.02$  \\
+    D3PM absorbing $L_{\mathrm{vb}}$ & $6.26 \pm 0.10$  &  $41.28 \pm 0.65$ & $\leq 4.83 \pm 0.02$  \\
+    D3PM absorbing $L_{\lambda=0.001}$  & $6.78 \pm 0.08$  &  $30.97 \pm 0.64$ & $\leq 4.40 \pm 0.02$ \\
+    D3PM Gauss $L_{\mathrm{vb}}$ & $7.75 \pm 0.13$  &  $15.30 \pm 0.55$ & $\leq 3.966 \pm 0.005$  \\
+    D3PM Gauss  $L_{\lambda=0.001}$ & $8.54 \pm 0.12$  &  $8.34 \pm 0.10$ & $\leq 3.975 \pm 0.006$ \\
+    D3PM Gauss + logistic $L_{\lambda=0.001}$ & $8.56 \pm 0.10$  &  $7.34 \pm 0.19$ &  $\leq 3.435 \pm 0.007$ \\
+    \bottomrule
+  \end{tabular}
+\end{table}

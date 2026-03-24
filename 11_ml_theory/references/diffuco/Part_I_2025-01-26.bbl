@@ -1,0 +1,445 @@
+% \bib, bibdiv, biblist are defined by the amsrefs package.
+\begin{bibdiv}
+\begin{biblist}
+
+\bib{AubinHaddad02PPDE}{article}{
+      author={Aubin, J.-P.},
+      author={Haddad, G.},
+       title={History path dependent optimal control and portfolio valuation
+  and management},
+        date={2002},
+        ISSN={1385-1292},
+     journal={Positivity},
+      volume={6},
+      number={3},
+       pages={331\ndash 358},
+         url={https://doi.org/10.1023/A:1020244921138},
+        note={Special issue of the mathematical economics},
+}
+
+\bib{AubinFrankowska_setValued}{book}{
+      author={Aubin, Jean-Pierre},
+      author={Frankowska, H\'{e}l\`ene},
+       title={Set-valued analysis},
+      series={Modern Birkh\"{a}user Classics},
+   publisher={Birkh\"{a}user Boston, Inc., Boston, MA},
+        date={2009},
+        ISBN={978-0-8176-4847-3},
+         url={https://doi.org/10.1007/978-0-8176-4848-0},
+        note={Reprint of the 1990 edition},
+}
+
+\bib{BK2}{article}{
+      author={Bandini, Elena},
+      author={Keller, Christian},
+       title={Non-local {H}amilton--{J}acobi--{B}ellman equations for the
+  stochastic optimal control of path-dependent piecewise deterministic
+  processes},
+        date={2024},
+     journal={arXiv preprint arXiv:2408.02147},
+}
+
+\bib{BardiCapuzzoDolcetta}{book}{
+      author={Bardi, Martino},
+      author={Capuzzo-Dolcetta, Italo},
+       title={Optimal control and viscosity solutions of
+  {H}amilton-{J}acobi-{B}ellman equations},
+      series={Systems \& Control: Foundations \& Applications},
+   publisher={Birkh\"auser Boston, Inc., Boston, MA},
+        date={1997},
+        ISBN={0-8176-3640-4},
+         url={http://dx.doi.org.proxy.lib.umich.edu/10.1007/978-0-8176-4755-1},
+        note={With appendices by M.~Falcone and P.~Soravia},
+}
+
+\bib{BarronJensen87}{article}{
+      author={Barron, Emmanuel~Nicholas},
+      author={Jensen, Robert},
+       title={Generalized viscosity solutions for {H}amilton-{J}acobi equations
+  with time-measurable {H}amiltonians},
+        date={1987},
+        ISSN={0022-0396,1090-2732},
+     journal={J. Differential Equations},
+      volume={68},
+      number={1},
+       pages={10\ndash 21},
+         url={https://doi.org/10.1016/0022-0396(87)90183-5},
+}
+
+\bib{BK18JFA}{article}{
+      author={Bayraktar, Erhan},
+      author={Keller, Christian},
+       title={Path-dependent {H}amilton-{J}acobi equations in infinite
+  dimensions},
+        date={2018},
+        ISSN={0022-1236},
+     journal={J. Funct. Anal.},
+      volume={275},
+      number={8},
+       pages={2096\ndash 2161},
+         url={https://doi.org/10.1016/j.jfa.2018.07.010},
+}
+
+\bib{CohenElliott}{book}{
+      author={Cohen, Samuel~N.},
+      author={Elliott, Robert~J.},
+       title={Stochastic calculus and applications},
+     edition={Second Edition},
+      series={Probability and its Applications},
+   publisher={Springer, Cham},
+        date={2015},
+        ISBN={978-1-4939-2866-8; 978-1-4939-2867-5},
+         url={https://doi.org/10.1007/978-1-4939-2867-5},
+}
+
+\bib{CrandallIshiiLions}{article}{
+      author={Crandall, Michael~G.},
+      author={Ishii, Hitoshi},
+      author={Lions, Pierre-Louis},
+       title={User's guide to viscosity solutions of second order partial
+  differential equations},
+        date={1992},
+        ISSN={0273-0979},
+     journal={Bull. Amer. Math. Soc. (N.S.)},
+      volume={27},
+      number={1},
+       pages={1\ndash 67},
+         url={https://doi.org/10.1090/S0273-0979-1992-00266-5},
+}
+
+\bib{DavisBook}{book}{
+      author={Davis, Mark H.~A.},
+       title={Markov models and optimization},
+      series={Monographs on Statistics and Applied Probability},
+   publisher={Chapman \& Hall, London},
+        date={1993},
+      volume={49},
+        ISBN={0-412-31410-X},
+         url={https://doi.org/10.1007/978-1-4899-4483-2},
+}
+
+\bib{dupirefunctional}{misc}{
+      author={Dupire, B.},
+       title={Functional {I}t\^o calculus},
+   publisher={SSRN},
+        date={2009},
+}
+
+\bib{EKTZ11}{article}{
+      author={Ekren, I.},
+      author={Keller, C.},
+      author={Touzi, N.},
+      author={Zhang, J.},
+       title={On viscosity solutions of path dependent {PDE}s},
+        date={2014},
+        ISSN={0091-1798},
+     journal={Ann. Probab.},
+      volume={42},
+      number={1},
+       pages={204\ndash 236},
+}
+
+\bib{ETZ_I}{article}{
+      author={Ekren, Ibrahim},
+      author={Touzi, Nizar},
+      author={Zhang, Jianfeng},
+       title={Viscosity solutions of fully nonlinear parabolic path dependent
+  {PDE}s: {P}art {I}},
+        date={2016},
+        ISSN={0091-1798},
+     journal={Ann. Probab.},
+      volume={44},
+      number={2},
+       pages={1212\ndash 1253},
+         url={http://dx.doi.org.proxy.lib.umich.edu/10.1214/14-AOP999},
+}
+
+\bib{ETZ_II}{article}{
+      author={Ekren, Ibrahim},
+      author={Touzi, Nizar},
+      author={Zhang, Jianfeng},
+       title={Viscosity solutions of fully nonlinear parabolic path dependent
+  {PDE}s: {P}art {II}},
+        date={2016},
+        ISSN={0091-1798},
+     journal={Ann. Probab.},
+      volume={44},
+      number={4},
+       pages={2507\ndash 2553},
+         url={http://dx.doi.org.proxy.lib.umich.edu/10.1214/15-AOP1027},
+}
+
+\bib{FilippovBook}{book}{
+      author={Filippov, A.~F.},
+       title={Differential equations with discontinuous right hand sides},
+      series={Mathematics and its Applications (Soviet Series)},
+   publisher={Kluwer Academic Publishers Group, Dordrecht},
+        date={1988},
+      volume={18},
+        ISBN={90-277-2699-X},
+         url={https://doi.org/10.1007/978-94-015-7793-9},
+}
+
+\bib{GP23JFA}{article}{
+      author={Gomoyunov, M.~I.},
+      author={Plaksin, A.~R.},
+       title={Equivalence of minimax and viscosity solutions of path-dependent
+  {H}amilton-{J}acobi equations},
+        date={2023},
+        ISSN={0022-1236,1096-0783},
+     journal={J. Funct. Anal.},
+      volume={285},
+      number={11},
+       pages={Paper No. 110155, 41},
+         url={https://doi.org/10.1016/j.jfa.2023.110155},
+}
+
+\bib{GLP21AMO}{article}{
+      author={Gomoyunov, Mikhail~I},
+      author={Lukoyanov, Nikolai~Yu},
+      author={Plaksin, Anton~R},
+       title={{P}ath-{D}ependent {H}amilton--{J}acobi {E}quations: {T}he
+  {M}inimax {S}olutions {R}evised},
+        date={2021},
+     journal={Appl Math Optim},
+      volume={84},
+         url={https://doi.org/10.1007/s00245-021-09794-4},
+}
+
+\bib{GL24survey}{article}{
+      author={Gomoyunov, Mikhail~Igorevich},
+      author={Lukoyanov, Nikolai~Yu},
+       title={Minimax solutions of {H}amilton-{J}acobi equations in dynamic
+  optimization problems for hereditary systems},
+        date={2024},
+     journal={Russian Mathematical Surveys},
+      volume={79},
+      number={2},
+       pages={229\ndash 324},
+}
+
+\bib{Ishii85}{article}{
+      author={Ishii, Hitoshi},
+       title={Hamilton-{J}acobi equations with discontinuous {H}amiltonians on
+  arbitrary open sets},
+        date={1985},
+     journal={Bull. Fac. Sci. Engrg. Chuo Univ.},
+      volume={28},
+       pages={33\ndash 77},
+}
+
+\bib{Ishii87Perron}{article}{
+      author={Ishii, Hitoshi},
+       title={Perron's method for {H}amilton-{J}acobi equations},
+        date={1987},
+        ISSN={0012-7094,1547-7398},
+     journal={Duke Math. J.},
+      volume={55},
+      number={2},
+       pages={369\ndash 384},
+         url={https://doi.org/10.1215/S0012-7094-87-05521-9},
+}
+
+\bib{Kim85}{article}{
+      author={Kim, A.~V.},
+       title={On {L}yapunov's second method for systems with aftereffect},
+        date={1985},
+        ISSN={0374-0641},
+     journal={Differentsial\cprime nye Uravneniya},
+      volume={21},
+      number={3},
+       pages={385\ndash 391, 546},
+}
+
+\bib{KimBook}{book}{
+      author={Kim, A.~V.},
+       title={Functional differential equations},
+      series={Mathematics and its Applications},
+   publisher={Kluwer Academic Publishers},
+     address={Dordrecht},
+        date={1999},
+      volume={479},
+        ISBN={0-7923-5689-6},
+        note={Application of $i$-smooth calculus},
+}
+
+\bib{KrasovksiiSubbotin}{book}{
+      author={Krasovski\u\i, N.~N.},
+      author={Subbotin, A.~I.},
+       title={Game-theoretical control problems},
+      series={Springer Series in Soviet Mathematics},
+   publisher={Springer-Verlag, New York},
+        date={1988},
+        ISBN={0-387-96389-8},
+         url={http://dx.doi.org.proxy.lib.umich.edu/10.1007/978-1-4612-3716-7},
+        note={Translated from the Russian by Samuel Kotz},
+}
+
+\bib{LionsPerthame87}{article}{
+      author={Lions, P.-L.},
+      author={Perthame, B.},
+       title={Remarks on {H}amilton-{J}acobi equations with measurable
+  time-dependent {H}amiltonians},
+        date={1987},
+        ISSN={0362-546X,1873-5215},
+     journal={Nonlinear Anal.},
+      volume={11},
+      number={5},
+       pages={613\ndash 621},
+         url={https://doi.org/10.1016/0362-546X(87)90076-9},
+}
+
+\bib{Lukoyanov2000}{article}{
+      author={Lukoyanov, Nikolai~Yu},
+       title={A {H}amilton-{J}acobi type equation in control problems with
+  hereditary information},
+        date={2000},
+        ISSN={0021-8928},
+     journal={Journal of Applied Mathematics and Mechanics},
+      volume={64},
+      number={2},
+       pages={243\ndash 253},
+  url={https://www.sciencedirect.com/science/article/pii/S0021892800000460},
+}
+
+\bib{Lukoyanov03}{article}{
+      author={Lukoyanov, Nikolai~Yu},
+       title={Functional {H}amilton-{J}acobi type equations in ci-derivatives
+  for systems with distributed delays},
+        date={2003},
+        ISSN={1229-1595},
+     journal={Nonlinear Funct. Anal. Appl.},
+      volume={8},
+      number={3},
+       pages={365\ndash 397},
+}
+
+\bib{Lukoyanov07}{article}{
+      author={Lukoyanov, Nikolai~Yu},
+       title={Viscosity solution of nonanticipating equations of
+  {H}amilton-{J}acobi type},
+        date={2007},
+        ISSN={0374-0641},
+     journal={Differ. Uravn.},
+      volume={43},
+      number={12},
+       pages={1674\ndash 1682, 1727},
+         url={https://doi.org/10.1134/S0012266107120117},
+}
+
+\bib{Lukoyanov10b}{article}{
+      author={Lukoyanov, Nikolai~Yu},
+       title={Minimax and viscosity solutions in optimization problems for
+  hereditary systems},
+        date={2010},
+        ISSN={1531-8605},
+     journal={Proc. Steklov Inst. Math.},
+      volume={269},
+      number={1},
+       pages={214\ndash 225},
+         url={https://doi.org/10.1134/S0081543810060179},
+}
+
+\bib{Qiu18SICON_SHJB}{article}{
+      author={Qiu, Jinniao},
+       title={Viscosity solutions of stochastic {H}amilton-{J}acobi-{B}ellman
+  equations},
+        date={2018},
+        ISSN={0363-0129},
+     journal={SIAM J. Control Optim.},
+      volume={56},
+      number={5},
+       pages={3708\ndash 3730},
+         url={https://doi.org/10.1137/17M1148232},
+}
+
+\bib{Qiu22SPA_RHJB}{article}{
+      author={Qiu, Jinniao},
+       title={Controlled ordinary differential equations with random
+  path-dependent coefficients and stochastic path-dependent {H}amilton-{J}acobi
+  equations},
+        date={2022},
+        ISSN={0304-4149},
+     journal={Stochastic Process. Appl.},
+      volume={154},
+       pages={1\ndash 25},
+         url={https://doi.org/10.1016/j.spa.2022.09.001},
+}
+
+\bib{Subbotin}{book}{
+      author={Subbotin, Andre{\u\i}~I.},
+       title={Generalized solutions of first-order {PDE}s},
+      series={Systems \& Control: Foundations \& Applications},
+   publisher={Birkh\"auser Boston, Inc., Boston, MA},
+        date={1995},
+        ISBN={0-8176-3740-0},
+         url={http://dx.doi.org.proxy.lib.umich.edu/10.1007/978-1-4612-0847-1},
+}
+
+\bib{SonEtAl95}{incollection}{
+      author={Thai~Son, Nguyen~Duy},
+      author={Liem, Nguyen~Dac},
+      author={Van, Tran~Duc},
+       title={Minimax solutions of first-order nonlinear partial differential
+  equations with time-measurable {H}amiltonians},
+        date={1995},
+   booktitle={Dynamical systems and applications},
+      series={World Sci. Ser. Appl. Anal.},
+      volume={4},
+   publisher={World Sci. Publ., River Edge, NJ},
+       pages={647\ndash 668},
+         url={https://doi.org/10.1142/9789812796417_0043},
+}
+
+\bib{SonEtAl97}{article}{
+      author={Thai~Son, Nguyen~Duy},
+      author={Liem, Nguyen~Dac},
+      author={Van, Tran~Duc},
+       title={Minimax solutions for monotone systems of first-order nonlinear
+  partial differential equations with time-measurable {H}amiltonians},
+        date={1997},
+        ISSN={0532-8721},
+     journal={Funkcial. Ekvac.},
+      volume={40},
+      number={2},
+       pages={185\ndash 214},
+         url={http://www.math.kobe-u.ac.jp/~fe/xml/mr1480274.xml},
+}
+
+\bib{VanEtAl95}{incollection}{
+      author={Van, Tran~Duc},
+      author={Liem, Nguyen~Dac},
+      author={Thai~Son, Nguyen~Duy},
+       title={Minimax solutions for some systems of first-order nonlinear
+  partial differential equations with time-measurable {H}amiltonians},
+        date={1996},
+   booktitle={Structure of solutions of differential equations
+  ({K}atata/{K}yoto, 1995)},
+   publisher={World Sci. Publ., River Edge, NJ},
+       pages={499\ndash 511},
+}
+
+\bib{minimaxBookTimeMeas}{book}{
+      author={Van, Tran~Duc},
+      author={Tsuji, Mikio},
+      author={Son, Nguyen Duy~Thai},
+       title={The characteristic method and its generalizations for first-order
+  nonlinear partial differential equations},
+      series={Chapman \& Hall/CRC Monographs and Surveys in Pure and Applied
+  Mathematics},
+   publisher={Chapman \& Hall/CRC, Boca Raton, FL},
+        date={2000},
+      volume={101},
+        ISBN={1-58488-016-3},
+}
+
+\bib{zhou2020viscosity}{article}{
+      author={Zhou, Jianjun},
+       title={{Viscosity solutions to first order path-dependent HJB
+  equations}},
+        date={2020},
+     journal={arXiv preprint arXiv:2004.02095v2},
+}
+
+\end{biblist}
+\end{bibdiv}

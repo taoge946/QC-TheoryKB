@@ -1,0 +1,12 @@
+\section{Discussion}
+\label{sec:discussion}
+We have presented D3PMs, a class of models that improves diffusion models for discrete data by defining new kinds of discrete corruption processes.
+We achieve strong empirical results relative to previous work on discrete diffusion models, even surpassing performance of continuous diffusion models in terms of log-likelihoods for image generation.
+While these results are promising, one limitation is that---like much other work on non-autoregressive generative models---our models are still inferior to strong autoregressive models like Transformer XL for text generation, and continuous diffusion models still yield stronger results on image quality.
+We expect that D3PMs can benefit further from the rapid development of continuous diffusion models \citep{song2020_sde, nichol2021improved}. For example, further research in alternative losses for D3PM's can take inspiration from the reweighted $L_{\mathrm{simple}}$ objective used in \citep{ho2020denoising}, or the resampled variational bound in \citet{nichol2021improved}. Furthermore, D3PM's might benefit from increasing the number of timesteps and a more optimized noise schedule, as discussed in \citet{nichol2021improved}.
+Another limitation comes from the choice of evaluation metrics that we use (and that are standard for evaluation of generative models). 
+Inception score and Frechet Inception Distance are based on neural networks that have been trained on a particular distribution of data, which is not representative for all use-cases, and focusing on average quality metrics may not accurately reflect performance across the wide diversity of settings where these generative models may be applied.
+This creates a risk of negative social impacts where advances disproportionately favor a subset of the population.
+Going forward, we are excited about the space of possibilities that arise within the D3PM framework. 
+We have found successes in leveraging the flexibility that comes from defining discrete corruption processes for discrete data, but we believe that there are many more possibilities that make use of richer forms of structure to define even more powerful discrete diffusion models.
+

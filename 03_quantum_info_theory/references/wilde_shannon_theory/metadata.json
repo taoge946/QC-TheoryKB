@@ -1,0 +1,11 @@
+{
+  "arxiv_id": "1106.1445",
+  "download_url": "https://arxiv.org/e-print/1106.1445",
+  "download_date": "2026-03-23T13:18:02.087253",
+  "output_dir": "F:\\数学定理推导\\03_quantum_info_theory\\references\\wilde_shannon_theory",
+  "tex_files": [
+    "qit-notes.tex"
+  ],
+  "main_tex": "qit-notes.tex",
+  "success": true
+}

@@ -1,0 +1,69 @@
+%! \DeclareRobustCommand\openone{\leavevmode\hbox{\small1\normalsize\kern-.33em1}}
+\usetikzlibrary{decorations.pathreplacing,decorations.pathmorphing}
+\providecommand{\ket}[1]{\left|#1\right\rangle}
+\begin{tikzpicture}[scale=1.500000,x=1pt,y=1pt]
+\filldraw[color=white] (0.000000, -9.000000) rectangle (175.000000, 45.000000);
+% Drawing wires
+% Line 15: d  W  \ket{\psi}_D
+\draw[color=black] (0.000000,36.000000) -- (175.000000,36.000000);
+\draw[color=black] (0.000000,36.000000) node[left] {$\ket{\psi}_D$};
+% Line 16: r W \ket{0}_R
+\draw[color=black] (0.000000,18.000000) -- (175.000000,18.000000);
+\draw[color=black] (0.000000,18.000000) node[left] {$\ket{0}_R$};
+% Line 20: a W \ket{0}_{A}
+\draw[color=black] (96.500000,0.000000) -- (148.000000,0.000000);
+\draw[color=black] (148.000000,-0.500000) -- (166.000000,-0.500000);
+\draw[color=black] (148.000000,0.500000) -- (166.000000,0.500000);
+\draw[color=black] (166.000000,-0.500000) -- (175.000000,-0.500000);
+\draw[color=black] (166.000000,0.500000) -- (175.000000,0.500000);
+% Done with wires; drawing gates
+% Line 26: d /
+\draw (3.000000, 30.000000) -- (11.000000, 42.000000);
+% Line 27: r /
+\draw (3.000000, 12.000000) -- (11.000000, 24.000000);
+% Line 31: d r G {Encoder} length=35
+\draw (34.500000,36.000000) -- (34.500000,18.000000);
+\begin{scope}
+\draw[fill=white] (34.500000, 27.000000) +(-45.000000:24.748737pt and 21.213203pt) -- +(45.000000:24.748737pt and 21.213203pt) -- +(135.000000:24.748737pt and 21.213203pt) -- +(225.000000:24.748737pt and 21.213203pt) -- cycle;
+\clip (34.500000, 27.000000) +(-45.000000:24.748737pt and 21.213203pt) -- +(45.000000:24.748737pt and 21.213203pt) -- +(135.000000:24.748737pt and 21.213203pt) -- +(225.000000:24.748737pt and 21.213203pt) -- cycle;
+\draw (34.500000, 27.000000) node {{Encoder}};
+\end{scope}
+% Line 33: d r = ${\ket{\psi}_L}$ width=25
+\draw[fill=white,color=white] (58.000000, 12.000000) rectangle (83.000000, 42.000000);
+\draw (70.500000, 27.000000) node {${\ket{\psi}_L}$};
+% Line 37: d r G {$E$}
+\draw (96.500000,36.000000) -- (96.500000,18.000000);
+\begin{scope}
+\draw[fill=white] (96.500000, 27.000000) +(-45.000000:8.485281pt and 21.213203pt) -- +(45.000000:8.485281pt and 21.213203pt) -- +(135.000000:8.485281pt and 21.213203pt) -- +(225.000000:8.485281pt and 21.213203pt) -- cycle;
+\clip (96.500000, 27.000000) +(-45.000000:8.485281pt and 21.213203pt) -- +(45.000000:8.485281pt and 21.213203pt) -- +(135.000000:8.485281pt and 21.213203pt) -- +(225.000000:8.485281pt and 21.213203pt) -- cycle;
+\draw (96.500000, 27.000000) node {{$E$}};
+\end{scope}
+% Line 39: a START
+\draw[color=black] (104.000000,0.000000) node[fill=white,left,minimum height=18.000000pt,minimum width=15.000000pt,inner sep=0pt] {\phantom{$\ket{0}_{A}$}};
+\draw[color=black] (104.000000,0.000000) node[left] {$\ket{0}_{A}$};
+% Line 40: a /
+\draw (110.000000, -6.000000) -- (118.000000, 6.000000);
+% Line 41: d r a TOUCH
+% Line 44: d r G {Stabiliser measurment} a
+\draw (130.000000,36.000000) -- (130.000000,0.000000);
+\begin{scope}
+\draw[fill=white] (130.000000, 27.000000) +(-45.000000:8.485281pt and 21.213203pt) -- +(45.000000:8.485281pt and 21.213203pt) -- +(135.000000:8.485281pt and 21.213203pt) -- +(225.000000:8.485281pt and 21.213203pt) -- cycle;
+\clip (130.000000, 27.000000) +(-45.000000:8.485281pt and 21.213203pt) -- +(45.000000:8.485281pt and 21.213203pt) -- +(135.000000:8.485281pt and 21.213203pt) -- +(225.000000:8.485281pt and 21.213203pt) -- cycle;
+\draw (130.000000, 27.000000) node {{Stabiliser measurment}};
+\end{scope}
+\filldraw (130.000000, 0.000000) circle(1.500000pt);
+% Line 45: a M
+\draw[fill=white] (142.000000, -6.000000) rectangle (154.000000, 6.000000);
+\draw[very thin] (148.000000, 0.600000) arc (90:150:6.000000pt);
+\draw[very thin] (148.000000, 0.600000) arc (90:30:6.000000pt);
+\draw[->,>=stealth] (148.000000, -5.400000) -- +(80:10.392305pt);
+% Line 46: a:cwire
+\filldraw (166.000000, 0.000000) circle(1.500000pt);
+\draw[fill=white] (160.000000, -6.000000) rectangle (172.000000, 6.000000);
+\draw[very thin] (166.000000, 0.600000) arc (90:150:6.000000pt);
+\draw[very thin] (166.000000, 0.600000) arc (90:30:6.000000pt);
+\draw[->,>=stealth] (166.000000, -5.400000) -- +(80:10.392305pt);
+% Done with gates; drawing ending labels
+% Done with ending labels; drawing cut lines and comments
+% Done with comments
+\end{tikzpicture}

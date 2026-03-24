@@ -1,0 +1,87 @@
+\indexentry{qubit}{6}
+\indexentry{Bloch sphere}{6}
+\indexentry{Pauli operator}{7}
+\indexentry{Clifford gate}{8}
+\indexentry{positive-operator-valued measure measurement, POVM measurement}{8}
+\indexentry{Hadamard test}{17}
+\indexentry{Chernoff-Hoeffding bound}{18}
+\indexentry{deterministic quantum computation with one clean qubit, DQC1}{18}
+\indexentry{Shor's factorization algorithm}{19}
+\indexentry{Kitaev's phase estimation algorithm}{19}
+\indexentry{quantum Fourier transform}{19}
+\indexentry{Aharonov-Jones-Landau algorithm}{21}
+\indexentry{Jones polynomial}{21}
+\indexentry{Jones polynomial}{21}
+\indexentry{Kauffman bracket}{22}
+\indexentry{braid group}{22}
+\indexentry{Temperley-Lieb (TL) algebra}{22}
+\indexentry{path-model representation}{24}
+\indexentry{completely-positive-trace-preserving (CPTP)}{26}
+\indexentry{Kraus operators}{26}
+\indexentry{stabilizer formalism}{28}
+\indexentry{Pauli group}{28}
+\indexentry{Pauli product}{28}
+\indexentry{stabilizer group}{28}
+\indexentry{stabilizer generator}{29}
+\indexentry{stabilizer state}{29}
+\indexentry{stabilizer subspace}{29}
+\indexentry{logical operator}{29}
+\indexentry{Clifford operation}{30}
+\indexentry{Clifford operation}{30}
+\indexentry{Pauli-basis measurement}{33}
+\indexentry{Gottesman-Knill theorem}{34}
+\indexentry{graph state}{36}
+\indexentry{cluster states}{37}
+\indexentry{measurement-based quantum computation}{40}
+\indexentry{byproduct operator}{40}
+\indexentry{one-bit teleportation}{40}
+\indexentry{gate teleportation}{42}
+\indexentry{byproduct operator}{42}
+\indexentry{feedforward}{43}
+\indexentry{gate teleportation}{43}
+\indexentry{logical operator}{44}
+\indexentry{quantum error correction, QEC}{48}
+\indexentry{three-qubit bit flip code}{48}
+\indexentry{three-qubit phase flip code}{49}
+\indexentry{9-qubit Shor code}{50}
+\indexentry{transversality}{50}
+\indexentry{stabilizer QEC code}{50}
+\indexentry{logical operator}{50}
+\indexentry{logical qubit}{51}
+\indexentry{weight}{51}
+\indexentry{code distance}{51}
+\indexentry{five-qubit code}{51}
+\indexentry{classical linear code}{51}
+\indexentry{parity check matrix}{52}
+\indexentry{Calderbank-Shor-Steane code, CSS code}{53}
+\indexentry{7-qubit Steane code}{53}
+\indexentry{magic state}{54}
+\indexentry{Reed-Muller code}{55}
+\indexentry{topological stabilizer code}{62}
+\indexentry{$\mathbf{Z}_2$ chain complex}{62}
+\indexentry{trivial cycle}{63}
+\indexentry{quotient group}{63}
+\indexentry{homology class}{63}
+\indexentry{plaquette and star operators}{66}
+\indexentry{minimum-weight perfect matching, MWPM}{72}
+\indexentry{random-bond Ising model, RBIM}{77}
+\indexentry{quantum Gilbert-Varshamov bound}{79}
+\indexentry{mutual duality relation}{80}
+\indexentry{Nishimori line}{81}
+\indexentry{topological color code}{82}
+\indexentry{topological order, topological ordered system}{84}
+\indexentry{stabilizer Hamiltonian}{85}
+\indexentry{symmetry protected topological order}{86}
+\indexentry{Jordan-Wigner transformation}{86}
+\indexentry{Majorana fermion}{86}
+\indexentry{Kitaev's toric code Hamiltonian}{87}
+\indexentry{Abelian anyon}{88}
+\indexentry{Kitaev's compass model}{89}
+\indexentry{defect pair qubit}{92}
+\indexentry{defect creation, annihilation, and movement}{93}
+\indexentry{topological diagram}{101}
+\indexentry{topological calculus}{101}
+\indexentry{correlation surface}{103}
+\indexentry{Reidemeister move}{104}
+\indexentry{$\Phi$-transformation}{105}
+\indexentry{projected-entangled-pair state, PEPS}{125}

@@ -1,0 +1,46 @@
+HEADER \DeclareRobustCommand\openone{\leavevmode\hbox{\small1\normalsize\kern-.33em1}}
+
+PREAMBLE \usetikzlibrary{decorations.pathreplacing,decorations.pathmorphing}
+PREAMBLE \providecommand{\ket}[1]{\left|#1\right\rangle}
+
+
+a b DEFINE CPG  a:shape=0 op="\draw[fill=black, rounded corners=2] (-3, -3) rectangle (3, 3) {};"  b:shape=0 op="\draw[fill=black, rounded corners=2] (-3, -3) rectangle (3, 3) {};"
+a b DEFINE CNOT a +b
+
+WIREPAD 6
+DEPTHPAD 3
+
+SCALE 1.5
+
+d  W  \ket{\psi}_D
+r W \ket{0}_R
+
+
+
+a W \ket{0}_{A}
+
+
+
+
+
+d / 
+r /
+
+
+
+ d r G {Encoder} length=35
+ 
+d r = ${\ket{\psi}_L}$ width=25
+
+ 
+MARK p00
+ d r G {$E$}
+MARK p01
+  a START
+a /
+d r a TOUCH
+
+
+d r G {Stabiliser measurment} a 
+a M
+a:cwire

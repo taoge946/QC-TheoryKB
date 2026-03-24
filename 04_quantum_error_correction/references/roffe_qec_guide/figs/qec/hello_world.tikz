@@ -1,0 +1,26 @@
+%! \DeclareRobustCommand\openone{\leavevmode\hbox{\small1\normalsize\kern-.33em1}}
+\providecommand{\ket}[1]{\left|#1\right\rangle}
+\begin{tikzpicture}[scale=1.500000,x=1pt,y=1pt]
+\filldraw[color=white] (0.000000, -9.000000) rectangle (72.000000, 9.000000);
+% Drawing wires
+% Line 13: q1 W \ket{0}
+\draw[color=black] (0.000000,0.000000) -- (54.000000,0.000000);
+\draw[color=black] (54.000000,-0.500000) -- (72.000000,-0.500000);
+\draw[color=black] (54.000000,0.500000) -- (72.000000,0.500000);
+\draw[color=black] (0.000000,0.000000) node[left] {$\ket{0}$};
+% Done with wires; drawing gates
+% Line 15: q1 H
+\begin{scope}
+\draw[fill=white] (18.000000, -0.000000) +(-45.000000:8.485281pt and 8.485281pt) -- +(45.000000:8.485281pt and 8.485281pt) -- +(135.000000:8.485281pt and 8.485281pt) -- +(225.000000:8.485281pt and 8.485281pt) -- cycle;
+\clip (18.000000, -0.000000) +(-45.000000:8.485281pt and 8.485281pt) -- +(45.000000:8.485281pt and 8.485281pt) -- +(135.000000:8.485281pt and 8.485281pt) -- +(225.000000:8.485281pt and 8.485281pt) -- cycle;
+\draw (18.000000, -0.000000) node {$H$};
+\end{scope}
+% Line 17: q1 M
+\draw[fill=white] (48.000000, -6.000000) rectangle (60.000000, 6.000000);
+\draw[very thin] (54.000000, 0.600000) arc (90:150:6.000000pt);
+\draw[very thin] (54.000000, 0.600000) arc (90:30:6.000000pt);
+\draw[->,>=stealth] (54.000000, -5.400000) -- +(80:10.392305pt);
+% Done with gates; drawing ending labels
+% Done with ending labels; drawing cut lines and comments
+% Done with comments
+\end{tikzpicture}

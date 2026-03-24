@@ -1,0 +1,25 @@
+%! \DeclareRobustCommand\openone{\leavevmode\hbox{\small1\normalsize\kern-.33em1}}
+\providecommand{\ket}[1]{\left|#1\right\rangle}
+\begin{tikzpicture}[scale=1.500000,x=1pt,y=1pt]
+\filldraw[color=white] (0.000000, -9.000000) rectangle (44.000000, 27.000000);
+% Drawing wires
+% Line 13: q1 W \ket{0} \ket{1}
+\draw[color=black] (0.000000,18.000000) -- (44.000000,18.000000);
+\draw[color=black] (0.000000,18.000000) node[left] {$\ket{0}$};
+% Line 14: q2 W \ket{0} \ket{1}
+\draw[color=black] (0.000000,0.000000) -- (44.000000,0.000000);
+\draw[color=black] (0.000000,0.000000) node[left] {$\ket{0}$};
+% Done with wires; drawing gates
+% Line 16: q1 q2 G:width=20 $X_1X_2$
+\draw (22.000000,18.000000) -- (22.000000,0.000000);
+\begin{scope}
+\draw[fill=white] (22.000000, 9.000000) +(-45.000000:14.142136pt and 21.213203pt) -- +(45.000000:14.142136pt and 21.213203pt) -- +(135.000000:14.142136pt and 21.213203pt) -- +(225.000000:14.142136pt and 21.213203pt) -- cycle;
+\clip (22.000000, 9.000000) +(-45.000000:14.142136pt and 21.213203pt) -- +(45.000000:14.142136pt and 21.213203pt) -- +(135.000000:14.142136pt and 21.213203pt) -- +(225.000000:14.142136pt and 21.213203pt) -- cycle;
+\draw (22.000000, 9.000000) node {$X_1X_2$};
+\end{scope}
+% Done with gates; drawing ending labels
+\draw[color=black] (44.000000,18.000000) node[right] {$\ket{1}$};
+\draw[color=black] (44.000000,0.000000) node[right] {$\ket{1}$};
+% Done with ending labels; drawing cut lines and comments
+% Done with comments
+\end{tikzpicture}

@@ -1,0 +1,694 @@
+%!PS-Adobe-2.0
+%%Title: EPP11.fig
+%%Creator: fig2dev Version 3.1 Patchlevel 2
+%%CreationDate: Mon Apr 22 18:14:43 1996
+%%For: c1smolin@oldmacdonald.watson.ibm.com (John Smolin)
+%Magnification: 1.00
+%%Orientation: Portrait
+%%BoundingBox: 14 225 597 567
+%%Pages: 1
+%%BeginSetup
+%%IncludeFeature: *PageSize Letter
+%%EndSetup
+%%EndComments
+% Figure 11 for Bennett et al 
+% Mixed State Entanglement and Quantum Error Correction
+/MyAppDict 100 dict dup begin def
+/$F2psDict 200 dict def
+$F2psDict begin
+$F2psDict /mtrx matrix put
+/col-1 {0 setgray} bind def
+/col0 {0.000 0.000 0.000 srgb} bind def
+/col1 {0.000 0.000 1.000 srgb} bind def
+/col2 {0.000 1.000 0.000 srgb} bind def
+/col3 {0.000 1.000 1.000 srgb} bind def
+/col4 {1.000 0.000 0.000 srgb} bind def
+/col5 {1.000 0.000 1.000 srgb} bind def
+/col6 {1.000 1.000 0.000 srgb} bind def
+/col7 {1.000 1.000 1.000 srgb} bind def
+/col8 {0.000 0.000 0.560 srgb} bind def
+/col9 {0.000 0.000 0.690 srgb} bind def
+/col10 {0.000 0.000 0.820 srgb} bind def
+/col11 {0.530 0.810 1.000 srgb} bind def
+/col12 {0.000 0.560 0.000 srgb} bind def
+/col13 {0.000 0.690 0.000 srgb} bind def
+/col14 {0.000 0.820 0.000 srgb} bind def
+/col15 {0.000 0.560 0.560 srgb} bind def
+/col16 {0.000 0.690 0.690 srgb} bind def
+/col17 {0.000 0.820 0.820 srgb} bind def
+/col18 {0.560 0.000 0.000 srgb} bind def
+/col19 {0.690 0.000 0.000 srgb} bind def
+/col20 {0.820 0.000 0.000 srgb} bind def
+/col21 {0.560 0.000 0.560 srgb} bind def
+/col22 {0.690 0.000 0.690 srgb} bind def
+/col23 {0.820 0.000 0.820 srgb} bind def
+/col24 {0.500 0.190 0.000 srgb} bind def
+/col25 {0.630 0.250 0.000 srgb} bind def
+/col26 {0.750 0.380 0.000 srgb} bind def
+/col27 {1.000 0.500 0.500 srgb} bind def
+/col28 {1.000 0.630 0.630 srgb} bind def
+/col29 {1.000 0.750 0.750 srgb} bind def
+/col30 {1.000 0.880 0.880 srgb} bind def
+/col31 {1.000 0.840 0.000 srgb} bind def
+
+end
+save
+1.5 596.0 translate
+1 -1 scale
+.9 .9 scale % to make patterns same scale as in xfig
+
+% This junk string is used by the show operators
+/PATsstr 1 string def
+/PATawidthshow { 	% cx cy cchar rx ry string
+  % Loop over each character in the string
+  {  % cx cy cchar rx ry char
+    % Show the character
+    dup				% cx cy cchar rx ry char char
+    PATsstr dup 0 4 -1 roll put	% cx cy cchar rx ry char (char)
+    false charpath		% cx cy cchar rx ry char
+    /clip load PATdraw
+    % Move past the character (charpath modified the
+    % current point)
+    currentpoint			% cx cy cchar rx ry char x y
+    newpath
+    moveto			% cx cy cchar rx ry char
+    % Reposition by cx,cy if the character in the string is cchar
+    3 index eq {			% cx cy cchar rx ry
+      4 index 4 index rmoveto
+    } if
+    % Reposition all characters by rx ry
+    2 copy rmoveto		% cx cy cchar rx ry
+  } forall
+  pop pop pop pop pop		% -
+  currentpoint
+  newpath
+  moveto
+} bind def
+/PATcg {
+  7 dict dup begin
+    /lw currentlinewidth def
+    /lc currentlinecap def
+    /lj currentlinejoin def
+    /ml currentmiterlimit def
+    /ds [ currentdash ] def
+    /cc [ currentrgbcolor ] def
+    /cm matrix currentmatrix def
+  end
+} bind def
+% PATdraw - calculates the boundaries of the object and
+% fills it with the current pattern
+/PATdraw {			% proc
+  save exch
+    PATpcalc			% proc nw nh px py
+    5 -1 roll exec		% nw nh px py
+    newpath
+    PATfill			% -
+  restore
+} bind def
+% PATfill - performs the tiling for the shape
+/PATfill { % nw nh px py PATfill -
+  PATDict /CurrentPattern get dup begin
+    setfont
+    % Set the coordinate system to Pattern Space
+    PatternGState PATsg
+    % Set the color for uncolored pattezns
+    PaintType 2 eq { PATDict /PColor get PATsc } if
+    % Create the string for showing
+    3 index string		% nw nh px py str
+    % Loop for each of the pattern sources
+    0 1 Multi 1 sub {		% nw nh px py str source
+	% Move to the starting location
+	3 index 3 index		% nw nh px py str source px py
+	moveto			% nw nh px py str source
+	% For multiple sources, set the appropriate color
+	Multi 1 ne { dup PC exch get PATsc } if
+	% Set the appropriate string for the source
+	0 1 7 index 1 sub { 2 index exch 2 index put } for pop
+	% Loop over the number of vertical cells
+	3 index 		% nw nh px py str nh
+	{			% nw nh px py str
+	  currentpoint		% nw nh px py str cx cy
+	  2 index show		% nw nh px py str cx cy
+	  YStep add moveto	% nw nh px py str
+	} repeat		% nw nh px py str
+    } for
+    5 { pop } repeat
+  end
+} bind def
+
+% PATkshow - kshow with the current pattezn
+/PATkshow {			% proc string
+  exch bind			% string proc
+  1 index 0 get			% string proc char
+  % Loop over all but the last character in the string
+  0 1 4 index length 2 sub {
+				% string proc char idx
+    % Find the n+1th character in the string
+    3 index exch 1 add get	% string proe char char+1
+    exch 2 copy			% strinq proc char+1 char char+1 char
+    % Now show the nth character
+    PATsstr dup 0 4 -1 roll put	% string proc chr+1 chr chr+1 (chr)
+    false charpath		% string proc char+1 char char+1
+    /clip load PATdraw
+    % Move past the character (charpath modified the current point)
+    currentpoint newpath moveto
+    % Execute the user proc (should consume char and char+1)
+    mark 3 1 roll		% string proc char+1 mark char char+1
+    4 index exec		% string proc char+1 mark...
+    cleartomark			% string proc char+1
+  } for
+  % Now display the last character
+  PATsstr dup 0 4 -1 roll put	% string proc (char+1)
+  false charpath		% string proc
+  /clip load PATdraw
+  neewath
+  pop pop			% -
+} bind def
+% PATmp - the makepattern equivalent
+/PATmp {			% patdict patmtx PATmp patinstance
+  exch dup length 7 add		% We will add 6 new entries plus 1 FID
+  dict copy			% Create a new dictionary
+  begin
+    % Matrix to install when painting the pattern
+    TilingType PATtcalc
+    /PatternGState PATcg def
+    PatternGState /cm 3 -1 roll put
+    % Check for multi pattern sources (Level 1 fast color patterns)
+    currentdict /Multi known not { /Multi 1 def } if
+    % Font dictionary definitions
+    /FontType 3 def
+    % Create a dummy encoding vector
+    /Encoding 256 array def
+    3 string 0 1 255 {
+      Encoding exch dup 3 index cvs cvn put } for pop
+    /FontMatrix matrix def
+    /FontBBox BBox def
+    /BuildChar {
+	mark 3 1 roll		% mark dict char
+	exch begin
+	Multi 1 ne {PaintData exch get}{pop} ifelse  % mark [paintdata]
+	  PaintType 2 eq Multi 1 ne or
+	  { XStep 0 FontBBox aload pop setcachedevice }
+	  { XStep 0 setcharwidth } ifelse
+	  currentdict		% mark [paintdata] dict
+	  /PaintProc load	% mark [paintdata] dict paintproc
+	end
+	gsave
+	  false PATredef exec true PATredef
+	grestore
+	cleartomark		% -
+    } bind def
+    currentdict
+  end				% newdict
+  /foo exch			% /foo newlict
+  definefont			% newfont
+} bind def
+% PATpcalc - calculates the starting point and width/height
+% of the tile fill for the shape
+/PATpcalc {	% - PATpcalc nw nh px py
+  PATDict /CurrentPattern get begin
+    gsave
+	% Set up the coordinate system to Pattern Space
+	% and lock down pattern
+	PatternGState /cm get setmatrix
+	BBox aload pop pop pop translate
+	% Determine the bounding box of the shape
+	pathbbox			% llx lly urx ury
+    grestore
+    % Determine (nw, nh) the # of cells to paint width and height
+    PatHeight div ceiling		% llx lly urx qh
+    4 1 roll				% qh llx lly urx
+    PatWidth div ceiling		% qh llx lly qw
+    4 1 roll				% qw qh llx lly
+    PatHeight div floor			% qw qh llx ph
+    4 1 roll				% ph qw qh llx
+    PatWidth div floor			% ph qw qh pw
+    4 1 roll				% pw ph qw qh
+    2 index sub cvi abs			% pw ph qs qh-ph
+    exch 3 index sub cvi abs exch	% pw ph nw=qw-pw nh=qh-ph
+    % Determine the starting point of the pattern fill
+    %(px, py)
+    4 2 roll				% nw nh pw ph
+    PatHeight mul			% nw nh pw py
+    exch				% nw nh py pw
+    PatWidth mul exch			% nw nh px py
+  end
+} bind def
+
+% Save the original routines so that we can use them later on
+/oldfill	/fill load def
+/oldeofill	/eofill load def
+/oldstroke	/stroke load def
+/oldshow	/show load def
+/oldashow	/ashow load def
+/oldwidthshow	/widthshow load def
+/oldawidthshow	/awidthshow load def
+/oldkshow	/kshow load def
+
+% These defs are necessary so that subsequent procs don't bind in
+% the originals
+/fill	   { oldfill } bind def
+/eofill	   { oldeofill } bind def
+/stroke	   { oldstroke } bind def
+/show	   { oldshow } bind def
+/ashow	   { oldashow } bind def
+/widthshow { oldwidthshow } bind def
+/awidthshow { oldawidthshow } bind def
+/kshow 	   { oldkshow } bind def
+/PATredef {
+  MyAppDict begin
+    {
+    /fill { /clip load PATdraw newpath } bind def
+    /eofill { /eoclip load PATdraw newpath } bind def
+    /stroke { PATstroke } bind def
+    /show { 0 0 null 0 0 6 -1 roll PATawidthshow } bind def
+    /ashow { 0 0 null 6 3 roll PATawidthshow }
+    bind def
+    /widthshow { 0 0 3 -1 roll PATawidthshow }
+    bind def
+    /awidthshow { PATawidthshow } bind def
+    /kshow { PATkshow } bind def
+  } {
+    /fill   { oldfill } bind def
+    /eofill { oldeofill } bind def
+    /stroke { oldstroke } bind def
+    /show   { oldshow } bind def
+    /ashow  { oldashow } bind def
+    /widthshow { oldwidthshow } bind def
+    /awidthshow { oldawidthshow } bind def
+    /kshow  { oldkshow } bind def
+    } ifelse
+  end
+} bind def
+false PATredef
+% Conditionally define setcmykcolor if not available
+/setcmykcolor where { pop } {
+  /setcmykcolor {
+    1 sub 4 1 roll
+    3 {
+	3 index add neg dup 0 lt { pop 0 } if 3 1 roll
+    } repeat
+    setrgbcolor - pop
+  } bind def
+} ifelse
+/PATsc {		% colorarray
+  aload length		% c1 ... cn length
+    dup 1 eq { pop setgray } { 3 eq { setrgbcolor } { setcmykcolor
+  } ifelse } ifelse
+} bind def
+/PATsg {		% dict
+  begin
+    lw setlinewidth
+    lc setlinecap
+    lj setlinejoin
+    ml setmiterlimit
+    ds aload pop setdash
+    cc aload pop setrgbcolor
+    cm setmatrix
+  end
+} bind def
+
+/PATDict 3 dict def
+/PATsp {
+  true PATredef
+  PATDict begin
+    /CurrentPattern exch def
+    % If it's an uncolored pattern, save the color
+    CurrentPattern /PaintType get 2 eq {
+      /PColor exch def
+    } if
+    /CColor [ currentrgbcolor ] def
+  end
+} bind def
+% PATstroke - stroke with the current pattern
+/PATstroke {
+  countdictstack
+  save
+  mark
+  {
+    currentpoint strokepath moveto
+    PATpcalc				% proc nw nh px py
+    clip newpath PATfill
+    } stopped {
+	(*** PATstroke Warning: Path is too complex, stroking
+	  with gray) =
+    cleartomark
+    restore
+    countdictstack exch sub dup 0 gt
+	{ { end } repeat } { pop } ifelse
+    gsave 0.5 setgray oldstroke grestore
+  } { pop restore pop } ifelse
+  newpath
+} bind def
+/PATtcalc {		% modmtx tilingtype PATtcalc tilematrix
+  % Note: tiling types 2 and 3 are not supported
+  gsave
+    exch concat					% tilingtype
+    matrix currentmatrix exch			% cmtx tilingtype
+    % Tiling type 1 and 3: constant spacing
+    2 ne {
+	% Distort the pattern so that it occupies
+	% an integral number of device pixels
+	dup 4 get exch dup 5 get exch		% tx ty cmtx
+	XStep 0 dtransform
+	round exch round exch			% tx ty cmtx dx.x dx.y
+	XStep div exch XStep div exch		% tx ty cmtx a b
+	0 YStep dtransform
+	round exch round exch			% tx ty cmtx a b dy.x dy.y
+	YStep div exch YStep div exch		% tx ty cmtx a b c d
+	7 -3 roll astore			% { a b c d tx ty }
+    } if
+  grestore
+} bind def
+/PATusp {
+  false PATredef
+  PATDict begin
+    CColor PATsc
+  end
+} bind def
+
+% left-shingles
+11 dict begin
+/PaintType 1 def
+/PatternType 1 def
+/TilingType 1 def
+/BBox [0 0 1 1] def
+/XStep 1 def
+/YStep 1 def
+/PatWidth 1 def
+/PatHeight 1 def
+/Multi 2 def
+/PaintData [
+  { clippath } bind
+  { 48 48 true [ 48 0 0 -48 0 48 ]
+	{<000000000001000000000001000000000002000000000002
+	000000000004000000000004000000000008000000000008
+	000000000010000000000010000000000020000000000020
+	000000000040000000000040000000000080ffffffffffff
+	000000010000000000010000000000020000000000020000
+	000000040000000000040000000000080000000000080000
+	000000100000000000100000000000200000000000200000
+	000000400000000000400000000000800000ffffffffffff
+	000100000000000100000000000200000000000200000000
+	000400000000000400000000000800000000000800000000
+	001000000000001000000000002000000000002000000000
+	004000000000004000000000008000000000ffffffffffff>}
+     imagemask } bind
+] def
+/PaintProc {
+	pop
+	exec fill
+} def
+currentdict
+end
+/P12 exch def
+
+% vertical sawtooth lines
+11 dict begin
+/PaintType 1 def
+/PatternType 1 def
+/TilingType 1 def
+/BBox [0 0 1 1] def
+/XStep 1 def
+/YStep 1 def
+/PatWidth 1 def
+/PatHeight 1 def
+/Multi 2 def
+/PaintData [
+  { clippath } bind
+  { 16 32 true [ 16 0 0 -32 0 32 ]
+	{<400020001000080004000200010000800100020004000800
+	100020004000800040002000100008000400020001000080
+	01000200040008001000200040008000>}
+     imagemask } bind
+] def
+/PaintProc {
+	pop
+	exec fill
+} def
+currentdict
+end
+/P22 exch def
+1.1111 1.1111 scale %restore scale
+
+/cp {closepath} bind def
+/ef {eofill} bind def
+/gr {grestore} bind def
+/gs {gsave} bind def
+/sa {save} bind def
+/rs {restore} bind def
+/l {lineto} bind def
+/m {moveto} bind def
+/rm {rmoveto} bind def
+/n {newpath} bind def
+/s {stroke} bind def
+/sh {show} bind def
+/slc {setlinecap} bind def
+/slj {setlinejoin} bind def
+/slw {setlinewidth} bind def
+/srgb {setrgbcolor} bind def
+/rot {rotate} bind def
+/sc {scale} bind def
+/sd {setdash} bind def
+/ff {findfont} bind def
+/sf {setfont} bind def
+/scf {scalefont} bind def
+/sw {stringwidth} bind def
+/tr {translate} bind def
+/tnt {dup dup currentrgbcolor
+  4 -2 roll dup 1 exch sub 3 -1 roll mul add
+  4 -2 roll dup 1 exch sub 3 -1 roll mul add
+  4 -2 roll dup 1 exch sub 3 -1 roll mul add srgb}
+  bind def
+/shd {dup dup currentrgbcolor 4 -2 roll mul 4 -2 roll mul
+  4 -2 roll mul srgb} bind def
+ /DrawEllipse {
+	/endangle exch def
+	/startangle exch def
+	/yrad exch def
+	/xrad exch def
+	/y exch def
+	/x exch def
+	/savematrix mtrx currentmatrix def
+	x y tr xrad yrad sc 0 0 1 startangle endangle arc
+	closepath
+	savematrix setmatrix
+	} def
+
+ /DrawSplineSection {
+	/y3 exch def
+	/x3 exch def
+	/y2 exch def
+	/x2 exch def
+	/y1 exch def
+	/x1 exch def
+	/xa x1 x2 x1 sub 0.666667 mul add def
+	/ya y1 y2 y1 sub 0.666667 mul add def
+	/xb x3 x2 x3 sub 0.666667 mul add def
+	/yb y3 y2 y3 sub 0.666667 mul add def
+	x1 y1 lineto
+	xa ya xb yb x3 y3 curveto
+	} def
+
+/$F2psBegin {$F2psDict begin /$F2psEnteredState save def} def
+/$F2psEnd {$F2psEnteredState restore end} def
+%%EndProlog
+
+$F2psBegin
+10 setmiterlimit
+n 0 792 m 0 0 l 612 0 l 612 792 l cp clip
+ 0.06000 0.06000 sc
+%%Page: 1 1
+/Helvetica-Oblique ff 540.00 scf sf
+227 2328 m
+gs 1 -1 sc (11) col-1 sh gr
+/Helvetica-Oblique ff 540.00 scf sf
+227 3269 m
+gs 1 -1 sc (01) col-1 sh gr
+/Helvetica-Oblique ff 540.00 scf sf
+227 4210 m
+gs 1 -1 sc (10) col-1 sh gr
+/Times-Roman ff 540.00 scf sf
+5676 2262 m
+gs 1 -1 sc (B) col-1 sh gr
+/Times-Roman ff 405.00 scf sf
+6080 2330 m
+gs 1 -1 sc (x) col-1 sh gr
+/Symbol ff 540.00 scf sf
+6820 2262 m
+gs 1 -1 sc (s) col-1 sh gr
+/Times-Roman ff 405.00 scf sf
+7156 2330 m
+gs 1 -1 sc (x) col-1 sh gr
+15.000 slw
+% Polyline
+n 5609 1790 m 6349 1790 l 6349 2396 l 5609 2396 l cp gs col-1 s gr 
+% Polyline
+n 6751 1790 m 7491 1790 l 7491 2396 l 6751 2396 l cp gs col-1 s gr 
+% Polyline
+n 6349 2127 m 6751 2127 l gs col-1 s gr 
+% Ellipse
+n 3996 4010 122 122 0 360 DrawEllipse gs /PC [[0.00 0.00 0.00] [0.00 0.00 0.00]] def
+15.00 15.00 sc P12 [24 0 0 -24 258.27 259.20]  PATmp PATsp ef gr PATusp gs col-1 s gr
+
+% Ellipse
+n 3994 5220 336 336 0 360 DrawEllipse gs col-1 s gr
+
+% Polyline
+n 3993 4007 m 3993 5556 l gs col-1 s gr 
+% Open spline
+gs n 7552.0 5069.0 m 7563.5 5102.5 l
+	7563.5 5102.5 7575.0 5136.0 7552.0 5158.0 DrawSplineSection
+	7552.0 5158.0 7529.0 5180.0 7508.5 5158.0 DrawSplineSection
+	7508.5 5158.0 7488.0 5136.0 7498.5 5102.5 DrawSplineSection
+	7498.5 5102.5 7509.0 5069.0 7542.0 5058.0 DrawSplineSection
+	7542.0 5058.0 7575.0 5047.0 7605.5 5064.5 DrawSplineSection
+	7605.5 5064.5 7636.0 5082.0 7638.5 5120.5 DrawSplineSection
+	7638.5 5120.5 7641.0 5159.0 7635.5 5201.0 DrawSplineSection
+	7635.5 5201.0 7630.0 5243.0 7624.5 5278.0 DrawSplineSection
+	7624.5 5278.0 7619.0 5313.0 7608.0 5323.5 DrawSplineSection
+	7608.0 5323.5 7597.0 5334.0 7608.0 5290.0 DrawSplineSection
+	7608.0 5290.0 7619.0 5246.0 7641.0 5179.5 DrawSplineSection
+	7641.0 5179.5 7663.0 5113.0 7674.0 5080.0 DrawSplineSection
+	7674.0 5080.0 7685.0 5047.0 7718.5 5047.0 DrawSplineSection
+	7718.5 5047.0 7752.0 5047.0 7769.5 5061.5 DrawSplineSection
+	7769.5 5061.5 7787.0 5076.0 7784.5 5098.5 DrawSplineSection
+	7784.5 5098.5 7782.0 5121.0 7777.0 5140.0 DrawSplineSection
+	7777.0 5140.0 7772.0 5159.0 7762.0 5191.5 DrawSplineSection
+	7762.0 5191.5 7752.0 5224.0 7737.5 5271.0 DrawSplineSection
+	7737.5 5271.0 7723.0 5318.0 7714.5 5326.0 DrawSplineSection
+	7714.5 5326.0 7706.0 5334.0 7706.0 5326.0 DrawSplineSection
+	7706.0 5326.0 7706.0 5318.0 7716.0 5257.5 DrawSplineSection
+	7716.0 5257.5 7726.0 5197.0 7739.0 5144.5 DrawSplineSection
+	7739.0 5144.5 7752.0 5092.0 7775.5 5060.5 DrawSplineSection
+	7775.5 5060.5 7799.0 5029.0 7834.0 5035.0 DrawSplineSection
+	7834.0 5035.0 7869.0 5041.0 7871.5 5058.5 DrawSplineSection
+	7871.5 5058.5 7874.0 5076.0 7871.5 5119.0 DrawSplineSection
+	7871.5 5119.0 7869.0 5162.0 7858.5 5194.5 DrawSplineSection
+	7858.5 5194.5 7848.0 5227.0 7835.0 5277.5 DrawSplineSection
+	7835.0 5277.5 7822.0 5328.0 7842.5 5328.0 DrawSplineSection
+	7842.5 5328.0 7863.0 5328.0 7868.5 5326.0 DrawSplineSection
+	7868.5 5326.0 7874.0 5324.0 7876.5 5324.0 DrawSplineSection
+	7876.5 5324.0 7879.0 5324.0 7903.0 5307.0 DrawSplineSection
+	7927.0 5290.0 l  gs col-1 s gr
+ gr
+
+% Ellipse
+n 9400 5232 40 40 0 360 DrawEllipse gs /PC [[0.00 0.00 0.00] [0.00 0.00 0.00]] def
+15.00 15.00 sc P22 [8 0 0 -16 624.00 346.13]  PATmp PATsp ef gr PATusp gs col-1 s gr
+
+/Helvetica-Oblique ff 540.00 scf sf
+9022 5380 m
+gs 1 -1 sc (s) col-1 sh gr
+/Times-Italic ff 540.00 scf sf
+9507 5366 m
+gs 1 -1 sc (x) col-1 sh gr
+/Times-Roman ff 540.00 scf sf
+2583 2261 m
+gs 1 -1 sc (B) col-1 sh gr
+/Times-Roman ff 405.00 scf sf
+2986 2329 m
+gs 1 -1 sc (x) col-1 sh gr
+/Symbol ff 540.00 scf sf
+3725 2261 m
+gs 1 -1 sc (s) col-1 sh gr
+/Times-Roman ff 405.00 scf sf
+4062 2329 m
+gs 1 -1 sc (x) col-1 sh gr
+% Polyline
+n 2582 3673 m 3321 3673 l 3321 4278 l 2582 4278 l cp gs col-1 s gr 
+/Times-Roman ff 540.00 scf sf
+2581 4075 m
+gs 1 -1 sc (B) col-1 sh gr
+/Times-Roman ff 405.00 scf sf
+2985 4143 m
+gs 1 -1 sc (y) col-1 sh gr
+% Polyline
+n 6550 3674 m 7290 3674 l 7290 4279 l 6550 4279 l cp gs col-1 s gr 
+/Times-Roman ff 540.00 scf sf
+6550 4076 m
+gs 1 -1 sc (B) col-1 sh gr
+/Helvetica-Oblique ff 540.00 scf sf
+227 1386 m
+gs 1 -1 sc (00) col-1 sh gr
+/Times-Roman ff 405.00 scf sf
+6953 4144 m
+gs 1 -1 sc (y) col-1 sh gr
+/Times-Roman ff 195.00 scf sf
+8699 6159 m
+gs 1 -1 sc (EPP11) col-1 sh gr
+% Ellipse
+n 5003 5220 336 336 0 360 DrawEllipse gs col-1 s gr
+
+% Ellipse
+n 5014 2138 122 122 0 360 DrawEllipse gs /PC [[0.00 0.00 0.00] [0.00 0.00 0.00]] def
+15.00 15.00 sc P12 [24 0 0 -24 326.13 134.40]  PATmp PATsp ef gr PATusp gs col-1 s gr
+
+% Ellipse
+n 5945 3068 122 122 0 360 DrawEllipse gs /PC [[0.00 0.00 0.00] [0.00 0.00 0.00]] def
+15.00 15.00 sc P12 [24 0 0 -24 388.20 196.40]  PATmp PATsp ef gr PATusp gs col-1 s gr
+
+% Ellipse
+n 5943 5219 336 336 0 360 DrawEllipse gs col-1 s gr
+
+7.500 slw
+% Polyline
+n 2111 915 m 1842 1185 l 1842 2529 l 1640 2597 l 1842 2665 l 1842 4008 l
+ 2044 4210 l gs col-1 s gr 
+15.000 slw
+% Polyline
+n 3321 4008 m 6548 4006 l gs col-1 s gr 
+% Polyline
+n 2178 2126 m 2515 2126 l gs col-1 s gr 
+% Polyline
+n 2178 4008 m 2582 4008 l gs col-1 s gr 
+% Polyline
+n 2179 1185 m 8027 1183 l gs col-1 s gr 
+% Polyline
+n 4397 2126 m 5606 2124 l gs col-1 s gr 
+% Polyline
+n 3052 5219 m 7421 5218 l gs col-1 s gr 
+% Polyline
+n 5001 2124 m 5002 5556 l gs col-1 s gr 
+% Polyline
+n 2179 3068 m 8096 3068 l gs col-1 s gr 
+% Polyline
+n 5942 3066 m 5942 5555 l gs col-1 s gr 
+% Polyline
+n 7287 4006 m 8094 4006 l gs col-1 s gr 
+% Polyline
+n 7490 2124 m 8094 2124 l gs col-1 s gr 
+7.500 slw
+% Polyline
+n 8229 913 m 8498 1183 l 8498 2527 l 8699 2595 l 8498 2663 l 8498 4006 l
+ 8296 4208 l gs col-1 s gr 
+15.000 slw
+% Polyline
+n 7479 4966 m 7950 4966 l 7950 5436 l 7479 5436 l cp gs col-1 s gr 
+7.500 slw
+% Polyline
+n 8054 5258 m 8806 5251 l 8794 5299 l 8901 5218 l 8792 5157 l 8807 5194 l
+ 8040 5190 l gs col-1 s gr 
+15.000 slw
+% Polyline
+n 2515 1789 m 3254 1789 l 3254 2395 l 2515 2395 l cp gs col-1 s gr 
+% Polyline
+n 3657 1789 m 4397 1789 l 4397 2395 l 3657 2395 l cp gs col-1 s gr 
+% Polyline
+n 3254 2126 m 3657 2126 l gs col-1 s gr 
+/Helvetica-Oblique ff 540.00 scf sf
+430 714 m
+gs 1 -1 sc (s) col-1 sh gr
+/Times-Italic ff 540.00 scf sf
+1303 2731 m
+gs 1 -1 sc (x) col-1 sh gr
+/Times-Roman ff 405.00 scf sf
+1101 5352 m
+gs 1 -1 sc (target) col-1 sh gr
+/Times-Italic ff 540.00 scf sf
+8901 2663 m
+gs 1 -1 sc (x'=x) col-1 sh gr
+showpage
+$F2psEnd
+rs
+end

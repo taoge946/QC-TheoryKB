@@ -1,0 +1,1171 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{DlCDVdNMD11}
+
+\bibitem[AA06]{AharonovJonesHard}
+Dorit Aharonov and Itai Arad.
+\newblock The bqp-hardness of approximating the jones polynomial.
+\newblock {\em arXiv preprint quant-ph/0605181}, 2006.
+
+\bibitem[AAEL07]{AharonovTutte}
+Dorit Aharonov, Itai Arad, Elad Eban, and Zeph Landau.
+\newblock Polynomial quantum algorithms for additive approximations of the
+  potts model and other points of the tutte plane.
+\newblock {\em arXiv preprint quant-ph/0702008}, 2007.
+
+\bibitem[ABD{\etalchar{+}}09]{BiasedNoiseNJP}
+Panos Aliferis, Frederico Brito, David~P DiVincenzo, John Preskill, Matthias
+  Steffen, and Barbara~M Terhal.
+\newblock Fault-tolerant computing with biased-noise superconducting qubits: a
+  case study.
+\newblock {\em New Journal of Physics}, 11(1):013061, 2009.
+
+\bibitem[ABO97]{Aharonov97}
+Dorit Aharonov and Michael Ben-Or.
+\newblock Fault tolerant quantum computation with constant error.
+\newblock In {\em Proc. ACM STOC}, pages 176--188--, 1997.
+
+\bibitem[ABO08]{Aharonov08}
+Dorit Aharonov and Michael Ben-Or.
+\newblock Fault-tolerant quantum computation with constant error rate.
+\newblock {\em SIAM Journal on Computing}, 38(4):1207--1282, 2008.
+
+\bibitem[AC07]{Aliferis07}
+Panos Aliferis and Andrew~W Cross.
+\newblock Subsystem fault tolerance with the bacon-shor code.
+\newblock {\em Physical review letters}, 98(22):220502, 2007.
+
+\bibitem[ADB05]{ADB05}
+Hans Aschauer, Wolfgang D{\"u}r, and H-J Briegel.
+\newblock Multiparticle entanglement purification for two-colorable graph
+  states.
+\newblock {\em Physical Review A}, 71(1):012319, 2005.
+
+\bibitem[AGP06]{Aliferis06}
+Panos Aliferis, Daniel Gottesman, and John Preskill.
+\newblock Quantum accuracy threshold for concatenated distance-3 codes.
+\newblock {\em Quant. Inf. Comput.}, 6:97, 2006.
+
+\bibitem[AGP08]{Aliferis08}
+Panos Aliferis, Daniel Gottesman, and John Preskill.
+\newblock Accuracy threshold for postselected quantum computation.
+\newblock {\em Quant. Inf. Comput.}, 8:181, 2008.
+
+\bibitem[AJL09]{AharonovJones}
+Dorit Aharonov, Vaughan Jones, and Zeph Landau.
+\newblock A polynomial quantum algorithm for approximating the jones
+  polynomial.
+\newblock {\em Algorithmica}, 55(3):395--421, 2009.
+
+\bibitem[AP09]{Aliferis09}
+Panos Aliferis and John Preskill.
+\newblock Fibonacci scheme for fault-tolerant quantum computation.
+\newblock {\em Physical Review A}, 79(1):012332, 2009.
+
+\bibitem[AS06]{ArrighiBlind}
+Pablo Arrighi and Louis Salvail.
+\newblock Blind quantum computation.
+\newblock {\em International Journal of Quantum Information}, 4(05):883--898,
+  2006.
+
+\bibitem[ASWP13]{Al-Shimary}
+Abbas Al-Shimary, James~R Wootton, and Jiannis~K Pachos.
+\newblock Lifetime of topological quantum memories in thermal environment.
+\newblock {\em New Journal of Physics}, 15(2):025027, 2013.
+
+\bibitem[BAO{\etalchar{+}}12]{BombinOhzeki}
+H~Bombin, Ruben~S Andrist, Masayuki Ohzeki, Helmut~G Katzgraber, and
+  MA~Martin-Delgado.
+\newblock Strong resilience of topological codes to depolarization.
+\newblock {\em Physical Review X}, 2(2):021004, 2012.
+
+\bibitem[Bar82]{Barahona}
+Francisco Barahona.
+\newblock On the computational complexity of ising spin glass models.
+\newblock {\em Journal of Physics A: Mathematical and General}, 15(10):3241,
+  1982.
+
+\bibitem[BBC{\etalchar{+}}93]{teleportation}
+Charles~H Bennett, Gilles Brassard, Claude Cr{\'e}peau, Richard Jozsa, Asher
+  Peres, and William~K Wootters.
+\newblock Teleporting an unknown quantum state via dual classical and
+  einstein-podolsky-rosen channels.
+\newblock {\em Phys. Rev. Lett.}, 70(13):1895, 1993.
+
+\bibitem[BBC{\etalchar{+}}95]{Barenco95}
+Adriano Barenco, Charles~H Bennett, Richard Cleve, David~P DiVincenzo, Norman
+  Margolus, Peter Shor, Tycho Sleator, John~A Smolin, and Harald Weinfurter.
+\newblock Elementary gates for quantum computation.
+\newblock {\em Physical Review A}, 52(5):3457, 1995.
+
+\bibitem[BBD{\etalchar{+}}09]{BarrettThermal}
+Sean~D. Barrett, Stephen~D. Bartlett, Andrew~C. Doherty, David Jennings, and
+  Terry Rudolph.
+\newblock Transitions in the computational power of thermal states for
+  measurement-based quantum computation.
+\newblock {\em Phys. Rev. A}, 80:062328, Dec 2009.
+
+\bibitem[BDCP12]{BombinTopoStab}
+H{\'e}ctor Bomb{\'\i}n, Guillaume Duclos-Cianci, and David Poulin.
+\newblock Universal topological phase of two-dimensional stabilizer codes.
+\newblock {\em New Journal of Physics}, 14(7):073048, 2012.
+
+\bibitem[BDSW96]{BCDSW96}
+Charles~H Bennett, David~P DiVincenzo, John~A Smolin, and William~K Wootters.
+\newblock Mixed-state entanglement and quantum error correction.
+\newblock {\em Physical Review A}, 54(5):3824, 1996.
+
+\bibitem[BE93]{Briegel93}
+Hans-J{\"u}rgen Briegel and Berthold-Georg Englert.
+\newblock Quantum optical master equations: The use of damping bases.
+\newblock {\em Physical Review A}, 47(4):3311, 1993.
+
+\bibitem[BFK09]{Blind}
+Anne Broadbent, Joseph Fitzsimons, and Elham Kashefi.
+\newblock Universal blind quantum computation.
+\newblock In {\em Foundations of Computer Science, 2009. FOCS'09. 50th Annual
+  IEEE Symposium on}, pages 517--526. IEEE, 2009.
+
+\bibitem[BH12]{BravyiHaah}
+Sergey Bravyi and Jeongwan Haah.
+\newblock Magic-state distillation with low overhead.
+\newblock {\em Physical Review A}, 86(5):052329, 2012.
+
+\bibitem[BJS11]{IQP}
+Michael~J Bremner, Richard Jozsa, and Dan~J Shepherd.
+\newblock Classical simulation of commuting quantum computations implies
+  collapse of the polynomial hierarchy.
+\newblock {\em Proceedings of the Royal Society A: Mathematical, Physical and
+  Engineering Science}, 467(2126):459--472, 2011.
+
+\bibitem[BK05]{Magic}
+Sergey Bravyi and Alexei Kitaev.
+\newblock Universal quantum computation with ideal clifford gates and noisy
+  ancillas.
+\newblock {\em Phy. Rev. A}, 71(2):022316, 2005.
+
+\bibitem[BKM{\etalchar{+}}14a]{UCSB14}
+R~Barends, J~Kelly, A~Megrant, A~Veitia, D~Sank, E~Jeffrey, TC~White, J~Mutus,
+  AG~Fowler, B~Campbell, et~al.
+\newblock Superconducting quantum circuits at the surface code threshold for
+  fault tolerance.
+\newblock {\em Nature}, 508(7497):500--503, 2014.
+
+\bibitem[BKM{\etalchar{+}}14b]{MartinisLegend}
+R~Barends, J~Kelly, A~Megrant, A~Veitia, D~Sank, E~Jeffrey, TC~White, J~Mutus,
+  AG~Fowler, B~Campbell, et~al.
+\newblock Superconducting quantum circuits at the surface code threshold for
+  fault tolerance.
+\newblock {\em Nature}, 508(7497):500--503, 2014.
+
+\bibitem[BMD06]{Bombin06}
+Hector Bombin and Miguel~Angel Martin-Delgado.
+\newblock Topological quantum distillation.
+\newblock {\em Physical review letters}, 97(18):180501, 2006.
+
+\bibitem[BMD07]{Bombin07}
+H~Bombin and MA~Martin-Delgado.
+\newblock Topological computation without braiding.
+\newblock {\em Physical review letters}, 98(16):160502, 2007.
+
+\bibitem[BMD09]{Bombin09}
+H~Bombin and MA~Martin-Delgado.
+\newblock Quantum measurements and gates by code deformation.
+\newblock {\em Journal of Physics A: Mathematical and Theoretical},
+  42(9):095302, 2009.
+
+\bibitem[Bom10]{BombinTwist}
+Hctor Bombin.
+\newblock Topological order with a twist: Ising anyons from an abelian model.
+\newblock {\em Physical review letters}, 105(3):030403, 2010.
+
+\bibitem[Bom11]{Bombin11}
+H~Bombin.
+\newblock Clifford gates by code deformation.
+\newblock {\em New Journal of Physics}, 13(4):043005, 2011.
+
+\bibitem[BR01]{Cluster}
+Hans~J Briegel and Robert Raussendorf.
+\newblock Persistent entanglement in arrays of interacting particles.
+\newblock {\em Physical Review Letters}, 86(5):910, 2001.
+
+\bibitem[BR05]{Browne05}
+Daniel~E Browne and Terry Rudolph.
+\newblock Resource-efficient linear optical quantum computation.
+\newblock {\em Physical Review Letters}, 95(1):010501, 2005.
+
+\bibitem[BR07]{BravyiRaussendorf}
+Sergey Bravyi and Robert Raussendorf.
+\newblock Measurement-based quantum computation with the toric code states.
+\newblock {\em Phy. Rev. A}, 76(2):022304, 2007.
+
+\bibitem[BT09]{BravyiTerhal}
+Sergey Bravyi and Barbara Terhal.
+\newblock A no-go theorem for a two-dimensional self-correcting quantum memory
+  based on stabilizer codes.
+\newblock {\em New Journal of Physics}, 11(4):043029, 2009.
+
+\bibitem[BV93]{BernsteinVazirani}
+Ethan Bernstein and Umesh Vazirani.
+\newblock Quantum complexity theory.
+\newblock In {\em Proceedings of the twenty-fifth annual ACM symposium on
+  Theory of computing}, pages 11--20. ACM, 1993.
+
+\bibitem[CDT09]{Cross09}
+Andrew~W Cross, David~P DiVincenzo, and Barbara~M Terhal.
+\newblock A comparative code study for quantum fault-tolerance.
+\newblock {\em Quant. Inf. Comput.}, 9:0541, 2009.
+
+\bibitem[CGC{\etalchar{+}}12]{Chow12IBM}
+Jerry~M Chow, Jay~M Gambetta, AD~C{\'o}rcoles, Seth~T Merkel, John~A Smolin,
+  Chad Rigetti, S~Poletto, George~A Keefe, Mary~B Rothwell, JR~Rozen, et~al.
+\newblock Universal quantum gate set approaching fault-tolerant thresholds with
+  superconducting qubits.
+\newblock {\em Physical review letters}, 109(6):060501, 2012.
+
+\bibitem[CGM{\etalchar{+}}14]{IBM13}
+Jerry~M Chow, Jay~M Gambetta, Easwar Magesan, Srikanth~J Srinivasan, Andrew~W
+  Cross, David~W Abraham, Nicholas~A Masluk, BR~Johnson, Colm~A Ryan, and
+  M~Steffen.
+\newblock Implementing a strand of a scalable fault-tolerant quantum computing
+  fabric.
+\newblock {\em Nat. Commun}, 5:4015, 2014.
+
+\bibitem[Chi05]{ChildsBlind}
+Andrew~M Childs.
+\newblock Secure assisted quantum computation.
+\newblock {\em Quantum Information \& Computation}, 5(6):456--466, 2005.
+
+\bibitem[CMS{\etalchar{+}}14]{IBM14}
+AD~C{\'o}rcoles, Easwar Magesan, Srikanth~J Srinivasan, Andrew~W Cross,
+  M~Steffen, Jay~M Gambetta, and Jerry~M Chow.
+\newblock Detecting arbitrary quantum errors via stabilizer measurements on a
+  sublattice of the surface code.
+\newblock {\em arXiv preprint arXiv:1410.6419}, 2014.
+
+\bibitem[CNHM03]{FluxQubit}
+I~Chiorescu, Y~Nakamura, CJP~Ma Harmans, and JE~Mooij.
+\newblock Coherent quantum dynamics of a superconducting flux qubit.
+\newblock {\em Science}, 299(5614):1869--1871, 2003.
+
+\bibitem[CR99]{Cook99}
+William Cook and Andre Rohe.
+\newblock Computing minimum-weight perfect matchings.
+\newblock {\em INFORMS Journal on Computing}, 11(2):138--148, 1999.
+
+\bibitem[CS96]{CalderbankShor}
+A~Robert Calderbank and Peter~W Shor.
+\newblock Good quantum error-correcting codes exist.
+\newblock {\em Physical Review A}, 54(2):1098, 1996.
+
+\bibitem[DA07]{DiVincenzo07}
+David~P DiVincenzo and Panos Aliferis.
+\newblock Effective fault-tolerant quantum computation with slow measurements.
+\newblock {\em Physical review letters}, 98(2):020501, 2007.
+
+\bibitem[DAB03]{DAB03}
+Wolfgang D{\"u}r, Hans Aschauer, and H-J Briegel.
+\newblock Multiparticle entanglement purification for graph states.
+\newblock {\em Physical review letters}, 91(10):107903, 2003.
+
+\bibitem[DCP10a]{DuclosPoulin1}
+Guillaume Duclos-Cianci and David Poulin.
+\newblock Fast decoders for topological quantum codes.
+\newblock {\em Physical review letters}, 104(5):050504, 2010.
+
+\bibitem[DCP10b]{DuclosPoulin2}
+Guillaume Duclos-Cianci and David Poulin.
+\newblock A renormalization group decoding algorithm for topological quantum
+  codes.
+\newblock In {\em Information Theory Workshop (ITW), 2010 IEEE}, pages 1--5.
+  IEEE, 2010.
+
+\bibitem[Del14]{Delfosse14}
+Nicolas Delfosse.
+\newblock Decoding color codes by projection onto surface codes.
+\newblock {\em Physical Review A}, 89(1):012317, 2014.
+
+\bibitem[Deu85]{Deutsch85}
+David Deutsch.
+\newblock Quantum theory, the church-turing principle and the universal quantum
+  computer.
+\newblock {\em Proceedings of the Royal Society of London. A. Mathematical and
+  Physical Sciences}, 400(1818):97--117, 1985.
+
+\bibitem[DG97]{Duan97}
+Lu-Ming Duan and Guang-Can Guo.
+\newblock Preserving coherence in quantum computation by pairing quantum bits.
+\newblock {\em Physical Review Letters}, 79(10):1953, 1997.
+
+\bibitem[DG98]{Duan98}
+Lu-Ming Duan and Guang-Can Guo.
+\newblock Prevention of dissipation with two particles.
+\newblock {\em Physical Review A}, 57(4):2399, 1998.
+
+\bibitem[DHCB05]{Dur05}
+W~D{\"u}r, M~Hein, JI~Cirac, and H-J Briegel.
+\newblock Standard forms of noisy quantum operations via depolarization.
+\newblock {\em Physical Review A}, 72(5):052326, 2005.
+
+\bibitem[DHN06a]{Dawson06b}
+Christopher~M Dawson, Henry~L Haselgrove, and Michael~A Nielsen.
+\newblock Noise thresholds for optical cluster-state quantum computation.
+\newblock {\em Physical Review A}, 73(5):052306, 2006.
+
+\bibitem[DHN06b]{Dawson06a}
+Christopher~M Dawson, Henry~L Haselgrove, and Michael~A Nielsen.
+\newblock Noise thresholds for optical quantum computers.
+\newblock {\em Physical review letters}, 96(2):020501, 2006.
+
+\bibitem[DiV95]{DiVincenzo95}
+David~P DiVincenzo.
+\newblock Two-bit gates are universal for quantum computation.
+\newblock {\em Physical Review A}, 51(2):1015, 1995.
+
+\bibitem[DKLP02]{Dennis}
+Eric Dennis, Alexei Kitaev, Andrew Landahl, and John Preskill.
+\newblock Topological quantum memory.
+\newblock {\em Journal of Mathematical Physics}, 43(9):4452--4505, 2002.
+
+\bibitem[DlCDVdNMD11]{Cuevas11}
+G~De~las Cuevas, W~D{\"u}r, M~Van~den Nest, and MA~Martin-Delgado.
+\newblock Quantum algorithms for classical lattice models.
+\newblock {\em New Journal of Physics}, 13(9):093021, 2011.
+
+\bibitem[DN05]{DawsonNielsen05}
+Christopher~M Dawson and Michael~A Nielsen.
+\newblock The solovay-kitaev algorithm.
+\newblock {\em Quantum Information and Computation}, 6:081--095, 2005.
+
+\bibitem[DR05]{DuanRaussendorf}
+L-M Duan and R~Raussendorf.
+\newblock Efficient quantum computation with probabilistic quantum gates.
+\newblock {\em Physical review letters}, 95(8):080503, 2005.
+
+\bibitem[DS96]{DiViShor}
+David~P. DiVincenzo and Peter~W. Shor.
+\newblock Fault-tolerant error correction with efficient quantum codes.
+\newblock {\em Phys. Rev. Lett.}, 77:3260--3263, 1996.
+
+\bibitem[Eas13]{Eastin13}
+Bryan Eastin.
+\newblock Distilling one-qubit magic states into toffoli states.
+\newblock {\em Physical Review A}, 87(3):032321, 2013.
+
+\bibitem[Edm65]{Edmonds}
+Jack Edmonds.
+\newblock Paths, trees, and flowers.
+\newblock {\em Canadian Journal of mathematics}, 17(3):449--467, 1965.
+
+\bibitem[EPR35]{EPR}
+Albert Einstein, Boris Podolsky, and Nathan Rosen.
+\newblock Can quantum-mechanical description of physical reality be considered
+  complete?
+\newblock {\em Physical review}, 47(10):777, 1935.
+
+\bibitem[Fey82]{Feynman82}
+Richard~P Feynman.
+\newblock Simulating physics with computers.
+\newblock {\em International journal of theoretical physics}, 21(6):467--488,
+  1982.
+
+\bibitem[FKLW03]{TQFT}
+Michael Freedman, Alexei Kitaev, Michael Larsen, and Zhenghan Wang.
+\newblock Topological quantum computation.
+\newblock {\em Bulletin of the American Mathematical Society}, 40(1):31--38,
+  2003.
+
+\bibitem[FM12]{FujiiMoriTher}
+Keisuke Fujii and Tomoyuki Morimae.
+\newblock Topologically protected measurement-based quantum computation on the
+  thermal state of a nearest-neighbor two-body hamiltonian with spin-3/2
+  particles.
+\newblock {\em Physical Review A}, 85(1):010304, 2012.
+
+\bibitem[FMMC12]{Fowler2}
+Austin~G Fowler, Matteo Mariantoni, John~M Martinis, and Andrew~N Cleland.
+\newblock Surface codes: Towards practical large-scale quantum computation.
+\newblock {\em Physical Review A}, 86(3):032324, 2012.
+
+\bibitem[FNIK14]{MFTP}
+Keisuke Fujii, Makoto Negoro, Nobuyuki Imoto, and Masahiro Kitagawa.
+\newblock Measurement-free topological protection using dissipative feedback.
+\newblock {\em arXiv preprint arXiv:1401.6350}, 2014.
+
+\bibitem[FNOM13]{FujiiNakata}
+Keisuke Fujii, Yoshifumi Nakata, Masayuki Ohzeki, and Mio Murao.
+\newblock Measurement-based quantum computation on symmetry breaking thermal
+  states.
+\newblock {\em Phys. Rev. Lett.}, 110:120502, Mar 2013.
+
+\bibitem[FSG09]{FowlerHigh}
+Austin~G Fowler, Ashley~M Stephens, and Peter Groszkowski.
+\newblock High-threshold universal quantum computation on the surface code.
+\newblock {\em Physical Review A}, 80(5):052312, 2009.
+
+\bibitem[FT10]{FTProb}
+Keisuke Fujii and Yuuki Tokunaga.
+\newblock Fault-tolerant topological one-way quantum computation with
+  probabilistic two-qubit gates.
+\newblock {\em Physical review letters}, 105(25):250503, 2010.
+
+\bibitem[FT12]{FujiiTokunaga12}
+Keisuke Fujii and Yuuki Tokunaga.
+\newblock Error and loss tolerances of surface codes with general lattice
+  structures.
+\newblock {\em Physical Review A}, 86(2):020303, 2012.
+
+\bibitem[FT14]{FujiiTamate}
+Keisuke Fujii and Shuhei Tamate.
+\newblock Computational quantum-classical boundary of commuting quantum
+  circuits.
+\newblock {\em arXiv preprint arXiv:1406.6932}, 2014.
+
+\bibitem[FTP{\etalchar{+}}05]{Facchi05}
+Paolo Facchi, Shuichi Tasaki, Saverio Pascazio, Hiromichi Nakazato, Akira
+  Tokuse, and DA~Lidar.
+\newblock Control of decoherence: analysis and comparison of three different
+  strategies.
+\newblock {\em Physical Review A}, 71(2):022302, 2005.
+
+\bibitem[FWH12]{FowlerDecode}
+Austin~G Fowler, Adam~C Whiteside, and Lloyd~CL Hollenberg.
+\newblock Towards practical classical processing for the surface code.
+\newblock {\em Physical review letters}, 108(18):180501, 2012.
+
+\bibitem[FY10a]{FYCluster}
+Keisuke Fujii and Katsuji Yamamoto.
+\newblock Cluster-based architecture for fault-tolerant quantum computation.
+\newblock {\em Phys. Rev. A}, 81:042324, Apr 2010.
+
+\bibitem[FY10b]{FYClusterTopo}
+Keisuke Fujii and Katsuji Yamamoto.
+\newblock Topological one-way quantum computation on verified logical cluster
+  states.
+\newblock {\em Phys. Rev. A}, 82:060301, Dec 2010.
+
+\bibitem[FYKI12]{FujiiDis}
+Keisuke Fujii, Takashi Yamamoto, Masato Koashi, and Nobuyuki Imoto.
+\newblock A distributed architecture for scalable quantum computation with
+  realistically noisy devices.
+\newblock {\em arXiv preprint arXiv:1202.6588}, 2012.
+
+\bibitem[GC99]{GottesmanChuang}
+Daniel Gottesman and Isaac~L Chuang.
+\newblock Demonstrating the viability of universal quantum computation using
+  teleportation and single-qubit operations.
+\newblock {\em Nature}, 402(6760):390--393, 1999.
+
+\bibitem[GFG12]{Fowler1}
+Joydip Ghosh, Austin~G Fowler, and Michael~R Geller.
+\newblock Surface code with decoherence: An analysis of three superconducting
+  architectures.
+\newblock {\em Physical Review A}, 86(6):062318, 2012.
+
+\bibitem[GHZ89]{GHZ}
+Daniel~M Greenberger, Michael~A Horne, and Anton Zeilinger.
+\newblock Going beyond bell’s theorem.
+\newblock In {\em Bell’s theorem, quantum theory and conceptions of the
+  universe}, pages 69--72. Springer, 1989.
+
+\bibitem[Gib14]{QuantumQuest}
+Elizabeth Gibney.
+\newblock Quantum computer quest.
+\newblock {\em Nature}, 516(7529):24--26, 2014.
+
+\bibitem[Got97]{Gottesman}
+D~Gottesman.
+\newblock {\em Stabilizer codes and quantum error correction.}
+\newblock PhD thesis, California Institute of Technology, 1997.
+
+\bibitem[Got98a]{GottesmanHeisenberg}
+Daniel Gottesman.
+\newblock The heisenberg representation of quantum computers.
+\newblock {\em arXiv preprint quant-ph/9807006}, 1998.
+
+\bibitem[Got98b]{GottesmanKnill}
+Daniel Gottesman.
+\newblock The heisenberg representation of quantum computers.
+\newblock {\em arXiv preprint quant-ph/9807006}, 1998.
+
+\bibitem[Gro96]{Grover}
+Lov~K Grover.
+\newblock A fast quantum mechanical algorithm for database search.
+\newblock In {\em Proceedings of the twenty-eighth annual ACM symposium on
+  Theory of computing}, pages 212--219. ACM, 1996.
+
+\bibitem[GW09]{SymmetGuWen}
+Zheng-Cheng Gu and Xiao-Gang Wen.
+\newblock Tensor-entanglement-filtering renormalization approach and
+  symmetry-protected topological order.
+\newblock {\em Physical Review B}, 80(15):155131, 2009.
+
+\bibitem[Har04]{Harrington}
+J.~W. Harrington.
+\newblock {\em Analysis of quantum error-correcting codes: symplectic lattice
+  codes and toric codes.}
+\newblock PhD thesis, California Institute of Technology, 2004.
+
+\bibitem[HCC09]{ToricBoson}
+Alioscia Hamma, Claudio Castelnovo, and Claudio Chamon.
+\newblock Toric-boson model: Toward a topological quantum memory at finite
+  temperature.
+\newblock {\em Physical Review B}, 79(24):245122, 2009.
+
+\bibitem[HCEK14]{AutomatonDec14}
+M~Herold, ET~Campbell, J~Eisert, and MJ~Kastoryano.
+\newblock Cellular-automaton decoders for topological quantum memories.
+\newblock {\em arXiv preprint arXiv:1406.2338}, 2014.
+
+\bibitem[HDE{\etalchar{+}}06]{Graphstate}
+M~Hein, W~D{\"u}r, J~Eisert, R~Raussendorf, M~Van~der Nest, and HJ~Briegel.
+\newblock Quantum computers, algorithms and chaos.
+\newblock In {\em International School of Physics Enrico Fermi}, volume 162,
+  2006.
+
+\bibitem[HFDVM12]{Horsman12}
+Clare Horsman, Austin~G Fowler, Simon Devitt, and Rodney Van~Meter.
+\newblock Surface code quantum computing by lattice surgery.
+\newblock {\em New Journal of Physics}, 14(12):123011, 2012.
+
+\bibitem[HLG11]{DecodingNP}
+Min-Hsiu Hsieh and Fran{\c{c}}ois Le~Gall.
+\newblock Np-hardness of decoding quantum error-correction codes.
+\newblock {\em Physical Review A}, 83(5):052331, 2011.
+
+\bibitem[HPP01]{Honecker01}
+Andreas Honecker, Marco Picco, and Pierre Pujol.
+\newblock Universality class of the nishimori point in the 2d$\pm$j random-bond
+  ising model.
+\newblock {\em Physical review letters}, 87(4):047201, 2001.
+
+\bibitem[HTPV08]{Hasenbusch08}
+Martin Hasenbusch, Francesco~Parisen Toldin, Andrea Pelissetto, and Ettore
+  Vicari.
+\newblock Universal dependence on disorder of two-dimensional randomly diluted
+  and random-bond$\pm$j ising models.
+\newblock {\em Physical Review E}, 78(1):011110, 2008.
+
+\bibitem[Huk99]{Hukushima99}
+Koji Hukushima.
+\newblock Domain-wall free energy of spin-glass models: Numerical method and
+  boundary conditions.
+\newblock {\em Physical Review E}, 60(4):3606, 1999.
+
+\bibitem[ICBB14]{Iblisdir}
+S~Iblisdir, M~Cirio, O~Boada, and GK~Brennen.
+\newblock Low depth quantum circuits for ising models.
+\newblock {\em Annals of Physics}, 340(1):205--251, 2014.
+
+\bibitem[IP13]{DecodingSharpP}
+Pavithran Iyer and David Poulin.
+\newblock Hardness of decoding quantum stabilizer codes.
+\newblock {\em arXiv preprint arXiv:1310.3235}, 2013.
+
+\bibitem[Jon13a]{Jones13}
+Cody Jones.
+\newblock Low-overhead constructions for the fault-tolerant toffoli gate.
+\newblock {\em Physical Review A}, 87(2):022328, 2013.
+
+\bibitem[Jon13b]{JonesMagic}
+Cody Jones.
+\newblock Multilevel distillation of magic states for quantum computing.
+\newblock {\em Phys. Rev. A}, 87:042305, Apr 2013.
+
+\bibitem[JVMF{\etalchar{+}}12]{Jones12}
+N~Cody Jones, Rodney Van~Meter, Austin~G Fowler, Peter~L McMahon, Jungsang Kim,
+  Thaddeus~D Ladd, and Yoshihisa Yamamoto.
+\newblock Layered architecture for quantum computing.
+\newblock {\em Physical Review X}, 2(3):031007, 2012.
+
+\bibitem[JW28]{JWtrans}
+P~Jordan and Eugene~P Wigner.
+\newblock About the pauli exclusion principle.
+\newblock {\em Zeitschrift fur Physik}, 47:631, 1928.
+
+\bibitem[JW09]{JordanWacjan}
+Stephen~P Jordan and Pawel Wocjan.
+\newblock Estimating jones and homfly polynomials with one clean qubit.
+\newblock {\em Quantum Information \& Computation}, 9:264, 2009.
+
+\bibitem[Kas61]{Kasteleyn}
+Pieter~W Kasteleyn.
+\newblock The statistics of dimers on a lattice: I. the number of dimer
+  arrangements on a quadratic lattice.
+\newblock {\em Physica}, 27(12):1209--1225, 1961.
+
+\bibitem[Kat95]{Kato}
+Tosio Kato.
+\newblock {\em Perturbation theory for linear operators}, volume 132.
+\newblock springer, 1995.
+
+\bibitem[Kay14]{Kay14}
+Alastair Kay.
+\newblock Implications of ignorance for quantum-error-correction thresholds.
+\newblock {\em Physical Review A}, 89(3):032328, 2014.
+
+\bibitem[KBF{\etalchar{+}}14]{Martinis9qubit}
+J.~Kelly, R.~Barends, A.~G. Fowler, A.~Megrant, E.~Jeffrey, T.~C. White, et~al.
+\newblock State preservation by repetitive error detection in a superconducting
+  quantum circuit.
+\newblock {\em arXiv preprint arXiv:1408.0959}, 2014.
+
+\bibitem[KCS14]{Kapit14}
+Eliot Kapit, John~T Chalker, and Steven~H Simon.
+\newblock Passive correction of quantum logical errors in a driven, dissipative
+  system: a blueprint for an analog quantum code fabric.
+\newblock {\em arXiv preprint arXiv:1408.0959}, 2014.
+
+\bibitem[Kit95a]{KitaevAbelian}
+A~Yu Kitaev.
+\newblock Quantum measurements and the abelian stabilizer problem.
+\newblock {\em arXiv preprint quant-ph/9511026}, 1995.
+
+\bibitem[Kit95b]{KitaevPhase}
+A~Yu Kitaev.
+\newblock Quantum measurements and the abelian stabilizer problem.
+\newblock {\em arXiv preprint quant-ph/9511026}, 1995.
+
+\bibitem[Kit97]{Kitaev97}
+A~Yu Kitaev.
+\newblock Quantum computations: algorithms and error correction.
+\newblock {\em Russian Mathematical Surveys}, 52(6):1191--1249, 1997.
+
+\bibitem[Kit01]{KitaevMajorana}
+A~Yu Kitaev.
+\newblock Unpaired majorana fermions in quantum wires.
+\newblock {\em Physics-Uspekhi}, 44(10S):131, 2001.
+
+\bibitem[Kit03]{Kitaev}
+A~Yu Kitaev.
+\newblock Fault-tolerant quantum computation by anyons.
+\newblock {\em Annals of Physics}, 303(1):2--30, 2003.
+
+\bibitem[Kit06]{Kitaev06}
+Alexei Kitaev.
+\newblock Anyons in an exactly solved model and beyond.
+\newblock {\em Annals of Physics}, 321(1):2--111, 2006.
+
+\bibitem[KL98]{DQC1}
+E.~Knill and R.~Laflamme.
+\newblock Power of one bit of quantum information.
+\newblock {\em Phys. Rev. Lett.}, 81:5672--5675, Dec 1998.
+
+\bibitem[KL12]{DecodingNP2}
+Kao-Yueh Kuo and Chung-Chin Lu.
+\newblock On the hardness of decoding quantum stabilizer codes under the
+  depolarizing channel.
+\newblock In {\em Information Theory and its Applications (ISITA), 2012
+  International Symposium on}, pages 208--211. IEEE, 2012.
+
+\bibitem[KLZ98a]{Knill98b}
+Emanuel Knill, Raymond Laflamme, and Wojciech~H Zurek.
+\newblock Resilient quantum computation.
+\newblock {\em Science}, 279(5349):342--345, 1998.
+
+\bibitem[KLZ98b]{Knill98a}
+Emanuel Knill, Raymond Laflamme, and Wojciech~H Zurek.
+\newblock Resilient quantum computation: error models and thresholds.
+\newblock {\em Proceedings of the Royal Society of London. Series A:
+  Mathematical, Physical and Engineering Sciences}, 454(1969):365--384, 1998.
+
+\bibitem[Kni05]{KnillNature}
+Emanuel Knill.
+\newblock Quantum computing with realistically noisy devices.
+\newblock {\em Nature}, 434(7029):39--44, 2005.
+
+\bibitem[Kol09]{Kolmogorov}
+Vladimir Kolmogorov.
+\newblock Blossom v: a new implementation of a minimum cost perfect matching
+  algorithm.
+\newblock {\em Mathematical Programming Computation}, 1(1):43--67, 2009.
+
+\bibitem[KR97]{Kawashima}
+Naoki Kawashima and Heiko Rieger.
+\newblock Finite-size scaling analysis of exact ground states for$\pm$j spin
+  glass models in two dimensions.
+\newblock {\em EPL (Europhysics Letters)}, 39(1):85, 1997.
+
+\bibitem[KW41]{KramersWannier}
+Hendrik~A Kramers and Gregory~H Wannier.
+\newblock Statistics of the two-dimensional ferromagnet. part i.
+\newblock {\em Physical Review}, 60(3):252, 1941.
+
+\bibitem[LB12]{Benjamin1}
+Ying Li and Simon~C Benjamin.
+\newblock High threshold distributed quantum computing with three-qubit nodes.
+\newblock {\em New Journal of Physics}, 14(9):093008, 2012.
+
+\bibitem[LBK{\etalchar{+}}11]{LiKwek}
+Ying Li, Daniel~E Browne, Leong~Chuan Kwek, Robert Raussendorf, and Tzu-Chieh
+  Wei.
+\newblock Thermal states as universal resources for quantum computation with
+  always-on interactions.
+\newblock {\em Physical review letters}, 107(6):060501, 2011.
+
+\bibitem[LBSB10]{LiBenjamin}
+Ying Li, Sean~D Barrett, Thomas~M Stace, and Simon~C Benjamin.
+\newblock Fault tolerant quantum computation with nondeterministic gates.
+\newblock {\em Physical review letters}, 105(25):250502, 2010.
+
+\bibitem[LCW98a]{DFS}
+D.~A. Lidar, I.~L. Chuang, and K.~B. Whaley.
+\newblock Decoherence-free subspaces for quantum computation.
+\newblock {\em Phys. Rev. Lett.}, 81:2594--2597, 1998.
+
+\bibitem[LCW98b]{Lidar98}
+Daniel~A Lidar, Isaac~L Chuang, and K~Birgitta Whaley.
+\newblock Decoherence-free subspaces for quantum computation.
+\newblock {\em Physical Review Letters}, 81(12):2594, 1998.
+
+\bibitem[LCYPP15]{Landon-Cardinal15}
+Olivier Landon-Cardinal, Beni Yoshida, David Poulin, and John Preskill.
+\newblock Perturbative instability of quantum memory based on effective
+  long-range interactions.
+\newblock {\em Phys. Rev. A}, 91:032303, Mar 2015.
+
+\bibitem[Lic97]{Lickorish97}
+WB~Raymond Lickorish.
+\newblock {\em An introduction to knot theory}, volume 175.
+\newblock Springer Science \& Business Media, 1997.
+
+\bibitem[Llo99]{LandauerLloyd}
+Seth Lloyd.
+\newblock Obituary: Rolf landauer (1927-99).
+\newblock {\em Nature}, 400(6746):720--720, 1999.
+
+\bibitem[LMPZ96]{Laflamme96}
+Raymond Laflamme, Cesar Miquel, Juan~Pablo Paz, and Wojciech~Hubert Zurek.
+\newblock Perfect quantum error correcting code.
+\newblock {\em Physical Review Letters}, 77(1):198, 1996.
+
+\bibitem[MBF10]{Matsuzaki10}
+Yuichiro Matsuzaki, Simon~C Benjamin, and Joseph Fitzsimons.
+\newblock Probabilistic growth of large entangled states with low error
+  accumulation.
+\newblock {\em Physical review letters}, 104(5):050501, 2010.
+
+\bibitem[MC02]{Merz02}
+F~Merz and JT~Chalker.
+\newblock Two-dimensional random-bond ising model, free fermions, and the
+  network model.
+\newblock {\em Physical Review B}, 65(5):054425, 2002.
+
+\bibitem[MEK12]{Meier12}
+Adam~M Meier, Bryan Eastin, and Emanuel Knill.
+\newblock Magic-state distillation with the four-qubit code.
+\newblock {\em arXiv preprint arXiv:1204.4221}, 2012.
+
+\bibitem[MF12]{BlindMoriFuji}
+Tomoyuki Morimae and Keisuke Fujii.
+\newblock Blind topological measurement-based quantum computation.
+\newblock {\em Nature communications}, 3:1036, 2012.
+
+\bibitem[MF13]{MoriBlind}
+Tomoyuki Morimae and Keisuke Fujii.
+\newblock Blind quantum computation protocol in which alice only makes
+  measurements.
+\newblock {\em Phy. Rev. A}, 87(5):050301, 2013.
+
+\bibitem[MFF14]{DQC1hardness}
+Tomoyuki Morimae, Keisuke Fujii, and Joseph~F. Fitzsimons.
+\newblock Hardness of classically simulating the one-clean-qubit model.
+\newblock {\em Phys. Rev. Lett.}, 112:130502, Apr 2014.
+
+\bibitem[MFI14]{MatsuoFujii}
+Akira Matsuo, Keisuke Fujii, and Nobuyuki Imoto.
+\newblock Quantum algorithm for an additive approximation of ising partition
+  functions.
+\newblock {\em Phys. Rev. A}, 90:022304, Aug 2014.
+
+\bibitem[MNFT14]{DQC12}
+Tomoyuki Morimae, Harumichi Nishimura, Keisuke Fujii, and Shuhei Tamate.
+\newblock Classical simulation of dqc1 $ \_2 $ or dqc2 $ \_1 $ implies collapse
+  of the polynomial hierarchy.
+\newblock {\em arXiv preprint arXiv:1409.6777}, 2014.
+
+\bibitem[MRR{\etalchar{+}}14]{Monroe}
+C~Monroe, R~Raussendorf, A~Ruthven, KR~Brown, P~Maunz, L-M Duan, and J~Kim.
+\newblock Large-scale modular quantum-computer architecture with atomic memory
+  and photonic interconnects.
+\newblock {\em Physical Review A}, 89(2):022317, 2014.
+
+\bibitem[MS77]{macwilliams}
+Florence~Jessie MacWilliams and Neil James~Alexander Sloane.
+\newblock {\em The theory of error correcting codes}, volume~16.
+\newblock Elsevier, 1977.
+
+\bibitem[NC00]{NielsenChuang}
+Michael~A Nielsen and Isaac~L Chuang.
+\newblock {\em Quantum computation and quantum information}.
+\newblock Cambridge university press, 2000.
+
+\bibitem[Nie04]{NielsenOpt}
+Michael~A Nielsen.
+\newblock Optical quantum computation using cluster states.
+\newblock {\em Physical review letters}, 93(4):040503, 2004.
+
+\bibitem[Nie06]{NielsenCluster}
+M.~A. Nielsen.
+\newblock Cluster-state quantum computation.
+\newblock {\em Rep. on Math. Phys.}, 57:147, 2006.
+
+\bibitem[Nis79]{NishimoriConj}
+Hidetoshi Nishimori.
+\newblock Conjecture on the exact transition point of the random ising
+  ferromagnet.
+\newblock {\em Journal of Physics C: Solid State Physics}, 12(23):L905, 1979.
+
+\bibitem[Nis81]{Nishimori81}
+Hidetoshi Nishimori.
+\newblock Internal energy, specific heat and correlation function of the
+  bond-random ising model.
+\newblock {\em Progress of Theoretical Physics}, 66(4):1169--1181, 1981.
+
+\bibitem[Nis01]{NishimoriBook}
+Hidetoshi Nishimori.
+\newblock {\em Statistical physics of spin glasses and information processing},
+  volume 187.
+\newblock Oxford University Press Oxford, 2001.
+
+\bibitem[NLB13]{Benjamin2}
+Naomi~H Nickerson, Ying Li, and Simon~C Benjamin.
+\newblock Topological quantum computing with a very noisy network and local
+  error rates approaching one percent.
+\newblock {\em Nature communications}, 4:1756, 2013.
+
+\bibitem[NN02]{NishimoriNemoto}
+Hidetoshi Nishimori and Koji Nemoto.
+\newblock Duality and multicritical point of two-dimensional spin glasses.
+\newblock {\em Journal of the Physical Society of Japan}, 71(4):1198--1199,
+  2002.
+
+\bibitem[NPT99]{ChargeQubit}
+Yu~Nakamura, Yu~A Pashkin, and JS~Tsai.
+\newblock Coherent control of macroscopic quantum states in a
+  single-cooper-pair box.
+\newblock {\em Nature}, 398(6730):786--788, 1999.
+
+\bibitem[OAIM04]{Ohno}
+Takuya Ohno, Gaku Arakawa, Ikuo Ichinose, and Tetsuo Matsui.
+\newblock Phase structure of the random-plaquette z2 gauge model: accuracy
+  threshold for a toric quantum memory.
+\newblock {\em Nuclear Physics B}, 697(3):462--480, 2004.
+
+\bibitem[OF12]{OhzekiFujii}
+Masayuki Ohzeki and Keisuke Fujii.
+\newblock Duality analysis on random planar lattices.
+\newblock {\em Physical Review E}, 86(5):051121, 2012.
+
+\bibitem[Ohz09a]{OhzekiColor}
+Masayuki Ohzeki.
+\newblock Accuracy thresholds of topological color codes on the hexagonal and
+  square-octagonal lattices.
+\newblock {\em Physical Review E}, 80(1):011141, 2009.
+
+\bibitem[Ohz09b]{Ohzeki09}
+Masayuki Ohzeki.
+\newblock Locations of multicritical points for spin glasses on regular
+  lattices.
+\newblock {\em Physical Review E}, 79(2):021129, 2009.
+
+\bibitem[Ohz12]{OhzekiLoss}
+Masayuki Ohzeki.
+\newblock Error threshold estimates for surface code with loss of qubits.
+\newblock {\em Physical Review A}, 85(6):060301, 2012.
+
+\bibitem[Ohz13]{OhzekiKindaiBook}
+Masayuki Ohzeki.
+\newblock Spin glass: A bridge between quantum computing and statistical
+  mechanics.
+\newblock In Mikio Nakahara and Shu Tanaka, editors, {\em Lectures on Quantum
+  Computing, Thermodynamics and Statistical Physics}, volume~8. World
+  Scientific, 2013.
+
+\bibitem[ONR{\etalchar{+}}14]{SiliconSpin}
+Joe O'Gorman, Naomi~H Nickerson, Philip Ross, John~JL Morton, and Simon~C
+  Benjamin.
+\newblock A silicon-based surface code quantum computer.
+\newblock {\em arXiv preprint arXiv:1406.5149}, 2014.
+
+\bibitem[Pac12]{Pachos2012}
+Jiannis~K Pachos.
+\newblock {\em Introduction to topological quantum computation}.
+\newblock Cambridge University Press, 2012.
+
+\bibitem[PB02]{Breuer}
+Francesco Petruccione and Heinz-Peter Breuer.
+\newblock {\em The theory of open quantum systems}.
+\newblock Oxford Univ. Press, 2002.
+
+\bibitem[PBKLO04]{FidelityDecay}
+David Poulin, Robin Blume-Kohout, Raymond Laflamme, and Harold Ollivier.
+\newblock Exponential speedup with a single bit of quantum information:
+  Measuring the average fidelity decay.
+\newblock {\em Physical review letters}, 92(17):177906, 2004.
+
+\bibitem[PHWL13]{ToricBoson2}
+Fabio~L Pedrocchi, Adrian Hutter, James~R Wootton, and Daniel Loss.
+\newblock Enhanced thermal stability of the toric code through coupling to a
+  bosonic bath.
+\newblock {\em Physical Review A}, 88(6):062313, 2013.
+
+\bibitem[Pou06]{Poulin06}
+David Poulin.
+\newblock Optimal and efficient decoding of concatenated quantum block codes.
+\newblock {\em Physical Review A}, 74(5):052333, 2006.
+
+\bibitem[PTBO10]{SymmetPollMann}
+Frank Pollmann, Ari~M Turner, Erez Berg, and Masaki Oshikawa.
+\newblock Entanglement spectrum of a topological phase in one dimension.
+\newblock {\em Physical Review B}, 81(6):064439, 2010.
+
+\bibitem[PVK97]{Plenio97}
+MB~Plenio, V~Vedral, and PL~Knight.
+\newblock Conditional generation of error syndromes in fault-tolerant error
+  correction.
+\newblock {\em Physical Review A}, 55(6):4593, 1997.
+
+\bibitem[Rau03]{RaussendorfPhD}
+R~Raussendorf.
+\newblock {\em Measurement-based quantum computation with cluster states.}
+\newblock PhD thesis, Ludwig-Maximillians Universit{\"a}t M{\"u}nchen, 2003.
+
+\bibitem[RB01]{MBQC}
+Robert Raussendorf and Hans~J Briegel.
+\newblock A one-way quantum computer.
+\newblock {\em Phys. Rev. Lett.}, 86(22):5188--5191, 2001.
+
+\bibitem[RBB03]{MBQC_PRA}
+Robert Raussendorf, Daniel~E Browne, and Hans~J Briegel.
+\newblock Measurement-based quantum computation on cluster states.
+\newblock {\em Physical review A}, 68(2):022312, 2003.
+
+\bibitem[RBH05]{RaussendorfBravyi}
+Robert Raussendorf, Sergey Bravyi, and Jim Harrington.
+\newblock Long-range quantum entanglement in noisy cluster states.
+\newblock {\em Phys. Rev. A}, 71:062313, Jun 2005.
+
+\bibitem[RDQDS99]{Reis99}
+FDA~Aarao Reis, SLA De~Queiroz, and Raimundo~R Dos~Santos.
+\newblock Universality, frustration, and conformal invariance in
+  two-dimensional random ising magnets.
+\newblock {\em Physical Review B}, 60(9):6740, 1999.
+
+\bibitem[Rei05]{Reichardt05}
+Ben~W Reichardt.
+\newblock Quantum universality from magic states distillation applied to css
+  codes.
+\newblock {\em Quantum Information Processing}, 4(3):251--264, 2005.
+
+\bibitem[RH07]{RaussendorfPRL}
+Robert Raussendorf and Jim Harrington.
+\newblock Fault-tolerant quantum computation with high threshold in two
+  dimensions.
+\newblock {\em Phys. Rev. Lett.}, 98:190504, May 2007.
+
+\bibitem[RHG06]{RaussendorfAnn}
+Robert Raussendorf, Jim Harrington, and Kovid Goyal.
+\newblock A fault-tolerant one-way quantum computer.
+\newblock {\em Annals of physics}, 321(9):2242--2270, 2006.
+
+\bibitem[RHG07]{RaussendorfNJP}
+Robert Raussendorf, Jim Harrington, and Kovid Goyal.
+\newblock Topological fault-tolerance in cluster state quantum computation.
+\newblock {\em New Journal of Physics}, 9(6):199, 2007.
+
+\bibitem[RWH{\etalchar{+}}12]{Roth}
+Beat R{\"o}thlisberger, James~R Wootton, Robert~M Heath, Jiannis~K Pachos, and
+  Daniel Loss.
+\newblock Incoherent dynamics in the toric code subject to disorder.
+\newblock {\em Physical Review A}, 85(2):022313, 2012.
+
+\bibitem[RZBB94]{Reck94}
+Michael Reck, Anton Zeilinger, Herbert~J Bernstein, and Philip Bertani.
+\newblock Experimental realization of any discrete unitary operator.
+\newblock {\em Physical Review Letters}, 73(1):58, 1994.
+
+\bibitem[SB10]{StacePRA}
+Thomas~M Stace and Sean~D Barrett.
+\newblock Error correction and degeneracy in surface codes suffering loss.
+\newblock {\em Physical Review A}, 81(2):022317, 2010.
+
+\bibitem[SBD09]{StacePRL}
+Thomas~M Stace, Sean~D Barrett, and Andrew~C Doherty.
+\newblock Thresholds for topological codes in the presence of loss.
+\newblock {\em Physical review letters}, 102(20):200501, 2009.
+
+\bibitem[Sho94]{Shor}
+P.~W. Shor.
+\newblock Algorithms for quantum computation: discrete logarithms and
+  factoring.
+\newblock In {\em Proceedings of the 35th Annual Symposium on Foundations of
+  Computer Science}, SFCS '94, pages 124--134, Washington, DC, USA, 1994. IEEE
+  Computer Society.
+
+\bibitem[Sho95]{Shor95}
+Peter~W. Shor.
+\newblock Scheme for reducing decoherence in quantum computer memory.
+\newblock {\em Phys. Rev. A}, 52:R2493--R2496, 1995.
+
+\bibitem[Sho97]{Shor97}
+Peter~W Shor.
+\newblock Polynomial-time algorithms for prime factorization and discrete
+  logarithms on a quantum computer.
+\newblock {\em SIAM journal on computing}, 26(5):1484--1509, 1997.
+
+\bibitem[SJ08]{ShorJordan}
+Peter~W Shor and Stephen~P Jordan.
+\newblock Estimating jones polynomials is a complete problem for one clean
+  qubit.
+\newblock {\em Quantum Information \& Computation}, 8(8):681--714, 2008.
+
+\bibitem[STD07]{Svore}
+Krysta~M. Svore, Barbara~M. Terhal, and David~P. DiVincenzo.
+\newblock Noise threshold for a fault-tolerant two-dimensional lattice
+  architecture.
+\newblock {\em Quant. Inf. Comp.}, 7:297--318, 2007.
+
+\bibitem[Ste96]{Steane96}
+Andrew~M Steane.
+\newblock Error correcting codes in quantum theory.
+\newblock {\em Physical Review Letters}, 77(5):793, 1996.
+
+\bibitem[Ste97]{Steane97}
+Andrew~M Steane.
+\newblock Active stabilization, quantum computation, and quantum state
+  synthesis.
+\newblock {\em Physical Review Letters}, 78(11):2252, 1997.
+
+\bibitem[Ste99]{Steane99}
+Andrew~M Steane.
+\newblock Efficient fault-tolerant quantum computing.
+\newblock {\em Nature}, 399(6732):124--126, 1999.
+
+\bibitem[Ste03]{Steane03}
+Andrew~M Steane.
+\newblock Overhead and noise threshold of fault-tolerant quantum error
+  correction.
+\newblock {\em Physical Review A}, 68(4):042322, 2003.
+
+\bibitem[TD04]{TerhalDiVincenzo}
+B.~Terhal and D~DiVincenzo.
+\newblock Adaptive quantum computation, constant depth quantum circuits and
+  arthur-merlin games.
+\newblock {\em Quantum Information \& Computation}, 4(2):134--145, 2004.
+
+\bibitem[TL71]{TLalgebra}
+Harold~NV Temperley and Elliott~H Lieb.
+\newblock Relations between the'percolation'and'colouring'problem and other
+  graph-theoretical problems associated with regular planar lattices: some
+  exact results for the'percolation'problem.
+\newblock {\em Proceedings of the Royal Society of London. A. Mathematical and
+  Physical Sciences}, 322(1549):251--280, 1971.
+
+\bibitem[VC04]{PEPS}
+Frank Verstraete and J~Ignacio Cirac.
+\newblock Valence-bond states for quantum computation.
+\newblock {\em Phy. Rev. A}, 70(6):060302, 2004.
+
+\bibitem[VdNDDM04]{LCeq}
+Maarten Van~den Nest, Jeroen Dehaene, and Bart De~Moor.
+\newblock Graphical description of the action of local clifford transformations
+  on graph states.
+\newblock {\em Physical Review A}, 69(2):022316, 2004.
+
+\bibitem[VGW96]{Vaidman96}
+Lev Vaidman, Lior Goldenberg, and Stephen Wiesner.
+\newblock Error prevention scheme with four particles.
+\newblock {\em Physical Review A}, 54(3):R1745, 1996.
+
+\bibitem[VKL99a]{Viola99}
+Lorenza Viola, Emanuel Knill, and Seth Lloyd.
+\newblock Dynamical decoupling of open quantum systems.
+\newblock {\em Physical Review Letters}, 82(12):2417, 1999.
+
+\bibitem[VKL99b]{DD}
+Lorenza Viola, Emanuel Knill, and Seth Lloyd.
+\newblock Dynamical decoupling of open quantum systems.
+\newblock {\em Phys. Rev. Lett.}, 82:2417--2421, 1999.
+
+\bibitem[VL98]{Viola98}
+Lorenza Viola and Seth Lloyd.
+\newblock Dynamical suppression of decoherence in two-state quantum systems.
+\newblock {\em Physical Review A}, 58(4):2733, 1998.
+
+\bibitem[VMLFY10]{VanMeter}
+Rodney Van~Meter, Thaddeus~D Ladd, Austin~G Fowler, and Yoshihisa Yamamoto.
+\newblock Distributed quantum computation architecture using semiconductor
+  nanophotonics.
+\newblock {\em International Journal of Quantum Information},
+  8(01n02):295--323, 2010.
+
+\bibitem[WFH11]{WangFowler}
+David~S Wang, Austin~G Fowler, and Lloyd~CL Hollenberg.
+\newblock Surface code quantum computing with error rates over 1\%.
+\newblock {\em Physical Review A}, 83(2):020302, 2011.
+
+\bibitem[WHP03]{Wang}
+Chenyang Wang, Jim Harrington, and John Preskill.
+\newblock Confinement-higgs transition in a disordered gauge theory and the
+  accuracy threshold for quantum memory.
+\newblock {\em Annals of Physics}, 303(1):31--58, 2003.
+
+\bibitem[Wit89]{Witten89}
+Edward Witten.
+\newblock Quantum field theory and the jones polynomial.
+\newblock {\em Communications in Mathematical Physics}, 121(3):351--399, 1989.
+
+\bibitem[WSB{\etalchar{+}}04]{DispersiveMeas}
+Andreas Wallraff, David~I Schuster, Alexandre Blais, L~Frunzio, R-S Huang,
+  J~Majer, S~Kumar, Steven~M Girvin, and Robert~J Schoelkopf.
+\newblock Strong coupling of a single photon to a superconducting qubit using
+  circuit quantum electrodynamics.
+\newblock {\em Nature}, 431(7005):162--167, 2004.
+
+\bibitem[WY06]{wocjan06}
+Pawel Wocjan and Jon Yard.
+\newblock The jones polynomial: quantum algorithms and applications in quantum
+  complexity theory.
+\newblock {\em arXiv preprint quant-ph/0603069}, 2006.
+
+\bibitem[Yos11a]{BeniTopoStab}
+Beni Yoshida.
+\newblock Classification of quantum phases and topology of logical operators in
+  an exactly solved model of quantum codes.
+\newblock {\em Annals of Physics}, 326(1):15--95, 2011.
+
+\bibitem[Yos11b]{BeniThermal3D}
+Beni Yoshida.
+\newblock Feasibility of self-correcting quantum memory and thermal stability
+  of topological order.
+\newblock {\em Annals of Physics}, 326(10):2566--2633, 2011.
+
+\bibitem[YPA{\etalchar{+}}03]{ChargeCNOT}
+Tsuyoshi Yamamoto, Yu~A Pashkin, Oleg Astafiev, Yasunobu Nakamura, and Jaw-Shen
+  Tsai.
+\newblock Demonstration of conditional gate operation using superconducting
+  charge qubits.
+\newblock {\em Nature}, 425(6961):941--944, 2003.
+
+\bibitem[YR03]{Yoran03}
+Nadav Yoran and Benni Reznik.
+\newblock Deterministic linear optics quantum computation with single photon
+  qubits.
+\newblock {\em Physical review letters}, 91(3):037903, 2003.
+
+\bibitem[ZLC00]{Leung}
+Xinlan Zhou, Debbie~W Leung, and Isaac~L Chuang.
+\newblock Methodology for quantum logic gate construction.
+\newblock {\em Phy. Rev. A}, 62(5):052316, 2000.
+
+\bibitem[ZR97]{Zanardi97}
+Paolo Zanardi and Mario Rasetti.
+\newblock Noiseless quantum codes.
+\newblock {\em Physical Review Letters}, 79(17):3306, 1997.
+
+\bibitem[Zur84]{Zurek84}
+Wojciech~H Zurek.
+\newblock Reversibility and stability of information processing systems.
+\newblock {\em Physical Review Letters}, 53(4):391, 1984.
+
+\end{thebibliography}

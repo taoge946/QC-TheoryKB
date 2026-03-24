@@ -1,0 +1,41 @@
+%\usetikzlibrary{arrows.meta,arrows,shapes,backgrounds,fit,decorations.pathreplacing,chains,snakes,positioning,angles,quotes,decorations.pathmorphing}  %TikZ libraries
+%\usepgfmodule{nonlineartransformations}
+
+\begin{tikzpicture}[line cap=round, line join=round, >=Triangle]
+  % TRIM THE PIC DIMENSIONS
+  \clip(-2.1,-2.1) rectangle (2.38,2.58);
+
+  % BLOCH SPHERE
+  \draw[ball color=gray!20!white, fill opacity=0.6] (0,0) circle (2cm);
+  \draw [rotate around={0.:(0.,0.)},dash pattern=on 3pt off 3pt] (0,0) ellipse (2cm and 0.9cm);
+  \draw (0,0)-- (0.70,1.07);
+
+  % AXES 
+  \draw[-to,line width=0.7pt]   (0,0) -- +(0,2);
+  \draw[-to,line width=0.7pt]   (0,0) -- +(-0.83,-0.81);
+  \draw[-to,line width=0.7pt]   (0,0) -- +(2,0);    
+
+  % THE ARROWS IN THE PLANE OF THE ROTATIONS  
+  \draw [-Latex, <-, >=stealth', shift={(0,0)}, black, fill opacity=1] (56.7:0.4) arc (56.7:90.:0.4);
+  
+  \begin{scope}[rotate around x=10, y=10, xshift=1, yshift=-4.6]
+  \draw [-Latex, ->, >=stealth', shift={(0,0)}, black, fill opacity=1] (-135.7:0.4) arc (-135.7:-33.2:0.4);
+  \end{scope}
+  
+  % STATE PROJECTION ONTO AXES
+  \draw [dotted] (0.7,1)-- (0.7,-0.46);
+  \draw [dotted] (0,0)-- (0.7,-0.46);
+  
+  % LABELS
+  \draw (-0.2,-0.29) node[anchor=north west] {$\phi$};
+  \draw (-0.08,0.9) node[anchor=north west] {$\theta$};
+  \draw (-1.15,-0.75) node[anchor=north west] {\small{$\hat{\bm{x}}$}};
+  \draw (1.95,0.3) node[anchor=north west] {\small{$\hat{\bm{y}}$}};
+  \draw (-0.5,2.6) node[anchor=north west] {\small{$\hat{\bm{z}}=\ket{0}$}};
+  %\draw (-0.4,-2) node[anchor=north west] {$-\hat{\bm{z}}=\ket{1}$};
+  \draw (0.4,1.65) node[anchor=north west] {$\ket{\psi}$};
+
+  % BLACK CIRCLES
+  \draw [fill] (0,0) circle (1.5pt);
+  \draw [fill] (0.7,1.07) circle (0.5pt);
+\end{tikzpicture}

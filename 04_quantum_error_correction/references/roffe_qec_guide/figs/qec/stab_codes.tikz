@@ -1,0 +1,148 @@
+%! \DeclareRobustCommand\openone{\leavevmode\hbox{\small1\normalsize\kern-.33em1}}
+%! \usetikzlibrary{decorations.pathreplacing,decorations.pathmorphing}
+\usetikzlibrary{decorations.pathreplacing,decorations.pathmorphing}
+\providecommand{\ket}[1]{\left|#1\right\rangle}
+\begin{tikzpicture}[scale=1.500000,x=1pt,y=1pt]
+\filldraw[color=white] (0.000000, -9.000000) rectangle (260.000000, 99.000000);
+% Drawing wires
+% Line 14: d  W  \ket{\psi}_D
+\draw[color=black] (0.000000,90.000000) -- (260.000000,90.000000);
+\draw[color=black] (0.000000,90.000000) node[left] {$\ket{\psi}_D$};
+% Line 15: r W \ket{0}_R
+\draw[color=black] (0.000000,72.000000) -- (260.000000,72.000000);
+\draw[color=black] (0.000000,72.000000) node[left] {$\ket{0}_R$};
+% Line 19: a W \ket{0}_{A_1}
+\draw[color=black] (96.500000,54.000000) -- (251.000000,54.000000);
+\draw[color=black] (251.000000,53.500000) -- (260.000000,53.500000);
+\draw[color=black] (251.000000,54.500000) -- (260.000000,54.500000);
+% Line 20: a2 W \ket{0}_{A_2}
+\draw[color=black] (96.500000,36.000000) -- (251.000000,36.000000);
+\draw[color=black] (251.000000,35.500000) -- (260.000000,35.500000);
+\draw[color=black] (251.000000,36.500000) -- (260.000000,36.500000);
+% Line 22: ...a2 W
+% Line 24: a3 W \ket{0}_{A_{n-k}}
+\draw[color=black] (96.500000,0.000000) -- (251.000000,0.000000);
+\draw[color=black] (251.000000,-0.500000) -- (260.000000,-0.500000);
+\draw[color=black] (251.000000,0.500000) -- (260.000000,0.500000);
+% Done with wires; drawing gates
+% Line 31: d /
+\draw (3.000000, 84.000000) -- (11.000000, 96.000000);
+% Line 32: r /
+\draw (3.000000, 66.000000) -- (11.000000, 78.000000);
+% Line 36: d r G {Encoder} length=35
+\draw (34.500000,90.000000) -- (34.500000,72.000000);
+\begin{scope}
+\draw[fill=white] (34.500000, 81.000000) +(-45.000000:24.748737pt and 21.213203pt) -- +(45.000000:24.748737pt and 21.213203pt) -- +(135.000000:24.748737pt and 21.213203pt) -- +(225.000000:24.748737pt and 21.213203pt) -- cycle;
+\clip (34.500000, 81.000000) +(-45.000000:24.748737pt and 21.213203pt) -- +(45.000000:24.748737pt and 21.213203pt) -- +(135.000000:24.748737pt and 21.213203pt) -- +(225.000000:24.748737pt and 21.213203pt) -- cycle;
+\draw (34.500000, 81.000000) node {{Encoder}};
+\end{scope}
+% Line 38: d r = ${\ket{\psi}_L}$ width=25
+\draw[fill=white,color=white] (58.000000, 66.000000) rectangle (83.000000, 96.000000);
+\draw (70.500000, 81.000000) node {${\ket{\psi}_L}$};
+% Line 42: d r G {$E$}
+\draw (96.500000,90.000000) -- (96.500000,72.000000);
+\begin{scope}
+\draw[fill=white] (96.500000, 81.000000) +(-45.000000:8.485281pt and 21.213203pt) -- +(45.000000:8.485281pt and 21.213203pt) -- +(135.000000:8.485281pt and 21.213203pt) -- +(225.000000:8.485281pt and 21.213203pt) -- cycle;
+\clip (96.500000, 81.000000) +(-45.000000:8.485281pt and 21.213203pt) -- +(45.000000:8.485281pt and 21.213203pt) -- +(135.000000:8.485281pt and 21.213203pt) -- +(225.000000:8.485281pt and 21.213203pt) -- cycle;
+\draw (96.500000, 81.000000) node {{$E$}};
+\end{scope}
+% Line 44: a START
+\draw[color=black] (104.000000,54.000000) node[fill=white,left,minimum height=18.000000pt,minimum width=15.000000pt,inner sep=0pt] {\phantom{$\ket{0}_{A_1}$}};
+\draw[color=black] (104.000000,54.000000) node[left] {$\ket{0}_{A_1}$};
+% Line 46: ...a2 START
+\draw[color=black] (104.000000,18.000000) node[fill=white,left,minimum height=18.000000pt,minimum width=15.000000pt,anchor = base,inner sep=0pt] {\phantom{$\;\vdots\;$}};
+\draw[color=black] (104.000000,18.000000) node[anchor=mid east] {$\vdots$};
+% Line 47: a2 START
+\draw[color=black] (104.000000,36.000000) node[fill=white,left,minimum height=18.000000pt,minimum width=15.000000pt,inner sep=0pt] {\phantom{$\ket{0}_{A_2}$}};
+\draw[color=black] (104.000000,36.000000) node[left] {$\ket{0}_{A_2}$};
+% Line 48: a3 START
+\draw[color=black] (104.000000,0.000000) node[fill=white,left,minimum height=18.000000pt,minimum width=15.000000pt,inner sep=0pt] {\phantom{$\ket{0}_{A_{n-k}}$}};
+\draw[color=black] (104.000000,0.000000) node[left] {$\ket{0}_{A_{n-k}}$};
+% Line 50: d r a TOUCH
+% Line 59: a H
+\begin{scope}
+\draw[fill=white] (116.000000, 54.000000) +(-45.000000:8.485281pt and 8.485281pt) -- +(45.000000:8.485281pt and 8.485281pt) -- +(135.000000:8.485281pt and 8.485281pt) -- +(225.000000:8.485281pt and 8.485281pt) -- cycle;
+\clip (116.000000, 54.000000) +(-45.000000:8.485281pt and 8.485281pt) -- +(45.000000:8.485281pt and 8.485281pt) -- +(135.000000:8.485281pt and 8.485281pt) -- +(225.000000:8.485281pt and 8.485281pt) -- cycle;
+\draw (116.000000, 54.000000) node {$H$};
+\end{scope}
+% Line 61: a2 H
+\begin{scope}
+\draw[fill=white] (116.000000, 36.000000) +(-45.000000:8.485281pt and 8.485281pt) -- +(45.000000:8.485281pt and 8.485281pt) -- +(135.000000:8.485281pt and 8.485281pt) -- +(225.000000:8.485281pt and 8.485281pt) -- cycle;
+\clip (116.000000, 36.000000) +(-45.000000:8.485281pt and 8.485281pt) -- +(45.000000:8.485281pt and 8.485281pt) -- +(135.000000:8.485281pt and 8.485281pt) -- +(225.000000:8.485281pt and 8.485281pt) -- cycle;
+\draw (116.000000, 36.000000) node {$H$};
+\end{scope}
+% Line 62: a3 H
+\begin{scope}
+\draw[fill=white] (116.000000, -0.000000) +(-45.000000:8.485281pt and 8.485281pt) -- +(45.000000:8.485281pt and 8.485281pt) -- +(135.000000:8.485281pt and 8.485281pt) -- +(225.000000:8.485281pt and 8.485281pt) -- cycle;
+\clip (116.000000, -0.000000) +(-45.000000:8.485281pt and 8.485281pt) -- +(45.000000:8.485281pt and 8.485281pt) -- +(135.000000:8.485281pt and 8.485281pt) -- +(225.000000:8.485281pt and 8.485281pt) -- cycle;
+\draw (116.000000, -0.000000) node {$H$};
+\end{scope}
+% Line 66: d r G {$P_1$} length=20 a
+\draw (138.000000,90.000000) -- (138.000000,54.000000);
+\begin{scope}
+\draw[fill=white] (138.000000, 81.000000) +(-45.000000:14.142136pt and 21.213203pt) -- +(45.000000:14.142136pt and 21.213203pt) -- +(135.000000:14.142136pt and 21.213203pt) -- +(225.000000:14.142136pt and 21.213203pt) -- cycle;
+\clip (138.000000, 81.000000) +(-45.000000:14.142136pt and 21.213203pt) -- +(45.000000:14.142136pt and 21.213203pt) -- +(135.000000:14.142136pt and 21.213203pt) -- +(225.000000:14.142136pt and 21.213203pt) -- cycle;
+\draw (138.000000, 81.000000) node {{$P_1$}};
+\end{scope}
+\filldraw (138.000000, 54.000000) circle(1.500000pt);
+% Line 67: d r G {$P_2$} length=20 a2
+\draw (164.000000,90.000000) -- (164.000000,36.000000);
+\begin{scope}
+\draw[fill=white] (164.000000, 81.000000) +(-45.000000:14.142136pt and 21.213203pt) -- +(45.000000:14.142136pt and 21.213203pt) -- +(135.000000:14.142136pt and 21.213203pt) -- +(225.000000:14.142136pt and 21.213203pt) -- cycle;
+\clip (164.000000, 81.000000) +(-45.000000:14.142136pt and 21.213203pt) -- +(45.000000:14.142136pt and 21.213203pt) -- +(135.000000:14.142136pt and 21.213203pt) -- +(225.000000:14.142136pt and 21.213203pt) -- cycle;
+\draw (164.000000, 81.000000) node {{$P_2$}};
+\end{scope}
+\filldraw (164.000000, 36.000000) circle(1.500000pt);
+% Line 69: d r = $...$
+\draw[fill=white,color=white] (180.000000, 66.000000) rectangle (195.000000, 96.000000);
+\draw (187.500000, 81.000000) node {$...$};
+% Line 71: d r G {$P_{n-k}$} length=20 a3
+\draw (211.000000,90.000000) -- (211.000000,0.000000);
+\begin{scope}
+\draw[fill=white] (211.000000, 81.000000) +(-45.000000:14.142136pt and 21.213203pt) -- +(45.000000:14.142136pt and 21.213203pt) -- +(135.000000:14.142136pt and 21.213203pt) -- +(225.000000:14.142136pt and 21.213203pt) -- cycle;
+\clip (211.000000, 81.000000) +(-45.000000:14.142136pt and 21.213203pt) -- +(45.000000:14.142136pt and 21.213203pt) -- +(135.000000:14.142136pt and 21.213203pt) -- +(225.000000:14.142136pt and 21.213203pt) -- cycle;
+\draw (211.000000, 81.000000) node {{$P_{n-k}$}};
+\end{scope}
+\filldraw (211.000000, 0.000000) circle(1.500000pt);
+% Line 75: TOUCH
+% Line 78: a H
+\begin{scope}
+\draw[fill=white] (233.000000, 54.000000) +(-45.000000:8.485281pt and 8.485281pt) -- +(45.000000:8.485281pt and 8.485281pt) -- +(135.000000:8.485281pt and 8.485281pt) -- +(225.000000:8.485281pt and 8.485281pt) -- cycle;
+\clip (233.000000, 54.000000) +(-45.000000:8.485281pt and 8.485281pt) -- +(45.000000:8.485281pt and 8.485281pt) -- +(135.000000:8.485281pt and 8.485281pt) -- +(225.000000:8.485281pt and 8.485281pt) -- cycle;
+\draw (233.000000, 54.000000) node {$H$};
+\end{scope}
+% Line 79: a2 H
+\begin{scope}
+\draw[fill=white] (233.000000, 36.000000) +(-45.000000:8.485281pt and 8.485281pt) -- +(45.000000:8.485281pt and 8.485281pt) -- +(135.000000:8.485281pt and 8.485281pt) -- +(225.000000:8.485281pt and 8.485281pt) -- cycle;
+\clip (233.000000, 36.000000) +(-45.000000:8.485281pt and 8.485281pt) -- +(45.000000:8.485281pt and 8.485281pt) -- +(135.000000:8.485281pt and 8.485281pt) -- +(225.000000:8.485281pt and 8.485281pt) -- cycle;
+\draw (233.000000, 36.000000) node {$H$};
+\end{scope}
+% Line 80: a3 H
+\begin{scope}
+\draw[fill=white] (233.000000, -0.000000) +(-45.000000:8.485281pt and 8.485281pt) -- +(45.000000:8.485281pt and 8.485281pt) -- +(135.000000:8.485281pt and 8.485281pt) -- +(225.000000:8.485281pt and 8.485281pt) -- cycle;
+\clip (233.000000, -0.000000) +(-45.000000:8.485281pt and 8.485281pt) -- +(45.000000:8.485281pt and 8.485281pt) -- +(135.000000:8.485281pt and 8.485281pt) -- +(225.000000:8.485281pt and 8.485281pt) -- cycle;
+\draw (233.000000, -0.000000) node {$H$};
+\end{scope}
+% Line 88: a M
+\draw[fill=white] (245.000000, 48.000000) rectangle (257.000000, 60.000000);
+\draw[very thin] (251.000000, 54.600000) arc (90:150:6.000000pt);
+\draw[very thin] (251.000000, 54.600000) arc (90:30:6.000000pt);
+\draw[->,>=stealth] (251.000000, 48.600000) -- +(80:10.392305pt);
+% Line 89: a2 M
+\draw[fill=white] (245.000000, 30.000000) rectangle (257.000000, 42.000000);
+\draw[very thin] (251.000000, 36.600000) arc (90:150:6.000000pt);
+\draw[very thin] (251.000000, 36.600000) arc (90:30:6.000000pt);
+\draw[->,>=stealth] (251.000000, 30.600000) -- +(80:10.392305pt);
+% Line 90: a3 M
+\draw[fill=white] (245.000000, -6.000000) rectangle (257.000000, 6.000000);
+\draw[very thin] (251.000000, 0.600000) arc (90:150:6.000000pt);
+\draw[very thin] (251.000000, 0.600000) arc (90:30:6.000000pt);
+\draw[->,>=stealth] (251.000000, -5.400000) -- +(80:10.392305pt);
+% Done with gates; drawing ending labels
+\draw[color=black] (260.000000,18.000000) node[anchor=mid west] {$\vdots$};
+% Done with ending labels; drawing cut lines and comments
+% Line 84: @ p0 p1 % {Syndrome extraction}
+\draw[decorate,decoration={brace,amplitude = 4.000000pt},very thick] (108.500000,99.000000) -- (240.500000,99.000000);
+\draw (174.500000, 103.000000) node[text width=144pt,above,text centered] {{Syndrome extraction}};
+% Done with comments
+\end{tikzpicture}

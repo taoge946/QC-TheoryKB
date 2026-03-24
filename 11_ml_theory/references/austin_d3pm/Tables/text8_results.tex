@@ -1,0 +1,33 @@
+\begin{table}[b]
+  \caption{Quantitative results on text8. NLL is reported on the entire test set. Sample times are for generating a single example of length 256. Results are reported on two seeds. All models are standard 12-layer transformers unless otherwise noted. $^\dagger$Transformer XL is a 24-layer transformer, using a 784 context window. $^\ddagger$Results reported by \citep{hoogeboom2021argmax} by running code from official repository.}
+  \label{tab:text8}
+  \scriptsize
+  \centering
+  \begin{tabular}{llll}
+    \toprule
+    % \multicolumn{2}{c}{Part}                   \\
+    % \cmidrule(r){1-2}
+    Model & Model steps & NLL (bits/char) ($\downarrow$) & Sample time (s) ($\downarrow$)\\
+    \midrule
+    Discrete Flow \citep{tran2019discrete} ($8\times 3$ layers) & - & $1.23$ & $0.16$ \\
+    Argmax Coupling Flow \citep{hoogeboom2021argmax} & - & $1.80$ & $0.40 \pm 0.03$ \\
+    IAF / SCF \citep{Ziegler2019}$^\ddagger$ & - & $1.88$ & $0.04 \pm 0.0004$\\
+    Multinomial Diffusion (D3PM uniform) \citep{hoogeboom2021argmax} & $1000$  & $\leq 1.72$ & $26.6\pm 2.2$   \\
+    \midrule
+    D3PM uniform \citep{hoogeboom2021argmax} (ours) & $1000$  & $\leq 1.61\pm 0.02$ & $3.6\pm 0.4$  \\
+    D3PM NN ($L_{\mathrm{vb}}$) (ours) & $1000$ & $\leq 1.59\pm 0.03$ & $3.1474\pm 0.0002$ \\
+    D3PM mask ($L_{\lambda=0.01}$) (ours) & $1000$ & $\leq 1.45\pm 0.02$ & $3.4\pm 0.3$ \\
+    \midrule
+    D3PM uniform \citep{hoogeboom2021argmax} (ours) & $256$ & $\leq 1.68\pm0.01$ & $0.5801\pm 0.0001$ \\
+    D3PM NN ($L_{\mathrm{vb}}$) (ours) & $256$ & $\leq 1.64\pm 0.02$ & $0.813\pm 0.002$ \\
+    D3PM absorbing ($L_{\lambda=0.01}$) (ours) & $256$ & $\leq 1.47\pm 0.03$ & $0.598\pm 0.002$ \\
+    Transformer decoder (ours) & $256$ & $1.23$ & $0.3570\pm 0.0002$\\
+    Transformer decoder \citep{al_rfou} & $256$ & $1.18$ & -\\
+    Transformer XL \citep{transformer_xl}$^\dagger$ & $256$ & $1.08$ & - \\
+    \midrule
+    D3PM uniform \citep{hoogeboom2021argmax} (ours) & $20$ & $\leq1.79\pm 0.03$ & $0.0771\pm 0.0005$ \\   
+    D3PM NN ($L_{\mathrm{vb}}$) (ours) & $20$ & $\leq 1.75\pm0.02$ & $0.1110\pm 0.0001$ \\
+    D3PM absorbing ($L_{\lambda=0.01}$) (ours) & $20$ & $\leq 1.56\pm0.04$ & $0.0785\pm 0.0003$ \\
+    \bottomrule
+  \end{tabular}
+\end{table}

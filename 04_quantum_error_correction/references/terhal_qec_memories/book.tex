@@ -1,0 +1,126 @@
+
+% RECOMMENDED %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt,notitlepage]{report}
+\oddsidemargin 10.0mm
+\textwidth 150mm
+\topmargin -10.mm
+\textheight 220mm
+\usepackage[affil-it]{authblk}
+\renewcommand{\bibname}{References}
+%graybox,envcountchap,sectrefs,
+% choose options for [] as required from the list
+% in the Reference Guide
+\usepackage{theorem}
+%\usepackage{mathptmx}
+%\usepackage{helvet}
+%\usepackage{courier}
+%
+%\usepackage{type1cm}    
+%\usepackage[tbtags]{amsmath}
+%% \usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{amsfonts}     
+
+\usepackage{makeidx}         % allows index generation
+\usepackage{graphicx}        % standard LaTeX graphics tool
+                             % when incl
+\usepackage{enumerate}
+% see the list of further useful packages
+% in the Reference Guide
+
+\makeindex             % used for the subject index
+                       % please use the style svind.ist with
+                       % your makeindex program
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\updow}{\hspace{0.5mm}{
+{\ooalign{{\rotatebox{30}{\hspace{0.5mm}\raisebox{1mm}[0ex][0ex]{{\small$\wedge$}}}}\crcr{$)$}}}
+{\ooalign{{\rotatebox{-30}{\hspace{-1.5mm}\raisebox{1.7mm}[0ex][0ex]{{\small$\wedge$}}}}\crcr{$($}}}}\hspace{0.5mm}}
+\newcommand{\lefri}{\hspace{3mm}\rotatebox{90}{\hspace{-1.7mm}{
+{\ooalign{{\rotatebox{30}{\hspace{0.5mm}\raisebox{1mm}[0ex][0ex]{{\small$\wedge$}}}}\crcr{$)$}}}\hspace{-0.5mm}
+{\ooalign{{\rotatebox{-30}{\hspace{-1.5mm}\raisebox{1.7mm}[0ex][0ex]{{\small$\wedge$}}}}\crcr{$($}}}}} \hspace{0.3mm}}
+
+\newcommand{\crosA}{{\hspace{0.5mm} \ooalign{{\large$\nearrow$}\crcr\hspace{-1.5mm}\raisebox{1.8mm}[0ex][0ex]{\footnotesize $\nwarrow$}\crcr \hspace{2mm}\raisebox{-1.6mm}[0ex][0ex]{\footnotesize $\diagdown$}}\hspace{1mm}}}
+
+\newcommand{\crosB}{{\hspace{1mm}\ooalign{{\large$\nwarrow$}\crcr\hspace{2.2mm}\raisebox{1.8mm}[0ex][0ex]{\footnotesize $\nearrow$}\crcr \hspace{-0.9mm}\raisebox{-1.4mm}[0ex][0ex]{\footnotesize $\diagup$}}}}
+
+\theorembodyfont{\normalfont}
+\newtheorem{theorem}{Theorem}
+\newtheorem{definition}[theorem]{definition}
+
+\begin{document}
+\setlength{\baselineskip}{15pt}
+\author[1,2,3]{Keisuke Fujii}
+\affil[1]{The Hakubi Center for Advanced Research, Kyoto University}
+\affil[ ]{Yoshida-Ushinomiya-cho, Sakyo-ku, Kyoto 606-8501, Japan}
+\affil[2]{Graduate School of Informatics, Kyoto University}
+\affil[ ]{Yoshida Honmachi, Sakyo-ku, Kyoto 606-8501, Japan}
+\affil[3]{Department of Physics, Graduate School of Science, Kyoto University}
+\affil[ ]{Kitashirakawa Oiwake-cho, Sakyo-ku, Kyoto 606-8502, Japan}
+
+
+\title{Quantum Computation with Topological Codes\\
+--- from qubit to topological fault-tolerance ---}
+
+\maketitle
+\begin{abstract}
+This is a comprehensive review on fault-tolerant topological quantum computation 
+with the surface codes. The basic concepts and useful tools
+underlying fault-tolerant quantum computation,
+such as universal quantum computation,
+stabilizer formalism, and measurement-based quantum computation, 
+are also provided in a pedagogical way.
+Topological quantum computation 
+by brading the defects on the surface code
+is explained in both circuit-based and measurement-based models
+in such a way that their relation is clear.
+The interdisciplinary connections between quantum error correction codes
+and subjects in other fields such as 
+topological order in condensed matter physics and 
+spin glass models in statistical physics
+are also discussed.
+This manuscript will be appeared in SpringerBriefs.
+\end{abstract}
+\tableofcontents
+
+
+%	\include{dedic}
+%\include{foreword}
+\include{preface}
+%\include{acknow}
+
+
+%\include{acronym}
+
+
+%\mainmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\include{part}
+
+\include{introduction}
+\include{stabilizer}
+\include{topologicalcode}
+\include{topologicalQC}
+\include{topologicalMBQC}
+
+\include{AppFT}
+\include{AppDec}
+%\backmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\printindex
+%\include{glossary}
+%\include{solutions}
+
+
+\bibliographystyle{alpha}
+%\bibliographystyle{unsrt}
+\bibliography{book}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
+
+
+
+
+

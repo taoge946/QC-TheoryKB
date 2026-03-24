@@ -1,0 +1,71 @@
+HEADER \DeclareRobustCommand\openone{\leavevmode\hbox{\small1\normalsize\kern-.33em1}}
+
+PREAMBLE \providecommand{\ket}[1]{\left|#1\right\rangle}
+
+a b DEFINE CPG  a:shape=0 op="\draw[fill=black, rounded corners=2] (-3, -3) rectangle (3, 3) {};"  b:shape=0 op="\draw[fill=black, rounded corners=2] (-3, -3) rectangle (3, 3) {};"
+a b DEFINE CNOT a +b
+
+WIREPAD 6
+DEPTHPAD 3
+
+SCALE 1.5
+
+MARK enc1
+d W \ket{\psi}_1
+p W \ket{0}_2
+p2 W \ket{0}_3
+
+
+a W \ket{0}_{A_1}
+a2 W \ket{0}_{A_2}
+TOUCH
+d p CNOT
+p p2 CNOT
+TOUCH
+MARK enc2
+
+# d p p2 @ enc1 enc2 color=black width=20 style=dotted %% {Encoder} 
+@ enc1 enc2 % Encoder
+
+TOUCH
+d p p2 = $\ket{\psi}_L$ width=25
+
+TOUCH
+
+a START
+a2 START
+a H
+a2 H
+
+d p p2 G $E$
+
+
+
+
+
+
+
+MARK stab1
+
+
+
+
+
+d p G $Z_1 Z_2$ a width=23
+p p2 G $Z_2Z_3$ a2 width=23 
+TOUCH 
+a2 H
+a H
+
+TOUCH
+MARK stab2
+TOUCH
+
+@ stab1 stab2 % {Syndrome extraction}
+
+#d p a a2 @ stab1 stab2 color=black width=20 style=dotted % {Syndrome extraction}
+
+
+a M
+a2 M
+

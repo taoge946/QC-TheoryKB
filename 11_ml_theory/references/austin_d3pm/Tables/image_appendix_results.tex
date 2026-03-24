@@ -1,0 +1,14 @@
+\begin{table}[h!]
+  \caption{Quantitative results on the image dataset CIFAR-10 for D3PM uniform models trained with $L_{\mathrm{vb}}$. The cosine noise schedule for the uniform D3PM model was suggested by \citet{hoogeboom2021argmax}. The linear schedule corresponds to linearly increasing $\beta_t$ from $0.02$ to $1$. Results displayed for models trained with 3 (linear) and 4 (cosine) seeds.}
+  \label{tab:appendix_cifar10}
+  \small
+  \centering
+  \begin{tabular}{lllll}
+    \toprule
+    Model & $\beta_t$ schedule  & IS ($\uparrow$)    & FID ($\downarrow$) & NLL ($\downarrow$) \\
+    \midrule
+    D3PM uniform  & linear & $4.44 \pm 0.05$ &  $79.86 \pm 1.64$ & $\leq 4.99 \pm 0.03$ \\
+    D3PM uniform & cosine & $5.99 \pm 0.14$  &  $51.27 \pm 2.15$ & $\leq 5.08 \pm 0.02$  \\
+    \bottomrule
+  \end{tabular}
+\end{table}

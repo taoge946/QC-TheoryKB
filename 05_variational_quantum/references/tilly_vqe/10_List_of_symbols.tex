@@ -1,0 +1,32 @@
+% Note:
+% At the moment 
+% command format: 
+% 1. \nomenclature[grouping-prefix]{symbol}{description}
+% The grouping-prefix helps to sort the symbols: Symbols will be sorted by <prefox><symbol>. 
+
+% defines the title of the list of symbols:
+\renewcommand{\nomname}{List of Symbols}
+% a short introduction to this section:
+\renewcommand{\nompreamble}{Here lists several symbols that are used in this paper.}
+
+% Grouping convention (Juat a first try, haven't figure out the best way to do it yet:
+% c: small symbols
+% g: Matrix and operators
+% l: complex expressions.
+
+\nomenclature[g]{$\hat{H}$}{Hamiltonian of the quantum mechanical system.}
+\nomenclature[g]{$\hat{P_a}$}{Any Pauli operator or tensor of Pauli operators (Pauli string)}
+\nomenclature[c]{$n$}{Number of basis functions used for in the Hamiltonian. It can also refer to, the number of fermionic modes, or the number of site on a lattice}
+\nomenclature[c]{$m$}{The number of electrons in the system of interest}
+\nomenclature[c]{$N$}{Refers to the number of qubits used to model the wavefunction of the system of interest}
+\nomenclature[c]{$\epsilon$}{A given level of precision, i.e. the maximum error in estimation. A variant of this symbol, $\varepsilon$, is used to represent the level of noise in the quantum computer.}
+\nomenclature[l]{$\mathcal{O}(f(n))$}{Order of function $f(n)$.}
+\nomenclature[g]{$\unit$}{The identity matrix of an appropriate dimension.}
+\nomenclature[g]{$I$}{The $2$ by $2$ identity matrix.}
+\nomenclature[g]{$X/Y/Z$}{The three $2$ by $2$ Pauli $X$, Pauli-$Y$ and Pauli-$Z$ matrices.}
+\nomenclature[g]{$\mathcal{P}$}{The number of Pauli strings in a Hamiltonian.}
+\nomenclature[g]{$\hat{P}$}{Any Pauli string.}
+\nomenclature[l]{$\phi_i(.)$, $\ket{\phi_i}$}{A spin-orbital function}
+\nomenclature[l]{$\psi(.)$, $\ket{\psi}$}{An electronic wavefunction}
+
+\printnomenclature

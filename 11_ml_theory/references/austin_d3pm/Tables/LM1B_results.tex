@@ -1,0 +1,52 @@
+\begin{table}[t] % Daniel: Strong opinion against inline tables. Top or bottom only.
+\vspace{-0.3cm}
+  \caption{Quantitative results on LM1B. Perplexity reported on the test set. Results are reported on two seeds. All models have context window length 128 and 12 layers unless otherwise noted. $^\dagger$Transformer XL is a 24 layer transformer. $^\ddagger$rounded for readability, see Appendix~\ref{appendix:lm1b_aux}.}
+  \label{tab:lm1b}
+  \scriptsize
+  \centering
+  \begin{tabular}{r rrr c rrr}
+    \toprule
+    Metric: &\multicolumn{3}{c}{Perplexity ($\downarrow$)}
+    &&\multicolumn{3}{c}{Sample time$^\ddagger$ (s) ($\downarrow$)}\\
+    \cmidrule{2-4}\cmidrule{6-8}
+    inference steps: & $1000$
+    & $128$
+    & $64$
+    &
+    & $1000$
+    & $128$
+    & $64$\\
+    \midrule
+    D3PM uniform
+    & 137.9 $\pm$ 2.1 & 139.2 $\pm$ 1.2 & 145.0 $\pm$ 1.2 &
+    & 1.82 & 0.21 & 0.08 \\
+    D3PM NN
+    & 149.5 $\pm$ 1.3 & 158.6 $\pm$ 2.2 & 160.4 $\pm$ 1.2 &
+    & 21.29 & 6.69 & 5.88 \\
+    D3PM absorbing
+    & 76.9 $\pm$ 2.3 & 80.1 $\pm$ 1.2 & 83.6 $\pm$ 6.1 &
+    & 1.90 & 0.19 & 0.10 \\
+    \midrule
+    Transformer (ours)
+    & - & 43.6 & - &
+    & - & 0.26 & -\\
+    Transformer XL \citep{transformer_xl}$^\dagger$
+    & - & 21.8 & - &
+    & - & - & -\\
+    \bottomrule
+  \end{tabular}
+%   \begin{tabular}{lllll}
+%     \toprule
+%     % \multicolumn{2}{c}{Part}                   \\
+%     % \cmidrule(r){1-2}
+%     Model & Perplexity @ 1000 steps & @ 128 steps & @ 64 steps & Sample time (at 1000/128/64)\\
+%     \midrule
+%     D3PM uniform \citep{hoogeboom2021argmax} (ours) & $159.85$ & $165.93$ & - & a/b/c \\
+%     D3PM mask ($L_{\lambda=0.01}$) (ours) & $78.15\pm 4.1$ & $83.172$ & $89.13\pm 9.2$ & a/b/c \\
+%     \midrule
+%     Transformer decoder (ours) & - & $43.62549$ & - & -/b/- \\
+%     Transformer XL \citep{transformer_xl}$^\dagger$ & - & $21.8$ & - & -/c/- \\
+%     \bottomrule
+%   \end{tabular}
+\end{table}
+

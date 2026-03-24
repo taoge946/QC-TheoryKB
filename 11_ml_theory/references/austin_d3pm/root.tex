@@ -1,0 +1,219 @@
+\documentclass{article}
+\pdfoutput=1
+
+% if you need to pass options to natbib, use, e.g.:
+%     \PassOptionsToPackage{numbers, compress}{natbib}
+% before loading neurips_2021
+
+\PassOptionsToPackage{numbers, compress}{natbib}
+
+% ready for submission
+% \usepackage{neurips_2021}
+\usepackage[final]{neurips_2021}
+
+% to compile a preprint version, e.g., for submission to arXiv, add add the
+% [preprint] option:
+% \usepackage[preprint]{neurips_2021}
+
+% to compile a camera-ready version, add the [final] option, e.g.:
+%     \usepackage[final]{neurips_2021}
+
+% to avoid loading the natbib package, add option nonatbib:
+%    \usepackage[nonatbib]{neurips_2021}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Note: Currently broken by bibunit; can crop PDF by hand instead.
+
+% TO GENERATE WITH ONLY MAIN TEXT:
+% \includeonly{main}
+
+% TO GENERATE WITH ONLY APPENDIX:
+% \includeonly{sections/appendix}
+
+% TO GENERATE BOTH: Comment out both lines.
+% May need to generate both once before uncommenting one of the
+% above lines, because LaTeX needs to write out what the appendix
+% references refer to.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage{hyperref}       % hyperlinks
+\usepackage{url}            % simple URL typesetting
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{microtype}      % microtypography
+\usepackage{xcolor}         % colors
+\usepackage{bbm}
+\usepackage{mathtools}
+\usepackage{amsthm}
+\usepackage{changepage}
+\usepackage{listings}
+\usepackage{array}
+
+\lstset{
+basicstyle=\small\ttfamily,
+columns=flexible,
+breaklines=true
+}
+
+% \setcitestyle{numbers}
+
+\newtheorem{theorem}{Theorem}
+
+% Extra packages.
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{xcolor}
+\usepackage{bm}
+\usepackage{subcaption}
+\usepackage{setspace}
+
+\usepackage{floatrow}
+% Table float box with bottom caption, box width adjusted to content
+\floatsetup[table]{capposition=top}
+\newfloatcommand{capbtabbox}{table}[][\FBwidth]
+
+% \usepackage{algorithm}
+% \usepackage{algpseudocode}
+\usepackage[title]{appendix}
+\usepackage{wrapfig}
+%\usepackage{todonotes}
+%\usepackage[disable]{todonotes}
+\usepackage[textwidth=1.3in]{todonotes}
+\usepackage{blkarray}
+
+\usepackage{marvosym}  % for eurosign
+\usepackage{textcomp}
+\DeclareUnicodeCharacter{20AC}{\EUR{}}
+\DeclareUnicodeCharacter{93}{''f}
+\DeclareUnicodeCharacter{B0}{\textdegree}
+
+\usepackage{bibunits} % for separate ref list in appendix
+\defaultbibliography{main}
+\defaultbibliographystyle{plainnat}
+
+\usepackage{listings} % for codeblocks
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+\usepackage[bottom]{footmisc}
+
+% Bold letters in sub-figures.
+\renewcommand{\thesubfigure}{\textbf{\alph{subfigure}}}
+
+% Useful shortcuts.
+\newcommand{\vect}[1]{\boldsymbol{\mathbf{#1}}}
+
+% Footnote without footnote mark.
+\newcommand\blfootnote[1]{%
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}%
+  \addtocounter{footnote}{-1}%
+  \endgroup
+}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\bx}{\boldsymbol{x}}
+\newcommand{\bv}{\boldsymbol{v}}
+\newcommand{\bq}{\boldsymbol{q}}
+\newcommand{\bQ}{\boldsymbol{Q}}
+\newcommand{\barbQ}{\overline{\boldsymbol{Q}}}
+\newcommand{\bs}[1]{\boldsymbol{#1}}
+
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
+
+
+% For generations in figures:
+\newcommand{\smallmasktok}{\allowbreak{\color{white!70!black}\textbf{[M]}}\allowbreak}
+\newcommand{\charmasktok}{\allowbreak{\color{white!70!black}\textbf{?}}\allowbreak}
+\newcommand{\charspacetok}{\allowbreak{\color{white!70!black}\textvisiblespace}\allowbreak}
+
+\newcommand\wip[1]{{\color{orange}#1}}
+
+\newcommand\DANIEL[1]{\todo[color=green!40,size=tiny]{\textbf{Daniel:} #1}}
+\newcommand\JACOB[1]{\todo[color=orange!40,size=tiny]{\textbf{Jacob:} #1}}
+\newcommand\DANNY[1]{\todo[color=blue!40,size=tiny]{\textbf{Danny:} #1}}
+\newcommand\RIANNE[1]{\todo[color=purple!40,size=tiny]{\textbf{Rianne:} #1}}
+\newcommand\JONATHAN[1]{\todo[color=yellow!4,size=tiny]{\textbf{Jonathan:} #1}}
+
+% \newcommand\DANIEL[1]{}
+% \newcommand\JACOB[1]{}
+% \newcommand\DANNY[1]{}
+% \newcommand\RIANNE[1]{}
+% \newcommand\JONATHAN[1]{}
+
+\title{Structured Denoising Diffusion Models in Discrete State-Spaces}
+
+% The \author macro works with any number of authors. There are two commands
+% used to separate the names and addresses of multiple authors: \And and \AND.
+%
+% Using \And between authors leaves it to LaTeX to determine where to break the
+% lines. Using \AND forces a line break at that point. So, if LaTeX puts 3 of 4
+% authors names on the first line, and the last on the second line, try using
+% \AND instead of \And before the third author name.
+
+
+ \author{Jacob Austin\thanks{Equal contributions}, Daniel D. Johnson\footnotemark[1], Jonathan Ho,  Daniel Tarlow \& Rianne van den Berg\thanks{Now at Microsoft Research}\\
+Google Research, Brain Team\\
+\texttt{\{jaaustin,ddjohnson,jonathanho,dtarlow,riannevdberg\}@google.com}
+}
+% footnotemark{Work completed as a Google AI Resident}
+
+
+\begin{document}
+
+% ArXiV version
+     \include{main}
+     % \include{sections/checklist}
+     \include{sections/appendix}
+\end{document}
+
+% NeurIPS version
+
+% \begin{bibunit}[plainnat]
+%     \include{main}
+%     \putbib[main]
+% \end{bibunit}
+
+% \include{sections/checklist}
+
+% \begin{bibunit}[plainnat]
+%     \include{sections/appendix}
+%     \putbib[main]
+% \end{bibunit}
+
+% \end{document}

@@ -1,0 +1,587 @@
+\appendix
+\newpage
+\section{Additional details regarding D3PMs}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Doubly-stochastic matrices}
+\label{appendix:stochastic}
+
+As discussed in Section \ref{sec:choice-transition-matrices}, there are two constraints on $\bs{Q}_t$ that allow it to be used within a D3PM: the rows of $\bs Q_t$ must sum to one to conserve probability mass, and the rows of $\overline{\bs Q}_{t} = \bs Q_1  \bs Q_2 \hdots \bs Q_t$ must converge to a known stationary distribution as $t$ becomes large. Technically, it is also possible to use a learned prior $p_\theta(\bx_T)$, but assuming this is still modeled under a conditional independence assumption, $q(\bx_T | \bx_0)$ must still be close to a stationary distribution for the $L_T$ loss term to be small.
+
+One way to ensure that this occurs is to chose $\bs{Q}_t$ as increasing powers of a doubly stochastic base matrix $\bQ$ (rows and columns sum to 1) with strictly positive entries. This is enough to ensure that $\bQ$ is is irreducible and aperiodic and that product $\overline{\bs Q}_t$ converges as $t\rightarrow\infty$ to a uniform distribution over all states.
+To show this, consider $\pi_i = 1/K$ for $i=1, ..., K$, and $\sum_{i=1}^K \bQ_{i,:} = \bs 1$ and $\sum_{j=1}^K \bQ_{:, j} = \bs 1$, then $[\bs Q \bs \pi]_i = \sum_{j=1}^K \bQ_{i, j} \pi_j =1/K\sum_{j=1}^K \bQ_{i, j} = 1/K = \pi_i$, thus the uniform distribution is an eigenvector of the transition matrix with eigenvalue 1. Convergence to this distribution follows from the Perron-Frobenius theorem for positive square matrices.
+
+More generally, a similar argument shows that even for $\bQ_t$ that are not powers of the same base matrix, as long as each $\bQ_t$ is doubly stochastic, irreducible, and aperiodic, the uniform distribution is the only possible stationary distribution, and as long as the second largest eigenvalue of $\bQ_t$ is bounded below, the cumulative product $\barbQ_t$ will converge to the uniform distribution. In practice, we choose $\bQ_t$ to add more noise as $t$ increases, which ensures that $\overline{\bs Q}_T$ is very close to reaching a uniform stationary distribution.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{More details on possible choices of Markov transition matrices}
+\label{sec:appendix_other_transition_mats}
+
+
+\subsubsection{Uniform diffusion}
+\label{sec:appendix_transition_uniform}
+
+The transition matrix described by \citet{sohl2015deep} for the binary case, and extended by \citet{hoogeboom2021argmax}, to the categorical case, can be represented using the following $K\times K$ transition matrix
+\begin{align}
+    \left[\bs{Q}_t\right]_{ij} = \begin{cases}
+    1 - \frac{K-1}{K} \beta_t \quad &\text{if}\quad i=j\\
+    \frac{1}{K} \beta_t \quad &\text{if}\quad i\neq j
+    \end{cases},
+    \label{eq:cat_forward_kernel_mat_uniform}
+\end{align} 
+This transition matrix can also be written as $(1 - \beta_t) I + \beta_t \mathbbm{1} \mathbbm{1}^T / K$, where $\mathbbm{1}$ is a column vector of all ones.
+
+\subsubsection{Diffusion with an absorbing state}
+\label{sec:appendix_transition_mask}
+For our diffusion models with an absorbing state $m$, we use the following matrix:
+
+\begin{align}
+    \left[\bs{Q}_t\right]_{ij} = \begin{cases}
+    1  \quad&\text{if}  \quad i = j = m \\
+    1 - \beta_t \quad &\text{if} \quad i = j \ne m \\
+    \beta_t \quad &\text{if} \quad j = m, i \ne m\\
+\end{cases}
+    \label{eq:cat_forward_kernel_mat_mask}
+\end{align}
+
+The transition matrix can also be written as $(1 - \beta_t) I + \beta_t \mathbbm{1} e^T_m$, where $e_m$ is a vector with a one on the absorbing state $m$ and zeros elsewhere.
+Since $m$ is an absorbing state, the corruption process converges not to a uniform distribution but to the point-mass distribution on $m$. 
+
+For text generation, we let $m$ be the [MASK] token at index $K-1$; this leads to a BERT-like training objective, which masks tokens according to some schedule and learns to denoise them iteratively (see Section \ref{sec:bert_connections}). For image generation, we set $m$ to the gray RGB pixel $(128, 128, 128)$ at index $K//2$.
+
+
+\subsubsection{Discretized Gaussian transition matrices}
+\label{sec:appendix_transition_gaussian}
+
+For our D3PM models applied to ordinal data, inspired by continuous-space diffusion models, we use the following $K \times K$ matrix:
+\begin{align}
+    \left[\bs{Q}_t\right]_{ij} = \begin{cases}
+\frac{\exp\left(-\frac{4|i - j|^2 }{(K-1)^2\beta_t}\right)}{\sum_{n=-(K-1)}^{K-1}\exp\left(-\frac{4n^2 }{(K-1)^2\beta_t}\right)} \quad &\text{if} \quad i\neq j\\[1.5em]
+1 - \sum_{l=0, l\neq i}^{K-1} [\bs Q_t]_{il} \quad &\text{if} \quad i = j \\
+\end{cases}
+    \label{eq:discretized_gaussian_mat}
+\end{align}
+
+Normalization is ensured by assigning the diagonal values to one minus the sum of each row (not including the diagonal entry). Note that due to the normalization of the off-diagonal values over the range $\{-K+1, ..., K-1\}$ the sum of each row excluding the diagonal entry is always smaller than 1. The result yields an irreducible doubly stochastic matrix and a forward process with a uniform stationary distribution. Similar to the continuous Gaussian diffusion model, the parameters $\beta_t$ influence the variance of the forward process distributions.
+
+\subsubsection{Structured diffusion in text: using word-embedding distance to introduce locality}\label{sec:appendix_transition_nearest_neighbor}
+
+For text, we construct a $k$-nearest neighbor adjacency matrix \[
+[\mathbf{G}]_{ij} = 1\text{ if } w_i \text{ is a k-nearest neighbor of } w_j \text{ else } 0
+\]
+constructed from a pre-trained embedding space over the vocabulary. Then we consider a symmetrized adjacency matrix of the form $\mathbf{A}=(\mathbf{G} + \mathbf{G}^T) / (2k)$ where $k$ is the number of nearest neighbors of each node,
+and finally construct a doubly stochastic rate matrix with
+\begin{align}
+    \left[\bs{R}\right]_{ij} = \begin{cases}
+        - \sum_{l\neq i} A_{il} \quad &\text{if} \quad i = j \\
+        A_{ij} \quad &\text{ otherwise }\\
+    \end{cases}
+    \label{eq:nn_diffusion}
+\end{align}
+Our final transition matrix is constructed as a matrix exponential of this rate matrix:
+$$
+\mathbf{Q}_t = \exp(\alpha_t \mathbf{R}) = \sum_{n = 0}^\infty \frac{\alpha_t^n}{n!} \bs{R}^n
+$$
+Since $\bs{R}$ is symmetric and sums to zero along each row, $\mathbf{Q}_t$ is doubly stochastic, which ensures we have a uniform stationary distribution (as long as $G$ is connected). Increasing $\alpha_t$ over time allows us to add more noise for larger values of $t$.
+
+Assuming word embeddings are some metric for syntactic or semantic similarity, this results in a corruption process that gradually moves away from the ground-truth sentence, swapping words with nearest-neighbors in embedding space. For character level modeling, this is a graph over characters, which more often transitions for instance from vowels to other vowels than from vowels to consonants. For words, this could transition between semantically similar words.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.5]{figures/text_diffusion.png}
+    \caption{Two examples of noise schedules transforming text data. The top is a BERT-like absorbing + uniform diffusion which replaces tokens with [MASK] tokens (and occasionally with any other token, in black). The bottom is nearest-neighbor diffusion in embedding space. At left represents a possible column in the transition matrix.}
+    \label{fig:nn_graph}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.5]{figures/char_nn.png}
+    \caption{The character-level symmetrized 5-NN graph.}
+    \label{fig:char_graph}
+\end{figure}
+
+For example, in Figure \ref{fig:nn_graph}, we construct the forward process to diffuse from "dog" to "cat" or "cow", which are nearby in embedding space, but not to more distant words. We can either bootstrap this process by updating the transition matrix $\bs{Q}$ dynamically during training, or use pretrained embeddings; we use pretrained embeddings for all of our experiments.
+
+\subsubsection{Band-diagonal transitions} 
+A class of transition matrices that introduce local, ordinal inductive biases for structured data are band-diagonal transition matrices which only allow the corruption process to transition locally between states and biases the reverse process towards local iterative refinement. For example, in images, this can be used to allow transitions only between adjacent pixel values.
+
+\begin{align}
+    \left[\bs{Q}_t\right]_{ij} = \begin{cases}
+\frac{1}{K} \beta_t \quad &\text{if} \quad  0 < \vert i-j\vert \leq v \\
+1 - \sum_{l\neq i} Q_{il} \quad &\text{if} \quad i = j \\
+\end{cases}
+    \label{eq:uniform_band_diagonal}
+\end{align}
+
+where $v$ is the number of nonzero off-diagonal elements of $\bs Q$ above (and below) the main diagonal. Note that this is a doubly stochastic matrix, so the stationary distribution is uniform. We do not use these in our experiments.
+
+
+\subsubsection{Combinations of absorbing diffusion and other diffusion} 
+A few ablations in Appendix~\ref{appendix:text8_aux} consider transition matrices that combine absorbing-state or nearest-neighbor and uniform D3PM models. For instance, an absorbing-uniform transition matrix can be constructed $\bs{Q} = \alpha \mathbbm{1} e_m^T + \beta \mathbbm{1}\mathbbm{1}^T/K + (1 - \alpha - \beta) I$, where $e_m$ is a one-hot vector on the [MASK] token.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Generative Masked Language Models are Diffusion Models}
+
+\label{appendix:cmlm}
+
+Generative Masked Language Models \citep{mask_predict, bert_speak} are generative models that generate text from a sequence of [MASK] tokens. These are usually trained by sampling a sequence $\bx_0$, masking tokens according to some schedule, and learning to predict the masked tokens given context. The actual masking procedure can either be done independently, i.e. by masking each token with probability $p = k/T$, like \citet{bert}, or by sampling exactly $k$ tokens. The usual objective is\footnote{Sometimes the loss is un-normalized or normalized by the full sequence length.}:
+\begin{equation}
+\label{eq:cmlm}
+\min - \mathbb{E}_{q(\bx_0)}\left[\mathbb{E}_{k\in[1...|\bx_0|]}\left[\frac{1}{k}\ \mathbb{E}_{\bx_k \text{with $k$ masked tokens}}\left[\sum_{i \text{ with } [\bx_k]_i = m} \log p_\theta([\bx_0]_i | \bx_k)\right]\right]\right]
+\end{equation}
+where we first sample a datapoint $\bx_0$, sample a number of tokens to mask $k$ (either uniformly or according to some schedule), then mask that many tokens at random and compute a cross entropy loss over those masked tokens. We claim that this training objective is a (reweighted) absorbing-state D3PM objective with a particular noise schedule and the $\bx_0$-parameterization from \ref{sec:x0_parameterization} (and indeed, that any absorbing-state D3PM model with [MASK] as the absorbing state will be a reweighted version of this loss with different weights assigned to different numbers of masked tokens $k$).
+
+Consider a D3PM with a schedule that masks tokens with probability $\beta_t$. The reverse process predicts $\widetilde{p}_\theta(\widetilde{\bx_0}| \bx_t)$, then uses the forward process to compute $p_{\theta}(\bx_{t-1}|\bx_t) \propto \sum q(\bx_{t-1}, \bx_t| \widetilde{\bx_0}) \widetilde{p}_\theta(\widetilde{\bx}_0| \bx_t)$. In the particular case of absorbing-state diffusion, for each masked token $[\bx_t]_i = m$ in $\bx_t$, we thus have
+\[
+p_{\theta}([\bx_{t-1}]_i|\bx_t) \propto 
+\begin{cases}
+[\beta_t \prod_{s < t} (1-\beta_s)] \widetilde{p}_\theta([\widetilde{\bx}_0]_i=[\bx_{0}]_i | \bx_t)
+&\text{for }[\bx_{t-1}]_i = [\bx_{0}]_i \ne m
+\\
+1 - \prod_{s \le t} (1-\beta_s)
+&\text{for }[\bx_{t-1}]_i = m
+\end{cases}
+\]
+We note that for each unmasked token $[\bx_t]_i = [\bx_0]_i$, the KL-divergence is zero since unmasked tokens cannot make any other type of transition other than becoming masked. Also, the term in the KL divergence due to the probability of mask transitions is a constant, since mask transitions are independent of the model parameters $\theta$.
+Our $L_t$ term is then
+$$
+D_{\mathrm{KL}}[q(\bx_{t-1} | \bx_t, \bx_0) \vert\vert p_{\theta}(\bx_{t-1}|\bx_t)] = -\left[\beta_t \prod_{s < t} (1-\beta_s)\right] \sum_{i \text{ with } [\bx_t]_i = m} \log \widetilde{p}_\theta([\bx_0]_i | \bx_t) + C
+$$
+where $C$ is independent of $\theta$ and the sum is taken over the masked tokens in $\bx_t$.
+For example, if we use $\beta(t) = 1 / (T - t + 1)$ from \citet{sohl2015deep}, $\beta_t \prod_{i=0}^{t-1} (1 - \beta_i) = 1 / T$ and $1 - \prod_{i=0}^t (1 - \beta_i) = (t-1) / T$, so $q([\bx_{t-1}]_i = [\bx_0]_i | [\bx_{t}]_i = m, \bx_0) = 1 / t$ for non-mask tokens and we can simplify our $L_t$ objective to
+$$D_{\mathrm{KL}}[q(\bx_{t-1} | \bx_t, \bx_0) \vert\vert p_{\theta}(\bx_{t-1}|\bx_t)] = -\left[\frac{1}{t}\sum_{i \text{ with } [\bx_t]_i = m} \log \widetilde{p}_\theta([\bx_0]_i | \bx_t)\right] + C$$
+
+where $\bx_t$ masks tokens independently and uniformly with probability $t / T$. The $L_T$ term in our ELBO is 0 for the $1 / (T - t + 1)$ schedule, so the full objective (up to a constant) reduces to
+
+\begin{align}
+    \mathbb E_{q(\bx_0)}\Bigg[-\sum_{t=2}^T \frac{1}{t}\mathbb E_{q(\bx_t|\bx_0)} \big[
+        \sum_{i \text{ with } [\bx_t]_i = m} \log p_\theta([\bx_0]_i | \bx_t)]
+        \big]
+        \nonumber\\
+        - \mathbb E_{q(\bx_1|\bx_0)} [\sum_{i \text{ with } [\bx_1]_i = m} \log p_{\theta}([\bx_0]_i|\bx_1)]\Bigg]\nonumber\\
+      =-\mathbb E_{q(\bx_0)} \left[ \sum_{t=1}^T \frac{1}{t}\ \mathbb E_{q(\bx_t|\bx_0)} \big[
+        \sum_{i \text{ with } [\bx_t]_i = m} \log p_\theta([\bx_0]_i | \bx_t)]
+        \big]\right]
+    \label{eq:negative_lower_bound_aux}
+\end{align}
+
+Note that while this looks very similar to Equation~\ref{eq:cmlm} (with each term reweighted by $1/t$, the expected number of masked tokens) it is not exactly identical since masking is computed independently per-token position (instead of choosing exactly $k$ tokens to mask). This is an entirely practical way to do masking (and indeed some methods implement it this way).
+
+
+Furthermore, since the masking probability varies linearly as $1 - \prod (1 - \beta_t) = t / T$, this is very close to uniformly sampling the number of masked tokens $k$, but $k$ is actually drawn from a mixture of binomial distributions, i.e.
+\begin{align}
+      =-\mathbb E_{q(\bx_0)} \left[ \mathbb E_{k\in[1...|X|]}\left[\mathbb{E}_{\bx_k \text{with $k$ masked tokens}}\left[\alpha(k) \sum_{i \text{ with } [\bx_k]_i = m} \log p_\theta([\bx_0]_i | \bx_k)]\right]\right]\right]
+\end{align}
+\begin{align}
+     \alpha(k) = q(\bx_t \text{ has $k$ masked tokens} | \bx_0 \text{ has $n$ tokens}) = \frac{1}{T}\sum_{t=1}^{T} {n \choose k} \left(\frac{t}{T}\right)^{n-1}\left(1 - \frac{t}{T}\right)^{n-k}
+\end{align}
+which is very close to uniform weight over terms, but slightly downweights terms near $0$ and $T$. By upweighting terms near the boundary, you could in theory make this exactly uniform and thus exactly recover Equation~\ref{eq:cmlm}. For instance, for 50 categories, absorbing-state diffusion produces the weighting shown in Figure~\ref{fig:mask_weighting}. 
+\begin{figure}[h!]
+    \centering
+    \includegraphics[scale=0.5]{figures/mask_weighting.png}
+    \caption{Plot of the probabilities of having $k$ tokens masked out of a length-50 sequence under a D3PM absorbing schedule with $T=50$ steps, which is very similar to the uniform weighting used by \citet{mask_predict}.}
+    \label{fig:mask_weighting}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Scaling to a large number of categories}
+\label{sec:scaling-to-large-categories}
+
+When the number of categories $K$ is large, it can quickly become impractical to store all of the transition matrices $\bQ_t$ in memory, as the memory usage grows like $O(K^2 T)$. And even if there is an algorithm to compute individual step matrices $\bQ_t$ on demand, it may or may not be possible to do the same for the cumulative products $\barbQ_t$. We propose two approaches to scaling D3PMs to large numbers of categories that ensure cumulative products are efficient: using low-rank corruption and using matrix exponentials.
+
+\subsubsection{Low-rank corruption}
+
+\label{appendix:low_rank_corruption}
+In the low-rank case, we consider structuring our transition matrices as
+\begin{align}
+\bQ_t &= \beta_t \bs{A}_t + (1 - \beta_t) \bs I,
+\end{align}
+where each $\bs{A}_t$ is a diagonalizable low-rank matrix with the same nonzero eigenvectors. In particular, recall that both absorbing-state diffusion and uniform diffusion
+have this form: for uniform diffusion, $\bs{A}^\text{uniform}_t = \mathbbm{1}\mathbbm{1}^T/K$, and for absorbing-state diffusion $\bs{A}^\text{abs}_t = \mathbbm{1}\bs{e}_{m}^T$ where $\bs{e}_{m}$ is a one-hot vector on the absorbing state. Since products of $\bs{A}_t$'s are also low rank, the cumulative products $\barbQ_t$ can be efficiently precomputed and stored using a much smaller amount of memory $O(r^2 T)$ where $r = \text{rank}(\bs{A}_t)$.
+
+
+As an illustrative example, we describe in more detail how to efficiently represent uniform and absorbing-state transition matrices using the low-rank structure.
+
+To compute products of uniform transition matrices (i.e. $\prod_i (1-\beta_i) I + \beta_i \mathbbm{1} \mathbbm{1}^T / K$), 
+% we can take advantage of the low-rank structure of the product to efficiently store all $n$-step matrices. To compute them, 
+we can take advantage of the useful fact that products of matrices of the form $\alpha I + \beta \mathbbm{1} \mathbbm{1}^T$ also have this same form: $I^2=I$ and $\left(\beta \mathbbm{1} \mathbbm{1}^T\right)^2 = \beta^2 K  \mathbbm{1} \mathbbm{1}^T$. We can thus treat this as a formal polynomial in one variable $X = (\mathbbm{1} \mathbbm{1}^T /K)$. Then products can be computed as $\prod_i\left[(1-\beta_i) + \beta_i X\right]$ over the quotient ring $\mathbb{R}[X] / (X^2 - X)$, since $X^2=X$. Functionally, this means you can instantiate a polynomial $(1-\beta_i) + \beta_i X$ and repeatedly perform ordinary polynomial multiplication over $\mathbb{R}[X]$ for the $t < T$ timesteps. After each multiplication, the higher-order terms are reduced by $X^2=X$, leaving a polynomial of degree 1 where the $X$ term has coefficient given by the sum of all higher-order terms. This can be computed with the convenient \textit{np.polynomial} module.
+
+Similarly, the transition matrices for D3PM absorbing can be computed in closed form. Fundamentally, in each step, we transition to a [MASK] token with probability $\beta_t$ and stay the same with probability $1 - \beta_t$. Since the [MASK] state is absorbing, after $t$ steps, the only operative quantity is the probability of not yet having transitioned to the [MASK] state, given by $\widetilde{\alpha_t} = \prod_{i=0}^t (1 - \beta_i)$. Hence for D3PM absorbing, $\barbQ=\Tilde{\alpha_t} I + (1 - \widetilde{\alpha_t}) \mathbbm{1} e^T_m$ where $e_m$ is a one-hot vector on the [MASK] token.
+
+\subsubsection{Matrix exponentials}
+In the matrix exponential case, we specify our transition matrices as
+\begin{align}
+\bQ_t &= \exp(\alpha_t \bs{R}) = \sum_{n = 0}^\infty \frac{\alpha_t^n}{n!} \bs{R}^n,
+&
+\barbQ_t &= \textstyle \exp\left(\left(\sum_{s \le t} \alpha_s\right) \bs{R}\right),
+\label{eq:matrix-exponential-parameterization}
+\end{align}
+where $\bs{R}$ is a \emph{transition rate matrix} and $\exp$ denotes the matrix exponential operation; the similar form for $\bQ_t$ and $\barbQ_t$ is a consequence of the ``exponential of sums'' property for commuting matrices.
+For efficiency, we further assume that each of the $\alpha_t$ is an integer multiple $n_t\alpha_\star$ of some common factor $\alpha_\star$, and precompute matrices $\exp(2^k \alpha_\star \bs{R})$ for $0 \le k \le \log_2 (\overline{\alpha}_T / \alpha_\star)$, where $\overline{\alpha}_T = \sum_{t < T} \alpha_t$, taking space $O(K^2 \log (\overline{\alpha}_T / \alpha_\star))$. Then, to compute matrix-vector products with $\bQ_t$ or $\barbQ_t$, we can iteratively take products with a subset of these precomputed matrices based on the digits of a binary expansion of the desired multiple $n_t$ in time $O(K^2  \log (\overline{\alpha}_T / \alpha_\star))$.\footnote{This is closely related to the well-known ``exponentiation-by-squaring'' technique.}
+
+As long as $\bs{R}$ has non-positive off-diagonal entries and sums to zero along each row, the matrix exponential produces a valid transition matrix $\bQ_t$; convergence to a specific stationary distribution can also be ensured by controlling the eigenvectors. In particular, if every column also sums to zero, the resulting $\bQ_t$ will be doubly stochastic and will thus have a uniform stationary distribution.
+
+We note that this parameterization can be viewed as a discretization of a continuous-time discrete-space Markov processes; we describe this connection in more detail in the following section.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Continuous-time Markov process transition rates}
+\label{appendix:kolmogorov}
+
+Following \citet{feller1949theory}, we define a continuous-time discrete-space Markov process as a collection of random variables $\{\bx_t\}_{t>0}$ parameterized by $t\in\mathbb{R}^+$ and characterized by a Markov property ($\bx_t \perp \bx_s \mid \bx_\tau$ if $t < \tau < s$), a transition probability matrix $\Pi(t)\in\mathbb{R}^{N\times N}$ where $N$ is the cardinality of $\bx_t$, and a set of transition rates $\bs{\gamma}_i(t)$. 
+
+A conceptual way to understand these processes is to imagine a continuous Poisson process occurring in each state $i$ at rate $\bs\gamma_i(t)$ determining when a transition between states occurs. When a transition occurs (at time $t$), a Markov transition occurs between states $i$ and $j$ with probability $\Pi_{ij}(t)$. Many common stochastic processes fall into this family, including Poisson processes. Like in the case of stochastic differential equations (\citet{song2020_sde}), we can derive a set of Kolomogorov equations (or Fokker-Planck equations in the continuous-state space case) that determine the marginal probability $\partial q_{ij}(\tau, t)$ of ending up in state $j$ at time $t$ having started in state $i$ at time $s$. The general form of the Kolmogorov forward equations is
+
+$$\frac{\partial q_{ij}(\tau, t)}{\partial t} = -\bs{\gamma}_k(t) q_{i}(\tau, t) + \sum_j \bs{\gamma}_j(t) \Pi_{kj}(t) q_{ik}(t)$$
+
+Now we can state and prove a theorem connecting continuous time Markov processes and matrix exponentials.
+
+\begin{theorem}
+\label{appendix:exponential_theorem}
+Let $\{\bx_t\}_{t\geq 0}$ be a discrete-space, continuous-time Markov process with (possibly time-dependent) transition probability matrix $\Pi(t)$ and transition rates $\bs{\gamma}_{i}(t)$. Then for a particle with an initial distribution $q(\bx_s)$ at time $s$, the probability of ending in state $j$ at time $t$ is
+
+$$q(\bx_t | \bx_s) = \exp\left(\int_s^t \operatorname{diag}(\bs{\gamma}(\tau)) (\Pi(\tau)-I)\, d\tau \right) q(\bx_s)$$
+
+where $\exp$ is the matrix exponential and we view $q(\bx_t)$ and $\bs{\gamma}(t)$ as vectors in $\R^N$.
+\end{theorem}
+
+\begin{proof}[Proof (sketch)]
+
+From the Kolmogorov equations for continuous-time Markov processes, we have the ODE
+
+$$\frac{\partial q(\bx_t | \bx_s)}{\partial t} = \operatorname{diag}(\bs{\gamma}(t))(\Pi(t) - I) q(\bx_t | \bx_s)$$
+
+where $\Pi(t)$ is the transition probability matrix. Solving this as a first-order ODE using integrating factors yields the desired equation.
+\end{proof}
+
+We note that, if $\Pi(t) = \Pi$ is independent of $t$ and $\bs{\gamma}(s) = \gamma(s) \mathbf{r}$ for some scalar function $\gamma : \R \to \R$ and vector $\mathbf{r} \in \R^N$, this simplifies to exactly our matrix exponential parameterization with
+\[
+\mathbf{R} = \operatorname{diag}(\mathbf{r})(\Pi - I).
+\]
+where we set
+\[
+\alpha_t = \int_{t-1}^t \gamma(t)\,dt.
+\]
+In other words, the $\alpha_t$ parameters in Equation~\ref{eq:matrix-exponential-parameterization} correspond to a discretization of the cumulative transition rate of a continuous-time process.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Continuous-limit of schedule from \citet{sohl2015deep}}
+
+\label{appendix:jsd_rates}
+
+Consider for example the schedule described by \citet{sohl2015deep} for Bernoulli variables $\beta_t = 1/(T - t + 1)$, i.e. the Bernoulli variable would stay the same with probability $1 - \beta_t = (T - t)/(T - t + 1)$ and transition with probability $\beta_t$. In this section, we show that a D3PM absorbing or D3PM uniform process with this schedule is exactly a discretization of a continuous-time jump process of the form described in Theorem~\ref{appendix:exponential_theorem}.
+
+We start by observing that both absorbing-state and uniform D3PM transition matrices can be expressed equivalently as matrix exponentials. In the uniform case, we have
+\[
+Q_t = \exp(\alpha_t \mathbf{R}_\text{unif})=
+\exp\left(\alpha_t \left(\frac{1}{K}\mathbbm{1} \mathbbm{1}^T - I\right)\right)=
+\exp(-\alpha_t) I + (1 - \exp(-\alpha_t))\frac{1}{K}\mathbbm{1} \mathbbm{1}^T,
+\]
+and in the absorbing case we have
+\[
+Q_t = \exp(\alpha_t \mathbf{R}_\text{abs})=
+\exp\left(\alpha_t \left(\mathbbm{1} \mathbf{e}_m^T - I \right)\right)=
+\exp(-\alpha_t) I + (1 - \exp(-\alpha_t))\mathbbm{1} \mathbf{e}_m^T.
+\]
+In either case, by setting this equal to the explicit forms in Appendix~\ref{sec:appendix_other_transition_mats}, we obtain the relationship
+\[
+\beta_t = 1 - \exp(-\alpha_t)
+\]
+where $\beta_t$ is defined as in Appendix~\ref{sec:appendix_other_transition_mats}, and $\alpha_t$ is the matrix exponential coefficient as used in the previous section.
+Using the correspondence discussed in the previous section, we also know
+\[
+\alpha_t = \int_{t-1}^t \gamma(s)\,ds
+\]
+for the continuous-time transition rate function $\gamma(s)$. Defining $\beta_t = 1/(T - t + 1)$, we have
+
+$$1 - \beta_t = 1 - \frac{1}{(T - t + 1)} = \frac{T - t}{T - t + 1} = \exp\left(-\int_{t-1}^{t} \gamma(\tau) d\tau\right)$$
+
+Denoting the anti-derivative $\int \gamma(t) = F(t)$, we have $\log(T - t) - \log(T - t + 1) = - F(t) + F(t-1)$, so we can deduce $F(t) = -\log(T - t)$ (up to a constant offset). Taking a derivative then yields $\gamma(t) = 1 / (T - t)$, which has the same form as the original schedule but is now interpreted as a continuously-varying rate function instead of a probability (and is also shifted by 1 unit in time). Intuitively, we can interpret this as a schedule which assigns uniform probability of a transition occurring over the remaining time, but instead of dividing it between $T-t+1$ discrete steps, we divide it across a continuous interval of size $T-t$. We note that using larger values of $T$ is equivalent to performing a finer discretization on a scaled version of this continuous-time process.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Mutual-information-based noise schedule}\label{sec:appendix_noise_schedule}
+An important part of designing the forward process for a diffusion process is to specify the \emph{noise schedule}: how much noise is added at each step $t$ such that after $T$ steps the process has (approximately) reached the stationary distribution of the transition matrix. Previous work on continuous-state diffusion models \citep{ho2020denoising, nichol2021improved, song2020_sde} has focused on controlling the variance of the continuous noise added at each step, but in a discrete state space it is less obvious how to measure or control the level of noise added.
+
+For uniform or absorbing-state transition matrices, once a single transition occurs, all information about the original data point is lost. In this case, the schedule introduced by \citet{sohl2015deep} is a natural choice, since it is designed to make this first transition for $t/T$ of the elements by time $t$.
+However, when the transition matrix imposes additional structure on the transitions, such as for our token-embedding based transition matrix, it is not sufficient to perturb $t/T$ of the elements by time $t$, since the value at time $t$ may be highly correlated with the value at time $t-1$ even after a transition occurs; we thus explore using mutual information to quantify how much noise has been added.
+Here we describe the mutual-information-based schedules in more detail. We focus on transition matrices that are parameterized as matrix exponentials, i.e. they have the form
+\begin{align*}
+\bQ_t &= \exp(\alpha_t \bs{R}) = \sum_{n = 0}^\infty \frac{\alpha_t^n}{n!} \bs{R}^n, &
+\barbQ_t &= \textstyle \exp\left(\left(\sum_{s \le t} \alpha_s\right) \bs{R}\right) = \textstyle \exp\left(\bar{\alpha}_t \bs{R}\right).
+\end{align*}
+Inspired by the schedule introduced by \citet{sohl2015deep}, we consider setting our $\alpha_t$ such that $\frac{t}{T}$ of the information about $p(\bx_0)$ has been lost by time $t$. Our goal is to find exponents such that
+\begin{equation}
+\frac{t}{T}
+= 1 - \frac{I(\bx_t; \bx_0)}{H(\bx_0)}
+= \frac{H(\bx_0, \bx_t) - H(\bx_t)}{H(\bx_0)}
+= \frac{\sum_{\bx_0, \bx_t} p(\bx_0)q(\bx_t | \bx_0) \log\frac{q(\bx_t | \bx_0)}{\sum_{\bx_0'} p(\bx_0') q(\bx_t | \bx_0')}}{\sum_{\bx_0} p(\bx_0) \log p(\bx_0)}
+\label{eqn:MI-schedule}
+\end{equation}
+where $H$ denotes the entropy of a random variable, and $p(\bx_0)$ denotes the distribution of a randomly chosen token in the data.
+
+In practice, we estimate $p(\bx_0)$ by computing empirical frequencies over the training set, and compute the value of the right-hand side of \ref{eqn:MI-schedule} for transition matrices $\exp(\bar{\alpha} \bs{R})$ with 256 geometrically-spaced exponents $\bar{\alpha}$ distributed in a large range (linear on a log scale between 1e-4 and 1e5). We then interpolate using a monotonic cubic spline to find the particular exponents $\bar{\alpha}_t$ that ensure the above property holds approximately, and round them so that they are all multiples of a common factor $\alpha_\star$ to ensure efficiency (as described in Appendix \ref{sec:scaling-to-large-categories}). Finally, we set $\bQ_t = \exp((\bar{\alpha}_t - \bar{\alpha}_{t-1}) \bs{R})$.
+
+It turns out that, for the specific case of absorbing-state diffusion with a [MASK] token, the mutual information schedule reduces to exactly the $(T-t+1)^{-1}$ schedule proposed by \citet{sohl2015deep}. To see this, let $m_t$ be the probability that a given value from time 0 has been replaced with [MASK] at time $t$. We note then that
+\begin{align*}
+H(\bx_t) &= \sum_{\bx_0} (1 - m_t) p(\bx_0) \log \left((1 - m_t) p(\bx_0) \right) + m_t \log m_t
+\\&= (1 - m_t) \sum_{\bx_0}p(\bx_0) \log  p(\bx_0) + (1 - m_t)\log(1 - m_t) + m_t \log m_t
+\end{align*}
+where we have used the fact that a mask token has zero probability under the data distribution. We also have the joint entropy
+\begin{align*}
+H(\bx_0, \bx_t) = \sum_{\bx_0} p(\bx_0) \log p(\bx_0) + m_t \log m_t + (1-m_t)\log(1-m_t).
+\end{align*}
+We can then calculate
+\begin{align*}
+1 - \frac{I(\bx_t; \bx_0)}{H(\bx_0)}
+&= \frac{H(\bx_0, \bx_t) - H(\bx_t)}{H(\bx_0)}
+\\&=  \frac{ \sum_{\bx_0} p(\bx_0) \log p(\bx_0) + m_t \log m_t + (1-m_t)\log(1-m_t)}{\sum_{\bx_0} p(\bx_0) \log p(\bx_0)}
+\\&\qquad\qquad- \frac{(1 - m) \sum_{\bx_0}p(\bx_0) \log  p(\bx_0) + (1 - m_t)\log(1 - m_t) + m_t \log m_t}{\sum_{\bx_0} p(\bx_0) \log p(\bx_0)}
+\\&= \frac{m_t\sum_{\bx_0} p(\bx_0) \log p(\bx_0)}{\sum_{\bx_0} p(\bx_0) \log p(\bx_0)}
+= m_t.
+\end{align*}
+It follows that the mutual information schedule for masks is one that ensures $m_t = q(\bx_t = 
+\text{[MASK]} | \bx_0) = \frac{t}{T}$. But this is exactly the $(T-t+1)^{-1}$ schedule. To see this, let $\beta_t$ be the probability that a non-mask token becomes a mask token at time $t$, and note that $m_t = 1 - \prod_{s=1}^t (1 - \beta_s)$. Thus,
+\begin{align*}
+\beta_t = 1 - \frac{1 - m_t}{1 - m_{t-1}}
+= 1 - \frac{1 - \frac{t}{T}}{1 - \frac{t-1}{T}}
+= 1 - \frac{T - t}{T - t + 1}
+= \frac{(T - t + 1) - (T - t)}{T - t + 1}
+= \frac{1}{T - t + 1}
+\end{align*}
+as desired.
+
+Interestingly, although the $(T-t+1)^{-1}$ schedule was designed for the case of a uniform transition matrix (an used for this purpose by \citet{sohl2015deep} and \citet{hoogeboom2021argmax}), the $(T-t+1)^{-1}$ schedule is NOT in general identical to the mutual information schedule in that setting. We leave further investigation of these schedules to future work.
+
+\subsection{Parameterizing the reverse process with a discretized truncated logistic distribution}
+\label{sec:appendix_logistic}
+For ordinal data such as images, we can instill an ordinal inductive bias
+in the logits of $\widetilde{p}_{\theta}(\widetilde{\bx}_0|\bx_t)$ by modeling them using a discretization of a distribution on real-valued numbers. In this paper we choose the underlying continuous distribution to be a truncated logistic distribution. The code below shows how we compute the logits for $\widetilde{p}_{\theta}(\widetilde{\bx}_0|\bx_t)$, given a location/mean and a log scale that were predicted by a neural network $\mathrm{nn}_{\theta}$.
+
+\begin{lstlisting}[language=Python]
+import jax.numpy as jnp
+    
+    
+def get_logits_from_logistic_pars(loc, log_scale, num_classes):
+  """Computes logits for an underlying logistic distribution."""
+
+  # The loc and log_scale are assumed to be modeled for data re-scaled 
+  # such that the values {0, ...,K-1} map to the interval [-1, 1].
+  # Shape of loc and log_scale: (batch_size, height, width, channels)
+  loc = jnp.expand_dims(loc, axis=-1)
+  log_scale = jnp.expand_dims(log_scale, axis=-1)
+
+  # Shift log_scale such that if it's zero the output distribution 
+  # has a reasonable variance.
+  inv_scale = jnp.exp(- (log_scale - 2.))
+
+  bin_width = 2. / (num_classes - 1.)
+  bin_centers = jnp.linspace(start=-1., stop=1., num=num_classes,
+                             endpoint=True)
+  bin_centers = jnp.expand_dims(bin_centers,
+                                axis=tuple(range(0, loc.ndim-1)))
+
+  bin_centers = bin_centers - loc
+  # Note that the edge bins corresponding to the values 0 and K-1 
+  # don't get assigned all of the mass in the tails to +/- infinity. 
+  # So the logits correspond to unnormalized log probabilites of a 
+  # discretized truncated logistic distribution.
+  log_cdf_min = jax.nn.log_sigmoid(
+      inv_scale * (bin_centers - 0.5 * bin_width))
+  log_cdf_plus = jax.nn.log_sigmoid(
+      inv_scale * (bin_centers + 0.5 * bin_width))
+
+  logits = log_minus_exp(log_cdf_plus, log_cdf_min)
+
+  return logits
+
+
+def log_minus_exp(a, b, epsilon=1.e-6):
+  """Computes the log(exp(a) - exp(b)) (b<a) in a numerically stable way."""
+
+  return a + jnp.log1p(-jnp.exp(b - a) + epsilon)
+\end{lstlisting}
+
+
+\section{Experiments}
+\label{sec:appendix_experiments}
+
+\subsection{Details and additional results for unconditional image generation experiments}
+\label{sec:appendix_image}
+
+ We follow the same training and evaluation setup as used by \citet{ho2020denoising}. For completeness we repeat these settings here. The model architecture is based on the backbone of a PixelCNN++ \citep{salimans2017pixelcnn++} architecture: a U-Net \citep{ronneberger2015unet} based on a Wide ResNet \citep{zagoruyko2016wide} with weight normalization layers \citep{salimans2016weight} replaced by group normalization layers \citep{wu2018group}. The model has four feature map resolutions and two convolutional residual blocks for each resolution level. At the $16\times 16$ resolution level a self-attention block is placed between the convolutional blocks \citep{chen2018pixelsnail}. The time step $t$ is included in the neural net through a Transformer sinusoidal position embedding \citep{vaswani2017attention} in each residual block. 
+Furthermore, we use the same hyperparameters and augmentation settings as in \citep{ho2020denoising} without tuning them: the dropout rate is set to 0.1; we use a learning rate of $2\times 10^{-4}$ with the Adam optimizer \citep{kingma2014adam} with standard settings, a batch size of 128; for evaluation we use an exponential moving average (EMA) for the model parameters with a decay factor of $0.9999$; and finally, we use random horizontal flips as augmentation during training.
+
+% We have started our experiments based on
+We built our implementation of D3PMs for images based on
+a re-implementation of the DDPM model \citep{ho2020denoising} in JAX \citep{jax2018github} and Flax \citep{flax2020github}, with the same settings as those mentioned above. This re-implementation has been verified to produce similar results as those reported in \citep{ho2020denoising}. 
+For the D3PM models for which the logits of $\widetilde{p}_{\theta}(\widetilde{\bx}_0|\bx_t) = \mathrm{Cat}(\widetilde{\bx}_0|\bs p_{\theta})$ are modeled directly as the output of a neural network, we model them as $\mathrm{logits} = \mathrm{nn}_{\theta}(\mathrm{normalize}(\bx^{\mathrm{int}}_t)) + \bx^{\mathrm{one-hot}}_t$, where $\bx^{\mathrm{int}}_t$ and $\bx^{\mathrm{one-hot}}_t$ denote integer and one-hot representations of $\bx_t$ respectively. The function $\mathrm{normalize}(\bx^{\mathrm{int}}_t)$ maps the integer values $\{0, ..., K-1\}$ to the interval $[-1, 1]$. For the case where the logits are predicted from a truncated distretized logistic distribution, as discussed in Section \ref{sec:appendix_logistic}, the neural network outputs a log scale $\log \bs s$ and the mean $\bs \mu$ of the underlying logistic distribution: $[\log \bs s, \bs \mu'] = \mathrm{nn}_{\theta}(\mathrm{normalize}(\bx^{\mathrm{int}}_t))$, $\bs \mu = \tanh(\mathrm{normalize}(\bx^{\mathrm{int}}_t) + \bs \mu')$.
+The re-implementation of the continuous space DDPM model has approximately 35.7M parameters, which is the same number of parameters as that of the CIFAR-10 model that we loaded from the officially released checkpoint by the authors of \citep{ho2020denoising}.\footnote{Code and checkpoints for the DDPM models from \citep{ho2020denoising} are available at \url{https://github.com/hojonathanho/diffusion}.}
+Our D3PM models that output logits directly have around 36.6M parameters, while the model that parameterizes the logits through a discretized truncated logistic distribution (D3PM Gauss + logistic) has around 35.7M parameters. 
+ %
+
+We trained all our models for 1.5M steps on TPUv2 accelerators with a $4\times4$ topology. 
+Our Inception \citep{salimans2016improved} and FID \citep{heusel2017gans} scores were computed on 50000 samples with the Inception-v3 model \citep{Szegedy_2016_CVPR}. We have included averages and standard deviations over models trained with 5 different seeds.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures/cifar10_samples_uniform_row.png} \\
+    \vspace{0.1cm}
+    \includegraphics[width=0.8\textwidth]{figures/cifar10_samples_mask_row.png}\\
+    \vspace{0.1cm}
+     \includegraphics[width=0.8\textwidth]{figures/cifar10_samples_gausslogistic_row.png}
+    \caption{Samples from the D3PM uniform model trained with $L_{\mathrm{vb}}$ (top), the D3PM absorb model trained with $L_{\lambda=0.001}$ (middle), and the D3PM Gauss + logistic model trained with $L_{\lambda=0.001}$ (bottom). These samples were not cherry picked.}
+    \label{fig:appendix_cifar10_samples}
+    \vspace{-0.1cm}
+\end{figure}
+\paragraph{Noise schedule settings}% noise schedule settings
+For the D3PM Gauss models with discretized Gaussian transition matrices as described in Appendix \ref{sec:appendix_transition_gaussian}, we use the same linear schedule for the $\beta_t$'s as in \citep{ho2020denoising}: $\beta_t$ is linearly increased from $1\times 10^{-4}$ to $0.02$. We did not explore any other noise schedules for D3PM Gauss models.
+For the D3PM uniform model (see Section \ref{sec:appendix_transition_uniform}) we experimented with a linear schedule for $\beta_t$ (linearly increasing from $0.02$ to $1$) and the cosine schedule as suggested by \citet{hoogeboom2021argmax}. Table~\ref{tab:appendix_cifar10} shows that the D3PM uniform model with a cosine schedule produces much better results than the same model with a linear $\beta_t$ schedule. For the D3PM absorbing model (see Section \ref{sec:appendix_transition_mask}) the absorbing state is the gray pixel, corresponding to the RGB values (128, 128, 128). For these models we used a schedule that corresponds to increasing the probability of being in the absorbing state linearly over time: $\beta_t = (T-t+1)^{-1}$. This schedule was also proposed in \citet{sohl2015deep} for diffusion with binary random variables, which has a uniform stationary distribution as opposed to the stationary distribution with all the mass on the absorbing state.
+
+\paragraph{Samples}Additional samples from the D3PM uniform model trained on $L_{\mathrm{vb}}$, the D3PM absorb model trained on $L_{\lambda=0.001}$, and the D3PM Gauss + logistic model trained on $L_{\lambda=0.001}$ can be bound in Figure~\ref{fig:appendix_cifar10_samples}.
+
+\input{Tables/image_appendix_results}
+
+\subsection{Details and additional results for unconditional text generation experiments}
+
+Our experiments using text8 and LM1B were performed with a standard transformer encoder following the T5 \citep{T5} architecture with 12 layers and 70 million parameters (12 heads, mlp dim 3072, qkv dim 768). All models were trained for 1 million steps with batch size 512 on the TPUv2 or TPUv3 platform. Our code is implemented in JAX \citep{jax2018github} and Flax \citep{flax2020github}. For our experiments, we used learning rate $5\times 10^{-4}$ with a 10000 step learning rate warmup and inverse sqrt decay. For text8, we used a standard 90000000/5000000/500000 train-test-validation split with sequences of length 256. For LM1B, we used the standard test-train split from TFDS with 30,301,028 examples in the training set and 306,688 in the test set. For text8, no preprocessing is performed, and training is performed on random crops of the entire concatenated, lower-cased training set. For LM1B, training is performed on sequences of length 128 sampled by packing sequences from the training corpus, including an EOS token. Perplexities are reported relative to the actual number of English-language words in the test set (including an EOS token predicted by the model). 
+
+Our autoregressive transformer baseline was a standard transformer decoder with the same basic architecture (but including causal masking, as is standard for autoregressive models) with the same number of parameters.
+
+Table \ref{tab:text8_aux} contains additional comparisons of hybrid losses. We found that the hybrid loss $L_{\lambda=0.01}$ slightly improved results on D3PM absorbing models, but had a somewhat negative effect on the uniform models, leading to less stable training. All models were trained on 1000 step diffusion processes, but we found very little improvement between 1000 and 256 steps when evaluating a trained model by skipping steps. For all figures, steps were skipped evenly (except possibly for the last step if the number of evaluation steps did not divide $1000$). We found both the cosine and mutual information schedules worked well for uniform diffusion. We used the cosine variant introduced by \citet{hoogeboom2021argmax}, i.e.
+
+\begin{align}f(t)=\cos\left(\frac{t/T + s}{1 + s} + \frac{\pi}{2}\right)\qquad\beta(t) = 1 - \frac{f(t+1)}{f(t)}\end{align}
+
+For absorbing and NN diffusion, we used an approximate mutual information schedule approximated with unigram probabilities of tokens in the vocabulary in the entire training corpus.
+
+Figure~\ref{fig:text8_scaling} shows scaling of bits/dim on text8 for 3 D3PM models with the number of inference steps. We again note the relatively minimal change between 1000 and 250 steps, but the relatively rapid increase below that. Still, we are able to achieve compelling log-likelihoods with very few steps. Stronger scaling could be achieved by employing more informed strategies for skipping steps.
+
+\subsubsection{Additional tables and figures for text8}
+
+\label{appendix:text8_aux}
+
+\begin{table}[h!]
+  \caption{Additional results for text8, including comparison of auxiliary hybrid loss.}
+  \label{tab:text8_aux}
+  \centering
+  \begin{tabular}{lll}
+    \toprule
+    % \multicolumn{2}{c}{Part}                   \\
+    % \cmidrule(r){1-2}
+    Model & Model steps & NLL (bits/char) ($\downarrow$) \\
+    \midrule
+    D3PM uniform (ours) ($L_{\lambda=0.01}$) & $1000$  & $\leq 1.91$ \\
+    D3PM uniform (ours) ($L_{\mathrm{vb}}$) & $1000$  & $\leq 1.61$ \\
+    D3PM absorbing ($L_{\lambda=0.01}$) (ours) & $1000$ & $\leq 1.44$ \\
+    D3PM absorbing ($L_{\mathrm{vb}}$) (ours) & $1000$ & $\leq 1.47$ \\
+    D3PM absorbing + NN ($L_{\lambda=0.01}$) (ours) & $1000$ & $\leq 1.53$ \\
+    \noalign{\vskip 0.05in}    
+    \hline\hline
+    \noalign{\vskip 0.05in}
+    D3PM uniform \citep{hoogeboom2021argmax} (ours) & $50$ & $\leq 1.7$ \\   
+    D3PM NN ($L_{\mathrm{vb}}$) (ours) & $50$ & $\leq 1.62$ \\
+    D3PM absorbing ($L_{\lambda=0.01}$) (ours) & $50$ & $\leq 1.53$ \\
+
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+
+\begin{table}
+  \caption{Additional results for text8 at a smaller model size (6 layers), comparing schedules. All at 1000 steps.}
+  \label{tab:text8_schedule}
+  \centering
+  \begin{tabular}{lll}
+    \toprule
+    % \multicolumn{2}{c}{Part}                   \\
+    % \cmidrule(r){1-2}
+    Model & Schedule & NLL (bits/char) ($\downarrow$) \\
+    \midrule
+    D3PM uniform & ($1/(T - t + 1)$ schedule) & $\leq 2.37$ \\
+    D3PM uniform & cosine & $\leq 1.73$ \\
+    D3PM uniform & mutual info & $\leq 1.74$ \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\clearpage
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.6\textwidth]{figures/text8_elbo_scaling.png}
+    \caption{Scaling of text8 bits/dim with inference steps. ``mask'' denotes D3PM absorbing.}
+    \label{fig:text8_scaling}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.7]{figures/inference-time.png}
+    \caption{Inference time for a D3PM absorbing model (`mask') on text8 in seconds as a function of iterations, compared to an autoregressive model.}
+    \label{fig:inference_time}
+\end{figure}
+
+\subsubsection{Additional tables and figures for LM1B}
+
+\label{appendix:lm1b_aux}
+
+\begin{table}[h]
+\vspace{-0.3cm}
+  \caption{Sample times for LM1B. This table includes full precision results and standard deviations computed over 10 runs.}
+  \label{tab:lm1b_appendix}
+  \scriptsize
+  \centering
+  \begin{tabular}{r rrr}
+    \toprule
+    Metric: &\multicolumn{3}{c}{Sample time (s) ($\downarrow$)}\\
+    \cmidrule{2-4}
+    inference steps: & $1000$
+    & $128$
+    & $64$\\
+    \midrule
+    D3PM uniform
+    & 1.8161 $\pm$ 0.0002 & 0.2120 $\pm$ 0.0005 & 0.0831 $\pm$ 0.0002 \\
+    D3PM NN
+    & 21.29 $\pm$ 0.03 & 6.6861 $\pm$ 0.0009 & 5.8786 $\pm$ 0.0008\\
+    D3PM absorbing
+    & 1.9049 $\pm$ 0.0005 & 0.1983 $\pm$ 0.0003 & 0.1017 $\pm$ 0.0002 \\
+    Transformer & - & 0.26 $\pm$ 0.03 & -\\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+
+\subsection{Additional uncurated generation examples from various models}
+
+\begin{figure}
+\centering
+\input{example_text/lm1b_absorbing_completion}
+\caption{Using an absorbing-state D3PM model (trained on LM1B with 128 denoising steps) to complete test-set examples at different noise levels. We corrupt the example using $q(\bx_t | \bx_0)$, then iteratively sample from $p_\theta(\bx_{t-1} | \bx_t)$ to reconstruct. Mask token shown as ``\smallmasktok{}''.}
+\end{figure}
+
+\begin{figure}
+\centering
+\input{example_text/lm1b_absorbing_generation}
+\caption{Generations over multiple denoising steps from absorbing-state D3PM model trained on LM1B with $T=128$. Mask token shown as ``\smallmasktok{}''.}
+\end{figure}
+
+\begin{figure}
+\centering
+\input{example_text/lm1b_uniform_generation}
+\caption{Generations over multiple denoising steps from uniform D3PM model trained on LM1B with $T=1000$.}
+\end{figure}
+
+\begin{figure}
+\centering
+\input{example_text/text8_uniform_generation}
+\caption{Generations over multiple denoising steps from uniform D3PM model trained on text8 with $T=1000$. `\charspacetok{}' is the space character.}
+\end{figure}
+
+\begin{figure}
+\centering
+\input{example_text/text8_absorbing_generation}
+\caption{Generations over multiple denoising steps from absorbing-state D3PM model trained on text8 with $T=1000$. `\charspacetok{}' is the space character and `\charmasktok{}' the absorbing (mask) state.}
+\end{figure}
+
+\begin{figure}
+\centering
+\input{example_text/text8_nearest_generation}
+\caption{Generations over multiple denoising steps from character-level nearest-neighbor D3PM model trained on text8 with $T=1000$. `\charspacetok{}' is the space character.}
+\end{figure}

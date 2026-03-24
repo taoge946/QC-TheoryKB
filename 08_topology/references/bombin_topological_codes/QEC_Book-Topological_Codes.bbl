@@ -1,0 +1,139 @@
+\begin{thebibliography}{10}
+
+\bibitem{Bravyi:2009:043029}
+S.~Bravyi and B.~Terhal, ``{A no-go theorem for a two-dimensional
+  self-correcting quantum memory based on stabilizer codes},'' {\em New J.
+  Phys.}, vol.~11, p.~043029, 2009.
+
+\bibitem{Hatcher:2002:CUP}
+A.~Hatcher, {\em {Algebraic topology}}.
+\newblock Cambridge University Press, 2002.
+
+\bibitem{Dennis:2002:4452}
+E.~Dennis, A.~Kitaev, A.~Landahl, and J.~Preskill, ``{Topological quantum
+  memory},'' {\em J. Math. Phys.}, vol.~43, p.~4452, 2002.
+
+\bibitem{Nishimori:1981:1169}
+H.~Nishimori, ``{Internal energy, specific heat and correlation function of the
+  bond-random Ising model},'' {\em Prog. Theor. Phys.}, vol.~66, no.~4,
+  pp.~1169--1181, 1981.
+
+\bibitem{bombin:2010:032301}
+H.~Bombin, ``{Topological Subsystem Codes},'' {\em Phys. Rev. A}, vol.~81,
+  p.~032301, 2010.
+
+\bibitem{kitaev:1997:181}
+A.~Kitaev.
+\newblock {Quantum error correction with imperfect gates}, in \emph{Quantum
+  Communication, Computing and Measurement},(eds.) Hirota, Holevo and Caves,
+  181--188 (Plenum Press, New York, 1997).
+
+\bibitem{kitaev:2003:2}
+A.~Kitaev, ``{Fault-tolerant quantum computation by anyons},'' {\em Ann.
+  Phys.}, vol.~303, no.~1, pp.~2--30, 2003.
+
+\bibitem{bravyi:1998:9811052}
+S.~Bravyi and A.~Kitaev, ``{Quantum codes on a lattice with boundary.}.''
+\newblock eprint arXiv.org:quant-ph/9811052.
+
+\bibitem{freedman:2001:325}
+M.~Freedman and D.~Meyer, ``{Projective plane and planar quantum codes},'' {\em
+  Found. Comp. Math.}, vol.~1, no.~3, pp.~325--332, 2001.
+
+\bibitem{wang:2003:31}
+C.~Wang, J.~Harrington, and J.~Preskill, ``{Confinement-Higgs transition in a
+  disordered gauge theory and the accuracy threshold for quantum memory},''
+  {\em Ann. Phys.}, vol.~303, no.~1, pp.~31--58, 2003.
+
+\bibitem{ohno:2004:462}
+T.~Ohno, G.~Arakawa, I.~Ichinose, and T.~Matsui, ``{Phase structure of the
+  random-plaquette Z2 gauge model: accuracy threshold for a toric quantum
+  memory},'' {\em Nuc. Phys. B}, vol.~697, no.~3, pp.~462--480, 2004.
+
+\bibitem{takeda:2004:377}
+K.~Takeda and H.~Nishimori, ``{Self-dual random-plaquette gauge model and the
+  quantum toric code},'' {\em Nuc. Phys. B}, vol.~686, no.~3, pp.~377--396,
+  2004.
+
+\bibitem{raussendorf:2007:199}
+R.~Raussendorf, J.~Harrington, and K.~Goyal, ``{Topological fault-tolerance in
+  cluster state quantum computation},'' {\em New J. Phys.}, vol.~9, p.~199,
+  2007.
+
+\bibitem{bombin:2009:095302}
+H.~Bombin and M.~Martin-Delgado, ``{Quantum measurements and gates by code
+  deformation},'' {\em J. Phys. A: Math. and Theor.}, vol.~42, p.~095302, 2009.
+
+\bibitem{raussendorf:2006:2242}
+R.~Raussendorf, H.~J., and G.~K., ``{A fault-tolerant one-way quantum
+  computer},'' {\em Ann. Phys.}, vol.~321, no.~9, pp.~2242--2270, 2006.
+
+\bibitem{stace:2009:200501}
+T.~Stace, S.~Barrett, and A.~Doherty, ``{Thresholds for topological codes in
+  the presence of loss},'' {\em Phys. Rev. Lett.}, vol.~102, no.~20, p.~200501,
+  2009.
+
+\bibitem{duclos:2010:50504}
+G.~Duclos-Cianci and D.~Poulin, ``{Fast decoders for topological quantum
+  codes},'' {\em Phys. Rev. Lett.}, vol.~104, no.~5, p.~50504, 2010.
+
+\bibitem{bombin:2006:180501}
+H.~Bombin and M.~Martin-Delgado, ``{Topological quantum distillation},'' {\em
+  Phys. Rev. Lett.}, vol.~97, no.~18, p.~180501, 2006.
+
+\bibitem{bombin:2007:160502}
+H.~Bombin and M.~Martin-Delgado, ``{Topological computation without
+  braiding},'' {\em Phys. Rev. Lett.}, vol.~98, no.~16, p.~160502, 2007.
+
+\bibitem{katzgraber:2009:090501}
+H.~Katzgraber, H.~Bombin, and M.~Martin-Delgado, ``{Error Threshold for Color
+  Codes and Random 3-Body Ising Models},'' {\em Phys. Rev. Lett.}, vol.~103,
+  p.~090501, 2009.
+
+\bibitem{katzgraber:2009:012319}
+H.~Katzgraber, H.~Bombin, R.~Andrist, and M.~Martin-Delgado, ``{Topological
+  color codes on Union Jack lattices: A stable implementation of the whole
+  Clifford group},'' {\em Phys. Rev. A (2010)}, vol.~81, p.~012319, 2010.
+
+\bibitem{bravyi:2010:083039}
+S.~Bravyi, B.~Terhal, and B.~Leemhuis, ``{Majorana fermion codes},'' {\em New
+  J. Phys.}, vol.~12, p.~083039, 2010.
+
+\bibitem{bombin:2010:30403}
+H.~Bombin, ``{Topological order with a twist: Ising anyons from an abelian
+  model},'' {\em Phys. Rev. Lett.}, vol.~105, no.~3, p.~30403, 2010.
+
+\bibitem{bravyi:2010:10010344}
+S.~Bravyi, M.~Hastings, and S.~Michalakis, ``{Topological quantum order:
+  stability under local perturbations}.''
+\newblock eprint arXiv:quant-ph/1001.0344.
+
+\bibitem{alicki:2009:065303}
+R.~Alicki, M.~Fannes, and M.~Horodecki, ``{On thermalization in Kitaevs 2D
+  model},'' {\em J. Phys. A: Math. and Theor.}, vol.~42, p.~065303, 2009.
+
+\bibitem{alicki:2008:08110033}
+R.~Alicki, M.~Horodecki, P.~Horodecki, and R.~Horodecki, ``{On thermal
+  stability of topological qubit in Kitaev's 4D model}.''
+\newblock eprint arXiv:quant-ph/0811.0033.
+
+\bibitem{bombin:2009:09075228}
+H.~Bombin, R.~Chhajlany, M.~Horodecki, and M.~Martin-Delgado,
+  ``{Self-correcting Quantum Computer}.''
+\newblock eprint arXiv:quant-ph/0907.5228.
+
+\bibitem{freedman:2003:31}
+M.~Freedman, A.~Kitaev, M.~Larsen, and Z.~Wang, ``{Topological quantum
+  computation},'' {\em B. Am. Math. Soc.}, vol.~40, no.~1, pp.~31--38, 2003.
+
+\bibitem{Preskill:2004:caltech}
+J.~Preskill.
+\newblock Lecture notes on Topological Quantum Computation,
+  http://www.theory.caltech.edu/~preskill/ph219/topological.pdf.
+
+\bibitem{bombin:2007:75103}
+H.~Bombin and M.~Martin-Delgado, ``{Exact topological quantum order in D= 3 and
+  beyond: Branyons and brane-net condensates},'' {\em Phys. Rev. B}, vol.~75,
+  no.~7, p.~75103, 2007.
+
+\end{thebibliography}

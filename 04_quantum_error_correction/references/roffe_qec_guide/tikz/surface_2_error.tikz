@@ -1,0 +1,35 @@
+\begin{tikzpicture}
+\draw[red,thick] (0.000000,0.000000) -- (3.000000,0.000000);
+\draw[blue,thick] (0.000000,0.000000) -- (0.000000,-3.000000);
+\draw[blue,thick] (0.000000,-1.500000) -- (3.000000,-1.500000);
+\draw[red,thick] (1.500000,0.000000) -- (1.500000,-3.000000);
+\draw[red,thick] (0.000000,-3.000000) -- (3.000000,-3.000000);
+\draw[blue,thick] (3.000000,0.000000) -- (3.000000,-3.000000);
+
+%Data qubit 1
+\filldraw[fill=white, draw=black] (0.000000,0.000000) circle (0.300000) node [label=above right:{$\scriptstyle D_{1} $}]{Z};
+
+%Parity qubit 1
+\filldraw[fill=red, draw=black] (1.305000,-0.195000) rectangle (1.695000,0.195000) node [label={[label distance=-0.3cm]30:{$\scriptstyle A_{1}$}}]{};
+
+%Data qubit 2
+\filldraw[fill=white, draw=black] (3.000000,0.000000) circle (0.300000) node [label=above right:{$\scriptstyle D_{2} $}]{};
+
+%Parity qubit 2
+\filldraw[fill=white, draw=black] (-0.195000,-1.695000) rectangle (0.195000,-1.305000) node [label={[label distance=-0.3cm]30:{$\scriptstyle A_{2}$}}]{};
+
+%Data qubit 3
+\filldraw[fill=white, draw=black] (1.500000,-1.500000) circle (0.300000) node [label=above right:{$\scriptstyle D_{3} $}]{};
+
+%Parity qubit 3
+\filldraw[fill=red, draw=black] (2.805000,-1.695000) rectangle (3.195000,-1.305000) node [label={[label distance=-0.3cm]30:{$\scriptstyle A_{3}$}}]{};
+
+%Data qubit 4
+\filldraw[fill=white, draw=black] (0.000000,-3.000000) circle (0.300000) node [label=above right:{$\scriptstyle D_{4} $}]{};
+
+%Parity qubit 4
+\filldraw[fill=white, draw=black] (1.305000,-3.195000) rectangle (1.695000,-2.805000) node [label={[label distance=-0.3cm]30:{$\scriptstyle A_{4}$}}]{};
+
+%Data qubit 5
+\filldraw[fill=white, draw=black] (3.000000,-3.000000) circle (0.300000) node [label=above right:{$\scriptstyle D_{5} $}]{X};
+\end{tikzpicture}

@@ -1,0 +1,19 @@
+\section{Connection to existing probabilistic models for text}
+\label{sec:bert_connections}
+In this section we expand on interesting connections between the D3PM framework and several existing probabilistic and language modeling approaches.
+
+\textbf{BERT is a one-step diffusion model:} One possible D3PM transition matrix is a combination of a uniform transition matrix and an absorbing state at the [MASK] token
+(i.e. $\bs{Q} = \alpha \mathbbm{1} e_m^T + \beta \mathbbm{1}\mathbbm{1}^T/K + (1 - \alpha - \beta) I$, where $e_m$ is a one-hot vector on the [MASK] token).
+For a one-step diffusion process in which $q(\bx_1 | \bx_0)$ replaces 10\% of tokens with [MASK] and 5\% uniformly at random, this leads precisely to the BERT denoising objective, i.e. $L_{vb} - L_T = - \mathbb E_{q(\bx_1|\bx_0)} [\log p_{\theta}(\bx_0|\bx_1)] = L_{BERT}$,
+since $L_T$ is a constant independent of $\theta$ (assuming a fixed prior).
+
+\textbf{Autoregressive models are (discrete) diffusion models:} Consider a diffusion process that deterministically masks tokens one-by-one in a sequence of length $N=T$:
+$q(\left[\bx_t\right]_i \mid \bx_0) = [\bx_0]_i \text{ if } i < N - t \text{ else [MASK] }$. This is a deterministic forward process, so $q(\bx_{t-1} | \bx_t, \bx_0)$ is a delta distribution on the $\bx_t$ sequence with one fewer mask: $q(\left[\bx_{t-1}\right]_i | \bx_t, \bx_0) = \delta_{[\bx_{t}]_i} \text{ if } i\neq T - t \text{ else } \delta_{[\bx_0]_i}$. While this process is not applied independently to each token, it can
+be recast as an independently-applied diffusion process on the product space
+$[0...N]\times\mathcal{V}$, where each token is tagged with its position in the sequence, $\mathcal{V}$ is the vocabulary, and $\bs{Q}$ is an $N\times|\mathcal V|\times N\times |\mathcal V|$ sparse matrix.
+
+Because all tokens except the one at position $i = T - t$ have deterministic posteriors, the KL divergence $D_{KL}(q([\bx_{t-1}]_j | \bx_t, \bx_0)\mid\mid p_\theta([\bx_{t-1}]_j | \bx_t))$ is zero for all other positions. The only token for which this is not true is the token at position $i$, for which $D_{KL}(q([\bx_{t-1}]_i| \bx_t, \bx_0)\mid\mid p_\theta([\bx_{t-1}]_i | \bx_t)) = -\log p_\theta([\bx_0]_i | \bx_t)$, the standard cross entropy loss for an autoregressive model.
+
+\textbf{(Generative) Masked Language-Models (MLMs) are diffusion models:} Generative Masked Language Models (\citep{mask_predict}, \citep{bert_speak}) are generative models that generate text from a sequence of [MASK] tokens. They are usually trained by sampling a sequence $\bx_0$, masking $k$ tokens according to some schedule, and learning to predict the masked tokens given context. It turns out that a D3PM absorbing ([MASK]) model trained on the usual ELBO objective with
+% the $\beta(t) = 1 / (T - t + 1)$ schedule and
+the $\bx_0$-parameterization from \ref{sec:x0_parameterization} reduces to a reweighted version of this MLM objective (see Appendix \ref{appendix:cmlm} for a detailed derivation).

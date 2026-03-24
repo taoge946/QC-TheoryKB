@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Search index (generated, too large)
+scripts/.rag_index/
+scripts/.tfidf_index.pkl
+
+# Extracted text (derived from PDFs, large)
+_extracted_text/*.txt
+
+# All PDFs (references are kept as tex sources, not PDFs)
+**/*.pdf
+
+# Unlocked PDFs (derived)
+*_open.pdf
+*_unlocked.pdf
+
+# Claude settings
+.claude/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+*.swp
+*~

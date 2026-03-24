@@ -1,0 +1,35 @@
+HEADER \DeclareRobustCommand\openone{\leavevmode\hbox{\small1\normalsize\kern-.33em1}}
+
+PREAMBLE \providecommand{\ket}[1]{\left|#1\right\rangle}
+
+a b DEFINE CPG  a:shape=0 op="\draw[fill=black, rounded corners=2] (-3, -3) rectangle (3, 3) {};"  b:shape=0 op="\draw[fill=black, rounded corners=2] (-3, -3) rectangle (3, 3) {};"
+a b DEFINE CNOT a +b
+
+WIREPAD 3
+DEPTHPAD 3
+
+SCALE 1.5
+
+d1 W \ket{D_1}
+d2 W \ket{D_2}
+A1 W \ket{0}_{A1}
+A2 W \ket{0}_{A2}
+
+A1 H
+A2 H
+
+d1 G $X$ A1
+d2 G $X$ A1
+
+d1 G $Z$ A2
+d2 G $Z$ A2
+TOUCH
+A1 H
+A2 H
+
+A1 A2 M
+
+
+
+
+

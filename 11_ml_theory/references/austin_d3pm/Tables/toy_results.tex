@@ -1,0 +1,17 @@
+\begin{table}[h!]
+  \caption{Quantitative results on toy sequence dataset (sequences .}
+  \label{tab:toy}
+  \small
+  \centering
+  \begin{tabular}{lll}
+    \toprule
+    % \multicolumn{2}{c}{Part}                   \\
+    % \cmidrule(r){1-2}
+    Model & Model steps & NLL (nats/sequence) ($\downarrow$)\\
+    \midrule
+    Uniform diffusion & $64$  & $\leq 12.26$  \\
+    Mask diffusion & $64$ & $\leq 9.355$ \\
+    Gaussian ordinal diffusion & $64$ & $\leq 6.449$ \\
+    \bottomrule
+  \end{tabular}
+\end{table}

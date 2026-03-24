@@ -1,0 +1,110 @@
+\chapter{Decoding stabilizer codes}
+\label{Ap:Decode}
+Consider an $n$-qubit stabilizer code, whose stabilizer group is given by $\mathcal{G}=\{ G_i \} $.
+The group consisting of the logical operators is denoted by $\mathcal{L}=\{ L_i \}$.
+Suppose a Pauli product $E \in \{ I,X,Y,Z\}^{\otimes n}$ acts as an error on the stabilizer code state.
+The error syndrome, a set of eigenvalues of the stabilizer generators, of an error $E$ is denoted by $S=\mathcal{S}(E)$. 	
+For each error syndrome $S$, we define a pure error operator $R(S) \in \{ I,X,Y,Z\}^{\otimes n}$ such that $S= \mathcal{S}[R(S)]$.
+The pure error operator $R(S)$ is chosen arbitrarily as long as $S= \mathcal{S}[R(S)]$.
+The error $E$ is decomposed uniquely into logical, stabilizer, and pure error operators:
+\begin{eqnarray}
+E=L_i G_j R[\mathcal{S}(E)].
+\end{eqnarray}
+We define a decoding map $\mathcal{D}$, which computes the logical operator $L_i$ from the error $E$, i.e., $L_i=\mathcal{D}(E)$.
+
+The decoding problem consists of finding an optimal logical operator $L_i$ that maximizes the posterior probability $P(L|S)$:
+\begin{eqnarray}
+{\rm arg} \max _{L_i \in \mathcal{L}} P(L_i|S).
+\end{eqnarray}
+The posterior probability is given by
+\begin{eqnarray}
+P(L_i| S) &=& \frac{1}{\mathcal{N}}\sum _{E} P(E) \delta [L_i=\mathcal{D}(E)] \delta [S=\mathcal{S}(E)]
+\\
+&=&  \frac{1}{\mathcal{N}} \sum _{G_j \in \mathcal{G}} P[L_i G_j R(S)].
+%\label{eq:posterior_stab}
+\end{eqnarray}
+where $1/\mathcal{N}$ is a normalization factor, $\delta (\cdots)$ is an indicator function, and $P(E)$ is the probability of the error $E$.
+In general, computing $P(L|S)$ is hard because the summation over all stabilizer operators, $\sum _{G_j}$, takes an exponential time.
+However, if the code has a good structure, such as a concatenated code, we can manage it efficiently.
+
+A concatenated code is defined recursively using the logical qubits at the lower level as physical qubits at the higher level.
+Using the logical Pauli operators $L_{i} ^{(k)} \in \mathcal{L}^{(k)}$ at the $k$th level ($k=1,2,..$), we define a stabilizer group $\mathcal{G}^{(k+1)}=\{G_{j}^{(k+1)}\}$ and logical operators $\mathcal{L}^{(k+1)}=\{ L_{i}^{(k+1)}\}$ at the $(k+1)$th level.
+The whole stabilizer group of the concatenated code is given by the union of all stabilizer groups $ \cup _{k=1}^{l} \mathcal{G}^{(k)}$, where we consider the $l$th concatenated code.
+A logical operator of the $l$th concatenated code is given by a logical operator at the highest level, $L_{i}^{(l)} \in \mathcal{L}^{(l)}$.
+At each level, we define a level-$k$ error $E^{(k)}$.
+In the case of $k=0$, the level-$0$ error $E^{(0)}\in \{ I, X, Y, Z\}^{\otimes n}$ is a physical error.
+At a higher level, the level-$k$ error $E^{(k)}$ is a level-$k$ logical operator, which will be defined later.
+At each level, we define an error syndrome $S^{(k)} = \mathcal{S}^{(k)} (E^{(k-1)})$, i.e., a set of eigenvalues of the level-$k$ stabilizer operators $\{G_j^{(k)}\}$ under the level-$(k-1)$ error $E^{(k-1)}$.
+The level-$k$ pure error operator $R^{(k)}(S^{(k)})$ is defined arbitrarily such that $\mathcal{S}^{(k)} [R^{(k)}(S^{(k)})] = S^{(k)}$.
+
+The level-$k$ error $E^{(k)}$ is now defined recursively as follows.
+Any physical error $E^{(0)}$ can be decomposed into the stabilizer, logical, and pure error operators of level-1:
+\begin{eqnarray}
+E^{(0)} = G_{j}^{(1)} L_{i}^{(1)} R^{(1)}(S^{(1)}).
+\end{eqnarray}
+The obtained level-1 logical operator $L_{i}^{(1)} = E^{(0)}G_{j}^{(1)}R^{(1)}(S^{(1)})$ is further regarded as the level-1 error $E^{(1)} \equiv L_i^{(1)}$.
+Recursively, the level-$k$ error $E^{(k)}$ is decomposed into the stabilizer, logical, and pure error operators of level-$(k+1)$:
+\begin{eqnarray}
+E^{(k)}  = G_{j}^{(k+1)} L_{i} ^{(k+1)} R^{(k+1)}(S^{(k+1)}).
+\label{eq:level-k-error}
+\end{eqnarray}
+Then, we define the level-$(k+1)$ error $E^{(k+1)} = L_i^{(k+1)}=E^{(k)}G_{j}^{(k+1)} R^{(k+1)}(S^{(k+1)})$.
+Let $\mathcal{D}^{(k)}$ be such a level-$k$ decoding map $L_{i}^{(k)} = \mathcal{D}^{(k)} (E^{(k-1)})$, which computes the level-$k$ logical operator from the level-$(k-1)$ error $E^{(k-1)}$.
+At the highest level, we have a decomposition
+\begin{eqnarray}
+E^{(0)}=L_{i}^{(l)} \prod _{k=1}^{l} G_{j_k}^{(k)} R^{(k)}[\mathcal{S}^{(k)}(E^{(k-1)})],
+\label{eq:error_decomposition}
+\end{eqnarray} 
+where $E^{(k)}$ is defined by Eq.\ (\ref{eq:level-k-error}).
+
+The decoding is performed by maximizing the posterior probability of the logical operator $L_i^{(l)}$, conditioned on the union of the error syndrome 
+$\bar S^{(l)} = \cup_{k=1}^{l} S^{(k)}$ up to the $l$th concatenation level,
+\begin{eqnarray}
+P(L_i^{(l)}|\bar S^{(l)}) =\frac{1}{\mathcal{N}} \sum _{G_{j_l}^{(l)},G_{j_{l-1}}^{(l-1)},...,G_{j_{1}}^{(1)}} P(E^{(0)}) ,
+\label{eq:posterior_stab} 
+\end{eqnarray}
+where $E^{(0)}$ is given by Eq.\ (\ref{eq:error_decomposition}).
+Using the hierarchal structure, Eq.\ (\ref{eq:posterior_stab}), can be rewritten as
+\begin{eqnarray}
+&&P(L_i^{(l)}|\bar S^{(l)})
+\\
+&=&\sum _{L_{i_{l-1}}^{(l-1)} \in \mathcal{L}^{(l-1)}}  P(L_i^{(l)}|\bar S^{(l)},L_{i_{l-1}}^{(l-1)}) P(L_{i_{l-1}}^{(l-1)}|\bar S^{(l)})
+\nonumber \\
+&=&
+\sum _{L_{i_{l-1}}^{(l-1)}\in \mathcal{L}^{(l-1)}} \delta \left[  L_{i_{l}}^{(l)} = \mathcal{D}^{(l)}(L_{i_{l-1}}^{(l-1)}) \right] 
+\frac{P(L_{i_{l-1}}^{(l-1)},\bar S^{(l)})}{P(\bar S^{(l)})}
+\nonumber \\
+&=&
+\sum _{L_{i_{l-1}}^{(l-1)}\in \mathcal{L}^{(l-1)}}  \delta [  L_{i_{l}}^{(l)} = \mathcal{D}^{(l)}(L_{i_{l-1}}^{(l-1)}) ] 
+\delta [  S^{(l)} = \mathcal{S}^{(l)}(L_{i_{l-1}}^{(l-1)}) ] 
+\frac{P(L_{i_{l-1}}^{(l-1)},\bar S^{(l-1)})}{P(\bar S^{(l)})}
+\nonumber \\
+&=&
+\sum _{L_{i_{l-1}}^{(l-1)}\in \mathcal{L}^{(l-1)}}  \frac{\delta [  L_{i_{l}}^{(l)} = \mathcal{D}^{(l)}(L_{i_{l-1}}^{(l-1)}) ] \delta [S^{(l)}= \mathcal{S}^{(l)}(L_{i_{l-1}}^{(l-1)}) ]} {P(\bar S^{(l)}|\bar S^{(l-1)})} P(L_{i_{l-1}}^{(l-1)}| \bar S^{(l-1)})
+ \nonumber \\
+\end{eqnarray}
+If the physical errors occur independently for each qubit, we can factorize the posterior probability of the $(l-1)$th level into posterior probabilities for level-$(l-1)$ code blocks
+\begin{eqnarray}
+ P(L_{i_{l-1}}^{(l-1)}| \bar S^{(l-1)}) = \prod _{j} P(L_{i_{l-1}}^{(l-1,j)}| \bar S^{(l-1,j)}),
+\end{eqnarray} 
+where $L_{i_{l-1}}^{(l-1,j)}$ is a level-$(l-1)$ logical operator acting on the $j$th code block, and $\bar S^{(l-1,j)}$ is a level-$(l-1)$ syndrome with respect to the stabilizer operator on the $j$th code block.
+By repeating this procedure, we can rewrite the posterior probability Eq.\ (\ref{eq:posterior_stab}) as a summation over logical operators defined at each concatenation level $L_{i_{k}}^{(k,j)} \in \mathcal{L}^{(k,j)}$, where we have defined the group of the level-$k$ logical operators on the $j$th code block, $\mathcal{L}^{(k,j)}$.
+
+The summation can be reformulated as a marginalization problem on a factor graph, which is a bipartite graph consisting of two types of nodes, circles, and boxes~\cite{Poulin06}.
+The variable $x_c$ and a function $f_b(\partial b)$ are assigned on each circle $c$ and box $b$.
+Here, $\partial b$ is a set of circles neighboring $b$.
+Specifically, in the present case, the factor graph is a tree graph.
+The marginal distribution on a tree factor graph can be computed efficiently by using the brief-propagation method as follows.
+From circles to boxes, we pass a message,
+\begin{eqnarray} 
+\mu _{c\rightarrow b}(x_c)= \prod _{b' \in  \delta c \backslash b} \nu _{b'\rightarrow c}(x_c).
+\end{eqnarray}
+Then from boxes to circles, we pass another message
+\begin{eqnarray} 
+\nu _{b\rightarrow c}(x_c)= \sum _{\delta b \backslash x_c}\prod _{b} f_{b}(\delta b) \prod _{c'\in \delta b \backslash c} \mu _{c' \rightarrow b}(x_c').
+\end{eqnarray}
+By repeating these procedures alternatively, we can obtain $P(L_i^{(l)}|\bar S^{(l)})$ as a message $\nu_{b\rightarrow c}(x_c)$, where the $\mu _{c\rightarrow b}(x_c)$ and 
+$\nu _{b\rightarrow c}(x_c)$ are updated from the bottom leaf nodes to the top root node, while using marginal distributions.
+By replacing $\mu _{c\rightarrow b}(x_c)$ and $f_b(\delta b)$ with $P(L_{i_{k-1}}^{(k-1,j)}| \bar S^{(k-1,j)})$ and 
+$\delta [  L_{i_{k}}^{(k)} = \mathcal{D}^{(k)}(L_{i_{k-1}}^{(k-1)}) ] \delta [S^{(k)}= \mathcal{S}^{(k)}(L_{i_{k-1}}^{(k-1)}) ]$, we obtain the posterior probability $P(L_i^{(l)}|\bar S^{(l)})$ as $\nu _{b\rightarrow c}(x_c)$ at the top root node.
+In this way, decoding by maximizing the posterior probability can be executed efficiently for the concatenated stabilizer codes~\cite{Poulin06}.

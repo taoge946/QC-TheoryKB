@@ -1,0 +1,182 @@
+If we took a large distance classical code to protect agains say $X$-errors \Cref{eqn:CSS_commutativity_constraint} would immediately imply that the $Z$-checks must have large weight as well.
+
+The issue of incompatibility between the commutativity constraint and for the code to be LDPC is overcome by several \emph{product constructions} that we will discuss in this section.
+
+%Hypergraph product takes two classical codes, more recent constructions (fiber/balanced/lifted) use some additional data or symmetry to achieve higher distances.
+All product constructions that we will discuss below have in common that they take two classical codes and, in the case of more recent constructions, additional data as input to generate a quantum code.
+
+
+Classical coding theory is a long established field and it would be desirable if it was possible to transfer results into quantum coding theory.
+A connection between classical and coding theory is made by the stabilizer formalism and in particular for Calderbank--Shor--Steane (CSS) codes.
+
+The commutativity constraint is quite severe in that it excludes many constructions of classical codes to be generalized to quantum codes. %TODO cite McKay paper
+For example, it is well established that random classical LDPC codes perform very well in practice %TODO reference %TODO Pavel said cyclic codes are used often, find reference
+However, these constructions do not directly transfer to quantum codes.
+
+%Concretely, the $Z$ and $X$ checks are defined by via the rows of the matrices
+%\begin{align}\label{eqn:def_HP}
+%\begin{split}
+%H_Z &= \left(I_{n_1} \otimes H_2 \mid H_1^{\tr} \otimes I_{r_2} \right) \\
+%H_X &= \left( H_1 \otimes I_{n_2} \mid I_{r_1} \otimes H_2^{\tr} \right) 
+%\end{split}
+%\end{align}
+%where $H_i$ denote the parity check matrices of the classical codes. The  commutativity constraints on $Z$ and $X$ checks follow readily from the construction. The hypergraph product two classical LDPC codes yields an LDPC quantum code.
+
+%Tillich and Z\'emor also show that the distance is given by $d = \min \lbrace d_1, d_2 \rbrace$.
+
+%Hence the hypergraph product code has parameters $[[n_1 n_2 + r_1 r_2,\, k_1 k_2,\, \min \lbrace d_1, d_2 \rbrace]]$.
+
+
+%The hypergraph product of two classical codes $[[n_1,k_1,d_1]]$ intertwines the checks 
+
+
+% quantum expander codes
+% cite ardoux & coveur paper, recent paper by delfosse-hastings,  zemor-tillich, bravyi-hastings, stuff that leonid did
+
+
+%Consider two classical codes with parity check matrices $H_1 \in \mathbb{F}_2^{r_1\times n_1}$ and $H_2 \in \mathbb{F}_2^{r_2\times n_2}$.
+%We define 
+%\begin{align}\label{eqn:def_HP}
+%\begin{split}
+%H_Z &= \left(I_{n_1} \otimes H_2 \mid H_1^{\tr} \otimes I_{r_2} \right) \\
+%H_X &= \left( H_1 \otimes I_{n_2} \mid I_{r_1} \otimes H_2^{\tr} \right) 
+%\end{split}
+%\end{align}
+%and observe that they fulfill the commutativity constraint.
+
+%The quantum code defined by \Cref{eqn:def_HP} has $n = n_1 n_2 + r_1 r_2$ physical qubits.
+%Assuming that $H_1$ and $H_2$ are non-trivial codes with linearly independent rows, the number of encoded qubits is given by the number of degrees of freedom~$n$ with the number of constraints $n_1 r_2 + r_1 n_2$, giving $k = k_1 k_2$.
+%Tillich and Z\'emor also show that the distance is given by $d = \min \lbrace d_1, d_2 \rbrace$.
+%Hence, we obtain a quantum code with parameters $[[n_1 n_2 + r_1 r_2,\, k_1 k_2,\, \min \lbrace d_1, d_2 \rbrace]]$.
+%We note that if the parity check matrices~$H_1$ and~$H_2$ belong to a family of LDPC codes then the derived hypergraph product code will also be LDPC.
+%As there are known constructions of classical LDPC codes with constant encoding rate and linear distance, we immediately obtain families of LDPC quantum codes with parameters $[[n,\Theta(n), \Theta(\sqrt{n})]]$.
+%TODO mention that the check-weight of such codes is high
+
+%TODO view it as tensor product of chains, leads to generalization
+%The hypergraph product construction can be understood more generally in the framework of homological algebra.
+%We will only discuss the rough idea here.
+%Details can be found in the Appendix. %TODO add reference
+%\subsection{Homological Product}
+%The hypergraph product construction was extended and put in a more general framework of homological products by Hastings, TODO cite.
+%Homological products allow to construct quantum codes from other quantum codes or more generally chain complexes. Their stabilizer checks are defined similarly to equation TODO cite.
+
+%They are based on the mathematical idea of tensor products of chain complexes, which are a common object in topology and geometry.
+
+From the homological perspective, the hypergraph product construction is a simply a special case of the tensor product of chain complexes, where classical codes are interpreted as chain complexes of length two via there parity check matrix.
+This perspective is taken by Hasting and Bravyi in \cite{bravyi2014homological} where  families of so called \emph{homological product codes}. The codes have constant encoding rate, linear distance and stabilizer weight in $O(\sqrt{n})$ and are hence not LDPC.
+
+\begin{figure}[h]
+		\centering
+		\begin{subfigure}[b]{0.3\textwidth}
+			\centering
+			\begin{tikzpicture}[scale=0.6]
+				\foreach \i in {1,...,7}{
+					\node[draw,circle,fill=white] (v\i) at (\i,1) {};
+				}
+				\foreach \i in {1,...,3}{
+					\node[draw,regular polygon, regular polygon sides=4,fill=white] (c\i) at (\i+0.5,-1) {};
+				}
+				\draw (c1.north) -- (v1.south);
+				\draw (c1.north) -- (v2.south);
+				\draw (c2.north) -- (v2.south);
+				\draw (c2.north) -- (v3.south);
+				\draw (c3.north) -- (v3.south);
+%				\draw (c3.north) -- (v4.south);
+%				\draw (c4.north) -- (v4.south);
+%				\draw (c4.north) -- (v5.south);
+			\end{tikzpicture}
+			\caption{Classical code}
+			\label{fig:tanner_graph_classical}
+		\end{subfigure}
+		\hfil
+		\begin{subfigure}[b]{0.3\textwidth}
+			\centering
+			\begin{tikzpicture}[scale=0.6]
+				\foreach \i in {1,...,4}{
+					\node[draw,regular polygon, regular polygon sides=4,fill=white] (cz\i) at (\i+0.5,3) {};
+				}
+				\foreach \i in {1,...,5}{
+					\node[draw,circle,fill=white] (v\i) at (\i,1) {};
+				}
+				\foreach \i in {1,...,4}{
+					\node[draw,regular polygon, regular polygon sides=4,fill=white] (cx\i) at (\i+0.5,-1) {};
+				}
+%				\draw (c1.north) -- (v1.south);
+%				\draw (c1.north) -- (v2.south);
+%				\draw (c2.north) -- (v2.south);
+%				\draw (c2.north) -- (v3.south);
+%				\draw (c3.north) -- (v3.south);
+%				\draw (c3.north) -- (v4.south);
+%				\draw (c4.north) -- (v4.south);
+%				\draw (c4.north) -- (v5.south);
+			\end{tikzpicture}
+			\caption{Quantum CSS code}
+			\label{fig:tanner_graph_quantum}
+		\end{subfigure}
+		\caption{Tanner graphs of classical and quantum CSS codes.}\label{fig:tanner_graph}
+	\end{figure}
+	
+	
+	
+	
+	
+	
+	
+\subsection{Homological quantum codes}
+In order to define a CSS quantum code all we need are two parity-check matrices~$H_X$ and~$H_Z$ fulfilling the commutativity constraint in \Cref{eqn:CSS_commutativity_constraint}.
+Equivalently, we need a Tanner graph as shown in \Cref{fig:tanner_graph_quantum} where the vertices are partitioned into three sets: $Z$-checks, qubits and $X$-checks where edges only connect checks with qubits.
+Let~$c_Z$ be a vertex associated to a $Z$-check and~$c_X$ be a vertex associated to a $X$-check.
+Let~$N_X$ and~$N_Z$ be the neighbors of~$c_X$ and~$c_Z$ respectively.
+The commutativity constraint is equivalent to the statement that $| N_X \cap N_Z |$ is even, regardless of which~$c_X$ and~$c_Z$ we chose.
+
+It turns out that suitable tessellations of manifolds give rise to Tanner graphs with the property explained above.
+In order to do so we define the \emph{poset diagram} as follows:
+To avoid confusion with the vertices of the tessellation, we call the vertices of the diagram \emph{nodes}.
+Each node in the diagram corresponds to a cell of the cellulation. 
+Two nodes are connected if and only if (a)~the cell corresponding to one node is contained in the cell corresponding to the other node and (b)~the difference of the dimensionalities of the cells is 1.
+
+Let us take the toric code as an example.
+It is defined on a square tessellation of a torus.
+The tessellation consists of three types of objects: faces (2D), edges (1D) and vertices (0D).
+Hence the poset diagram has three levels and each node has degree 4.
+We note that each pair consisting of a face-node and a vertex-node overlap on exactly zero or two edge-nodes, so that the diagram is in fact a valid Tanner graph of a quantum code.
+
+Tessellations of manifolds of dimension $D$ give rise to diagrams with~$D+1$ levels.
+%TODO finish this
+
+A quantum CSS code is defined by a pair of classical codes that we will call $C_X$ and $C_Z$ with the property that $C_X \subset C_Z^\perp$ and $C_Z \subset C_X^\perp$.
+Equivalently, if $H_X$ and $H_Z$ are the respective parity check matrices then we need that
+\begin{align}\label{eqn:CSS_commutativity_constraint}
+H_Z H_X^{\tr} = 0 \mod 2.
+\end{align}
+We will call \Cref{eqn:CSS_commutativity_constraint} the \emph{commutativity constraint}.
+In particular, any weakly-self dual classical code, i.e. a code for which $C \subset C^{\perp}$, defines a quantum CSS code.
+
+To any (CSS quantum) code we can associate a \emph{Tanner graph}~$\mathcal{T}$ which is a bipartite graph with vertices given by the variables and checks of the code where each check is connected to all variables in its support.
+
+
+
+
+
+
+
+
+
+
+Idee:
+\begin{itemize}
+    \item quantencodes sind zentral wichtig
+    \item hauptbeispiel toric code. nachteil: nur kostante quibits und wurzel distance
+    \item LDPC quantum codes stellen eine alternative dazu darstellen. sie erreichen besser encoding rate und distance. tradeoff: keine planarität, barabara zitieren, dafür aber immer noch die low density. gottesmann zitieren
+    \item hoffnung: entwicklung von good ldpc quantum codes, die praktisch so gut sind wie aktuelle klassische codes. zeigen, dass sie sich trotz nichtplanaritäet implementieren lassen können, und potentiell eine wichtige zutat zu quantencomptuern werden.
+    \item in diesem review zeigen wir die aktuelle und spannende forschung, die aus vielen berreichen der mathematik und physik schöpft. weiter zeigen wir, dass es in den letzten jahren bahnbrechende ergebnisse und neue techniken gab. beispiele.
+    \item bemerken dass das noch ein junges feld ist und dass es viele offene fragen gibt: theoretisch: good ldpc codes verbindung zu der qPCP conjecture. praktisch: decoding, planarität, hardware.
+    \item jetzt punkt für punkt aufzählen was in jeder section passiert.
+    \begin{itemize}
+        \item background, kann übersprungen werden
+        \item geometrie
+        \item produkt konstruktionen
+        \item andere sachen, die nicht streng genommen lpdc sind, hier kann der satz hin.
+        \item challanges bla
+    \end{itemize}
+\end{itemize}

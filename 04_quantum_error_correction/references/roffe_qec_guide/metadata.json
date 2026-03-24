@@ -1,0 +1,11 @@
+{
+  "arxiv_id": "1907.11157",
+  "download_url": "https://arxiv.org/e-print/1907.11157",
+  "download_date": "2026-03-23T13:19:31.952720",
+  "output_dir": "..\\04_quantum_error_correction\\references\\roffe_qec_guide",
+  "tex_files": [
+    "cp_review_arxiv.tex"
+  ],
+  "main_tex": "cp_review_arxiv.tex",
+  "success": true
+}

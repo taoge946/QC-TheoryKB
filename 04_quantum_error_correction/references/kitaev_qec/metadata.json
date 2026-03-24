@@ -1,0 +1,11 @@
+{
+  "arxiv_id": "quant-ph/9707021",
+  "download_url": "https://arxiv.org/e-print/quant-ph/9707021",
+  "download_date": "2026-03-23T13:17:21.740888",
+  "output_dir": "F:\\数学定理推导\\04_quantum_error_correction\\references\\kitaev_qec",
+  "tex_files": [
+    "anyons.tex"
+  ],
+  "main_tex": "anyons.tex",
+  "success": true
+}

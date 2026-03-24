@@ -1,0 +1,90 @@
+\section{Diffusion models for discrete state spaces}
+\label{sec:discrete_diffusion}
+
+Diffusion models with discrete state spaces were first introduced by \citet{sohl2015deep}, who considered a diffusion process over binary random variables.
+% with uniform transition probabilities. 
+\citet{hoogeboom2021argmax} extended
+% this framework
+the model class to categorical random variables with transition matrices characterized by uniform transition probabilities. In their supplementary material, \citet{song2021implicit} also derived this extension, although no experiments were performed with this model class.
+Here, we briefly describe a more general framework for diffusion with categorical random variables which includes these models as special cases.
+
+For scalar discrete random variables with $K$ categories $x_t, x_{t-1} \in {1, ..., K}$
+the forward transition probabilities can be represented by matrices: $[\bs{Q}_t]_{ij} = q(x_t=j|x_{t-1}=i)$.
+Denoting the one-hot version of $x$ with the row vector $\bx$, we can write
+\begin{align}
+    q(\bx_t|\bx_{t-1}) = \mathrm{Cat}(\bx_t;\bs p = \bx_{t-1}\bs Q_t),
+    \label{eq:forward_Q_t}
+\end{align}
+where $\mathrm{Cat}(\bs x;\bs p)$ is a categorical distribution over the one-hot row vector $\bx$ with probabilities given by the row vector $\bs p$, and $\bx_{t-1}\bs Q_t$ is to be understood as a row vector-matrix product. 
+We assume that $\bQ_t$ is applied to each pixel of an image or each token in a sequence independently, and that $q$ factorizes over these higher dimensions as well; we thus write $q(\bx_t|\bx_{t-1})$ in terms of a single element.
+Starting from $\bx_0$, we obtain the following $t$-step marginal and posterior at time $t-1$:
+\begin{align}
+    &q(\bx_t | \bx_0) = \mathrm{Cat}\left(\bx_{t}; \bs p = \bx_{0}\overline{\bs Q}_{t}  \right), 
+    \quad \text{with}\quad 
+  \overline{\bs Q}_{t} = \bs Q_1  \bs Q_2 \hdots \bs Q_t \nonumber \\
+    & q(\bx_{t-1}|\bx_{t}, \bx_0) = \frac{q(\bx_{t}|\bx_{t-1}, \bx_0)q(\bx_{t-1}|\bx_0)}{q(\bx_{t}| \bx_0)}
+    =\mathrm{Cat}\left(\bx_{t-1};\bs p= \frac{\bx_t\bs Q_t^{\top} \odot  \bx_0 \overline{\bs Q}_{t-1}  }{\bx_0 \overline{\bs Q}_{t} \bx_t^\top}\right).
+    \label{eq:discrete_t_step_posterior}
+\end{align}
+Note that due to the Markov property of the forward process $q(\bx_t|\bx_{t-1}, \bx_0)= q(\bx_{t}|\bx_{t-1})$. 
+Assuming that the reverse process $p_\theta(\bx_t|\bx_{t-1})$ is also factorized as conditionally independent over the image or sequence elements, the KL divergence between $q$ and $p_\theta$ can be computed by simply summing over all possible values of each random variable; we thus satisfy criteria 1 and 2 discussed in Section~\ref{sec:background}.
+Depending on $\bQ_t$, the cumulative products $\barbQ_t$ can often be computed in closed form, or simply precomputed for all $t$.
+However, for large $K$ and large $T$ this may be prohibitive. In Appendix~\ref{sec:scaling-to-large-categories} we discuss how to ensure $\overline{\bQ}_t$ can still be computed efficiently in this case, allowing the framework to scale to a larger number of categories. 
+
+In the next section we discuss the choice of the Markov transition matrices $\bs Q_t$ and corresponding stationary distributions. From here on, we refer to the general class of diffusion models with discrete state spaces as Discrete Denoising Diffusion Probabilistic Models (D3PMs).
+
+\subsection{Choice of Markov transition matrices for the forward process}
+\label{sec:choice-transition-matrices}
+
+An advantage of the D3PM framework described above is the ability to control the data corruption and denoising process by choosing $\bs{Q}_t$, in notable contrast to continuous diffusion, for which only additive Gaussian noise has received significant attention.
+Besides the constraint that the rows of $\bs Q_t$ must sum to one to conserve probability mass, the only other constraint in choosing $\bs{Q}_t$ is that the rows of $\overline{\bs Q}_{t} = \bs Q_1  \bs Q_2 \hdots \bs Q_t$ must converge to a known stationary distribution%
+\footnote{If a stationary distribution is not known, we can introduce a learned prior $p_\theta(\bx_{T})$; we note that this is equivalent to extending the forward process by appending a rank-one matrix $\bQ_{T+1}$ that ignores $\bx_{T}$ and produces a deterministic $\bx_{T+1}$, then learning the reverse step $p_\theta(\bx_T | \bx_{T+1}) = p_\theta(\bx_T)$.}
+when $t$ becomes large, which can be guaranteed while imposing minimal restrictions on $\bs{Q}_t$ (see Appendix \ref{appendix:stochastic}).
+
+
+We argue that for most real-world discrete data, including images and text,
+it makes sense to add domain-dependent structure to the transition matrices $\bQ_t$ as a way of controlling the forward corruption process and the learnable reverse denoising process.
+Below we briefly discuss the uniform transition matrices that have been studied in prior work \citep{hoogeboom2021argmax}, along with a set of structured transition matrices we have explored for our image and text dataset experiments; see Appendix \ref{sec:appendix_other_transition_mats} for more details on each matrix type. We also note that this set is not exhaustive, and many other transition matrices could also be used within the D3PM framework.
+
+\textbf{Uniform (Appendix~\ref{sec:appendix_transition_uniform}).} \citet{sohl2015deep} considered a simple $2\times 2$ transition matrix for binary random variables. \citet{hoogeboom2021argmax} later extended this to categorical variables, proposing a transition matrix $\bs{Q}_t = (1 - \beta_t) \bs I + \beta_t/K\; \mathbbm{1}\mathbbm{1}^T$ with $\beta_t\in[0, 1]$. Since this transition matrix is doubly stochastic with strictly positive entries, the stationary distribution is uniform.
+Because the transition probability to any other state is uniform, in this paper we equivalently refer to this discrete diffusion instance as D3PM-uniform.
+
+\textbf{Absorbing state (Appendix~\ref{sec:appendix_transition_mask}).} Motivated by the success of BERT \citep{bert} and recent work on Conditional Masked Language Models (CMLMs) in text, we consider a transition matrix with an absorbing state (called [MASK]), such that each token either stays the same or transitions to [MASK] with some probability $\beta_t$. This does not impose particular relationships between categories, similar to uniform diffusion, but still allows corrupted tokens to be distinguished from original ones. Moreover, the stationary distribution is not uniform but has all the mass on the [MASK] token. For images, we reuse the grey pixel as the [MASK] absorbing token.
+
+\textbf{Discretized Gaussian (Appendix~\ref{sec:appendix_transition_gaussian}).} Instead of transitioning uniformly to any other state, for ordinal data we propose imitating a continuous space diffusion model by using a discretized, truncated Gaussian distribution. We choose a normalization such that the transition matrix is doubly stochastic, leading to a uniform stationary distribution. This transition matrix will transition between more similar states with higher probability, and is well suited for quantized ordinal data such as images.
+
+\textbf{Token embedding distance (Appendix~\ref{sec:appendix_transition_nearest_neighbor}).} Textual data does not have ordinal structure, but there may still be interesting semantic relationships. For instance, in a character level vocabulary vowels may be more similar to each other than they are to consonants. As a demonstration of the generality of the D3PM framework, we explore using similarity in an embedding space to guide the forward process, and construct a doubly-stochastic transition matrix that transitions more frequently between tokens that have similar embeddings while maintaining a uniform stationary distribution.
+
+For uniform and absorbing-state diffusion, the cumulative products $\barbQ_t$ can be computed in closed form (see Appendix \ref{appendix:low_rank_corruption}); the remainder can be precomputed.
+
+\subsection{Noise schedules}
+We consider several different options for the noise schedule of the forward process. For discretized Gaussian diffusion, we explore linearly increasing the variance of the Gaussian before discretizing it. (Note that a linear schedule for $\bQ_t$ leads to a nonlinear amount of cumulative noise in $\barbQ_t$.)
+For uniform diffusion we use the cosine schedule which sets the cumulative probability of a transition to a cosine function, as introduced by \citet{nichol2021improved} and adapted by \citet{hoogeboom2021argmax}.
+%
+For a general set of transition matrices $\bQ_t$ (such as the one based on token embeddings), previously proposed schedules may not be directly applicable. We consider linearly interpolating the \textit{mutual information} between $\bx_t$ and $\bx_0$ to zero, i.e. $I(\bx_t; \bx_0) \approx (1 - \frac{t}{T})\,H(\bx_0)$. Interestingly, for the specific case of absorbing-state D3PMs, this schedule reduces to exactly the $(T-t+1)^{-1}$ schedule proposed by \citet{sohl2015deep} for a Bernoulli diffusion process. See Appendix~\ref{sec:appendix_noise_schedule} for more details.
+
+\subsection{Parameterization of the reverse process}
+\label{sec:x0_parameterization}
+While it is possible to directly predict the logits of $p_{\theta}(\bx_{t-1}|\bx_{t})$ using a neural network $\mathrm{nn}_{\theta}(\bx_t)$, we follow \citet{ho2020denoising} and \citet{hoogeboom2021argmax} and focus on using a neural network 
+$\mathrm{nn}_{\theta}(\bx_t)$ to predict the logits of a distribution $\widetilde{p}_{\theta}(\widetilde{\bx}_0|\bx_t)$, which we combine with $q(\bx_{t-1}|\bx_t, \bx_0)$ and a summation over one-hot representations of $\bx_0$ to obtain the following parameterization
+\begin{align}
+    p_{\theta}(\bx_{t-1}|\bx_t) \propto \sum_{\widetilde{\bx}_0} q(\bx_{t-1}, \bx_t \vert \widetilde{\bx}_0) \widetilde{p}_{\theta}(\widetilde{\bx}_0|\bx_t).
+    % = \mathrm{Cat}\left(\bx_{t-1} |\frac{\bx_t\bs Q_t^{\top} \odot  \widetilde{\bx}_0 \overline{\bs Q}_{t-1}  }{\widetilde{\bx}_0 \overline{\bs Q}_{t} \bx_t}\right) .
+    \label{eq:x_0parameterization}
+\end{align}
+We note that under this $\bx_0$-parameterization the KL divergence $D_{\mathrm{KL}}[q(\bx_{t-1} | \bx_t, \bx_0) \vert\vert p_{\theta}(\bx_{t-1}|\bx_t)]$ will be zero if $\widetilde{p}_{\theta}(\widetilde{\bx}_0|\bx_t)$ places all of its probability mass on the original value $\bx_0$.
+The decomposition of $q(\bx_{t-1}|\bx_{t}, \bx_0)$ in \eqref{eq:discrete_t_step_posterior} also provides us with a motivation for this parameterization. According to  \eqref{eq:discrete_t_step_posterior},  in a given state $\bx_t$, the optimal reverse process only takes into account transitions to states for which $q(\bx_t | \bx_{t-1})$ is non-zero. Therefore, the sparsity pattern of $\bs Q_t$ determines the sparsity pattern of the ideal reverse transition probabilities in $p_{\theta}(\bx_{t-1}| \bx_{t})$. The parameterization in \eqref{eq:x_0parameterization} automatically ensures that the learned reverse probability distribution $p_{\theta}(\bx_{t-1}|\bx_{t})$ has the correct sparsity pattern dictated by the choice of the Markov transition matrix $\bs Q_t$. This parameterization also lets us perform inference with $k$ steps at a time, by predicting $p_\theta(\bx_{t-k} | \bx_t) = \sum q(\bx_{t-k}, \bx_t |  \widetilde{\bx}_0)\widetilde{p_\theta}(\widetilde{\bx}_0 | \bx_t)$.
+
+Finally, when modeling ordinal discrete data, instead of predicting the logits of $\widetilde p_{\theta}(\widetilde{\bx}_0|\bx_t)$ directly with the output of a neural net, another option is to model the probabilities with a truncated discretized logistic distribution (see Appendix~\ref{sec:appendix_logistic}). This provides an extra ordinal inductive bias to the reverse model and boosts FID and log-likelihood scores for images.
+
+\subsection{Loss function}
+While the original diffusion models introduced by \citet{sohl2015deep} were optimized with the negative variational lower bound $L_{\mathrm{vb}}$ of \eqref{eq:negative_lower_bound}, more recent diffusion models are optimized with different objectives.
+For instance, \citet{ho2020denoising} derive a simplified loss function ($L_{\mathrm{simple}}$) that reweights the negative variational bound, and  \citet{nichol2021improved} explore a hybrid loss $L_{\mathrm{hybrid}} = L_{\mathrm{simple}} + \lambda L_{\mathrm{vb}}$ (using one term to learn the predicted mean and the other to learn predicted variance).
+Inspired by this recent work, we introduce an auxiliary denoising objective for the $\bx_0$-parameterization of the reverse process, which encourages good predictions of the data $\bx_0$ at each time step. 
+We combine this with the negative variational lower bound, yielding the following alternative loss function:
+\begin{align}
+    L_{\lambda} =& L_{\mathrm{vb}} + \lambda \; \mathbb E_{q(\bx_0)}\mathbb E_{q(\bx_t|\bx_0)}[-\log \widetilde p_{\theta}(\bx_0|\bx_t)].
+    \label{eq:alternative_loss}
+\end{align}
+Note that the auxiliary loss coincides with the cross entropy term $L_0$ in \eqref{eq:negative_lower_bound} at $t=1$. Furthermore, due to the $\bx_0$-parameterization of $p_{\theta}(\bx_{t-1}|\bx_t)$, both the auxiliary loss term and $D_{\mathrm{KL}}[q(\bx_{t-1} | \bx_t, \bx_0) \vert\vert p_{\theta}(\bx_{t-1}|\bx_t)]$ in $L_{\mathrm{vb}}$ are minimized exactly when $\widetilde p_{\theta}(\widetilde{\bx}_0|\bx_t)$ has all its mass on the datapoint $\bx_0$.
+We find that training with this loss leads to improved quality of image samples. 

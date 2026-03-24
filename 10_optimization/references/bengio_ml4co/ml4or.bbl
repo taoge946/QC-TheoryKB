@@ -1,0 +1,450 @@
+\begin{thebibliography}{}
+
+\bibitem[Ahuja and Orlin, 2001]{AhujaInverseOptimization2001}
+Ahuja, R.~K. and Orlin, J.~B. (2001).
+\newblock Inverse {{Optimization}}.
+\newblock {\em Operations Research}, 49(5):771--783.
+
+\bibitem[Andrychowicz et~al., 2016]{AndrychowiczLearninglearngradient2016}
+Andrychowicz, M., Denil, M., G\'omez, S., Hoffman, M.~W., Pfau, D., Schaul, T.,
+  Shillingford, B., and {de Freitas}, N. (2016).
+\newblock Learning to learn by gradient descent by gradient descent.
+\newblock In Lee, D.~D., Sugiyama, M., Luxburg, U.~V., Guyon, I., and Garnett,
+  R., editors, {\em Advances in {{Neural Information Processing Systems}} 29},
+  pages 3981--3989. {Curran Associates, Inc.}
+
+\bibitem[Ansótegui et~al., 2019]{AnsoteguiHyperReactive2019}
+Ansótegui, C., Heymann, B., Pon, J., Sellmann, M., and Tierney, K. (2019).
+\newblock Hyper-{Reactive} {Tabu} {Search} for {MaxSAT}.
+\newblock In Battiti, R., Brunato, M., Kotsireas, I., and Pardalos, P.~M.,
+  editors, {\em Learning and {Intelligent} {Optimization}}, Lecture {Notes} in
+  {Computer} {Science}, pages 309--325. Springer International Publishing.
+
+\bibitem[Ansótegui et~al., 2017]{AnsoteguiReactive2017}
+Ansótegui, C., Pon, J., Sellmann, M., and Tierney, K. (2017).
+\newblock Reactive {Dialectic} {Search} {Portfolios} for {MaxSAT}.
+\newblock In {\em Thirty-{First} {AAAI} {Conference} on {Artificial}
+  {Intelligence}}.
+
+\bibitem[Applegate et~al., 2007]{applegate2007}
+Applegate, D., Bixby, R., Chv\'atal, V., and Cook, W. (2007).
+\newblock {\em The traveling salesman problem. A computational study}.
+\newblock Princeton University Press.
+
+\bibitem[Bahdanau et~al., 2015]{Bahdanau-et-al-ICLR2015-small}
+Bahdanau, D., Cho, K., and Bengio, Y. (2015).
+\newblock Neural machine translation by jointly learning to align and
+  translate.
+\newblock In {\em ICLR'2015, arXiv:1409.0473}.
+
+\bibitem[{Baltean-Lugojan} et~al., 2018]{Baltean-LugojanStrongsparsecut2018}
+{Baltean-Lugojan}, R., Misener, R., Bonami, P., and Tramontani, A. (2018).
+\newblock Strong sparse cut selection via trained neural nets for quadratic
+  semidefinite outer-approximations.
+\newblock Technical report, Imperial College, London.
+
+\bibitem[Bello et~al., 2017]{BelloNeuralCombinatorialOptimization2016}
+Bello, I., Pham, H., Le, Q.~V., Norouzi, M., and Bengio, S. (2017).
+\newblock Neural {{Combinatorial Optimization}} with {{Reinforcement
+  Learning}}.
+\newblock In {\em International Conference on Learning Representations}.
+
+\bibitem[Bengio et~al., 1991]{BengioLearningSynaptic1991}
+Bengio, Y., Bengio, S., Cloutier, J., and Gecsei, J. (1991).
+\newblock Learning a synaptic learning rule.
+\newblock In {\em IJCNN}, pages II--A969.
+
+\bibitem[Bischl et~al., 2016]{BischlAslib2016}
+Bischl, B., Kerschke, P., Kotthoff, L., Lindauer, M., Malitsky, Y., Fréchette,
+  A., Hoos, H., Hutter, F., Leyton-Brown, K., Tierney, K., and Vanschoren, J.
+  (2016).
+\newblock {ASlib}: {A} benchmark library for algorithm selection.
+\newblock {\em Artificial Intelligence}, 237:41--58.
+
+\bibitem[Bishop, 2006]{bishop2006pattern}
+Bishop, C.~M. (2006).
+\newblock {\em Pattern Recognition and Machine Learning}.
+\newblock {springer}.
+
+\bibitem[Bonami et~al., 2018]{BonamiLearningClassificationMixedInteger2018}
+Bonami, P., Lodi, A., and Zarpellon, G. (2018).
+\newblock Learning a {{Classification}} of {{Mixed}}-{{Integer Quadratic
+  Programming Problems}}.
+\newblock In {\em Integration of {{Constraint Programming}}, {{Artificial
+  Intelligence}}, and {{Operations Research}}}, Lecture Notes in Computer
+  Science, pages 595--604. {Springer, Cham}.
+
+\bibitem[Chan et~al., 2014]{ChanGeneralizedInverseMultiobjective2014}
+Chan, T. C.~Y., Craig, T., Lee, T., and Sharpe, M.~B. (2014).
+\newblock Generalized {{Inverse Multiobjective Optimization}} with
+  {{Application}} to {{Cancer Therapy}}.
+\newblock {\em Operations Research}, 62(3):680--695.
+
+\bibitem[Conforti et~al., 2014]{Conforti2014}
+Conforti, M., Conrnu\'ejols, G., and Zambelli, G. (2014).
+\newblock {\em Integer {{Programming}}}.
+\newblock {Springer}.
+
+\bibitem[Creswell et~al., 2018]{CreswellGenerativeAdversarialNetworks2018}
+Creswell, A., White, T., Dumoulin, V., Arulkumaran, K., Sengupta, B., and
+  Bharath, A.~A. (2018).
+\newblock Generative {{Adversarial Networks}}: {{An Overview}}.
+\newblock {\em IEEE Signal Processing Magazine}, 35(1):53--65.
+
+\bibitem[Dai et~al., 2016]{DaiDiscriminativeEmbeddingsLatent2016}
+Dai, H., Dai, B., and Song, L. (2016).
+\newblock Discriminative {{Embeddings}} of {{Latent Variable Models}} for
+  {{Structured Data}}.
+\newblock In Balcan, M.~F. and Weinberger, K.~Q., editors, {\em Proceedings of
+  {{The}} 33rd {{International Conference}} on {{Machine Learning}}}, volume~48
+  of {\em Proceedings of Machine Learning Research}, pages 2702--2711, New
+  York, New York, USA. {PMLR}.
+
+\bibitem[Dey and Molinaro, 2018]{DeyMolinaro2018}
+Dey, S. and Molinaro, M. (2018).
+\newblock Theoretical challenges towards cutting-plane selection.
+\newblock {\em Mathematical Programming}, 170:237--266.
+
+\bibitem[Emami and Ranka, 2018]{EmamiLearningPermutationsSinkhorn2018}
+Emami, P. and Ranka, S. (2018).
+\newblock Learning {{Permutations}} with {{Sinkhorn Policy Gradient}}.
+\newblock {\em arXiv:1805.07010 [cs, stat]}.
+
+\bibitem[Finn et~al., 2017]{FinnModelAgnosticMetaLearningFast2017}
+Finn, C., Abbeel, P., and Levine, S. (2017).
+\newblock Model-{{Agnostic Meta}}-{{Learning}} for {{Fast Adaptation}} of
+  {{Deep Networks}}.
+\newblock In Precup, D. and Teh, Y.~W., editors, {\em Proceedings of the 34th
+  {{International Conference}} on {{Machine Learning}}}, volume~70 of {\em
+  Proceedings of Machine Learning Research}, pages 1126--1135, International
+  Convention Centre, Sydney, Australia. {PMLR}.
+
+\bibitem[Fischetti and Lodi, 2011]{FischettiLodi2011}
+Fischetti, M. and Lodi, A. (2011).
+\newblock {\em Heuristics in Mixed Integer Programming}, volume~3, pages
+  2199--2204.
+\newblock Wiley Online Library.
+
+\bibitem[Fitzgerald et~al., 2014]{FitzgeraldReact2014}
+Fitzgerald, T., Malitsky, Y., O’Sullivan, B., and Tierney, K. (2014).
+\newblock {ReACT}: {Real}-{Time} {Algorithm} {Configuration} through
+  {Tournaments}.
+\newblock In {\em Seventh {Annual} {Symposium} on {Combinatorial} {Search}}.
+
+\bibitem[Fortun and Schweber, 1993]{FortunScientists1993}
+Fortun, M. and Schweber, S.~S. (1993).
+\newblock Scientists and the legacy of world war ii: The case of operations
+  research (or).
+\newblock {\em Social Studies of Science}, 23(4):595--642.
+
+\bibitem[Gasse et~al., 2019]{GasseExact2019}
+Gasse, M., Chételat, D., Ferroni, N., Charlin, L., and Lodi, A. (2019).
+\newblock Exact combinatorial optimization with graph convolutional neural
+  networks.
+\newblock {\em arXiv preprint arXiv:1906.01629}.
+
+\bibitem[Gendreau and Potvin, 2010]{gendreau2010handbook}
+Gendreau, M. and Potvin, J.-Y., editors (2010).
+\newblock {\em Handbook of metaheuristics}, volume~2.
+\newblock Springer.
+
+\bibitem[Gilmer et~al., 2017]{GilmerNeuralMessagePassing2017}
+Gilmer, J., Schoenholz, S.~S., Riley, P.~F., Vinyals, O., and Dahl, G.~E.
+  (2017).
+\newblock Neural {{Message Passing}} for {{Quantum Chemistry}}.
+\newblock In Precup, D. and Teh, Y.~W., editors, {\em Proceedings of the 34th
+  {{International Conference}} on {{Machine Learning}}}, volume~70 of {\em
+  Proceedings of Machine Learning Research}, pages 1263--1272, International
+  Convention Centre, Sydney, Australia. {PMLR}.
+
+\bibitem[Goodfellow et~al., 2016]{goodfellow2016deep}
+Goodfellow, I., Bengio, Y., and Courville, A. (2016).
+\newblock {\em Deep Learning}.
+\newblock {MIT press}.
+
+\bibitem[He et~al., 2014]{HeLearningSearchBranch2014}
+He, H., Daume~III, H., and Eisner, J.~M. (2014).
+\newblock Learning to {{Search}} in {{Branch}} and {{Bound Algorithms}}.
+\newblock In Ghahramani, Z., Welling, M., Cortes, C., Lawrence, N.~D., and
+  Weinberger, K.~Q., editors, {\em Advances in {{Neural Information Processing
+  Systems}} 27}, pages 3293--3301. {Curran Associates, Inc.}
+
+\bibitem[Hochreiter et~al., 2001]{HochreiterLearningLearn2001}
+Hochreiter, S., Younger, A.~S., and Conwell, P.~R. (2001).
+\newblock Learning to learn using gradient descent.
+\newblock In Dorffner, G., Bischof, H., and Hornik, K., editors, {\em
+  Artificial Neural Networks --- ICANN 2001}, pages 87--94, Berlin, Heidelberg.
+  Springer Berlin Heidelberg.
+
+\bibitem[Hoos, 2012]{HoosAutomated2012}
+Hoos, H.~H. (2012).
+\newblock Automated {Algorithm} {Configuration} and {Parameter} {Tuning}.
+\newblock In Hamadi, Y., Monfroy, E., and Saubion, F., editors, {\em Autonomous
+  {Search}}, pages 37--71. Springer Berlin Heidelberg, Berlin, Heidelberg.
+
+\bibitem[Hottung et~al., 2017]{HottungDeep2017}
+Hottung, A., Tanaka, S., and Tierney, K. (2017).
+\newblock Deep {Learning} {Assisted} {Heuristic} {Tree} {Search} for the
+  {Container} {Pre}-marshalling {Problem}.
+\newblock {\em arXiv:1709.09972 [cs]}.
+\newblock arXiv: 1709.09972.
+
+\bibitem[Hussein et~al., 2017]{HusseinImitationLearningSurvey2017}
+Hussein, A., Gaber, M.~M., Elyan, E., and Jayne, C. (2017).
+\newblock Imitation {{Learning}}: {{A Survey}} of {{Learning Methods}}.
+\newblock {\em ACM Computing Surveys}, 50(2):21:1--21:35.
+
+\bibitem[Karapetyan et~al., 2017]{KarapetyanMarkov2017}
+Karapetyan, D., Punnen, A.~P., and Parkes, A.~J. (2017).
+\newblock Markov {Chain} methods for the {Bipartite} {Boolean} {Quadratic}
+  {Programming} {Problem}.
+\newblock {\em European Journal of Operational Research}, 260(2):494--506.
+
+\bibitem[Khalil et~al., 2017a]{KhalilLearningCombinatorialOptimization2017}
+Khalil, E., Dai, H., Zhang, Y., Dilkina, B., and Song, L. (2017a).
+\newblock Learning {{Combinatorial Optimization Algorithms}} over {{Graphs}}.
+\newblock In Guyon, I., Luxburg, U.~V., Bengio, S., Wallach, H., Fergus, R.,
+  Vishwanathan, S., and Garnett, R., editors, {\em Advances in {{Neural
+  Information Processing Systems}} 30}, pages 6348--6358. {Curran Associates,
+  Inc.}
+
+\bibitem[Khalil et~al., 2016]{KhalilLearningbranchmixed2016}
+Khalil, E.~B., Bodic, P.~L., Song, L., Nemhauser, G., and Dilkina, B. (2016).
+\newblock Learning to {{Branch}} in {{Mixed Integer Programming}}.
+\newblock In {\em Proceedings of the {{Thirtieth AAAI Conference}} on
+  {{Artificial Intelligence}}}, AAAI'16, pages 724--731, Phoenix, Arizona.
+  {AAAI Press}.
+
+\bibitem[Khalil et~al., 2017b]{KhalilLearningRunHeuristics2017}
+Khalil, E.~B., Dilkina, B., Nemhauser, G.~L., Ahmed, S., and Shao, Y. (2017b).
+\newblock Learning to {{Run Heuristics}} in {{Tree Search}}.
+\newblock In {\em Proceedings of the {{Twenty}}-{{Sixth International Joint
+  Conference}} on {{Artificial Intelligence}}, {{IJCAI}}-17}, pages 659--666.
+
+\bibitem[Kool and Welling, 2018]{KoolAttentionSolvesYour2018}
+Kool, W. W.~M. and Welling, M. (2018).
+\newblock Attention {{Solves Your TSP}}, {{Approximately}}.
+\newblock {\em arXiv:1803.08475 [cs, stat]}.
+
+\bibitem[Kruber et~al., 2017]{KruberLearningWhenUse2017}
+Kruber, M., L\"ubbecke, M.~E., and Parmentier, A. (2017).
+\newblock Learning {{When}} to {{Use}} a {{Decomposition}}.
+\newblock In {\em Integration of {{AI}} and {{OR Techniques}} in {{Constraint
+  Programming}}}, Lecture Notes in Computer Science, pages 202--210. {Springer,
+  Cham}.
+
+\bibitem[Larsen et~al., 2018]{LarsenPredictingSolutionSummaries2018}
+Larsen, E., Lachapelle, S., Bengio, Y., Frejinger, E., {Lacoste-Julien}, S.,
+  and Lodi, A. (2018).
+\newblock Predicting {{Solution Summaries}} to {{Integer Linear Programs}}
+  under {{Imperfect Information}} with {{Machine Learning}}.
+\newblock {\em arXiv:1807.11876 [cs, stat]}.
+
+\bibitem[Larson and Odoni, 1981]{LarsonUrban1981}
+Larson, R.~C. and Odoni, A.~R. (1981).
+\newblock {\em Urban operations research}.
+\newblock Number Monograph.
+
+\bibitem[Li and Malik, 2017]{LiLearningOptimizeNeural2017}
+Li, K. and Malik, J. (2017).
+\newblock Learning to {{Optimize Neural Nets}}.
+\newblock {\em arXiv:1703.00441 [cs, math, stat]}.
+
+\bibitem[Liberto et~al., 2016]{LibertoDash2016}
+Liberto, G.~D., Kadioglu, S., Leo, K., and Malitsky, Y. (2016).
+\newblock {DASH}: {Dynamic} {Approach} for {Switching} {Heuristics}.
+\newblock {\em European Journal of Operational Research}, 248(3):943--953.
+
+\bibitem[Lindauer and Hutter, 2018]{LindauerWarmstarting2018}
+Lindauer, M. and Hutter, F. (2018).
+\newblock Warmstarting of {Model}-{Based} {Algorithm} {Configuration}.
+\newblock In {\em Thirty-{Second} {AAAI} {Conference} on {Artificial}
+  {Intelligence}}.
+
+\bibitem[Lodi, 2009]{Lodi2008}
+Lodi, A. (2009).
+\newblock {{MIP}} computation.
+\newblock In J\"unger, M., Liebling, T., Naddef, D., Nemhauser, G.,
+  Pulleyblank, W., Reinelt, G., Rinaldi, G., and Wolsey, L., editors, {\em 50
+  {{Years}} of {{Integer Programming}} 1958-2008}, pages 619--645.
+  {Springer-Verlag}.
+
+\bibitem[Lodi and Zarpellon, 2017]{Lodilearningbranchingsurvey2017}
+Lodi, A. and Zarpellon, G. (2017).
+\newblock On learning and branching: A survey.
+\newblock {\em TOP}, 25(2):207--236.
+
+\bibitem[Lombardi and Milano, 2018]{LombardiBoostingCombinatorialProblem2018}
+Lombardi, M. and Milano, M. (2018).
+\newblock Boosting {{Combinatorial Problem Modeling}} with {{Machine
+  Learning}}.
+\newblock In {\em Proceedings of the {{Twenty}}-{{Seventh International Joint
+  Conference}} on {{Artificial Intelligence}}, {{IJCAI}}-18}, pages 5472--5478.
+  {International Joint Conferences on Artificial Intelligence Organization}.
+
+\bibitem[Mahmood et~al., 2018]{MahmoodAutomatedTreatmentPlanning2018}
+Mahmood, R., Babier, A., McNiven, A., Diamant, A., and Chan, T. C.~Y. (2018).
+\newblock Automated {{Treatment Planning}} in {{Radiation Therapy}} using
+  {{Generative Adversarial Networks}}.
+\newblock In {\em Proceedings of {{Machine Learning}} for {{Health Care}}},
+  volume~85 of {\em Proceedings of Machine Learning Research}.
+
+\bibitem[Malitsky et~al., 2016]{MalitskyStructurePreserving2016}
+Malitsky, Y., Merschformann, M., O’Sullivan, B., and Tierney, K. (2016).
+\newblock Structure-{Preserving} {Instance} {Generation}.
+\newblock In Festa, P., Sellmann, M., and Vanschoren, J., editors, {\em
+  Learning and {Intelligent} {Optimization}}, Lecture {Notes} in {Computer}
+  {Science}, pages 123--140. Springer International Publishing.
+
+\bibitem[Marcos~Alvarez et~al.,
+  2014]{MarcosAlvarezsupervisedmachinelearning2014}
+Marcos~Alvarez, A., Louveaux, Q., and Wehenkel, L. (2014).
+\newblock A supervised machine learning approach to variable branching in
+  branch-and-bound.
+\newblock Technical report, {Universit\'e de Li\`ege}.
+
+\bibitem[Marcos~Alvarez et~al.,
+  2017]{MarcosAlvarezMachineLearningBasedApproximation2017}
+Marcos~Alvarez, A., Louveaux, Q., and Wehenkel, L. (2017).
+\newblock A {{Machine Learning}}-{{Based Approximation}} of {{Strong
+  Branching}}.
+\newblock {\em INFORMS Journal on Computing}, 29(1):185--195.
+
+\bibitem[Marcos~Alvarez et~al., 2016]{MarcosAlvarezOnlineLearningStrong2016}
+Marcos~Alvarez, A., Wehenkel, L., and Louveaux, Q. (2016).
+\newblock Online {{Learning}} for {{Strong Branching Approximation}} in
+  {{Branch}}-and-{{Bound}}.
+\newblock Technical report, {Universit\'e de Li\`ege}.
+
+\bibitem[Mascia et~al., 2014]{MasciaGrammar2014}
+Mascia, F., López-Ibáñez, M., Dubois-Lacoste, J., and Stützle, T. (2014).
+\newblock Grammar-based generation of stochastic local search heuristics
+  through automatic algorithm configuration tools.
+\newblock {\em Computers \& Operations Research}, 51:190--199.
+
+\bibitem[McCormick, 1976]{McCormickComputabilityglobalsolutions1976}
+McCormick, G.~P. (1976).
+\newblock Computability of global solutions to factorable nonconvex programs:
+  {{Part I}} \textemdash{} {{Convex}} underestimating problems.
+\newblock {\em Mathematical Programming}, 10(1):147--175.
+
+\bibitem[Murphy, 2012]{murphy2012machine}
+Murphy, K.~P. (2012).
+\newblock {\em Machine Learning: A Probabilistic Perspective}.
+\newblock {MIT press}.
+
+\bibitem[Nagarajan et~al., 2019]{NagarajanDeterministic2019}
+Nagarajan, P., Warnell, G., and Stone, P. (2019).
+\newblock Deterministic implementations for reproducibility in deep
+  reinforcement learning.
+\newblock In {\em AAAI 2019 Workshop on Reproducible AI}.
+
+\bibitem[Nair et~al., 2018]{NairLearning2018}
+Nair, V., Dvijotham, D., Dunning, I., and Vinyals, O. (2018).
+\newblock Learning fast optimizers for contextual stochastic integer programs.
+\newblock In {\em Conference on Uncertainty in Artifical Intelligence}, pages
+  591--600.
+
+\bibitem[Nowak et~al., 2017]{NowakNoteLearningAlgorithms2017}
+Nowak, A., Villar, S., Bandeira, A.~S., and Bruna, J. (2017).
+\newblock A {{Note}} on {{Learning Algorithms}} for {{Quadratic Assignment}}
+  with {{Graph Neural Networks}}.
+\newblock {\em arXiv:1706.07450 [cs, stat]}.
+
+\bibitem[Ravi and Larochelle, 2017]{RaviOptimizationFewShot2017}
+Ravi, S. and Larochelle, H. (2017).
+\newblock Optimization as a model for few-shot learning.
+\newblock In {\em International Conference on Learning Representations}.
+
+\bibitem[Schmidhuber, 1992]{SchmidhuberLearningControl1992}
+Schmidhuber, J. (1992).
+\newblock Learning to control fast-weight memories: An alternative to dynamic
+  recurrent networks.
+\newblock {\em Neural Computation}, 4(1):131--139.
+
+\bibitem[Selsam et~al., 2018]{SelsamLearningSATSolver2018}
+Selsam, D., Lamm, M., B\"unz, B., Liang, P., {de Moura}, L., and Dill, D.~L.
+  (2018).
+\newblock Learning a {{SAT Solver}} from {{Single}}-{{Bit Supervision}}.
+\newblock {\em arXiv:1802.03685 [cs]}.
+
+\bibitem[Silver et~al., 2016]{SilverMasteringgameGo2016}
+Silver, D., Huang, A., Maddison, C.~J., Guez, A., Sifre, L., van~den Driessche,
+  G., Schrittwieser, J., Antonoglou, I., Panneershelvam, V., Lanctot, M.,
+  Dieleman, S., Grewe, D., Nham, J., Kalchbrenner, N., Sutskever, I.,
+  Lillicrap, T., Leach, M., Kavukcuoglu, K., Graepel, T., and Hassabis, D.
+  (2016).
+\newblock Mastering the game of {{Go}} with deep neural networks and tree
+  search.
+\newblock {\em Nature}, 529(7587):484--489.
+
+\bibitem[Smith, 1999]{SmithNeuralNetworksCombinatorial1999}
+Smith, K.~A. (1999).
+\newblock Neural {{Networks}} for {{Combinatorial Optimization}}: {{A Review}}
+  of {{More Than}} a {{Decade}} of {{Research}}.
+\newblock {\em INFORMS Journal on Computing}, 11(1):15--34.
+
+\bibitem[Smith-Miles and Bowly, 2015]{SmithGenerating2015}
+Smith-Miles, K. and Bowly, S. (2015).
+\newblock Generating new test instances by evolving in instance space.
+\newblock {\em Computers \& Operations Research}, 63:102--113.
+
+\bibitem[Sutton and Barto, 2018]{sutton2018reinforcement}
+Sutton, R.~S. and Barto, A.~G. (2018).
+\newblock {\em Reinforcement Learning: {{An}} Introduction}.
+\newblock {MIT press Cambridge}, second edition.
+
+\bibitem[Thrun and Pratt, 1998]{ThrunPrattBook1998}
+Thrun, S. and Pratt, L.~Y., editors (1998).
+\newblock {\em Learning to Learn}.
+\newblock Kluwer Academic.
+
+\bibitem[Vaswani et~al., 2017]{VaswaniAttentionAllyou2017}
+Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A.~N.,
+  Kaiser, L., and Polosukhin, I. (2017).
+\newblock Attention is {{All}} you {{Need}}.
+\newblock In Guyon, I., Luxburg, U.~V., Bengio, S., Wallach, H., Fergus, R.,
+  Vishwanathan, S., and Garnett, R., editors, {\em Advances in {{Neural
+  Information Processing Systems}} 30}, pages 5998--6008. {Curran Associates,
+  Inc.}
+
+\bibitem[Veličković et~al., 2018]{VelickovicGraphAttention2018}
+Veličković, P., Cucurull, G., Casanova, A., Romero, A., Liò, P., and Bengio,
+  Y. (2018).
+\newblock Graph attention networks.
+\newblock In {\em International Conference on Learning Representations}.
+
+\bibitem[Vinyals et~al., 2015]{VinyalsPointerNetworks2015}
+Vinyals, O., Fortunato, M., and Jaitly, N. (2015).
+\newblock Pointer {{Networks}}.
+\newblock In Cortes, C., Lawrence, N.~D., Lee, D.~D., Sugiyama, M., and
+  Garnett, R., editors, {\em Advances in {{Neural Information Processing
+  Systems}} 28}, pages 2692--2700. {Curran Associates, Inc.}
+
+\bibitem[Wichrowska et~al., 2017]{WichrowskaLearnedOptimizersthat2017}
+Wichrowska, O., Maheswaranathan, N., Hoffman, M.~W., Colmenarejo, S.~G., Denil,
+  M., {de Freitas}, N., and {Sohl-Dickstein}, J. (2017).
+\newblock Learned {{Optimizers}} that {{Scale}} and {{Generalize}}.
+\newblock In Precup, D. and Teh, Y.~W., editors, {\em Proceedings of the 34th
+  {{International Conference}} on {{Machine Learning}}}, volume~70 of {\em
+  Proceedings of Machine Learning Research}, pages 3751--3760, International
+  Convention Centre, Sydney, Australia. {PMLR}.
+
+\bibitem[Wierstra et~al., 2010]{WierstraRecurrentpolicy2010}
+Wierstra, D., Förster, A., Peters, J., and Schmidhuber, J. (2010).
+\newblock Recurrent policy gradients.
+\newblock {\em Logic Journal of the IGPL}, 18(5):620--634.
+
+\bibitem[Wolsey, 1998]{wolsey1998integer}
+Wolsey, L.~A. (1998).
+\newblock {\em Integer Programming}.
+\newblock {Wiley}.
+
+\bibitem[Özcan et~al., 2012]{OzcanReinforcement2012}
+Özcan, E., Misir, M., Ochoa, G., and Burke, E.~K. (2012).
+\newblock A {Reinforcement} {Learning}: {Great}-{Deluge} {Hyper}-{Heuristic}
+  for {Examination} {Timetabling}.
+\newblock {\em Modeling, Analysis, and Applications in Metaheuristic Computing:
+  Advancements and Trends}, pages 34--55.
+
+\end{thebibliography}

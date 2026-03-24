@@ -1,0 +1,390 @@
+\begin{thebibliography}{10}
+\providecommand{\url}[1]{\normalfont{#1}}
+\providecommand{\urlprefix}{Available from: }
+
+\bibitem{Shor97}
+Shor~PW. Polynomial-time algorithms for prime factorization and discrete
+  logarithms on a quantum computer. {SIAM} Journal on Computing.
+  1997;\hspace{0pt}26(5):1484--1509.
+
+\bibitem{Grover96}
+Grover~LK. A fast quantum mechanical algorithm for database search. In: STOC;
+  1996.
+
+\bibitem{Schuld14}
+Schuld~M, Sinayskiy~I, Petruccione~F. An introduction to quantum machine
+  learning. Contemporary Physics. 2014;\hspace{0pt}56(2):172--185.
+  \urlprefix\url{https://doi.org/10.1080/00107514.2014.964942}.
+
+\bibitem{Aspuru-Guzik05}
+Aspuru-Guzik~A, Dutoi~AD, Love~PJ, et~al. Simulated quantum computation of
+  molecular energies. Science. 2005;\hspace{0pt}309(5741):1704--1707.
+  \urlprefix\url{https://science.sciencemag.org/content/309/5741/1704}.
+
+\bibitem{Wang2016}
+Wang~XL, Chen~LK, Li~W, et~al. Experimental ten-photon entanglement. Physical
+  Review Letters. 2016;\hspace{0pt}117(21).
+  \urlprefix\url{https://doi.org/10.1103/physrevlett.117.210502}.
+
+\bibitem{Qiang18}
+Qiang~X, Zhou~X, Wang~J, et~al. Large-scale silicon quantum photonics
+  implementing arbitrary two-qubit processing. Nature Photonics.
+  2018;\hspace{0pt}12(9):534--539.
+  \urlprefix\url{https://doi.org/10.1038/s41566-018-0236-y}.
+
+\bibitem{Randall15}
+Randall~J, Weidt~S, Standing~ED, et~al. Efficient preparation and detection of
+  microwave dressed-state qubits and qutrits with trapped ions. Physical Review
+  A. 2015;\hspace{0pt}91(1).
+
+\bibitem{Ballance16}
+Ballance~C, Harty~T, Linke~N, et~al. High-fidelity quantum logic gates using
+  trapped-ion hyperfine qubits. Physical Review Letters.
+  2016;\hspace{0pt}117(6).
+
+\bibitem{Brandl16}
+Brandl~MF, van Mourik~MW, Postler~L, et~al. Cryogenic setup for trapped ion
+  quantum computing. Review of Scientific Instruments.
+  2016;\hspace{0pt}87(11):113103.
+
+\bibitem{Debnath16}
+Debnath~S, Linke~NM, Figgatt~C, et~al. Demonstration of a small programmable
+  quantum computer with atomic qubits. Nature. 2016;\hspace{0pt}536(7614):63.
+
+\bibitem{Chow12}
+Chow~JM, Gambetta~JM, C{\'{o}}rcoles~AD, et~al. Universal quantum gate set
+  approaching fault-tolerant thresholds with superconducting qubits. Physical
+  Review Letters. 2012;\hspace{0pt}109(6).
+  \urlprefix\url{https://doi.org/10.1103/physrevlett.109.060501}.
+
+\bibitem{Chen2014}
+Chen~Y, Neill~C, Roushan~P, et~al. Qubit architecture with high coherence and
+  fast tunable coupling. Phys Rev Lett. 2014;\hspace{0pt}113:220502.
+  \urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevLett.113.220502}.
+
+\bibitem{Wendin2017}
+Wendin~G. Quantum information processing with superconducting circuits: a
+  review. Reports on Progress in Physics. 2017;\hspace{0pt}80(10):106001.
+  \urlprefix\url{https://doi.org/10.1088/1361-6633/aa7e1a}.
+
+\bibitem{Kane1998}
+Kane~BE. A silicon-based nuclear spin quantum computer. Nature.
+  1998;\hspace{0pt}393(6681):133--137.
+  \urlprefix\url{https://doi.org/10.1038/30156}.
+
+\bibitem{Hill2015}
+Hill~CD, Peretz~E, Hile~SJ, et~al. A surface code quantum computer in silicon.
+  Science Advances. 2015;\hspace{0pt}1(9):e1500707.
+  \urlprefix\url{https://doi.org/10.1126/sciadv.1500707}.
+
+\bibitem{vanderHeijden18}
+van~der Heijden~J, Kobayashi~T, House~MG, et~al. Readout and control of the
+  spin-orbit states of two coupled acceptor atoms in a silicon transistor.
+  Science Advances. 2018;\hspace{0pt}4(12):eaat9199.
+  \urlprefix\url{https://doi.org/10.1126/sciadv.aat9199}.
+
+\bibitem{Shannon49}
+Shannon~CE. A mathematical theory of communication. University of Illinois
+  Press; 1949.
+
+\bibitem{Hamming50}
+Hamming~RW. Error detecting and error correcting codes. Bell System Technical
+  Journal. 1950;\hspace{0pt}29(2):147--160.
+  \urlprefix\url{https://doi.org/10.1002/j.1538-7305.1950.tb00463.x}.
+
+\bibitem{MacKay03a}
+MacKay~DJ. Information theory, inference and learning algorithms. Cambridge
+  University Press; 2003.
+
+\bibitem{Wootters82}
+Wootters~WK, Zurek~WH. A single quantum cannot be cloned. Nature.
+  1982;\hspace{0pt}299(5886):802--803.
+
+\bibitem{Shor95}
+Shor~PW. Scheme for reducing decoherence in quantum computer memory.
+  Phys~Rev~A. 1995;\hspace{0pt}52:R2493.
+
+\bibitem{Preskill385}
+Preskill~J. Reliable quantum computers. Proceedings of the Royal Society of
+  London A: Mathematical, Physical and Engineering Sciences.
+  1998;\hspace{0pt}454(1969):385--410.
+  \urlprefix\url{http://rspa.royalsocietypublishing.org/content/454/1969/385}.
+
+\bibitem{Kitaev1997}
+Kitaev~AY. Quantum computations: algorithms and error correction. Russian
+  Mathematical Surveys. 1997;\hspace{0pt}52(6):1191--1249.
+  \urlprefix\url{https://doi.org/10.1070/rm1997v052n06abeh002155}.
+
+\bibitem{Aharonov:1997:FQC:258533.258579}
+Aharonov~D, Ben-Or~M. Fault-tolerant quantum computation with constant error.
+  In: Proceedings of the Twenty-ninth Annual ACM Symposium on Theory of
+  Computing; New York, NY, USA. ACM; 1997. p. 176--188; STOC '97.
+  \urlprefix\url{http://doi.acm.org/10.1145/258533.258579}.
+
+\bibitem{Knill1998}
+Knill~E. Resilient quantum computation. Science.
+  1998;\hspace{0pt}279(5349):342--345.
+  \urlprefix\url{https://doi.org/10.1126/science.279.5349.342}.
+
+\bibitem{Gottesman98}
+Gottesman~D. Theory of fault-tolerant quantum computation. Physical Review A.
+  1998;\hspace{0pt}57(1):127.
+
+\bibitem{Gaitan08}
+Gaitan~F. Quantum error correction and fault tolerant quantum computing. CRC
+  Press; 2008.
+
+\bibitem{Gottesman09}
+Gottesman~D. An introduction to quantum error correction and fault-tolerant
+  quantum computation. arXiv:09042557. 2009;\hspace{0pt}.
+
+\bibitem{Djordjevic12}
+Quantum information processing and quantum error correction: An engineering
+  approach. Elsevier; 2012.
+  \urlprefix\url{https://doi.org/10.1016/c2010-0-66917-3}.
+
+\bibitem{Devitt13}
+Devitt~SJ, Munro~WJ, Nemoto~K. Quantum error correction for beginners. Reports
+  on Progress in Physics. 2013;\hspace{0pt}76(7):076001.
+  \urlprefix\url{https://doi.org/10.1088/0034-4885/76/7/076001}.
+
+\bibitem{Lidar13}
+Lidar~D, Brun~T. Quantum error correction. Cambridge University Press; 2013.
+
+\bibitem{Terhal15}
+Terhal~BM. Quantum error correction for quantum memories. Reviews of Modern
+  Physics. 2015;\hspace{0pt}87(2):307--346.
+  \urlprefix\url{https://doi.org/10.1103/revmodphys.87.307}.
+
+\bibitem{Campbell17}
+Campbell~ET, Terhal~BM, Vuillot~C. Roads towards fault-tolerant universal
+  quantum computation. Nature. 2017;\hspace{0pt}549(7671):172--179.
+  \urlprefix\url{https://doi.org/10.1038/nature23460}.
+
+\bibitem{Fowler12}
+Fowler~AG, Mariantoni~M, Martinis~JM, et~al. Surface codes: Towards practical
+  large-scale quantum computation. Physical Review A. 2012;\hspace{0pt}86(3).
+  \urlprefix\url{https://doi.org/10.1103/physreva.86.032324}.
+
+\bibitem{Nielsen2010}
+Nielsen~M, Chuang~I. Quantum computation and quantum information: 10th
+  anniversary edition. Cambridge University Press, Cambridge, United Kingdom;
+  2010.
+
+\bibitem{Knill97}
+Knill~E, Laflamme~R. Theory of quantum error-correcting codes. Physical Review
+  A. 1997;\hspace{0pt}55(2):900--911.
+
+\bibitem{Gottesman97}
+Gottesman~D. The {H}eisenberg representation of quantum computers. Group22:
+  Proceedings of the XXII International Colloquium on Group Theoretical Methods
+  in Physics, pp 32-43, Cambridge, MA, International Press. 1999;\hspace{0pt}.
+
+\bibitem{Vaidman96}
+Vaidman~L, Goldenberg~L, Wiesner~S. Error prevention scheme with four
+  particles. Physical Review A. 1996;\hspace{0pt}54(3):R1745--R1748.
+
+\bibitem{Grassl97}
+Grassl~M, Beth~T, Pellizzari~T. Codes for the quantum erasure channel. Physical
+  Review A. 1997;\hspace{0pt}56(1):33--38.
+
+\bibitem{Gottesmanthesis}
+Gottesman~DE. Stabilizer codes and quantum error correction [dissertation];
+  1997.
+  \urlprefix\url{http://resolver.caltech.edu/CaltechETD:etd-07162004-113028}.
+
+\bibitem{Roffe18}
+Roffe~J, Headley~D, Chancellor~N, et~al. Protecting quantum memories using
+  coherent parity check codes. Quantum Science and Technology.
+  2018;\hspace{0pt}3(3):035010.
+
+\bibitem{Calderbank95}
+Calderbank~AR, Shor~PW. Good quantum error-correcting codes exist. Phys Rev A.
+  1996;\hspace{0pt}54:1098--1106.
+
+\bibitem{Steane96b}
+Steane~A. Error correcting codes in quantum theory. Phys~Rev~Lett.
+  1996;\hspace{0pt}77:793--797.
+
+\bibitem{Kovalev13}
+Kovalev~AA, Pryadko~LP. Quantum kronecker sum-product low-density parity-check
+  codes with finite rate. Physical Review A. 2013;\hspace{0pt}88(1).
+  \urlprefix\url{https://doi.org/10.1103/physreva.88.012311}.
+
+\bibitem{Tillich14}
+Tillich~JP, Zemor~G. Quantum {LDPC} codes with positive rate and minimum
+  distance proportional to the square root of the blocklength. {IEEE}
+  Transactions on Information Theory. 2014;\hspace{0pt}60(2):1193.
+
+\bibitem{Bravyi98}
+Bravyi~SB, Kitaev~AY. Quantum codes on a lattice with boundary.
+  arXiv:quant-ph/9811052. 1998;\hspace{0pt}.
+
+\bibitem{Freedman98}
+Freedman~MH, Meyer~DA. Projective plane and planar quantum codes ; 1998.
+
+\bibitem{Nickerson14}
+Nickerson~NH, Fitzsimons~JF, Benjamin~SC. Freely scalable quantum technologies
+  using cells of 5-to-50 qubits with very lossy and noisy photonic links.
+  Physical Review X. 2014;\hspace{0pt}4(4):041041.
+
+\bibitem{Kelly16}
+Kelly~J, Barends~R, Fowler~AG, et~al. Scalablein situqubit calibration during
+  repetitive error detection. Physical Review A. 2016;\hspace{0pt}94(3).
+
+\bibitem{Rigetti16}
+Sete~EA, Zeng~WJ, Rigetti~CT. A functional architecture for scalable quantum
+  computing. In: 2016 {IEEE} International Conference on Rebooting Computing
+  ({ICRC}). {IEEE}; 2016.
+
+\bibitem{OGorman16}
+O'Gorman~J, Nickerson~NH, Ross~P, et~al. A silicon-based surface code quantum
+  computer. npj Quantum Information. 2016;\hspace{0pt}2(1).
+  \urlprefix\url{https://doi.org/10.1038/npjqi.2015.19}.
+
+\bibitem{Takita17}
+Takita~M, Cross~AW, C{\'{o}}rcoles~A, et~al. Experimental demonstration of
+  fault-tolerant state preparation with superconducting qubits. Physical Review
+  Letters. 2017;\hspace{0pt}119(18).
+
+\bibitem{Kitaev03}
+Kitaev~A. Fault-tolerant quantum computation by anyons. Annals of Physics.
+  2003;\hspace{0pt}303(1):2--30.
+  \urlprefix\url{https://doi.org/10.1016/s0003-4916(02)00018-0}.
+
+\bibitem{Horsman12}
+Horsman~C, Fowler~A, Devitt~S, et~al. Surface code quantum computing by lattice
+  surgery. New Journal of Physics. 2012;\hspace{0pt}14(12):123011.
+
+\bibitem{Edmonds65}
+Edmonds~J. Paths, trees, and flowers. Canadian Journal of Mathematics.
+  1965;\hspace{0pt}17:449--467.
+
+\bibitem{Kolmogorov09}
+Kolmogorov~V. Blossom v: a new implementation of a minimum cost perfect
+  matching algorithm. Mathematical Programming Computation.
+  2009;\hspace{0pt}1(1):43--67.
+
+\bibitem{Dennis02}
+Dennis~E, Kitaev~A, Landahl~A, et~al. Topological quantum memory. Journal of
+  Mathematical Physics. 2002;\hspace{0pt}43(9):4452--4505.
+
+\bibitem{Criger18}
+Criger~B, Ashraf~I. Multi-path {S}ummation for {D}ecoding 2{D} {T}opological
+  {C}odes. {Quantum}. 2018;\hspace{0pt}2:102.
+  \urlprefix\url{https://doi.org/10.22331/q-2018-10-19-102}.
+
+\bibitem{Gottesman14}
+Gottesman~D. Fault-tolerant quantum computation with constant overhead. Quantum
+  Info Comput. 2014;\hspace{0pt}14(15-16):1338--1372.
+  \urlprefix\url{http://dl.acm.org/citation.cfm?id=2685179.2685184}.
+
+\bibitem{Shor96}
+Shor~P. Fault-tolerant quantum computation. In: Proceedings of 37th Conference
+  on Foundations of Computer Science. {IEEE} Comput. Soc. Press; ????
+  \urlprefix\url{https://doi.org/10.1109/sfcs.1996.548464}.
+
+\bibitem{Steane97}
+Steane~AM. Active stabilization, quantum computation, and quantum state
+  synthesis. Physical Review Letters. 1997;\hspace{0pt}78(11):2252.
+
+\bibitem{DiVincenzo07}
+DiVincenzo~DP, Aliferis~P. Effective fault-tolerant quantum computation with
+  slow measurements. Physical Review Letters. 2007;\hspace{0pt}98(2).
+  \urlprefix\url{https://doi.org/10.1103/physrevlett.98.020501}.
+
+\bibitem{Chao2018}
+Chao~R, Reichardt~BW. Quantum error correction with only two extra qubits.
+  Physical Review Letters. 2018;\hspace{0pt}121(5).
+  \urlprefix\url{https://doi.org/10.1103/physrevlett.121.050502}.
+
+\bibitem{Wang10}
+Wang~DS, Fowler~AG, Stephens~AM, et~al. Threshold error rates for the toric and
+  planar codes. Quantum Info Comput. 2010;\hspace{0pt}10(5):456--469.
+  \urlprefix\url{http://dl.acm.org/citation.cfm?id=2011362.2011368}.
+
+\bibitem{Dawson05}
+Dawson~CM, Nielsen~MA. The solovay-kitaev algorithm. 2005;\hspace{0pt}.
+
+\bibitem{Eastin09}
+Eastin~B, Knill~E. Restrictions on transversal encoded quantum gate sets.
+  Physical Review Letters. 2009;\hspace{0pt}102(11).
+  \urlprefix\url{https://doi.org/10.1103/physrevlett.102.110502}.
+
+\bibitem{Bravyi05}
+Bravyi~S, Kitaev~A. Universal quantum computation with ideal clifford gates and
+  noisy ancillas. Physical Review A. 2005;\hspace{0pt}71(2).
+  \urlprefix\url{https://doi.org/10.1103/physreva.71.022316}.
+
+\bibitem{Landahl14}
+Landahl~AJ, Ryan-Anderson~C. Quantum computing by color-code lattice surgery ;
+  2014.
+
+\bibitem{Yoder17}
+Yoder~TJ. Universal fault-tolerant quantum computation with bacon-shor codes.
+  arXiv:170501686. 2017;\hspace{0pt}.
+
+\bibitem{Vasmer18}
+Vasmer~M, Browne~DE. Universal quantum computing with 3d surface codes.
+  arXiv:180104255. 2018;\hspace{0pt}.
+
+\bibitem{Gambetta2017}
+Gambetta~JM, Chow~JM, Steffen~M. Building logical qubits in a superconducting
+  quantum computing system. npj Quantum Information. 2017;\hspace{0pt}3(1).
+  \urlprefix\url{https://doi.org/10.1038/s41534-016-0004-0}.
+
+\bibitem{Takita2017}
+Takita~M, Cross~AW, C{\'{o}}rcoles~A, et~al. Experimental demonstration of
+  fault-tolerant state preparation with superconducting qubits. Physical Review
+  Letters. 2017;\hspace{0pt}119(18).
+
+\bibitem{Rist2015}
+Rist{\`{e}}~D, Poletto~S, Huang~MZ, et~al. Detecting bit-flip errors in a
+  logical qubit using stabilizer measurements. Nature Communications.
+  2015;\hspace{0pt}6(1). \urlprefix\url{https://doi.org/10.1038/ncomms7983}.
+
+\bibitem{Harty14}
+Harty~T, Allcock~D, Ballance~C, et~al. High-fidelity preparation, gates,
+  memory, and readout of a trapped-ion quantum bit. Physical Review Letters.
+  2014;\hspace{0pt}113(22).
+
+\bibitem{OGorman17}
+O'Gorman~J, Campbell~ET. Quantum computation with realistic magic-state
+  factories. Physical Review A. 2017;\hspace{0pt}95(3).
+  \urlprefix\url{https://doi.org/10.1103/physreva.95.032338}.
+
+\bibitem{Linke17}
+Linke~NM, Gutierrez~M, Landsman~KA, et~al. Fault-tolerant quantum error
+  detection. Science Advances. 2017;\hspace{0pt}3(10):e1701074.
+  \urlprefix\url{https://doi.org/10.1126/sciadv.1701074}.
+
+\bibitem{Vuillot18}
+Vuillot~C. Is error detection helpful on {IBM} 5q chips? Quantum Information
+  and Computation. 2018;\hspace{0pt}, Vol. 18, No. 11-12:0949--0964.
+
+\bibitem{Harper19}
+Harper~R, Flammia~ST. Fault-tolerant logical gates in the {IBM} quantum
+  experience. Phys Rev Lett. 2019;\hspace{0pt}122:080504.
+  \urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevLett.122.080504}.
+
+\bibitem{Wootton2018}
+Wootton~JR, Loss~D. Repetition code of 15 qubits. Physical Review A.
+  2018;\hspace{0pt}97(5).
+  \urlprefix\url{https://doi.org/10.1103/physreva.97.052313}.
+
+\bibitem{Bombin2007}
+Bombin~H, Martin-Delgado~MA. Optimal resources for topological two-dimensional
+  stabilizer codes: Comparative study. Physical Review A.
+  2007;\hspace{0pt}76(1).
+  \urlprefix\url{https://doi.org/10.1103/physreva.76.012305}.
+
+\bibitem{Breuckmann16}
+Breuckmann~NP, Terhal~BM. Constructions and noise threshold of hyperbolic
+  surface codes. {IEEE} Transactions on Information Theory.
+  2016;\hspace{0pt}62(6):3731.
+
+\bibitem{qpic}
+Draper~T, Kutin~S. {QPIC}: Quantum circuit diagrams in {LaTeX}.
+  ????;\hspace{0pt}\urlprefix\url{https://github.com/qpic/qpic}.
+
+\end{thebibliography}

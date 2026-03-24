@@ -1,0 +1,162 @@
+%%%%%%%%%%%%%%%%%%%%%%preface.tex%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% sample preface
+%
+% Use this file as a template for your own input.
+%
+%%%%%%%%%%%%%%%%%%%%%%%% Springer %%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\preface
+\chapter*{Preface}
+%% Please write your preface here
+In 1982, Richard Feynman pointed out that
+a simulation of quantum systems on classical computers
+is generally inefficient because the dimension of the state space
+increases exponentially with the number of particles~\cite{Feynman82}.
+Instead, quantum systems could be simulated efficiently by other quantum systems.
+David Deutsch put this idea forward
+by formulating a quantum version of 
+a Turing machine~\cite{Deutsch85}.
+Quantum computation enables us 
+to solve certain kinds of problems that 
+are thought to be intractable with classical computers
+such as the prime factoring problem
+%~\cite{Shor} 
+and an approximation of the Jones polynomial.
+%~\cite{AharonovJones,AharonovJonesHard}.
+It has a great possibility to disprove the extended (strong) Church-Turing thesis,
+i.e., that any computational process on realistic devices can be simulated 
+efficiently on a probabilistic Turing machine.
+
+However, for this statement to make sense,
+we need to determine whether or not quantum computation
+is a realistic model of computation.
+Rolf Landauer criticized it (encouragingly)
+by suggesting to put a footnote:
+``{\it This proposal, like all proposals for quantum computation, 
+relies on speculative technology, 
+does not in its current form take into account 
+all possible sources of noise, unreliability 
+and manufacturing error, and
+probably will not work.}"~\cite{LandauerLloyd}.
+Actually, quantum coherence,
+which is essential for quantum computation
+is quite fragile against noise.
+%Moreover, quantum information cannot be copied
+%due to the no-cloning theorem~\cite{Nocloning}.
+If we cannot handle the effect of noise,
+quantum computation is of a limiting interest,
+like classical analog computers,
+as a realistic model of computation. 
+To solve this, many researchers have investigated 
+the fault-tolerance of quantum computation
+with developing quantum error correction techniques.
+One of the greatest achievements of this approach 
+is topological fault-tolerant quantum computation
+using the surface code
+%~\cite{Kitaev,Dennis}
+proposed by R. Raussendorf {\it et al.}~\cite{RaussendorfAnn,RaussendorfNJP,RaussendorfPRL}.
+It says that 
+nearest-neighbor two-qubit gates and single-qubit operations
+on a two-dimensional array of qubits can perform 
+universal quantum computation fault-tolerantly
+as long as the error rate per operation is less than $\sim 1\%$.
+
+In this book, 
+I present 
+a self-consistent review of 
+topological fault-tolerant quantum computation
+using the surface code.
+The book covers 
+everything required to 
+understand topological 
+fault-tolerant quantum computation,
+ranging from the definition of the surface code
+to topological quantum error correction and 
+topological operations on the surface code.
+The basic concepts and powerful tools for understanding 
+topological fault-tolerant quantum computation, such as 
+universal quantum computation, quantum algorithms, stabilizer formalism, 
+and measurement-based quantum computation,
+are also introduced in the first part (Chapter 1 and Chapter 2) of the book.
+In particular, in Chapter 1, I also mention
+a quantum algorithm for approximating 
+the Jones polynomials,
+which is also related to topological quantum computation
+with braiding non-Abelian anyons.
+In Chapter. 3, the definition of the surface code and 
+topological quantum error correction on it is explained. 
+In Chapter 4, topological quantum computation on the surface code
+is described in the circuit-based model,
+where topological diagrams are introduced
+to understand the logical operations on the surface code diagrammatically.
+In Chapter. 5, 
+I explain the same thing in the measurement-based model,
+as done in the original proposal~\cite{RaussendorfAnn}.
+Hopefully, it would be easy to see how these two viewpoints are related.
+
+Throughout the book, 
+I have tried to explain the quantum operations 
+using circuit and topological diagrams 
+so that the readers can get a graphical understanding of the operations.
+The graphical understanding should be helpful to study
+the subjects more efficiently.
+Topological quantum error correction codes 
+are a nice play ground for studying
+the interdisciplinary connections between 
+quantum information and other fields of physics,
+such as condensed matter physics and statistical physics.
+Actually, there is a nice correspondence between 
+topological quantum error correction codes and topologically ordered
+systems in condensed matter physics.
+Furthermore, if we consider a decoding problem of 
+a quantum error correction code,
+a partition function of a random statistical mechanical model
+is naturally appeared as a posterior probability for the decoding.
+These interdisciplinary topics are also included in Chapter 3.
+
+Almost all topics, except for the basic concepts 
+in the first part, are based on the results
+achieved after the appearance of the standard textbook
+of quantum information science
+entitled {\it``Quantum Computation and Quantum Information"} (Cambridge University Press 2000) by M. A. Nielsen and I. L. Chuang.
+In this sense, the present comprehensive review 
+on these topics would be helpful to learn and update
+the recent progress efficiently.
+In this book, 
+I concentrated on the quantum information aspect 
+of topological quantum computation.
+Unfortunately, I cannot cover 
+the more physical and condensed matter aspects of 
+topological quantum computation, such as non-Abelian anyons
+and topological quantum field theory.
+In this sense, this book is complemented by the book 
+{\it``Introduction to topological quantum computation"}
+(Cambridge University Press 2012)
+written by J. K. Pachos.
+Readers who are interested in the more physical aspects
+of topological quantum computation are recommended to read it.
+
+Hopefully, this review will encourage 
+both theoretical and experimental
+researchers to find a more feasible way of quantum computation.
+It will also bring me great pleasure if this review provides 
+an opportunity 
+to reunify and refine
+various subdivided fields of modern physics 
+in terms of quantum information.
+
+
+
+
+
+
+
+\vspace{\baselineskip}
+\begin{flushright}\noindent
+Kyoto, Japan
+\hfill {\it Keisuke  Fujii}, \\
+April, 2015
+\\
+\end{flushright}
+
+

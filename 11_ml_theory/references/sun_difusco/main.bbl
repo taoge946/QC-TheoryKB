@@ -1,0 +1,839 @@
+\begin{thebibliography}{122}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Ahn et~al.(2020)Ahn, Seo, and Shin]{ahn2020learning}
+Sungsoo Ahn, Younggyo Seo, and Jinwoo Shin.
+\newblock Learning what to defer for maximum independent sets.
+\newblock In \emph{International Conference on Machine Learning}, pages
+  134--144. PMLR, 2020.
+
+\bibitem[Andrade et~al.(2012)Andrade, Resende, and Werneck]{andrade2012fast}
+Diogo~V Andrade, Mauricio~GC Resende, and Renato~F Werneck.
+\newblock Fast local search for the maximum independent set problem.
+\newblock \emph{Journal of Heuristics}, 18\penalty0 (4):\penalty0 525--547,
+  2012.
+
+\bibitem[Applegate et~al.(2006)Applegate, Bixby, Chvatal, and
+  Cook]{applegate2006concorde}
+David Applegate, Ribert Bixby, Vasek Chvatal, and William Cook.
+\newblock Concorde {TSP} solver.
+\newblock \url{https://www.math.uwaterloo.ca/tsp/concorde/index.html}, 2006.
+
+\bibitem[Arora(1996)]{arora1996polynomial}
+Sanjeev Arora.
+\newblock Polynomial time approximation schemes for euclidean tsp and other
+  geometric problems.
+\newblock In \emph{Proceedings of 37th Conference on Foundations of Computer
+  Science}, pages 2--11. IEEE, 1996.
+
+\bibitem[Austin et~al.(2021)Austin, Johnson, Ho, Tarlow, and van~den
+  Berg]{austin2021structured}
+Jacob Austin, Daniel~D Johnson, Jonathan Ho, Daniel Tarlow, and Rianne van~den
+  Berg.
+\newblock Structured denoising diffusion models in discrete state-spaces.
+\newblock \emph{Advances in Neural Information Processing Systems},
+  34:\penalty0 17981--17993, 2021.
+
+\bibitem[Bello et~al.(2016)Bello, Pham, Le, Norouzi, and
+  Bengio]{bello2016neural}
+Irwan Bello, Hieu Pham, Quoc~V Le, Mohammad Norouzi, and Samy Bengio.
+\newblock Neural combinatorial optimization with reinforcement learning.
+\newblock \emph{arXiv preprint arXiv:1611.09940}, 2016.
+
+\bibitem[Bi et~al.(2022)Bi, Ma, Wang, Cao, Chen, Sun, and Chee]{bilearning}
+Jieyi Bi, Yining Ma, Jiahai Wang, Zhiguang Cao, Jinbiao Chen, Yuan Sun, and
+  Yeow~Meng Chee.
+\newblock Learning generalizable models for vehicle routing problems via
+  knowledge distillation.
+\newblock In \emph{Advances in Neural Information Processing Systems}, 2022.
+
+\bibitem[B{\"o}ther et~al.(2022)B{\"o}ther, Ki{\ss}ig, Taraz, Cohen, Seidel,
+  and Friedrich]{other2022whats}
+Maximilian B{\"o}ther, Otto Ki{\ss}ig, Martin Taraz, Sarel Cohen, Karen Seidel,
+  and Tobias Friedrich.
+\newblock What{\textquoteright}s wrong with deep learning in tree search for
+  combinatorial optimization.
+\newblock In \emph{International Conference on Learning Representations}, 2022.
+\newblock URL \url{https://openreview.net/forum?id=mk0HzdqY7i1}.
+
+\bibitem[Bresson and Laurent(2018)]{bresson2018experimental}
+Xavier Bresson and Thomas Laurent.
+\newblock An experimental study of neural networks for variable graphs.
+\newblock 2018.
+
+\bibitem[Bresson and Laurent(2021)]{bresson2021transformer}
+Xavier Bresson and Thomas Laurent.
+\newblock The transformer network for the traveling salesman problem.
+\newblock \emph{arXiv preprint arXiv:2103.03012}, 2021.
+
+\bibitem[Brown et~al.(2020)Brown, Mann, Ryder, Subbiah, Kaplan, Dhariwal,
+  Neelakantan, Shyam, Sastry, Askell, et~al.]{brown2020language}
+Tom Brown, Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared~D Kaplan, Prafulla
+  Dhariwal, Arvind Neelakantan, Pranav Shyam, Girish Sastry, Amanda Askell,
+  et~al.
+\newblock Language models are few-shot learners.
+\newblock \emph{Advances in neural information processing systems},
+  33:\penalty0 1877--1901, 2020.
+
+\bibitem[Campbell et~al.(2022)Campbell, Benton, Bortoli, Rainforth,
+  Deligiannidis, and Doucet]{campbell2022a}
+Andrew Campbell, Joe Benton, Valentin~De Bortoli, Tom Rainforth, George
+  Deligiannidis, and Arnaud Doucet.
+\newblock A continuous time framework for discrete denoising models.
+\newblock In Alice~H. Oh, Alekh Agarwal, Danielle Belgrave, and Kyunghyun Cho,
+  editors, \emph{Advances in Neural Information Processing Systems}, 2022.
+\newblock URL \url{https://openreview.net/forum?id=DmT862YAieY}.
+
+\bibitem[Chang et~al.(2022)Chang, Zhang, Jiang, Liu, and
+  Freeman]{chang2022maskgit}
+Huiwen Chang, Han Zhang, Lu~Jiang, Ce~Liu, and William~T Freeman.
+\newblock Maskgit: Masked generative image transformer.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision
+  and Pattern Recognition}, pages 11315--11325, 2022.
+
+\bibitem[Chen et~al.(2020)Chen, Zhang, Zen, Weiss, Norouzi, and
+  Chan]{chen2020wavegrad}
+Nanxin Chen, Yu~Zhang, Heiga Zen, Ron~J Weiss, Mohammad Norouzi, and William
+  Chan.
+\newblock Wavegrad: Estimating gradients for waveform generation.
+\newblock In \emph{International Conference on Learning Representations}, 2020.
+
+\bibitem[Chen et~al.(2021)Chen, Zhang, Zen, Weiss, Norouzi, Dehak, and
+  Chan]{chen2021wavegrad}
+Nanxin Chen, Yu~Zhang, Heiga Zen, Ron~J Weiss, Mohammad Norouzi, Najim Dehak,
+  and William Chan.
+\newblock Wavegrad 2: Iterative refinement for text-to-speech synthesis.
+\newblock \emph{arXiv preprint arXiv:2106.09660}, 2021.
+
+\bibitem[Chen et~al.(2022)Chen, Zhang, and Hinton]{chen2022analog}
+Ting Chen, Ruixiang Zhang, and Geoffrey Hinton.
+\newblock Analog bits: Generating discrete data using diffusion models with
+  self-conditioning.
+\newblock \emph{arXiv preprint arXiv:2208.04202}, 2022.
+
+\bibitem[Chen and Tian(2019)]{chen2019learning}
+Xinyun Chen and Yuandong Tian.
+\newblock Learning to perform local rewriting for combinatorial optimization.
+\newblock \emph{Advances in Neural Information Processing Systems}, 32, 2019.
+
+\bibitem[Choo et~al.(2022)Choo, Kwon, Kim, Jae, Hottung, Tierney, and
+  Gwon]{choo2022simulationguided}
+Jinho Choo, Yeong-Dae Kwon, Jihoon Kim, Jeongwoo Jae, Andr{\'e} Hottung, Kevin
+  Tierney, and Youngjune Gwon.
+\newblock Simulation-guided beam search for neural combinatorial optimization.
+\newblock In Alice~H. Oh, Alekh Agarwal, Danielle Belgrave, and Kyunghyun Cho,
+  editors, \emph{Advances in Neural Information Processing Systems}, 2022.
+\newblock URL \url{https://openreview.net/forum?id=tYAS1Rpys5}.
+
+\bibitem[Croes(1958)]{croes1958method}
+Georges~A Croes.
+\newblock A method for solving traveling-salesman problems.
+\newblock \emph{Operations research}, 6\penalty0 (6):\penalty0 791--812, 1958.
+
+\bibitem[d~O~Costa et~al.(2020)d~O~Costa, Rhuggenaath, Zhang, and
+  Akcay]{d2020learning}
+Paulo~R d~O~Costa, Jason Rhuggenaath, Yingqian Zhang, and Alp Akcay.
+\newblock Learning 2-opt heuristics for the traveling salesman problem via deep
+  reinforcement learning.
+\newblock In \emph{Asian Conference on Machine Learning}, pages 465--480. PMLR,
+  2020.
+
+\bibitem[da~Costa et~al.(2020)da~Costa, Rhuggenaath, Zhang, and
+  Akcay]{da2020learning}
+Paulo R de~O da~Costa, Jason Rhuggenaath, Yingqian Zhang, and Alp Akcay.
+\newblock Learning {2-OPT} heuristics for the traveling salesman problem via
+  deep reinforcement learning.
+\newblock \emph{arXiv preprint arXiv:2004.01608}, 2020.
+
+\bibitem[Deudon et~al.(2018)Deudon, Cournut, Lacoste, Adulyasak, and
+  Rousseau]{ean}
+Michel Deudon, Pierre Cournut, Alexandre Lacoste, Yossiri Adulyasak, and
+  Louis-Martin Rousseau.
+\newblock Learning heuristics for the {TSP} by policy gradient.
+\newblock In \emph{International conference on the integration of constraint
+  programming, artificial intelligence, and operations research}, pages
+  170--181. Springer, 2018.
+
+\bibitem[Dhariwal and Nichol(2021)]{dhariwal2021diffusion}
+Prafulla Dhariwal and Alexander Nichol.
+\newblock Diffusion models beat gans on image synthesis.
+\newblock \emph{Advances in Neural Information Processing Systems},
+  34:\penalty0 8780--8794, 2021.
+
+\bibitem[Dieleman et~al.(2022)Dieleman, Sartran, Roshannai, Savinov, Ganin,
+  Richemond, Doucet, Strudel, Dyer, Durkan, et~al.]{dieleman2022continuous}
+Sander Dieleman, Laurent Sartran, Arman Roshannai, Nikolay Savinov, Yaroslav
+  Ganin, Pierre~H Richemond, Arnaud Doucet, Robin Strudel, Chris Dyer, Conor
+  Durkan, et~al.
+\newblock Continuous diffusion for categorical data.
+\newblock \emph{arXiv preprint arXiv:2211.15089}, 2022.
+
+\bibitem[Drori et~al.(2020)Drori, Kharkar, Sickinger, Kates, Ma, Ge, Dolev,
+  Dietrich, Williamson, and Udell]{drori2020learning}
+Iddo Drori, Anant Kharkar, William~R Sickinger, Brandon Kates, Qiang Ma, Suwen
+  Ge, Eden Dolev, Brenda Dietrich, David~P Williamson, and Madeleine Udell.
+\newblock Learning to solve combinatorial optimization problems on real-world
+  graphs in linear time.
+\newblock In \emph{2020 19th IEEE International Conference on Machine Learning
+  and Applications (ICMLA)}, pages 19--24. IEEE, 2020.
+
+\bibitem[Erd{\H{o}}s et~al.(1960)Erd{\H{o}}s, R{\'e}nyi,
+  et~al.]{erdHos1960evolution}
+Paul Erd{\H{o}}s, Alfr{\'e}d R{\'e}nyi, et~al.
+\newblock On the evolution of random graphs.
+\newblock \emph{Publ. Math. Inst. Hung. Acad. Sci}, 5\penalty0 (1):\penalty0
+  17--60, 1960.
+
+\bibitem[Fu et~al.(2021)Fu, Qiu, and Zha]{fu2021generalize}
+Zhang-Hua Fu, Kai-Bin Qiu, and Hongyuan Zha.
+\newblock Generalize a small pre-trained model to arbitrarily large tsp
+  instances.
+\newblock In \emph{Proceedings of the AAAI Conference on Artificial
+  Intelligence}, volume~35, pages 7474--7482, 2021.
+
+\bibitem[Geisler et~al.(2022)Geisler, Sommer, Schuchardt, Bojchevski, and
+  G{\"u}nnemann]{geisler2022generalization}
+Simon Geisler, Johanna Sommer, Jan Schuchardt, Aleksandar Bojchevski, and
+  Stephan G{\"u}nnemann.
+\newblock Generalization of neural combinatorial solvers through the lens of
+  adversarial robustness.
+\newblock In \emph{International Conference on Learning Representations}, 2022.
+\newblock URL \url{https://openreview.net/forum?id=vJZ7dPIjip3}.
+
+\bibitem[Gilmer et~al.(2017)Gilmer, Schoenholz, Riley, Vinyals, and
+  Dahl]{gilmer2017neural}
+Justin Gilmer, Samuel~S Schoenholz, Patrick~F Riley, Oriol Vinyals, and
+  George~E Dahl.
+\newblock Neural message passing for quantum chemistry.
+\newblock In \emph{International conference on machine learning}, pages
+  1263--1272. PMLR, 2017.
+
+\bibitem[Gong et~al.(2022)Gong, Li, Feng, Wu, and Kong]{gong2022diffuseq}
+Shansan Gong, Mukai Li, Jiangtao Feng, Zhiyong Wu, and LingPeng Kong.
+\newblock Diffuseq: Sequence to sequence text generation with diffusion models.
+\newblock \emph{arXiv preprint arXiv:2210.08933}, 2022.
+
+\bibitem[Gonzalez(2007)]{gonzalez2007handbook}
+Teofilo~F Gonzalez.
+\newblock \emph{Handbook of approximation algorithms and metaheuristics}.
+\newblock Chapman and Hall/CRC, 2007.
+
+\bibitem[Graikos et~al.(2022)Graikos, Malkin, Jojic, and
+  Samaras]{graikos2022diffusion}
+Alexandros Graikos, Nikolay Malkin, Nebojsa Jojic, and Dimitris Samaras.
+\newblock Diffusion models as plug-and-play priors.
+\newblock In \emph{Thirty-Sixth Conference on Neural Information Processing
+  Systems}, 2022.
+\newblock URL \url{https://arxiv.org/pdf/2206.09012.pdf}.
+
+\bibitem[Gu et~al.(2018)Gu, Bradbury, Xiong, Li, and Socher]{gu2018non}
+Jiatao Gu, James Bradbury, Caiming Xiong, Victor~OK Li, and Richard Socher.
+\newblock Non-autoregressive neural machine translation.
+\newblock In \emph{International Conference on Learning Representations}, 2018.
+
+\bibitem[Gu et~al.(2022)Gu, Chen, Bao, Wen, Zhang, Chen, Yuan, and
+  Guo]{gu2022vector}
+Shuyang Gu, Dong Chen, Jianmin Bao, Fang Wen, Bo~Zhang, Dongdong Chen, Lu~Yuan,
+  and Baining Guo.
+\newblock Vector quantized diffusion model for text-to-image synthesis.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision
+  and Pattern Recognition}, pages 10696--10706, 2022.
+
+\bibitem[Gurobi~Optimization(2018)]{gurobi2018gurobi}
+LLC Gurobi~Optimization.
+\newblock Gurobi optimizer reference manual, 2018.
+
+\bibitem[Hamilton et~al.(2017)Hamilton, Ying, and
+  Leskovec]{hamilton2017inductive}
+Will Hamilton, Zhitao Ying, and Jure Leskovec.
+\newblock Inductive representation learning on large graphs.
+\newblock \emph{Advances in neural information processing systems}, 30, 2017.
+
+\bibitem[Han et~al.(2022)Han, Kumar, and Tsvetkov]{han2022ssd}
+Xiaochuang Han, Sachin Kumar, and Yulia Tsvetkov.
+\newblock Ssd-lm: Semi-autoregressive simplex-based diffusion language model
+  for text generation and modular control.
+\newblock \emph{arXiv preprint arXiv:2210.17432}, 2022.
+
+\bibitem[He et~al.(2022)He, Sun, Wang, Huang, and Qiu]{he2022diffusionbert}
+Zhengfu He, Tianxiang Sun, Kuanning Wang, Xuanjing Huang, and Xipeng Qiu.
+\newblock Diffusionbert: Improving generative masked language models with
+  diffusion models.
+\newblock \emph{arXiv preprint arXiv:2211.15029}, 2022.
+
+\bibitem[Helsgaun(2017)]{lkh3}
+K.~Helsgaun.
+\newblock An extension of the {Lin-Kernighan-Helsgaun} {TSP} solver for
+  constrained traveling salesman and vehicle routing problems.
+\newblock Technical report, Roskilde University, 2017.
+
+\bibitem[Ho et~al.(2020)Ho, Jain, and Abbeel]{ho2020denoising}
+Jonathan Ho, Ajay Jain, and Pieter Abbeel.
+\newblock Denoising diffusion probabilistic models.
+\newblock \emph{Advances in Neural Information Processing Systems},
+  33:\penalty0 6840--6851, 2020.
+
+\bibitem[Ho et~al.(2022{\natexlab{a}})Ho, Chan, Saharia, Whang, Gao, Gritsenko,
+  Kingma, Poole, Norouzi, Fleet, et~al.]{ho2022imagen}
+Jonathan Ho, William Chan, Chitwan Saharia, Jay Whang, Ruiqi Gao, Alexey
+  Gritsenko, Diederik~P Kingma, Ben Poole, Mohammad Norouzi, David~J Fleet,
+  et~al.
+\newblock Imagen video: High definition video generation with diffusion models.
+\newblock \emph{arXiv preprint arXiv:2210.02303}, 2022{\natexlab{a}}.
+
+\bibitem[Ho et~al.(2022{\natexlab{b}})Ho, Saharia, Chan, Fleet, Norouzi, and
+  Salimans]{ho2022cascaded}
+Jonathan Ho, Chitwan Saharia, William Chan, David~J Fleet, Mohammad Norouzi,
+  and Tim Salimans.
+\newblock Cascaded diffusion models for high fidelity image generation.
+\newblock \emph{J. Mach. Learn. Res.}, 23:\penalty0 47--1, 2022{\natexlab{b}}.
+
+\bibitem[Ho et~al.(2022{\natexlab{c}})Ho, Salimans, Gritsenko, Chan, Norouzi,
+  and Fleet]{ho2022video}
+Jonathan Ho, Tim Salimans, Alexey Gritsenko, William Chan, Mohammad Norouzi,
+  and David~J Fleet.
+\newblock Video diffusion models.
+\newblock \emph{arXiv preprint arXiv:2204.03458}, 2022{\natexlab{c}}.
+
+\bibitem[Hoogeboom et~al.(2021)Hoogeboom, Nielsen, Jaini, Forr{\'e}, and
+  Welling]{hoogeboom2021argmax}
+Emiel Hoogeboom, Didrik Nielsen, Priyank Jaini, Patrick Forr{\'e}, and Max
+  Welling.
+\newblock Argmax flows and multinomial diffusion: Learning categorical
+  distributions.
+\newblock \emph{Advances in Neural Information Processing Systems},
+  34:\penalty0 12454--12465, 2021.
+
+\bibitem[Hoogeboom et~al.(2022)Hoogeboom, Satorras, Vignac, and
+  Welling]{hoogeboom2022equivariant}
+Emiel Hoogeboom, V{\i}ctor~Garcia Satorras, Cl{\'e}ment Vignac, and Max
+  Welling.
+\newblock Equivariant diffusion for molecule generation in 3d.
+\newblock In \emph{International Conference on Machine Learning}, pages
+  8867--8887. PMLR, 2022.
+
+\bibitem[Hoos and St{\"u}tzle(2000)]{hoos2000satlib}
+Holger~H Hoos and Thomas St{\"u}tzle.
+\newblock {SATLIB}: An online resource for research on {SAT}.
+\newblock \emph{Sat}, 2000:\penalty0 283--292, 2000.
+
+\bibitem[Hottung and Tierney(2019)]{hottung2019neural}
+Andr{\'e} Hottung and Kevin Tierney.
+\newblock Neural large neighborhood search for the capacitated vehicle routing
+  problem.
+\newblock \emph{arXiv preprint arXiv:1911.09539}, 2019.
+
+\bibitem[Hottung et~al.(2021)Hottung, Kwon, and Tierney]{hottung2021efficient}
+Andr{\'e} Hottung, Yeong-Dae Kwon, and Kevin Tierney.
+\newblock Efficient active search for combinatorial optimization problems.
+\newblock \emph{arXiv preprint arXiv:2106.05126}, 2021.
+
+\bibitem[Hudson et~al.(2022)Hudson, Li, Malencia, and Prorok]{hudson2022graph}
+Benjamin Hudson, Qingbiao Li, Matthew Malencia, and Amanda Prorok.
+\newblock Graph neural network guided local search for the traveling
+  salesperson problem.
+\newblock In \emph{International Conference on Learning Representations}, 2022.
+\newblock URL \url{https://openreview.net/forum?id=ar92oEosBIg}.
+
+\bibitem[Institute(2023)]{lastmile}
+Capgemini~Research Institute.
+\newblock Capgemini research institute, the last-mile delivery challenge, 2023.
+\newblock URL
+  \url{https://www.capgemini.com/wp-content/uploads/2019/01/Report-Digital-–-Last-Mile-Delivery-Challenge1.pdf}.
+
+\bibitem[Ioffe and Szegedy(2015)]{batch-norm}
+Sergey Ioffe and Christian Szegedy.
+\newblock Batch normalization: Accelerating deep network training by reducing
+  internal covariate shift.
+\newblock In \emph{International conference on machine learning}, pages
+  448--456. PMLR, 2015.
+
+\bibitem[Johnson et~al.(2021)Johnson, Austin, Berg, and
+  Tarlow]{johnson2021beyond}
+Daniel~D Johnson, Jacob Austin, Rianne van~den Berg, and Daniel Tarlow.
+\newblock Beyond in-place corruption: Insertion and deletion in denoising
+  probabilistic models.
+\newblock \emph{arXiv preprint arXiv:2107.07675}, 2021.
+
+\bibitem[Joshi et~al.(2019)Joshi, Laurent, and Bresson]{joshi2019efficient}
+Chaitanya~K Joshi, Thomas Laurent, and Xavier Bresson.
+\newblock An efficient graph convolutional network technique for the travelling
+  salesman problem.
+\newblock \emph{arXiv preprint arXiv:1906.01227}, 2019.
+
+\bibitem[Joshi et~al.(2022)Joshi, Cappart, Rousseau, and
+  Laurent]{joshi2022learning}
+Chaitanya~K Joshi, Quentin Cappart, Louis-Martin Rousseau, and Thomas Laurent.
+\newblock Learning the travelling salesperson problem requires rethinking
+  generalization.
+\newblock \emph{Constraints}, pages 1--29, 2022.
+
+\bibitem[Karalias and Loukas(2020)]{karalias2020erdos}
+Nikolaos Karalias and Andreas Loukas.
+\newblock Erdos goes neural: an unsupervised learning framework for
+  combinatorial optimization on graphs.
+\newblock \emph{Advances in Neural Information Processing Systems},
+  33:\penalty0 6659--6672, 2020.
+
+\bibitem[Karras et~al.(2022)Karras, Aittala, Aila, and
+  Laine]{karras2022elucidating}
+Tero Karras, Miika Aittala, Timo Aila, and Samuli Laine.
+\newblock Elucidating the design space of diffusion-based generative models.
+\newblock \emph{arXiv preprint arXiv:2206.00364}, 2022.
+
+\bibitem[Khalil et~al.(2017)Khalil, Dai, Zhang, Dilkina, and
+  Song]{khalil2017learning}
+Elias Khalil, Hanjun Dai, Yuyu Zhang, Bistra Dilkina, and Le~Song.
+\newblock Learning combinatorial optimization algorithms over graphs.
+\newblock \emph{Advances in neural information processing systems}, 30, 2017.
+
+\bibitem[Kim et~al.(2021)Kim, Park, et~al.]{kim2021learning}
+Minsu Kim, Jinkyoo Park, et~al.
+\newblock Learning collaborative policies to solve {NP}-hard routing problems.
+\newblock \emph{Advances in Neural Information Processing Systems}, 34, 2021.
+
+\bibitem[Kim et~al.(2022)Kim, Park, and Park]{kim2022symnco}
+Minsu Kim, Junyoung Park, and Jinkyoo Park.
+\newblock Sym-{NCO}: Leveraging symmetricity for neural combinatorial
+  optimization.
+\newblock In Alice~H. Oh, Alekh Agarwal, Danielle Belgrave, and Kyunghyun Cho,
+  editors, \emph{Advances in Neural Information Processing Systems}, 2022.
+\newblock URL \url{https://openreview.net/forum?id=kHrE2vi5Rvs}.
+
+\bibitem[Kingma et~al.(2021)Kingma, Salimans, Poole, and
+  Ho]{kingma2021variational}
+Diederik Kingma, Tim Salimans, Ben Poole, and Jonathan Ho.
+\newblock Variational diffusion models.
+\newblock \emph{Advances in neural information processing systems},
+  34:\penalty0 21696--21707, 2021.
+
+\bibitem[Kipf and Welling(2016)]{kipf2016semi}
+Thomas~N Kipf and Max Welling.
+\newblock Semi-supervised classification with graph convolutional networks.
+\newblock \emph{arXiv preprint arXiv:1609.02907}, 2016.
+
+\bibitem[Kipf and Welling(2017)]{kipf2017semisupervised}
+Thomas~N. Kipf and Max Welling.
+\newblock Semi-supervised classification with graph convolutional networks.
+\newblock In \emph{International Conference on Learning Representations}, 2017.
+\newblock URL \url{https://openreview.net/forum?id=SJU4ayYgl}.
+
+\bibitem[Konda and Tsitsiklis(2000)]{konda2000actor}
+Vijay~R Konda and John~N Tsitsiklis.
+\newblock Actor-critic algorithms.
+\newblock In \emph{Advances in neural information processing systems}, pages
+  1008--1014, 2000.
+
+\bibitem[Kool et~al.(2019{\natexlab{a}})Kool, van Hoof, and Welling]{19iclr-am}
+Wouter Kool, Herke van Hoof, and Max Welling.
+\newblock Attention, learn to solve routing problems!
+\newblock In \emph{International Conference on Learning Representations},
+  2019{\natexlab{a}}.
+
+\bibitem[Kool et~al.(2019{\natexlab{b}})Kool, van Hoof, and
+  Welling]{kool2019buy}
+Wouter Kool, Herke van Hoof, and Max Welling.
+\newblock Buy 4 {REINFORCE} samples, get a baseline for free!
+\newblock In \emph{Deep Reinforcement Learning Meets Structured Prediction,
+  ICLR 2019 Workshop}, 2019{\natexlab{b}}.
+
+\bibitem[Krizhevsky and Hinton(2010)]{krizhevsky2010convolutional}
+Alex Krizhevsky and Geoff Hinton.
+\newblock Convolutional deep belief networks on cifar-10.
+\newblock \emph{Unpublished manuscript}, 40\penalty0 (7):\penalty0 1--9, 2010.
+
+\bibitem[Kwon et~al.(2020)Kwon, Choo, Kim, Yoon, Gwon, and Min]{kwon2020pomo}
+Yeong-Dae Kwon, Jinho Choo, Byoungjip Kim, Iljoo Yoon, Youngjune Gwon, and
+  Seungjai Min.
+\newblock {POMO}: Policy optimization with multiple optima for reinforcement
+  learning.
+\newblock \emph{arXiv preprint arXiv:2010.16011}, 2020.
+
+\bibitem[Kwon et~al.(2021)Kwon, Choo, Yoon, Park, Park, and
+  Gwon]{kwon2021matrix}
+Yeong-Dae Kwon, Jinho Choo, Iljoo Yoon, Minah Park, Duwon Park, and Youngjune
+  Gwon.
+\newblock Matrix encoding networks for neural combinatorial optimization.
+\newblock \emph{Advances in Neural Information Processing Systems}, 34, 2021.
+
+\bibitem[Li et~al.(2022)Li, Thickstun, Gulrajani, Liang, and
+  Hashimoto]{li2022diffusionlm}
+Xiang~Lisa Li, John Thickstun, Ishaan Gulrajani, Percy Liang, and Tatsunori
+  Hashimoto.
+\newblock Diffusion-{LM} improves controllable text generation.
+\newblock In Alice~H. Oh, Alekh Agarwal, Danielle Belgrave, and Kyunghyun Cho,
+  editors, \emph{Advances in Neural Information Processing Systems}, 2022.
+\newblock URL \url{https://openreview.net/forum?id=3s9IrEsjLyk}.
+
+\bibitem[Li et~al.(2018)Li, Chen, and Koltun]{li2018combinatorial}
+Zhuwen Li, Qifeng Chen, and Vladlen Koltun.
+\newblock Combinatorial optimization with graph convolutional networks and
+  guided tree search.
+\newblock \emph{Advances in neural information processing systems}, 31, 2018.
+
+\bibitem[Lin and Kernighan(1973)]{lin1973effective}
+Shen Lin and Brian~W Kernighan.
+\newblock An effective heuristic algorithm for the traveling-salesman problem.
+\newblock \emph{Operations research}, 21\penalty0 (2):\penalty0 498--516, 1973.
+
+\bibitem[Liu et~al.(2022)Liu, Li, Ren, Chen, and Zhao]{liu2022diffsinger}
+Jinglin Liu, Chengxi Li, Yi~Ren, Feiyang Chen, and Zhou Zhao.
+\newblock Diffsinger: Singing voice synthesis via shallow diffusion mechanism.
+\newblock In \emph{Proceedings of the AAAI Conference on Artificial
+  Intelligence}, volume~36, pages 11020--11028, 2022.
+
+\bibitem[Liu et~al.(2021)Liu, Ren, Lin, and Zhao]{liu2021pseudo}
+Luping Liu, Yi~Ren, Zhijie Lin, and Zhou Zhao.
+\newblock Pseudo numerical methods for diffusion models on manifolds.
+\newblock In \emph{International Conference on Learning Representations}, 2021.
+
+\bibitem[Lu et~al.(2022{\natexlab{a}})Lu, Zhou, Bao, Chen, Li, and
+  Zhu]{lu2022dpm}
+Cheng Lu, Yuhao Zhou, Fan Bao, Jianfei Chen, Chongxuan Li, and Jun Zhu.
+\newblock Dpm-solver: A fast ode solver for diffusion probabilistic model
+  sampling in around 10 steps.
+\newblock \emph{arXiv preprint arXiv:2206.00927}, 2022{\natexlab{a}}.
+
+\bibitem[Lu et~al.(2022{\natexlab{b}})Lu, Zhou, Bao, Chen, Li, and
+  Zhu]{lu2022dpmpp}
+Cheng Lu, Yuhao Zhou, Fan Bao, Jianfei Chen, Chongxuan Li, and Jun Zhu.
+\newblock Dpm-solver++: Fast solver for guided sampling of diffusion
+  probabilistic models.
+\newblock \emph{arXiv preprint arXiv:2211.01095}, 2022{\natexlab{b}}.
+
+\bibitem[Lu et~al.(2020)Lu, Zhang, and Yang]{l2i}
+Hao Lu, Xingwen Zhang, and Shuang Yang.
+\newblock A learning-based iterative method for solving vehicle routing
+  problems.
+\newblock In \emph{International Conference on Learning Representations}, 2020.
+
+\bibitem[Luo et~al.(2022)Luo, Su, Peng, Wang, Peng, and
+  Ma]{luo2022antigenspecific}
+Shitong Luo, Yufeng Su, Xingang Peng, Sheng Wang, Jian Peng, and Jianzhu Ma.
+\newblock Antigen-specific antibody design and optimization with
+  diffusion-based generative models for protein structures.
+\newblock In Alice~H. Oh, Alekh Agarwal, Danielle Belgrave, and Kyunghyun Cho,
+  editors, \emph{Advances in Neural Information Processing Systems}, 2022.
+\newblock URL \url{https://openreview.net/forum?id=jSorGn2Tjg}.
+
+\bibitem[Ma et~al.(2019)Ma, Ge, He, Thaker, and Drori]{ma2019combinatorial}
+Qiang Ma, Suwen Ge, Danyang He, Darshan Thaker, and Iddo Drori.
+\newblock Combinatorial optimization by graph pointer networks and hierarchical
+  reinforcement learning.
+\newblock \emph{arXiv preprint arXiv:1911.04936}, 2019.
+
+\bibitem[Ma et~al.(2021)Ma, Li, Cao, Song, Zhang, Chen, and
+  Tang]{ma2021learning}
+Yining Ma, Jingwen Li, Zhiguang Cao, Wen Song, Le~Zhang, Zhenghua Chen, and
+  Jing Tang.
+\newblock Learning to iteratively solve routing problems with dual-aspect
+  collaborative transformer.
+\newblock \emph{Advances in Neural Information Processing Systems},
+  34:\penalty0 11096--11107, 2021.
+
+\bibitem[Malherbe et~al.(2022)Malherbe, Grosnit, Tutunov, Ammar, and
+  Wang]{malherbe2022optimistic}
+Cedric Malherbe, Antoine Grosnit, Rasul Tutunov, Haitham~Bou Ammar, and Jun
+  Wang.
+\newblock Optimistic tree searches for combinatorial black-box optimization.
+\newblock In Alice~H. Oh, Alekh Agarwal, Danielle Belgrave, and Kyunghyun Cho,
+  editors, \emph{Advances in Neural Information Processing Systems}, 2022.
+\newblock URL \url{https://openreview.net/forum?id=JGLW4DvX11F}.
+
+\bibitem[Meng et~al.(2021)Meng, Song, Song, Wu, Zhu, and Ermon]{meng2021sdedit}
+Chenlin Meng, Yang Song, Jiaming Song, Jiajun Wu, Jun-Yan Zhu, and Stefano
+  Ermon.
+\newblock Sdedit: Image synthesis and editing with stochastic differential
+  equations.
+\newblock \emph{arXiv preprint arXiv:2108.01073}, 2021.
+
+\bibitem[Nair et~al.(2020)Nair, Bartunov, Gimeno, von Glehn, Lichocki, Lobov,
+  O'Donoghue, Sonnerat, Tjandraatmadja, Wang, et~al.]{nair2020solving}
+Vinod Nair, Sergey Bartunov, Felix Gimeno, Ingrid von Glehn, Pawel Lichocki,
+  Ivan Lobov, Brendan O'Donoghue, Nicolas Sonnerat, Christian Tjandraatmadja,
+  Pengming Wang, et~al.
+\newblock Solving mixed integer programs using neural networks.
+\newblock \emph{arXiv preprint arXiv:2012.13349}, 2020.
+
+\bibitem[Nazari et~al.(2018)Nazari, Oroojlooy, Snyder, and
+  Tak{\'a}c]{nazari2018reinforcement}
+Mohammadreza Nazari, Afshin Oroojlooy, Lawrence Snyder, and Martin Tak{\'a}c.
+\newblock Reinforcement learning for solving the vehicle routing problem.
+\newblock \emph{Advances in neural information processing systems}, 31, 2018.
+
+\bibitem[Nichol et~al.(2021)Nichol, Dhariwal, Ramesh, Shyam, Mishkin, McGrew,
+  Sutskever, and Chen]{nichol2021glide}
+Alex Nichol, Prafulla Dhariwal, Aditya Ramesh, Pranav Shyam, Pamela Mishkin,
+  Bob McGrew, Ilya Sutskever, and Mark Chen.
+\newblock Glide: Towards photorealistic image generation and editing with
+  text-guided diffusion models.
+\newblock \emph{arXiv preprint arXiv:2112.10741}, 2021.
+
+\bibitem[Nichol and Dhariwal(2021)]{nichol2021improved}
+Alexander~Quinn Nichol and Prafulla Dhariwal.
+\newblock Improved denoising diffusion probabilistic models.
+\newblock In \emph{International Conference on Machine Learning}, pages
+  8162--8171. PMLR, 2021.
+
+\bibitem[Niu et~al.(2020)Niu, Song, Song, Zhao, Grover, and
+  Ermon]{niu2020permutation}
+Chenhao Niu, Yang Song, Jiaming Song, Shengjia Zhao, Aditya Grover, and Stefano
+  Ermon.
+\newblock Permutation invariant graph generation via score-based generative
+  modeling.
+\newblock In \emph{International Conference on Artificial Intelligence and
+  Statistics}, pages 4474--4484. PMLR, 2020.
+
+\bibitem[Ouyang et~al.(2021)Ouyang, Wang, Han, Jin, and
+  Weng]{ouyang2021improving}
+Wenbin Ouyang, Yisen Wang, Shaochen Han, Zhejian Jin, and Paul Weng.
+\newblock Improving generalization of deep reinforcement learning-based tsp
+  solvers.
+\newblock \emph{arXiv preprint arXiv:2110.02843}, 2021.
+
+\bibitem[Papadimitriou and Steiglitz(1998)]{papadimitriou1998combinatorial}
+Christos~H Papadimitriou and Kenneth Steiglitz.
+\newblock \emph{Combinatorial optimization: algorithms and complexity}.
+\newblock Courier Corporation, 1998.
+
+\bibitem[Park et~al.(2021)Park, Chun, Kim, Kim, and Park]{park2021learning}
+Junyoung Park, Jaehyeong Chun, Sang~Hun Kim, Youngkook Kim, and Jinkyoo Park.
+\newblock Learning to schedule job-shop problems: representation and policy
+  learning using graph neural network and reinforcement learning.
+\newblock \emph{International Journal of Production Research}, 59\penalty0
+  (11):\penalty0 3360--3377, 2021.
+
+\bibitem[Peng et~al.(2019)Peng, Wang, and Zhang]{peng2019deep}
+Bo~Peng, Jiahai Wang, and Zizhen Zhang.
+\newblock A deep reinforcement learning algorithm using dynamic attention model
+  for vehicle routing problems.
+\newblock In \emph{International Symposium on Intelligence Computation and
+  Applications}, pages 636--650. Springer, 2019.
+
+\bibitem[pitney bowes(2023)]{pitneyindex}
+pitney bowes.
+\newblock Pitney bowes parcel shipping index, 2023.
+\newblock URL \url{https://www.pitneybowes.com/us/shipping-index.html}.
+
+\bibitem[Qiu et~al.(2022)Qiu, Sun, and Yang]{qiudimes}
+Ruizhong Qiu, Zhiqing Sun, and Yiming Yang.
+\newblock Dimes: A differentiable meta solver for combinatorial optimization
+  problems.
+\newblock In \emph{Advances in Neural Information Processing Systems}, 2022.
+
+\bibitem[Ramesh et~al.(2022)Ramesh, Dhariwal, Nichol, Chu, and
+  Chen]{ramesh2022hierarchical}
+Aditya Ramesh, Prafulla Dhariwal, Alex Nichol, Casey Chu, and Mark Chen.
+\newblock Hierarchical text-conditional image generation with clip latents.
+\newblock \emph{arXiv preprint arXiv:2204.06125}, 2022.
+
+\bibitem[Rombach et~al.(2022)Rombach, Blattmann, Lorenz, Esser, and
+  Ommer]{rombach2022high}
+Robin Rombach, Andreas Blattmann, Dominik Lorenz, Patrick Esser, and Bj{\"o}rn
+  Ommer.
+\newblock High-resolution image synthesis with latent diffusion models.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision
+  and Pattern Recognition}, pages 10684--10695, 2022.
+
+\bibitem[Saharia et~al.(2022{\natexlab{a}})Saharia, Chan, Chang, Lee, Ho,
+  Salimans, Fleet, and Norouzi]{saharia2022palette}
+Chitwan Saharia, William Chan, Huiwen Chang, Chris Lee, Jonathan Ho, Tim
+  Salimans, David Fleet, and Mohammad Norouzi.
+\newblock Palette: Image-to-image diffusion models.
+\newblock In \emph{ACM SIGGRAPH 2022 Conference Proceedings}, pages 1--10,
+  2022{\natexlab{a}}.
+
+\bibitem[Saharia et~al.(2022{\natexlab{b}})Saharia, Chan, Saxena, Li, Whang,
+  Denton, Ghasemipour, Ayan, Mahdavi, Lopes, et~al.]{saharia2022photorealistic}
+Chitwan Saharia, William Chan, Saurabh Saxena, Lala Li, Jay Whang, Emily
+  Denton, Seyed Kamyar~Seyed Ghasemipour, Burcu~Karagol Ayan, S~Sara Mahdavi,
+  Rapha~Gontijo Lopes, et~al.
+\newblock Photorealistic text-to-image diffusion models with deep language
+  understanding.
+\newblock \emph{arXiv preprint arXiv:2205.11487}, 2022{\natexlab{b}}.
+
+\bibitem[Shaw(1997)]{shaw1997new}
+Paul Shaw.
+\newblock A new local search algorithm providing high quality solutions to
+  vehicle routing problems.
+\newblock \emph{APES Group, Dept of Computer Science, University of
+  Strathclyde, Glasgow, Scotland, UK}, 46, 1997.
+
+\bibitem[Silver et~al.(2016)Silver, Huang, Maddison, Guez, Sifre, Van
+  Den~Driessche, Schrittwieser, Antonoglou, Panneershelvam, Lanctot,
+  et~al.]{silver2016mastering}
+David Silver, Aja Huang, Chris~J Maddison, Arthur Guez, Laurent Sifre, George
+  Van Den~Driessche, Julian Schrittwieser, Ioannis Antonoglou, Veda
+  Panneershelvam, Marc Lanctot, et~al.
+\newblock Mastering the game of go with deep neural networks and tree search.
+\newblock \emph{nature}, 529\penalty0 (7587):\penalty0 484--489, 2016.
+
+\bibitem[Singer et~al.(2022)Singer, Polyak, Hayes, Yin, An, Zhang, Hu, Yang,
+  Ashual, Gafni, et~al.]{singer2022make}
+Uriel Singer, Adam Polyak, Thomas Hayes, Xi~Yin, Jie An, Songyang Zhang, Qiyuan
+  Hu, Harry Yang, Oron Ashual, Oran Gafni, et~al.
+\newblock Make-a-video: Text-to-video generation without text-video data.
+\newblock \emph{arXiv preprint arXiv:2209.14792}, 2022.
+
+\bibitem[Sohl-Dickstein et~al.(2015)Sohl-Dickstein, Weiss, Maheswaranathan, and
+  Ganguli]{sohl2015deep}
+Jascha Sohl-Dickstein, Eric Weiss, Niru Maheswaranathan, and Surya Ganguli.
+\newblock Deep unsupervised learning using nonequilibrium thermodynamics.
+\newblock In \emph{International Conference on Machine Learning}, pages
+  2256--2265. PMLR, 2015.
+
+\bibitem[Song et~al.(2021{\natexlab{a}})Song, Meng, and
+  Ermon]{song2021denoising}
+Jiaming Song, Chenlin Meng, and Stefano Ermon.
+\newblock Denoising diffusion implicit models.
+\newblock In \emph{International Conference on Learning Representations},
+  2021{\natexlab{a}}.
+\newblock URL \url{https://openreview.net/forum?id=St1giarCHLP}.
+
+\bibitem[Song and Ermon(2019)]{song2019generative}
+Yang Song and Stefano Ermon.
+\newblock Generative modeling by estimating gradients of the data distribution.
+\newblock \emph{Advances in Neural Information Processing Systems}, 32, 2019.
+
+\bibitem[Song and Ermon(2020)]{song2020improved}
+Yang Song and Stefano Ermon.
+\newblock Improved techniques for training score-based generative models.
+\newblock \emph{Advances in neural information processing systems},
+  33:\penalty0 12438--12448, 2020.
+
+\bibitem[Song et~al.(2021{\natexlab{b}})Song, Sohl-Dickstein, Kingma, Kumar,
+  Ermon, and Poole]{song2021score}
+Yang Song, Jascha Sohl-Dickstein, Diederik~P Kingma, Abhishek Kumar, Stefano
+  Ermon, and Ben Poole.
+\newblock Score-based generative modeling through stochastic differential
+  equations.
+\newblock In \emph{International Conference on Learning Representations},
+  2021{\natexlab{b}}.
+
+\bibitem[Sun et~al.(2022)Sun, Yu, Dai, Schuurmans, and Dai]{sun2022score}
+Haoran Sun, Lijun Yu, Bo~Dai, Dale Schuurmans, and Hanjun Dai.
+\newblock Score-based continuous-time discrete diffusion models.
+\newblock \emph{arXiv preprint arXiv:2211.16750}, 2022.
+
+\bibitem[Vaswani et~al.(2017)Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez,
+  Kaiser, and Polosukhin]{vaswani2017attention}
+Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones,
+  Aidan~N Gomez, {\L}ukasz Kaiser, and Illia Polosukhin.
+\newblock Attention is all you need.
+\newblock In \emph{Advances in neural information processing systems}, pages
+  5998--6008, 2017.
+
+\bibitem[Veli{\v{c}}kovi{\'c} et~al.(2018)Veli{\v{c}}kovi{\'c}, Cucurull,
+  Casanova, Romero, Li{\`o}, and Bengio]{velivckovic2018graph}
+Petar Veli{\v{c}}kovi{\'c}, Guillem Cucurull, Arantxa Casanova, Adriana Romero,
+  Pietro Li{\`o}, and Yoshua Bengio.
+\newblock Graph attention networks.
+\newblock In \emph{International Conference on Learning Representations}, 2018.
+
+\bibitem[Vignac et~al.(2022)Vignac, Krawczuk, Siraudin, Wang, Cevher, and
+  Frossard]{vignac2022digress}
+Clement Vignac, Igor Krawczuk, Antoine Siraudin, Bohan Wang, Volkan Cevher, and
+  Pascal Frossard.
+\newblock Digress: Discrete denoising diffusion for graph generation.
+\newblock \emph{arXiv preprint arXiv:2209.14734}, 2022.
+
+\bibitem[Wang et~al.(2021{\natexlab{a}})Wang, Yang, Slumbers, Han, Guo, Zhang,
+  and Wang]{wang2021game}
+Chenguang Wang, Yaodong Yang, Oliver Slumbers, Congying Han, Tiande Guo,
+  Haifeng Zhang, and Jun Wang.
+\newblock A game-theoretic approach for improving generalization ability of
+  {TSP} solvers.
+\newblock \emph{arXiv preprint arXiv:2110.15105}, 2021{\natexlab{a}}.
+
+\bibitem[Wang et~al.(2021{\natexlab{b}})Wang, Hua, Liu, Zhang, Yan, Qi, Yang,
+  Zhou, and Yang]{wang2021bi}
+Runzhong Wang, Zhigang Hua, Gan Liu, Jiayi Zhang, Junchi Yan, Feng Qi, Shuang
+  Yang, Jun Zhou, and Xiaokang Yang.
+\newblock A bi-level framework for learning to solve combinatorial optimization
+  on graphs.
+\newblock \emph{arXiv preprint arXiv:2106.04927}, 2021{\natexlab{b}}.
+
+\bibitem[Williams(1992)]{williams1992simple}
+Ronald~J Williams.
+\newblock Simple statistical gradient-following algorithms for connectionist
+  reinforcement learning.
+\newblock \emph{Machine learning}, 8\penalty0 (3):\penalty0 229--256, 1992.
+
+\bibitem[Wu et~al.(2022)Wu, Gong, Liu, Ye, and Liu]{wu2022diffusion}
+Lemeng Wu, Chengyue Gong, Xingchao Liu, Mao Ye, and Qiang Liu.
+\newblock Diffusion-based molecule generation with informative prior bridges.
+\newblock \emph{arXiv preprint arXiv:2209.00865}, 2022.
+
+\bibitem[Wu et~al.(2021)Wu, Song, Cao, Zhang, and Lim]{wu2021learning}
+Yaoxin Wu, Wen Song, Zhiguang Cao, Jie Zhang, and Andrew Lim.
+\newblock Learning improvement heuristics for solving routing problems..
+\newblock \emph{IEEE transactions on neural networks and learning systems},
+  2021.
+
+\bibitem[Xin et~al.(2021{\natexlab{a}})Xin, Song, Cao, and Zhang]{xin2021multi}
+Liang Xin, Wen Song, Zhiguang Cao, and Jie Zhang.
+\newblock Multi-decoder attention model with embedding glimpse for solving
+  vehicle routing problems.
+\newblock In \emph{Proceedings of the AAAI Conference on Artificial
+  Intelligence}, volume~35, pages 12042--12049, 2021{\natexlab{a}}.
+
+\bibitem[Xin et~al.(2021{\natexlab{b}})Xin, Song, Cao, and
+  Zhang]{xin2021neurolkh}
+Liang Xin, Wen Song, Zhiguang Cao, and Jie Zhang.
+\newblock {NeuroLKH}: Combining deep learning model with
+  {Lin--Kernighan--Helsgaun} heuristic for solving the traveling salesman
+  problem.
+\newblock \emph{Advances in Neural Information Processing Systems}, 34,
+  2021{\natexlab{b}}.
+
+\bibitem[Xu et~al.(2019)Xu, Hu, Leskovec, and Jegelka]{xu2018how}
+Keyulu Xu, Weihua Hu, Jure Leskovec, and Stefanie Jegelka.
+\newblock How powerful are graph neural networks?
+\newblock In \emph{International Conference on Learning Representations}, 2019.
+\newblock URL \url{https://openreview.net/forum?id=ryGs6iA5Km}.
+
+\bibitem[Xu et~al.(2021)Xu, Yu, Song, Shi, Ermon, and Tang]{xu2021geodiff}
+Minkai Xu, Lantao Yu, Yang Song, Chence Shi, Stefano Ermon, and Jian Tang.
+\newblock Geodiff: A geometric diffusion model for molecular conformation
+  generation.
+\newblock In \emph{International Conference on Learning Representations}, 2021.
+
+\bibitem[Yang et~al.(2022)Yang, Yu, Wang, Wang, Weng, Zou, and
+  Yu]{yang2022diffsound}
+Dongchao Yang, Jianwei Yu, Helin Wang, Wen Wang, Chao Weng, Yuexian Zou, and
+  Dong Yu.
+\newblock Diffsound: Discrete diffusion model for text-to-sound generation.
+\newblock \emph{arXiv preprint arXiv:2207.09983}, 2022.
+
+\bibitem[Yolcu and P{\'o}czos(2019)]{yolcu2019learning}
+Emre Yolcu and Barnab{\'a}s P{\'o}czos.
+\newblock Learning local search heuristics for boolean satisfiability.
+\newblock In \emph{NeurIPS}, pages 7990--8001, 2019.
+
+\bibitem[Yu et~al.()Yu, Xu, Koh, Luong, Baid, Wang, Vasudevan, Ku, Yang, Ayan,
+  et~al.]{yuscaling}
+Jiahui Yu, Yuanzhong Xu, Jing~Yu Koh, Thang Luong, Gunjan Baid, Zirui Wang,
+  Vijay Vasudevan, Alexander Ku, Yinfei Yang, Burcu~Karagol Ayan, et~al.
+\newblock Scaling autoregressive models for content-rich text-to-image
+  generation.
+\newblock \emph{Transactions on Machine Learning Research}.
+
+\bibitem[Yu et~al.(2022)Yu, Cheng, Sohn, Lezama, Zhang, Chang, Hauptmann, Yang,
+  Hao, Essa, et~al.]{yu2022magvit}
+Lijun Yu, Yong Cheng, Kihyuk Sohn, Jos{\'e} Lezama, Han Zhang, Huiwen Chang,
+  Alexander~G Hauptmann, Ming-Hsuan Yang, Yuan Hao, Irfan Essa, et~al.
+\newblock Magvit: Masked generative video transformer.
+\newblock \emph{arXiv preprint arXiv:2212.05199}, 2022.
+
+\bibitem[Zhang et~al.(2020)Zhang, Song, Cao, Zhang, Tan, and
+  Xu]{zhang2020learning}
+Cong Zhang, Wen Song, Zhiguang Cao, Jie Zhang, Puay~Siew Tan, and Chi Xu.
+\newblock Learning to dispatch for job shop scheduling via deep reinforcement
+  learning.
+\newblock \emph{arXiv preprint arXiv:2010.12367}, 2020.
+
+\end{thebibliography}

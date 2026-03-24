@@ -1,0 +1,65 @@
+%! \DeclareRobustCommand\openone{\leavevmode\hbox{\small1\normalsize\kern-.33em1}}
+\usetikzlibrary{decorations.pathreplacing,decorations.pathmorphing}
+\providecommand{\ket}[1]{\left|#1\right\rangle}
+\begin{tikzpicture}[scale=1.500000,x=1pt,y=1pt]
+\filldraw[color=white] (0.000000, -12.000000) rectangle (187.000000, 36.000000);
+% Drawing wires
+% Line 15: d  W  \ket{\psi}_L
+\draw[color=black] (0.000000,24.000000) -- (187.000000,24.000000);
+\draw[color=black] (0.000000,24.000000) node[left] {$\ket{\psi}_L$};
+% Line 20: a W \ket{A}^{\otimes m}
+\draw[color=black] (0.000000,0.000000) -- (67.000000,0.000000);
+\draw[color=black] (67.000000,-0.500000) -- (142.000000,-0.500000);
+\draw[color=black] (67.000000,0.500000) -- (142.000000,0.500000);
+\draw[color=black] (0.000000,0.000000) node[left] {$\ket{A}^{\otimes m}$};
+% Done with wires; drawing gates
+% Line 26: d /
+\draw (3.000000, 18.000000) -- (11.000000, 30.000000);
+% Line 28: a /
+\draw (3.000000, -6.000000) -- (11.000000, 6.000000);
+% Line 37: d G {$E$}
+\begin{scope}
+\draw[fill=white] (23.000000, 24.000000) +(-45.000000:8.485281pt and 8.485281pt) -- +(45.000000:8.485281pt and 8.485281pt) -- +(135.000000:8.485281pt and 8.485281pt) -- +(225.000000:8.485281pt and 8.485281pt) -- cycle;
+\clip (23.000000, 24.000000) +(-45.000000:8.485281pt and 8.485281pt) -- +(45.000000:8.485281pt and 8.485281pt) -- +(135.000000:8.485281pt and 8.485281pt) -- +(225.000000:8.485281pt and 8.485281pt) -- cycle;
+\draw (23.000000, 24.000000) node {{$E$}};
+\end{scope}
+% Line 40: d a TOUCH
+% Line 43: d G {$\mathcal{S}$} a  width=20
+\draw (45.000000,24.000000) -- (45.000000,0.000000);
+\begin{scope}
+\draw[fill=white] (45.000000, 24.000000) +(-45.000000:14.142136pt and 8.485281pt) -- +(45.000000:14.142136pt and 8.485281pt) -- +(135.000000:14.142136pt and 8.485281pt) -- +(225.000000:14.142136pt and 8.485281pt) -- cycle;
+\clip (45.000000, 24.000000) +(-45.000000:14.142136pt and 8.485281pt) -- +(45.000000:14.142136pt and 8.485281pt) -- +(135.000000:14.142136pt and 8.485281pt) -- +(225.000000:14.142136pt and 8.485281pt) -- cycle;
+\draw (45.000000, 24.000000) node {{$\mathcal{S}$}};
+\end{scope}
+\filldraw (45.000000, 0.000000) circle(1.500000pt);
+% Line 44: a:cwire
+\filldraw (67.000000, 0.000000) circle(1.500000pt);
+\draw[fill=white] (61.000000, -6.000000) rectangle (73.000000, 6.000000);
+\draw[very thin] (67.000000, 0.600000) arc (90:150:6.000000pt);
+\draw[very thin] (67.000000, 0.600000) arc (90:30:6.000000pt);
+\draw[->,>=stealth] (67.000000, -5.400000) -- +(80:10.392305pt);
+% Line 46: a = $S$
+\draw[fill=white,color=white] (79.000000, -6.000000) rectangle (94.000000, 6.000000);
+\draw (86.500000, 0.000000) node {$S$};
+% Line 48: a G {Decoder} width=30
+\begin{scope}
+\draw[fill=white] (115.000000, -0.000000) +(-45.000000:21.213203pt and 8.485281pt) -- +(45.000000:21.213203pt and 8.485281pt) -- +(135.000000:21.213203pt and 8.485281pt) -- +(225.000000:21.213203pt and 8.485281pt) -- cycle;
+\clip (115.000000, -0.000000) +(-45.000000:21.213203pt and 8.485281pt) -- +(45.000000:21.213203pt and 8.485281pt) -- +(135.000000:21.213203pt and 8.485281pt) -- +(225.000000:21.213203pt and 8.485281pt) -- cycle;
+\draw (115.000000, -0.000000) node {{Decoder}};
+\end{scope}
+% Line 49: d G {$\mathcal{R}$} a:owire
+\draw (141.500000,24.000000) -- (141.500000,0.000000);
+\draw (142.500000,24.000000) -- (142.500000,0.000000);
+\begin{scope}
+\draw[fill=white] (142.000000, 24.000000) +(-45.000000:8.485281pt and 8.485281pt) -- +(45.000000:8.485281pt and 8.485281pt) -- +(135.000000:8.485281pt and 8.485281pt) -- +(225.000000:8.485281pt and 8.485281pt) -- cycle;
+\clip (142.000000, 24.000000) +(-45.000000:8.485281pt and 8.485281pt) -- +(45.000000:8.485281pt and 8.485281pt) -- +(135.000000:8.485281pt and 8.485281pt) -- +(225.000000:8.485281pt and 8.485281pt) -- cycle;
+\draw (142.000000, 24.000000) node {{$\mathcal{R}$}};
+\end{scope}
+\filldraw (142.000000, 0.000000) circle(1.500000pt);
+% Line 50: d = $\mathcal{R}E\ket{\psi}_L$ width=30
+\draw[fill=white,color=white] (154.000000, 18.000000) rectangle (184.000000, 30.000000);
+\draw (169.000000, 24.000000) node {$\mathcal{R}E\ket{\psi}_L$};
+% Done with gates; drawing ending labels
+% Done with ending labels; drawing cut lines and comments
+% Done with comments
+\end{tikzpicture}

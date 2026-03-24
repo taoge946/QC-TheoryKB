@@ -1,0 +1,170 @@
+%\section{Supplemental Material}
+
+
+
+
+
+\subsection{Data Set}
+	\vspace{2mm}\noindent\textbf{Citation Networks}
+	consist of papers, authors, and their relationships such as citations, authorship, and co-authorship.
+	Although citation networks are directed graphs, they are often treated as undirected graphs in evaluating model performance with respect to node classification, link prediction, and node clustering tasks.  There are three popular data sets for paper-citation networks, Cora, Citeseer and Pubmed.  The Cora data set contains 2708 machine learning publications grouped into seven classes.  The Citeseer data set contains 3327 scientific papers grouped into six classes. Each paper in Cora and Citeseer is represented by a one-hot vector indicating the presence or absence of a word from a dictionary.  The Pubmed data set contains 19717 diabetes-related publications. Each paper in Pubmed is represented by a term frequency-inverse document frequency (TF-IDF) vector. Furthermore, DBLP is a large citation data set with millions of papers and authors which are collected from computer science bibliographies. The raw data set of DBLP can be found on \url{https://dblp.uni-trier.de}.  A processed version of the DBLP paper-citation network is updated continuously by \url{https://aminer.org/citation}. 
+	
+		\begin{table}[h]
+	\caption{Reported experimental results for node classification on five frequently used data sets.  Cora, Citeseer, and Pubmed are evaluated by classification accuracy.
+		PPI and Reddit are evaluated by micro-averaged F1 score. 
+		%For fair comparison, the listed methods use standard splits of these data sets. %In detail, for Cora, the standard split is [train,valid,test]=[140,500,1000] (nodes). For Citeseer, the standard split is [train,valid,test]=[120,500,1000] (nodes). For Pubmed, the standard split is [train,valid,test]=[600,500,1000] (nodes). For PPI, [train,valid,test]=[20,2,2] (graphs). Cora, 
+	}
+	\label{tab:bennode}
+	\centering
+	\scriptsize
+	\begin{tabular}{l l l l l l}
+		\toprule
+		Method       & Cora     & Citeseer & Pubmed   & PPI   & Reddit    \\ \midrule
+		SSE (2018)          & -        & -        & -        & 83.60    & - \\ \hline
+		GCN (2016)   & 81.50     & 70.30     & 79.00     & -     &  -  \\ \hline
+		%SGC (2019) \cite{wu2019simplifying} & 81.00 & 71.90 & 78.90 & - & \\ \hline
+		Cayleynets (2017)   & 81.90 & -        & -        & -   &    - \\ \hline
+		DualGCN (2018)      & 83.50     & 72.60     & 80.00     & -    &  -   \\ \hline
+		GraphSage (2017)     & -        & -        & -        & 61.20     &  95.40 \\ \hline
+		GAT (2017)          & 83.00 & 72.50 & 79.00 &  97.30 & -  \\ \hline
+		MoNet (2017)  & 81.69   & -    &  78.81    & -     &   -  \\ \hline
+		LGCN (2018)         & 83.30 & 73.00 & 79.50 & 77.20  &  -  \\ \hline
+		GAAN (2018)         & -        & -        & -        & 98.71 & 96.83 \\ \hline
+		FastGCN (2018)  & - & - & - & - & 93.70 \\ \hline
+		StoGCN (2018)     & 82.00 & 70.90  & 78.70   & 97.80   &  96.30 \\ \hline
+		Huang et al. (2018) & - & - & -& - & 96.27 \\ \hline
+		GeniePath (2019)   & -        & -        & 78.50     & 97.90      & - \\ \hline
+		DGI (2018) & 82.30 & 71.80 & 76.80 & 63.80 & 94.00 \\ \hline
+		Cluster-GCN (2019) & - & - &- & 99.36 & 96.60 \\ \bottomrule
+	\end{tabular}
+\end{table}
+
+
+
+\begin{table*}
+	\caption{A Summary of Open-source Implementations}
+	\label{tab:codes}
+	\centering
+	\begin{tabular}{ l l l }
+		\toprule
+		Model & Framework & Github Link \\ \midrule
+		GGNN (2015)      &    torch         &      \url{https://github.com/yujiali/ggnn}       \\ \hline
+		SSE (2018)      &    c         &      \url{https://github.com/Hanjun-Dai/steady_state_embedding}       \\ \hline
+		ChebNet (2016)   & tensorflow  &\url{https://github.com/mdeff/cnn_graph}    \\ \hline 
+		GCN (2017) & tensorflow  &\url{https://github.com/tkipf/gcn}          \\ \hline
+		
+		CayleyNet (2017) & tensorflow & \url{https://github.com/amoliu/CayleyNet}.  \\ \hline 
+		DualGCN (2018)  & theano & \url{https://github.com/ZhuangCY/DGCN} \\ \hline
+		GraphSage (2017)     &  tensorflow           &        \url{https://github.com/williamleif/GraphSAGE}     \\ \hline
+		GAT (2017)          &     tensorflow        &    \url{https://github.com/PetarV-/GAT}         \\ \hline 
+		LGCN (2018)         &    tensorflow         &      \url{https://github.com/divelab/lgcn/}       \\ \hline
+		PGC-DGCNN (2018) & pytorch & \url{https://github.com/dinhinfotech/PGC-DGCNN} \\ \hline
+		%SGC (2019) \cite{wu2019simplifying} & pytorch & \url{https://github.com/Tiiiger/SGC} \\ \hline
+		FastGCN (2018)  & tensorflow & \url{https://github.com/matenure/FastGCN} \\ \hline
+		StoGCN (2018)  & tensorflow & \url{https://github.com/thu-ml/stochastic_gcn} \\ \hline
+		DGCNN (2018)  & torch & \url{https://github.com/muhanzhang/DGCNN} \\ \hline
+		DiffPool (2018)  & pytorch & \url{https://github.com/RexYing/diffpool} \\ \hline
+		DGI (2019)  & pytorch & \url{https://github.com/PetarV-/DGI} \\ \hline
+		GIN (2019)  & pytorch & \url{https://github.com/weihua916/powerful-gnns} \\ \hline
+		Cluster-GCN (2019)  & pytorch & \url{https://github.com/benedekrozemberczki/ClusterGCN} \\ \hline
+		%CapsGNN (2019) \cite{xinyi2019capsule} & pytorch & \url{https://github.com/benedekrozemberczki/CapsGNN} \\ \hline
+		DNGR (2016)        &      matlab       & \url{https://github.com/ShelsonCao/DNGR}            \\ \hline 
+		SDNE (2016)      & tensorflow            &    \url{https://github.com/suanrong/SDNE}         \\ \hline 
+		GAE (2016)        &  tensorflow           &    \url{https://github.com/limaosen0/Variational-Graph-Auto-Encoders}         \\ \hline 
+		ARVGA (2018)          &  tensorflow           &    \url{https://github.com/Ruiqi-Hu/ARGA}         \\ \hline 
+		DRNE (2016)        &      tensorflow       & \url{https://github.com/tadpole/DRNE}            \\ \hline
+		GraphRNN (2018)      &    tensorflow         &    \url{https://github.com/snap-stanford/GraphRNN}         \\ \hline  
+		MolGAN (2018) & tensorflow & \url{https://github.com/nicola-decao/MolGAN} \\ \hline
+		NetGAN (2018) & tensorflow & \url{https://github.com/danielzuegner/netgan}  \\ \hline
+		GCRN (2016)  & tensorflow & \url{https://github.com/youngjoo-epfl/gconvRNN} \\ \hline
+		DCRNN (2018)     &     tensorflow        &      \url{https://github.com/liyaguang/DCRNN}        \\ \hline 
+		Structural RNN (2016) &     theano        & \url{https://github.com/asheshjain399/RNNexp}            \\ \hline
+		CGCN (2017)        &   tensorflow          &    \url{https://github.com/VeritasYin/STGCN_IJCAI-18}        \\ \hline 
+		ST-GCN (2018)        & pytorch           &   \url{https://github.com/yysijie/st-gcn}          \\
+		\hline
+		GraphWaveNet (2019) & pytorch & \url{https://github.com/nnzhan/Graph-WaveNet} \\ \hline
+		
+		ASTGCN (2019)  & mxnet & \url{https://github.com/Davidham3/ASTGCN} \\ \bottomrule
+	\end{tabular}
+\end{table*}
+	
+
+	
+	\vspace{2mm}\noindent\textbf{Biochemical Graphs}
+	Chemical molecules and compounds can be represented by chemical graphs with atoms as nodes and chemical bonds as edges.  This category of graphs is often used to evaluate graph classification performance.  The NCI-1 and NCI-9 data set contain 4110 and 4127 chemical compounds respectively, labeled as to whether they are active to hinder the growth of human cancer cell lines. The MUTAG data set contains 188 nitro compounds, labeled as to whether they are aromatic or heteroaromatic. The D\&D and PROTEIN data set represent proteins as graphs, labeled as to whether they are enzymes or non-enzymes.
+	The PTC data set consists of 344 chemical compounds, labeled as to whether they are carcinogenic for male and female rats. 
+	The QM9 data set records 13 physical properties of 133885 molecules with up to 9 heavy atoms. The Alchemy data set records 12 quantum mechanical properties of 119487 molecules comprising up to 14 heavy atoms. %The Tox21 data set contains 12707 chemical compounds labeled with 12 types of toxicity. 
+	Another important data set is the Protein-Protein Interaction network (PPI). It contains 24 biological graphs with nodes represented by proteins and edges represented by the interactions between proteins. In PPI, each graph is associated with one human tissue. Each node is labeled with its biological states.
+	
+	%\vspace{2mm}\noindent\textbf{Unstructured Graphs}
+	%To test the generalization of graph neural networks to unstructured data, the $k$ nearest neighbor graph (k-NN graph) has been widely used. The MNIST data set contains  70000 images of size $28\times 28$ labeled with ten digits. A typical way to convert an MNIST image to a graph is to construct an 8-NN graph based on its pixel locations. 
+	%The Wikipedia data set is a word co-occurrence network extracted from the first million bytes of the Wikipedia dump. Labels of words represent part-of-speech (POS) tags.  
+	%The 20-NewsGroup data set consists of around 20,000 News Group (NG) text documents categorized by 20 news types.   The graph of the 20-NewsGroup is constructed by representing each document as a node and using the similarities between nodes as edge weights.
+	\vspace{2mm}\noindent\textbf{Social Networks}
+	are formed by user interactions from online services such as BlogCatalog and Reddit. The BlogCatalog data set is a social network which consists of bloggers and their social relationships.  The classes of bloggers represent their personal interests.  The Reddit data set is an undirected graph formed by posts collected from the Reddit discussion forum. Two posts are linked if they contain comments by the same user. Each post has a label indicating the community to which it belongs. 
+	
+	\vspace{2mm}\noindent\textbf{Others}
+	There are several other data sets worth mentioning. The MNIST data set contains  70000 images of size $28\times 28$ labeled with ten digits. An MNINST image is converted to a graph by constructing an 8-nearest-neighbors graph based on its pixel locations.
+	The METR-LA is a spatial-temporal graph data set. It contains four months of traffic data collected by 207 sensors on the highways of Los Angeles County. The adjacency matrix of the graph is computed by the sensor network distance with a Gaussian threshold. 
+	%The MovieLens-1M data set from the MovieLens website contains 1 million item ratings given by 6k users.  It is a benchmark data set for recommender systems. 
+	The NELL data set is a knowledge graph obtained from the Never-Ending Language Learning project. It consists of facts represented by a triplet which involves two entities and their relation.
+	% Please add the following required packages to your document preamble:
+
+\subsection{Reported Experimental Results for Node Classification}
+A summarization of experimental results of methods which follow a standard train/valid/test split is given in Table \ref{tab:bennode}.
+
+\subsection{Open-source Implementations}
+Here we summarize the open-source implementations of graph neural networks reviewed in the survey. We provide the hyperlinks of the source codes of the GNN models in table \ref{tab:codes}. 
+
+
+	
+
+\begin{comment}
+	    	\begin{table*}[htbp]
+		\caption{A Summary of Open-source Implementations}
+		\label{tab:codes}
+		\centering
+		\begin{tabular}{ l l l }
+			\toprule
+			 Model & Framework & Github Link \\ \midrule
+			 GGNN (2015) \cite{li2015gated}      &    torch         &      \url{https://github.com/yujiali/ggnn}       \\ \hline
+			 SSE (2018) \cite{dai2018learning}      &    c         &      \url{https://github.com/Hanjun-Dai/steady_state_embedding}       \\ \hline
+			 ChebNet (2016) \cite{defferrard2016convolutional}    & tensorflow  &\url{https://github.com/mdeff/cnn_graph}    \\ \hline 
+			 GCN (2017) \cite{kipf2017semi} & tensorflow  &\url{https://github.com/tkipf/gcn}          \\ \hline
+			 
+			 CayleyNet (2017) \cite{levie2017cayleynets} & tensorflow & \url{https://github.com/amoliu/CayleyNet}.  \\ \hline 
+			 DualGCN (2018) \cite{zhuang2018dual} & theano & \url{https://github.com/ZhuangCY/DGCN} \\ \hline
+			 GraphSage (2017) \cite{hamilton2017inductive}     &  tensorflow           &        \url{https://github.com/williamleif/GraphSAGE}     \\ \hline
+			GAT (2017) \cite{velickovic2017graph}          &     tensorflow        &    \url{https://github.com/PetarV-/GAT}         \\ \hline 
+			LGCN (2018) \cite{gao2018large}          &    tensorflow         &      \url{https://github.com/divelab/lgcn/}       \\ \hline
+			PGC-DGCNN (2018) \cite{tran2018filter} & pytorch & \url{https://github.com/dinhinfotech/PGC-DGCNN} \\ \hline
+			%SGC (2019) \cite{wu2019simplifying} & pytorch & \url{https://github.com/Tiiiger/SGC} \\ \hline
+			FastGCN (2018) \cite{chen2018fastgcn} & tensorflow & \url{https://github.com/matenure/FastGCN} \\ \hline
+			StoGCN (2018) \cite{chen2018stochastic} & tensorflow & \url{https://github.com/thu-ml/stochastic_gcn} \\ \hline
+			DGCNN (2018) \cite{zhang2018end} & torch & \url{https://github.com/muhanzhang/DGCNN} \\ \hline
+			DiffPool (2018) \cite{ying2018hierarchical} & pytorch & \url{https://github.com/RexYing/diffpool} \\ \hline
+			DGI (2019) \cite{velivckovic2019deep} & pytorch & \url{https://github.com/PetarV-/DGI} \\ \hline
+			GIN (2019) \cite{xu2019how} & pytorch & \url{https://github.com/weihua916/powerful-gnns} \\ \hline
+			Cluster-GCN (2019) \cite{chiang2019cluster} & pytorch & \url{https://github.com/benedekrozemberczki/ClusterGCN} \\ \hline
+			%CapsGNN (2019) \cite{xinyi2019capsule} & pytorch & \url{https://github.com/benedekrozemberczki/CapsGNN} \\ \hline
+			DNGR (2016) \cite{cao2016deep}          &      matlab       & \url{https://github.com/ShelsonCao/DNGR}            \\ \hline 
+			SDNE (2016) \cite{wang2016sdne}           & tensorflow            &    \url{https://github.com/suanrong/SDNE}         \\ \hline 
+            GAE (2016) \cite{kipf2016variational}           &  tensorflow           &    \url{https://github.com/limaosen0/Variational-Graph-Auto-Encoders}         \\ \hline 
+			ARVGA (2018) \cite{pan2018adversarially}           &  tensorflow           &    \url{https://github.com/Ruiqi-Hu/ARGA}         \\ \hline 
+			DRNE (2016) \cite{tu2018deep}          &      tensorflow       & \url{https://github.com/tadpole/DRNE}            \\ \hline
+			GraphRNN (2018) \cite{you2018graphrnn}      &    tensorflow         &    \url{https://github.com/snap-stanford/GraphRNN}         \\ \hline  
+			MolGAN (2018) \cite{de2018molgan} & tensorflow & \url{https://github.com/nicola-decao/MolGAN} \\ \hline
+			NetGAN (2018) \cite{bojchevski2018netgan} & tensorflow & \url{https://github.com/danielzuegner/netgan}  \\ \hline
+			GCRN (2016) \cite{seo2016structured} & tensorflow & \url{https://github.com/youngjoo-epfl/gconvRNN} \\ \hline
+	        DCRNN (2018) \cite{li2018diffusion}        &     tensorflow        &      \url{https://github.com/liyaguang/DCRNN}        \\ \hline 
+	        		    Structural RNN (2016) \cite{jain2016structural} &     theano        & \url{https://github.com/asheshjain399/RNNexp}            \\ \hline
+			CGCN (2017) \cite{yuspatio}       &   tensorflow          &    \url{https://github.com/VeritasYin/STGCN_IJCAI-18}        \\ \hline 
+			ST-GCN (2018) \cite{yan2018spatial}        & pytorch           &   \url{https://github.com/yysijie/st-gcn}          \\
+			\hline
+			GraphWaveNet (2019) \cite{wu2019graph} & pytorch & \url{https://github.com/nnzhan/Graph-WaveNet} \\ \hline
+			
+			ASTGCN (2019) \cite{guo2019att} & mxnet & \url{https://github.com/Davidham3/ASTGCN} \\ \bottomrule
+		\end{tabular}
+	\end{table*}
+\end{comment}
+

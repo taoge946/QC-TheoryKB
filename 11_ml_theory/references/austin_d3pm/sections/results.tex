@@ -1,0 +1,59 @@
+\section{Text generation}
+
+For text, we experiment with generation on two datasets: text8 \citep{text8}, a character-level dataset extracted from English-language Wikipedia, and the One Billion Word dataset (LM1B) \citep{lm1b}, a large dataset of shuffled English-language sentences. For both, we train a D3PM uniform model based on the work by \citet{hoogeboom2021argmax} (D3PM uniform) and a model that masks tokens (D3PM absorbing). We also consider a model that transitions uniformly to nearest neighbors in a token embedding space (D3PM NN). We follow \citet{hoogeboom2021argmax} and use $T=1000$ timesteps, although we are also able to evaluate on fewer due to the parameterization in Section \ref{sec:x0_parameterization}.
+
+\subsection{Character-level generation on text8}
+\input{Tables/text8_results}
+
+text8 is a character-level text dataset consisting of a small vocabulary of 27 tokens: the letters `a'-`z' and the `\_' whitespace token. We follow the convention of training and evaluating text8 in chunks of length 256 without any preprocessing \citep{hoogeboom2021argmax}. For nearest-neighbor D3PM, our nearest neighbor graph in character-space is shown in Appendix \ref{appendix:text8_aux}. D3PM uniform models were trained with a cosine schedule from \citet{hoogeboom2021argmax} (ablations in Appendix~\ref{appendix:text8_aux}), while D3PM absorbing and D3PM NN models were trained with a mutual information schedule.
+
+Table \ref{tab:text8} shows that for D3PM, the D3PM absorbing model performed the best, exceeding the uniform and NN diffusion models. We were able to improve upon the baseline result of \citep{hoogeboom2021argmax} with hyperparameter tuning, and our uniform and NN results outperformed results from \citet{hoogeboom2021argmax} across all inference steps, down to as few as 20. We found that $L_{\lambda=0.01}$ worked best for D3PM absorbing, while $L_{\mathrm{vb}}$ was better for D3PM uniform. Our model outperforms all non-autoregressive baselines except one, the Discrete Flow model \citep{tran2019discrete} 
+(for which unfortunately no open-source implementations exist), and is also faster than all but one method, the IAF/SCF model \citep{Ziegler2019}. It is also nearly 20x faster than an autoregressive transformer of the same size. We also include a plot of inference time as a function of iterations in Appendix~\ref{appendix:text8_aux}.
+D3PM with the mask absorbing token was by far the best performing model, which lends credibility to the use of masks in denoising auto-encoders. Nearest-neighbor diffusion only narrowly improves upon a D3PM-uniform model: this was a surprising negative result for us, suggesting that not all notions of structure are meaningful.
+
+\subsection{Text generation on LM1B}
+Text generation for large-scale text datasets and large vocabularies with discrete diffusion models has not been previously demonstrated. We include results from LM1B as a proof of concept, showing that these models can indeed scale (as discussed in Appendix \ref{sec:scaling-to-large-categories}), and that the D3PM absorbing model continues to excel. All models were trained and evaluated on packed sequences of length $128$, using a sentencepiece\footnote{\url{https://github.com/google/sentencepiece}} vocabulary of size $8192$.
+%
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=\textwidth]{figures/perplexity3.png}
+    \caption{Left: perplexity v.s. sampling iterations for LM1B. Right: Using a trained D3PM absorbing model for LM1B to (top) generate new sentences and (bottom) reconstruct corrupted examples.}
+    \vspace{-0.3cm}
+    \label{fig:lm1b_scaling}
+\end{figure}
+%
+
+Table \ref{tab:lm1b} contains results from experiments on LM1B. Overall, mask diffusion (D3PM absorbing) does relatively well, approaching the performance of a comparable autoregressive model of the same size, and scaling to far fewer steps, while uniform diffusion performs significantly worse. We find, surprisingly, that the D3PM NN model performs worse than the uniform model in terms of log likelihoods (although it demonstrates unique qualitative behavior). This suggests that word embedding similarity may not be a meaningful kind of locality in a diffusion process. We found the the $L_{\lambda=0.01}$ loss worked best for the mask absorbing model, but reduced performance for the other models. We note the surprising scaling in perplexity in Figure \ref{fig:lm1b_scaling}, achieving strong results with as few as 10 inference steps. We also show samples from our model and completions from corrupted samples.
+\input{Tables/LM1B_results}
+
+\section{Image generation}
+
+\input{Tables/image_results}
+
+We evaluate the performance of several D3PM models on the task of unconditional image generation with the dataset CIFAR-10 \citep{krizhevsky2009learning}. We follow \citet{ho2020denoising} and use $T=1000$ timesteps for all models and verify that for all models the forward process converges to the stationary distribution within $T$ steps, yielding a value of at most $L_T\approx 10^{-5}$ bits per dimension. We train three versions of D3PM with different transition matrices: doubly stochastic matrices with uniform transition probabilities (D3PM uniform) \citep{hoogeboom2021argmax}, transition matrices with an absorbing state located at R, G and B values of 128 (D3PM absorbing) and doubly stochastic discretized Gaussian transition matrices (D3PM Gauss). For the D3PM uniform model we experimented with a linear $\beta_t$ schedule as well as the cosine schedule as proposed in \citep{hoogeboom2021argmax}, with the cosine schedule producing the best results. For D3PM absorbing we use the schedule $\beta_t = (T-t+1)^{-1}$ as also proposed in \citep{sohl2015deep}, which corresponds to increasing the probability of being in the absorbing state linearly over time.
+For D3PM Gauss we use the same linear schedule as in \citep{ho2020denoising}. See Appendix \ref{sec:appendix_image} for more details on the experimental setup.
+
+\begin{figure}[b]
+    \centering
+    \begin{subfigure}[b]{0.54\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{figures/progressive_samples_mask_hybrid.png} \\
+         \vspace{0.07cm}
+         \includegraphics[width=\textwidth]{figures/progressive_samples_gauss_logistic_hybrid.png} 
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.45\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{figures/cifar10_samples_cropped.png}
+     \end{subfigure}
+    \caption{Left: progressive sampling at $t=1000, 900, 800, ..., 0$ for D3PM absorbing (top) and D3PM Gauss + logistic (bottom), trained with $L_{\lambda}$ loss on CIFAR-10. These samples were cherry picked. Right: (non cherry picked) samples from the D3PM Gauss + logistic model.}
+    \label{fig:cifar10_samples}
+\end{figure}
+Table~\ref{tab:cifar10} shows that for D3PM models trained with the $L_{\mathrm{vb}}$ objective, D3PM Gauss performs better than D3PM absorbing and uniform on all metrics: Inception score (IS), Frechet Inception Distance (FID) and negative log-likelihood (NLL). The IS score of the uniform and absorbing D3PM models are comparable, while the FID score and NLL of the D3PM absorbing model are slightly better. We trained both D3PM absorbing and D3PM Gauss with the alternative loss function $L_{\lambda}$ of \eqref{eq:alternative_loss}, and we found $\lambda=0.001$ to work best.
+We have also experimented with larger values of $\lambda$ and a model trained only with the auxiliary denoising term in \eqref{eq:alternative_loss}. Although this led to a more rapid increase in performance early on in training, the NLL leveled off at higher values for larger $\lambda$ and the FID even started increasing again.
+%}
+The results show that the models trained with $L_{\lambda}$ perform significantly better than their counterparts trained with $L_{\mathrm{vb}}$.
+%
+One explanation for this boost in performance is that the cross entropy term leads to gradient noise that varies less with the time step $t$, which is in contrast to the large change in magnitude of the $L_{t-1}$ terms in $L_{\mathrm{vb}}$ for smaller $t$, as demonstrated by \citet{nichol2021improved}. 
+Finally, we achieve our best results by combining D3PM Gauss trained on $L_{\lambda}$ with a truncated logistic parameterization of the reverse process distribution $p_{\theta}(\widetilde{\bx}_0|\bx_t)$ (D3PM Gauss + logistic). Figure~\ref{fig:cifar10_samples} shows samples from our best model (D3PM Gauss + logistic), as well as the D3PM absorbing model.
+
