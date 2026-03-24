@@ -1,0 +1,25 @@
+# QC.VQA._RATIO.01
+# Auto-generated from 05_variational_quantum/key_formulas.md (F5.7)
+
+id: QC.VQA._RATIO.01
+legacy_alias: F5.7
+version: '01'
+claim_type: IDENTITY
+domain: QC.VQA
+artifact_type: DEFINITION
+name_en: 近似比 (Approximation Ratio)
+name_zh: null
+latex: r = \frac{\langle \boldsymbol{\gamma}, \boldsymbol{\beta} | H_C | \boldsymbol{\gamma}, \boldsymbol{\beta} \rangle}{C_{\max}}
+derivation_files: []
+citations:
+- raw: Farhi, Goldstone, Gutmann, arXiv:1411.4028 (2014). 对MaxCut在 $P=1$ 时 $r \geq 0.6924$。
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 05_variational_quantum

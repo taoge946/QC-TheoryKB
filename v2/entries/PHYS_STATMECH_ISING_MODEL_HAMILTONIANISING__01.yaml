@@ -1,0 +1,28 @@
+# PHYS.STATMECH.ISING_MODEL_HAMILTONIANISING_.01
+# Auto-generated from 16_statistical_mechanics/key_formulas.md (F16.1)
+
+id: PHYS.STATMECH.ISING_MODEL_HAMILTONIANISING_.01
+legacy_alias: F16.1
+version: '01'
+claim_type: IDENTITY
+domain: PHYS.STATMECH
+artifact_type: DEFINITION
+name_en: Ising Model Hamiltonian（Ising 模型哈密顿量）
+name_zh: null
+latex: H = -J \sum_{\langle ij \rangle} s_i s_j - h \sum_i s_i
+derivation_files:
+- 16_statistical_mechanics/derivations/ising_model.md
+citations:
+- raw: Ising, Z. Phys. 31, 253 (1925)
+  verified: false
+- raw: Onsager, Phys. Rev. 65, 117 (1944)
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 16_statistical_mechanics

@@ -1,0 +1,29 @@
+# QC.VQA.FISHER_FISHER_INFORMATION_MATRIX.01
+# Auto-generated from 05_variational_quantum/key_formulas.md (F5.11)
+
+id: QC.VQA.FISHER_FISHER_INFORMATION_MATRIX.01
+legacy_alias: F5.11
+version: '01'
+claim_type: IDENTITY
+domain: QC.VQA
+artifact_type: DERIVATION
+name_en: 量子Fisher信息矩阵 (Quantum Fisher Information Matrix)
+name_zh: null
+latex: F_{ij}(\boldsymbol{\theta}) = \text{Re}\left[\langle \partial_i \psi(\boldsymbol{\theta}) | \partial_j \psi(\boldsymbol{\theta})
+  \rangle - \langle \partial_i \psi(\boldsymbol{\theta}) | \psi(\boldsymbol{\theta}) \rangle \langle \psi(\boldsymbol{\theta})
+  | \partial_j \psi(\boldsymbol{\theta}) \rangle\right]
+derivation_files: []
+citations:
+- raw: Stokes et al., *Quantum* **4**, 269 (2020)
+  verified: false
+- raw: Provost & Vallee, *Commun. Math. Phys.* **76**, 289 (1980).
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 05_variational_quantum

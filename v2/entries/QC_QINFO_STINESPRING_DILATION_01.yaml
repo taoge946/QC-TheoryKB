@@ -1,0 +1,26 @@
+# QC.QINFO.STINESPRING_DILATION.01
+# Auto-generated from 03_quantum_info_theory/key_formulas.md (F3.8)
+
+id: QC.QINFO.STINESPRING_DILATION.01
+legacy_alias: F3.8
+version: '01'
+claim_type: EQUIVALENCE
+domain: QC.QINFO
+artifact_type: THEOREM
+name_en: Stinespring Dilation
+name_zh: Stinespring 膨胀
+latex: \Phi(X) = \mathrm{Tr}_{\mathcal{Z}}(AXA^*)
+derivation_files:
+- 03_quantum_info_theory/derivations/quantum_channel_capacity.md
+citations:
+- raw: Watrous, Ch.2, Thm.2.27
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 03_quantum_info_theory

@@ -1,0 +1,26 @@
+# QC.HARDWARE.TRANSMON_QUBIT_HAMILTONIAN.01
+# Auto-generated from 15_quantum_hardware/key_formulas.md (F15.1)
+
+id: QC.HARDWARE.TRANSMON_QUBIT_HAMILTONIAN.01
+legacy_alias: F15.1
+version: '01'
+claim_type: IDENTITY
+domain: QC.HARDWARE
+artifact_type: DEFINITION
+name_en: Transmon Qubit Hamiltonian
+name_zh: null
+latex: H = 4E_C(\hat{n} - n_g)^2 - E_J \cos\hat{\phi}
+derivation_files:
+- 15_quantum_hardware/derivations/superconducting_qubits.md
+citations:
+- raw: Koch et al., PRA 76, 042319 (2007), Eqs. (2.2), (2.11), (2.18)
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 15_quantum_hardware

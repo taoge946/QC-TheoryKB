@@ -1,0 +1,26 @@
+# ML.DIFFUSION.PROBABILITY_FLOW_ODE.01
+# Auto-generated from 11_ml_theory/key_formulas.md (F11.9)
+
+id: ML.DIFFUSION.PROBABILITY_FLOW_ODE.01
+legacy_alias: F11.9
+version: '01'
+claim_type: EQUIVALENCE
+domain: ML.DIFFUSION
+artifact_type: DERIVATION
+name_en: Probability Flow ODE
+name_zh: null
+latex: dx = \left[f(x, t) - \frac{1}{2}\, g(t)^2\, \nabla_x \log p_t(x)\right] dt
+derivation_files:
+- 11_ml_theory/derivations/diffusion_models_math.md
+citations:
+- raw: Song et al., Score-Based SDE, ICLR 2021
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 11_ml_theory

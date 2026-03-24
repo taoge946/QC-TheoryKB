@@ -1,0 +1,29 @@
+# MATH.PROOFTOOL.PAC_BAYES_BOUND.01
+# Auto-generated from 18_proof_techniques/key_formulas.md (F18.12)
+
+id: MATH.PROOFTOOL.PAC_BAYES_BOUND.01
+legacy_alias: F18.12
+version: '01'
+claim_type: BOUND.UPPER
+domain: MATH.PROOFTOOL
+artifact_type: THEOREM
+name_en: PAC-Bayes Bound
+name_zh: PAC-Bayes 界
+latex: \mathbb{E}_{h \sim Q}\left[R(h)\right] \leq \mathbb{E}_{h \sim Q}\left[\hat{R}(h)\right] + \sqrt{\frac{D_{\mathrm{KL}}(Q
+  \| P) + \log(n/\delta)}{2(n-1)}}
+derivation_files:
+- 18_proof_techniques/derivations/learning_theory.md
+citations:
+- raw: McAllester, 1999
+  verified: false
+- raw: Catoni, 2007
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 18_proof_techniques

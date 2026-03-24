@@ -1,0 +1,26 @@
+# QC.QINFO.DISTILLABLE_ENTANGLEMENT_ENTANGLEMENT_COST.01
+# Auto-generated from 03_quantum_info_theory/key_formulas.md (F3.28)
+
+id: QC.QINFO.DISTILLABLE_ENTANGLEMENT_ENTANGLEMENT_COST.01
+legacy_alias: F3.28
+version: '01'
+claim_type: BOUND.UPPER
+domain: QC.QINFO
+artifact_type: DERIVATION
+name_en: Distillable Entanglement & Entanglement Cost
+name_zh: 可蒸馏纠缠与纠缠代价
+latex: 'E_D(\rho) = \sup\{r : \lim_{n\to\infty}\inf_\Lambda \|\Lambda(\rho^{\otimes n})-\Phi_+^{\otimes\lfloor rn\rfloor}\|_1=0\}'
+derivation_files:
+- 03_quantum_info_theory/derivations/entanglement_theory.md
+citations:
+- raw: Watrous, Ch.7, Def.7.55, 7.60
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 03_quantum_info_theory

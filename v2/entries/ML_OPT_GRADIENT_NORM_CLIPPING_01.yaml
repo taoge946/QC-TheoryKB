@@ -1,0 +1,26 @@
+# ML.OPT.GRADIENT_NORM_CLIPPING.01
+# Auto-generated from 11_ml_theory/key_formulas.md (F11.53)
+
+id: ML.OPT.GRADIENT_NORM_CLIPPING.01
+legacy_alias: F11.53
+version: '01'
+claim_type: IDENTITY
+domain: ML.OPT
+artifact_type: DERIVATION
+name_en: Gradient Norm Clipping
+name_zh: null
+latex: \tilde{g} = g \cdot \min\left(1, \frac{c}{\|g\|}\right)
+derivation_files:
+- 11_ml_theory/derivations/optimization_algorithms.md
+citations:
+- raw: Pascanu et al., 2013
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 11_ml_theory

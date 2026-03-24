@@ -1,0 +1,25 @@
+# QC.VQA._TIME_EVOLUTION.01
+# Auto-generated from 05_variational_quantum/key_formulas.md (F5.17)
+
+id: QC.VQA._TIME_EVOLUTION.01
+legacy_alias: F5.17
+version: '01'
+claim_type: EQUIVALENCE
+domain: QC.VQA
+artifact_type: DERIVATION
+name_en: 虚时间演化 (Imaginary Time Evolution)
+name_zh: null
+latex: '|\psi(\tau)\rangle = A(\tau) e^{-H\tau} |\psi(0)\rangle, \quad \tau \to \infty \implies |\psi\rangle \to |E_0\rangle'
+derivation_files: []
+citations:
+- raw: Tilly et al. 2022, §7], McArdle et al. (2019), Stokes et al. (2020)
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 05_variational_quantum

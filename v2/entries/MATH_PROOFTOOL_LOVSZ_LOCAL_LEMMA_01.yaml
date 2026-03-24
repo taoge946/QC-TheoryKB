@@ -1,0 +1,28 @@
+# MATH.PROOFTOOL.LOVSZ_LOCAL_LEMMA.01
+# Auto-generated from 18_proof_techniques/key_formulas.md (F18.16)
+
+id: MATH.PROOFTOOL.LOVSZ_LOCAL_LEMMA.01
+legacy_alias: F18.16
+version: '01'
+claim_type: BOUND.UPPER
+domain: MATH.PROOFTOOL
+artifact_type: LEMMA
+name_en: Lovász Local Lemma
+name_zh: Lovász 局部引理
+latex: P\left(\bigcap_{i=1}^n \overline{A_i}\right) > 0
+derivation_files:
+- 18_proof_techniques/derivations/probabilistic_method.md
+citations:
+- raw: Erdős & Lovász, 1975
+  verified: false
+- raw: Alon & Spencer, "The Probabilistic Method"
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 18_proof_techniques

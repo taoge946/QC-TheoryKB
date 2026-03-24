@@ -1,0 +1,28 @@
+# QC.COMPILATION.INITIAL_MAPPING_SUBGRAPH_ISOMORPHISM.01
+# Auto-generated from 13_quantum_compilation/key_formulas.md (F13.8)
+
+id: QC.COMPILATION.INITIAL_MAPPING_SUBGRAPH_ISOMORPHISM.01
+legacy_alias: F13.8
+version: '01'
+claim_type: EQUIVALENCE
+domain: QC.COMPILATION
+artifact_type: DERIVATION
+name_en: Initial Mapping as Subgraph Isomorphism
+name_zh: null
+latex: 'E_C = \{(q_i, q_j) : \exists \text{ a two-qubit gate on } q_i, q_j \text{ in circuit } C\}'
+derivation_files:
+- 13_quantum_compilation/derivations/routing_algorithms.md
+citations:
+- raw: Siraichi et al., CGO 2018
+  verified: false
+- raw: Zulehner et al., DATE 2018
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 13_quantum_compilation

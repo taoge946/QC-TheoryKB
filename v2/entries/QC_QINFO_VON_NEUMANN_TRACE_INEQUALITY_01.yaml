@@ -1,0 +1,26 @@
+# QC.QINFO.VON_NEUMANN_TRACE_INEQUALITY.01
+# Auto-generated from 03_quantum_info_theory/key_formulas.md (F3.5)
+
+id: QC.QINFO.VON_NEUMANN_TRACE_INEQUALITY.01
+legacy_alias: F3.5
+version: '01'
+claim_type: EQUIVALENCE
+domain: QC.QINFO
+artifact_type: THEOREM
+name_en: Von Neumann Trace Inequality
+name_zh: von Neumann 迹不等式
+latex: '|\mathrm{Tr}(XY)| \leq \sum_k s_k(X)s_k(Y)'
+derivation_files:
+- 03_quantum_info_theory/derivations/classical_information_theory.md
+citations:
+- raw: Watrous, Ch.1, Thm.1.13
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 03_quantum_info_theory

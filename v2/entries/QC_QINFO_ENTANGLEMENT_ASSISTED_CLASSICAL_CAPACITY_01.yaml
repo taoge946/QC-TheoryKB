@@ -1,0 +1,28 @@
+# QC.QINFO.ENTANGLEMENT_ASSISTED_CLASSICAL_CAPACITY.01
+# Auto-generated from 03_quantum_info_theory/key_formulas.md (F3.25)
+
+id: QC.QINFO.ENTANGLEMENT_ASSISTED_CLASSICAL_CAPACITY.01
+legacy_alias: F3.25
+version: '01'
+claim_type: BOUND.UPPER
+domain: QC.QINFO
+artifact_type: THEOREM
+name_en: Entanglement-Assisted Classical Capacity
+name_zh: 纠缠辅助经典容量
+latex: C_E(\Phi) = \max_\rho [\mathrm{H}(\rho)+\mathrm{H}(\Phi(\rho))-\mathrm{H}_e(\Phi,\rho)] = \max_\rho \mathrm{I}(A:B)_{\sigma}
+derivation_files:
+- 03_quantum_info_theory/derivations/quantum_channel_capacity.md
+citations:
+- raw: Watrous, Ch.6, Thm.6.33
+  verified: false
+- raw: Wilde, Ch.21, Thm.21.4.1
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 03_quantum_info_theory

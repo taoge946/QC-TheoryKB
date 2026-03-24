@@ -1,0 +1,30 @@
+# QC.QEC.QUANTUM_SINGLETON_BOUND.01
+# Auto-generated from 04_quantum_error_correction/key_formulas.md (F4.11)
+
+id: QC.QEC.QUANTUM_SINGLETON_BOUND.01
+legacy_alias: F4.11
+version: '01'
+claim_type: BOUND.UPPER
+domain: QC.QEC
+artifact_type: THEOREM
+name_en: Quantum Singleton Bound
+name_zh: null
+latex: k \leq n - 2(d - 1)
+derivation_files:
+- 04_quantum_error_correction/derivations/code_distance_bounds.md
+citations:
+- raw: Nielsen & Chuang, Theorem 10.2, p.444
+  verified: false
+- raw: Knill & Laflamme (1997)
+  verified: false
+- raw: Rains (1999)
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 04_quantum_error_correction

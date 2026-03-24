@@ -1,0 +1,27 @@
+# STATS.EXPERIMENT.STATISTICAL_FIDELITY_ESTIMATION.01
+# Auto-generated from 17_experimental_methods/key_formulas.md (F17.1)
+
+id: STATS.EXPERIMENT.STATISTICAL_FIDELITY_ESTIMATION.01
+legacy_alias: F17.1
+version: '01'
+claim_type: STATISTICAL_VALIDATION
+domain: STATS.EXPERIMENT
+artifact_type: PROTOCOL
+name_en: Statistical Fidelity Estimation
+name_zh: 保真度的统计估计
+latex: \hat{F} = \frac{n_{\text{success}}}{n_{\text{shots}}}, \qquad \text{Var}(\hat{F}) = \frac{\hat{F}(1-\hat{F})}{n_{\text{shots}}}
+derivation_files: []
+citations:
+- raw: 基础统计学
+  verified: false
+- raw: 量子实验通用做法
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 17_experimental_methods

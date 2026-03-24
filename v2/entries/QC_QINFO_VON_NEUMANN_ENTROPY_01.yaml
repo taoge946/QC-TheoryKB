@@ -1,0 +1,26 @@
+# QC.QINFO.VON_NEUMANN_ENTROPY.01
+# Auto-generated from 03_quantum_info_theory/key_formulas.md (F3.16)
+
+id: QC.QINFO.VON_NEUMANN_ENTROPY.01
+legacy_alias: F3.16
+version: '01'
+claim_type: BOUND.UPPER
+domain: QC.QINFO
+artifact_type: DERIVATION
+name_en: Von Neumann Entropy
+name_zh: von Neumann 熵
+latex: \mathrm{H}(\rho) = -\mathrm{Tr}(\rho\log\rho)
+derivation_files:
+- 03_quantum_info_theory/derivations/entropy_inequalities.md
+citations:
+- raw: Watrous, Ch.5, Def.5.1
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 03_quantum_info_theory

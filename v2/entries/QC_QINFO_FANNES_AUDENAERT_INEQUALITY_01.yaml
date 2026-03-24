@@ -1,0 +1,26 @@
+# QC.QINFO.FANNES_AUDENAERT_INEQUALITY.01
+# Auto-generated from 03_quantum_info_theory/key_formulas.md (F3.42)
+
+id: QC.QINFO.FANNES_AUDENAERT_INEQUALITY.01
+legacy_alias: F3.42
+version: '01'
+claim_type: EQUIVALENCE
+domain: QC.QINFO
+artifact_type: THEOREM
+name_en: Fannes-Audenaert Inequality
+name_zh: Fannes-Audenaert 不等式
+latex: '|H(\rho) - H(\sigma)| \leq T \log(d-1) + h_2(T), \quad T = \tfrac{1}{2}\|\rho - \sigma\|_1'
+derivation_files:
+- 03_quantum_info_theory/derivations/entropy_inequalities.md
+citations:
+- raw: Wilde, Ch.11, Theorem 11.10.3
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 03_quantum_info_theory

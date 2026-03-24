@@ -1,0 +1,27 @@
+# MATH.OPT.GNN_NEIGHBORHOOD_AGGREGATION.01
+# Auto-generated from 10_optimization/key_formulas.md (F10.27)
+
+id: MATH.OPT.GNN_NEIGHBORHOOD_AGGREGATION.01
+legacy_alias: F10.27
+version: '01'
+claim_type: DERIVATION
+domain: MATH.OPT
+artifact_type: DERIVATION
+name_en: GNN邻域聚合公式 (GNN Neighborhood Aggregation)
+name_zh: null
+latex: f^{(t)}(v) = \sigma\left(f^{(t-1)}(v) \cdot W_1^{(t)} + \sum_{w \in N(v)} f^{(t-1)}(w) \cdot W_2^{(t)}\right)
+derivation_files: []
+citations:
+- raw: Cappart et al. 2023, §2.3, Eq.(1)
+  verified: false
+- raw: Morris et al. (2019)
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 10_optimization

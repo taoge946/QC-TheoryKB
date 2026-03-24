@@ -1,0 +1,28 @@
+# QC.HARDWARE.CROSS_ENTROPY_BENCHMARKING_FIDELITY.01
+# Auto-generated from 15_quantum_hardware/key_formulas.md (F15.11)
+
+id: QC.HARDWARE.CROSS_ENTROPY_BENCHMARKING_FIDELITY.01
+legacy_alias: F15.11
+version: '01'
+claim_type: EQUIVALENCE
+domain: QC.HARDWARE
+artifact_type: DERIVATION
+name_en: Cross-Entropy Benchmarking (XEB) Fidelity
+name_zh: null
+latex: F_{\text{XEB}} = 2^n \langle p(x_i) \rangle_{\text{samples}} - 1
+derivation_files:
+- 15_quantum_hardware/derivations/benchmarking_metrics.md
+citations:
+- raw: Arute et al., Nature 574, 505 (2019), Supplementary §IV
+  verified: false
+- raw: Boixo et al., Nat. Phys. 14, 595 (2018)
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 15_quantum_hardware

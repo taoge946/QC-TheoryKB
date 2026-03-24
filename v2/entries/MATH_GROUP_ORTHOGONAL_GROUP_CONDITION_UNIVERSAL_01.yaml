@@ -1,0 +1,27 @@
+# MATH.GROUP.ORTHOGONAL_GROUP_CONDITION_UNIVERSAL.01
+# Auto-generated from 06_group_theory/key_formulas.md (F6.16)
+
+id: MATH.GROUP.ORTHOGONAL_GROUP_CONDITION_UNIVERSAL.01
+legacy_alias: F6.16
+version: '01'
+claim_type: CORRECTNESS
+domain: MATH.GROUP
+artifact_type: THEOREM
+name_en: Orthogonal Group Condition for Universal Transversal Gates [Gottesman thesis, §5.4]
+name_zh: null
+latex: 'M \in O(n, \mathbb{Z}_2) \iff M^T M = I \pmod{2}'
+derivation_files: []
+citations:
+- raw: Gottesman thesis, §5.4
+  verified: false
+- raw: Rains (1997)
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 06_group_theory

@@ -1,0 +1,27 @@
+# ML.GNN.GCN_SPECTRAL_DERIVATION_CHAIN.01
+# Auto-generated from 11_ml_theory/key_formulas.md (F11.29)
+
+id: ML.GNN.GCN_SPECTRAL_DERIVATION_CHAIN.01
+legacy_alias: F11.29
+version: '01'
+claim_type: DERIVATION
+domain: ML.GNN
+artifact_type: DERIVATION
+name_en: GCN Spectral Derivation Chain
+name_zh: null
+latex: g_\theta \star x = Ug_\theta U^\top x \;\xrightarrow{K\text{-Cheb}}\; \sum_{k=0}^K \theta_k' T_k(\tilde{L})x \;\xrightarrow{K=1}\;
+  \theta_0' x - \theta_1' D^{-1/2}AD^{-1/2}x \;\xrightarrow{\text{renorm}}\; \tilde{D}^{-1/2}\tilde{A}\tilde{D}^{-1/2}X\Theta
+derivation_files:
+- 11_ml_theory/derivations/gnn_message_passing.md
+citations:
+- raw: Kipf & Welling, GCN, ICLR 2017
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 11_ml_theory

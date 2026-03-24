@@ -1,0 +1,28 @@
+# MATH.GRAPH.CHEBYSHEV_POLYNOMIAL_APPROXIMATION.01
+# Auto-generated from 07_graph_theory/key_formulas.md (F7.6)
+
+id: MATH.GRAPH.CHEBYSHEV_POLYNOMIAL_APPROXIMATION.01
+legacy_alias: F7.6
+version: '01'
+claim_type: DERIVATION
+domain: MATH.GRAPH
+artifact_type: DERIVATION
+name_en: Chebyshev Polynomial Approximation
+name_zh: 切比雪夫多项式近似
+latex: x *_G g_\theta = \sum_{k=0}^{K} \theta_k \, T_k(\tilde{L}_{\mathrm{sym}}) \, x, \quad T_k(x) = 2x\,T_{k-1}(x) - T_{k-2}(x)
+derivation_files:
+- 07_graph_theory/derivations/spectral_graph_theory.md
+citations:
+- raw: Defferrard et al. (ChebNet), 2016
+  verified: false
+- raw: Wu et al. GNN Survey, §4.1
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 07_graph_theory

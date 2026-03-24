@@ -1,0 +1,26 @@
+# QC.ZX.PI_COPY_RULE.01
+# Auto-generated from 12_zx_calculus/key_formulas.md (F12.6)
+
+id: QC.ZX.PI_COPY_RULE.01
+legacy_alias: F12.6
+version: '01'
+claim_type: EQUIVALENCE
+domain: QC.ZX
+artifact_type: IDENTITY
+name_en: Pi-Copy Rule
+name_zh: $\pi$-复制规则
+latex: \tikz{X}^{1,m}_\pi \circ \tikz{Z}^{1,1}_\alpha = \tikz{Z}^{1,1}_{-\alpha} \circ \tikz{X}^{1,m}_\pi
+derivation_files:
+- 12_zx_calculus/derivations/zx_rewrite_rules.md
+citations:
+- raw: van de Wetering, arXiv:2012.13966, Rule ($\pi$)
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 12_zx_calculus

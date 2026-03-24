@@ -1,0 +1,29 @@
+# ML.DIFFUSION.DENOISING_SCORE_MATCHING.01
+# Auto-generated from 11_ml_theory/key_formulas.md (F11.6)
+
+id: ML.DIFFUSION.DENOISING_SCORE_MATCHING.01
+legacy_alias: F11.6
+version: '01'
+claim_type: DERIVATION
+domain: ML.DIFFUSION
+artifact_type: DERIVATION
+name_en: Denoising Score Matching Objective
+name_zh: null
+latex: \mathcal{L}_{\mathrm{DSM}} = \mathbb{E}_{t}\left[\lambda(t)\, \mathbb{E}_{x_0}\, \mathbb{E}_{x_t | x_0}\left[\left\|
+  s_\theta(x_t, t) - \nabla_{x_t} \log q(x_t | x_0)\right\|^2\right]\right]
+derivation_files:
+- 11_ml_theory/derivations/score_matching.md
+citations:
+- raw: Vincent, 2011
+  verified: false
+- raw: Song & Ermon, NeurIPS 2019
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 11_ml_theory

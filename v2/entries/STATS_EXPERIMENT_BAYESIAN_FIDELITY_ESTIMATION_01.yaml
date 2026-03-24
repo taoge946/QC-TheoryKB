@@ -1,0 +1,27 @@
+# STATS.EXPERIMENT.BAYESIAN_FIDELITY_ESTIMATION.01
+# Auto-generated from 17_experimental_methods/key_formulas.md (F17.9)
+
+id: STATS.EXPERIMENT.BAYESIAN_FIDELITY_ESTIMATION.01
+legacy_alias: F17.9
+version: '01'
+claim_type: STATISTICAL_VALIDATION
+domain: STATS.EXPERIMENT
+artifact_type: PROTOCOL
+name_en: Bayesian Fidelity Estimation
+name_zh: 贝叶斯保真度估计
+latex: F \mid k, n \sim \text{Beta}(\alpha_0 + k, \;\beta_0 + n - k)
+derivation_files: []
+citations:
+- raw: Blume-Kohout (2010), New J. Phys.
+  verified: false
+- raw: Granade et al. (2016), New J. Phys.
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 17_experimental_methods

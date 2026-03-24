@@ -303,9 +303,13 @@ Song et al. (2021) 提出的通用SDE框架：
 
 $$\nabla_x \log p(x|c) = \nabla_x \log p(x) + \nabla_x \log p(c|x)$$
 
-Classifier-free guidance放大条件信号：
+Classifier-free guidance放大条件信号 **[Ho & Salimans, 2022]**：
 
-$$\tilde{s}(x,t,c) = s(x,t,\varnothing) + (1+w)[s(x,t,c) - s(x,t,\varnothing)]$$
+$$\tilde{s}(x,t,c) = s(x,t,\varnothing) + w \cdot [s(x,t,c) - s(x,t,\varnothing)]$$
+
+其中 $w > 1$ 为引导强度（guidance scale）。$w = 1$ 时退化为标准条件生成，$w > 1$ 放大条件信号。
+
+> **Convention Note**: 原始论文中 Ho & Salimans 使用 $w \geq 1$，其中 $w=1$ 对应无引导。部分代码实现使用 $(1+w)$ 参数化（其中 $w=0$ 对应无引导）。本文件采用原始论文的标准 convention。
 
 $$= (1+w)\, s(x,t,c) - w\, s(x,t,\varnothing)$$
 
@@ -617,10 +621,3 @@ $$u_t(x|x_1) = \frac{\alpha'_{1-t}}{1-\alpha_{1-t}^2}\left(\alpha_{1-t}\, x - x_
 5. Nichol, A. & Dhariwal, P. (2021). Improved Denoising Diffusion Probabilistic Models. ICML.
 6. Ho, J. & Salimans, T. (2022). Classifier-Free Diffusion Guidance.
 7. Lipman, Y., Chen, R.T.Q., Ben-Hamu, H., Nickel, M., & Le, M. (2023). Flow Matching for Generative Modeling. ICLR.
-
-1. Ho, J., Jain, A., & Abbeel, P. (2020). Denoising Diffusion Probabilistic Models. NeurIPS.
-2. Song, Y., & Ermon, S. (2019). Generative Modeling by Estimating Gradients of the Data Distribution. NeurIPS.
-3. Song, Y., Sohl-Dickstein, J., Kingma, D.P., Kumar, A., Ermon, S., & Poole, B. (2021). Score-Based Generative Modeling through Stochastic Differential Equations. ICLR.
-4. Song, J., Meng, C., & Ermon, S. (2021). Denoising Diffusion Implicit Models. ICLR.
-5. Nichol, A. & Dhariwal, P. (2021). Improved Denoising Diffusion Probabilistic Models. ICML.
-6. Ho, J. & Salimans, T. (2022). Classifier-Free Diffusion Guidance.

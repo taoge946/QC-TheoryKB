@@ -1,0 +1,28 @@
+# QC.TOPO.POINCAR_DUALITY.01
+# Auto-generated from 08_topology/key_formulas.md (F8.8)
+
+id: QC.TOPO.POINCAR_DUALITY.01
+legacy_alias: F8.8
+version: '01'
+claim_type: EQUIVALENCE
+domain: QC.TOPO
+artifact_type: DERIVATION
+name_en: Poincaré Duality
+name_zh: Poincaré 对偶
+latex: H_n(M; \mathbb{F}_2) \cong H^{d-n}(M; \mathbb{F}_2) \cong H_{d-n}(M; \mathbb{F}_2)
+derivation_files:
+- 08_topology/derivations/cohomology_basics.md
+citations:
+- raw: Hatcher, Ch. 3
+  verified: false
+- raw: Poincaré (1895)
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 08_topology

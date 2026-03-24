@@ -1,0 +1,28 @@
+# MATH.OPT.GRAPH_COLORING_OPTIMIZATION.01
+# Auto-generated from 10_optimization/key_formulas.md (F10.7)
+
+id: MATH.OPT.GRAPH_COLORING_OPTIMIZATION.01
+legacy_alias: F10.7
+version: '01'
+claim_type: DERIVATION
+domain: MATH.OPT
+artifact_type: DERIVATION
+name_en: Graph Coloring as Optimization
+name_zh: null
+latex: \min k, \quad \text{s.t.} \; \sum_{c=1}^{k} x_{i,c} = 1 \; \forall i \in V, \quad x_{i,c} + x_{j,c} \leq 1 \; \forall
+  (i,j) \in E, \; \forall c
+derivation_files: []
+citations:
+- raw: Garey & Johnson (1979)
+  verified: false
+- raw: Jensen & Toft, *Graph Coloring Problems* (1995)
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 10_optimization

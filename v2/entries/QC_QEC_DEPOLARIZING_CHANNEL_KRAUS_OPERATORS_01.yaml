@@ -1,0 +1,29 @@
+# QC.QEC.DEPOLARIZING_CHANNEL_KRAUS_OPERATORS.01
+# Auto-generated from 04_quantum_error_correction/key_formulas.md (F4.14)
+
+id: QC.QEC.DEPOLARIZING_CHANNEL_KRAUS_OPERATORS.01
+legacy_alias: F4.14
+version: '01'
+claim_type: EQUIVALENCE
+domain: QC.QEC
+artifact_type: DERIVATION
+name_en: Depolarizing Channel Kraus Operators
+name_zh: null
+latex: \mathcal{E}_{\text{dep}}(\rho) = (1-p)\rho + \frac{p}{3}(X\rho X + Y\rho Y + Z\rho Z)
+derivation_files: []
+citations:
+- raw: Nielsen & Chuang, Eq. 8.101, p.378
+  verified: false
+- raw: Section 8.3.4, p.378
+  verified: false
+- raw: Preskill Lecture Notes
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 04_quantum_error_correction

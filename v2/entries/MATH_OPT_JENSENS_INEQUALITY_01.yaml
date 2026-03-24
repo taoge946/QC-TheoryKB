@@ -1,0 +1,24 @@
+# MATH.OPT.JENSENS_INEQUALITY.01
+# Auto-generated from 10_optimization/key_formulas.md (F10.23)
+
+id: MATH.OPT.JENSENS_INEQUALITY.01
+legacy_alias: F10.23
+version: '01'
+claim_type: BOUND.LOWER
+domain: MATH.OPT
+artifact_type: THEOREM
+name_en: Jensen's Inequality
+name_zh: null
+latex: f(\mathbb{E}[X]) \leq \mathbb{E}[f(X)] \quad (f \text{ convex})
+derivation_files:
+- 10_optimization/derivations/convex_optimization_basics.md
+citations: []
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 10_optimization

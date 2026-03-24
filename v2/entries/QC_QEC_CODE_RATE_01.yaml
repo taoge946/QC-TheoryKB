@@ -1,0 +1,27 @@
+# QC.QEC.CODE_RATE.01
+# Auto-generated from 04_quantum_error_correction/key_formulas.md (F4.10)
+
+id: QC.QEC.CODE_RATE.01
+legacy_alias: F4.10
+version: '01'
+claim_type: CONVERGENCE
+domain: QC.QEC
+artifact_type: DERIVATION
+name_en: Code Rate
+name_zh: null
+latex: R = \frac{k}{n}
+derivation_files: []
+citations:
+- raw: 基本定义
+  verified: false
+- raw: Gottesman (1997)
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 04_quantum_error_correction

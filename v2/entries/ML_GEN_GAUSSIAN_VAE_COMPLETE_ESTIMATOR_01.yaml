@@ -1,0 +1,27 @@
+# ML.GEN.GAUSSIAN_VAE_COMPLETE_ESTIMATOR.01
+# Auto-generated from 11_ml_theory/key_formulas.md (F11.52)
+
+id: ML.GEN.GAUSSIAN_VAE_COMPLETE_ESTIMATOR.01
+legacy_alias: F11.52
+version: '01'
+claim_type: DERIVATION
+domain: ML.GEN
+artifact_type: DERIVATION
+name_en: Gaussian VAE Complete Estimator
+name_zh: null
+latex: \mathcal{L} \simeq \frac{1}{2}\sum_{j=1}^J\left(1+\log(\sigma_j^{(i)})^2 - (\mu_j^{(i)})^2 - (\sigma_j^{(i)})^2\right)
+  + \frac{1}{L}\sum_{l=1}^L \log p_\theta(\mathbf{x}^{(i)}|\mathbf{z}^{(i,l)})
+derivation_files:
+- 11_ml_theory/derivations/elbo_derivation.md
+citations:
+- raw: Kingma & Welling, VAE, ICLR 2014
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 11_ml_theory

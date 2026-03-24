@@ -1,0 +1,27 @@
+# QC.VQA.VQE_COST_FUNCTION.01
+# Auto-generated from 05_variational_quantum/key_formulas.md (F5.2)
+
+id: QC.VQA.VQE_COST_FUNCTION.01
+legacy_alias: F5.2
+version: '01'
+claim_type: IDENTITY
+domain: QC.VQA
+artifact_type: DERIVATION
+name_en: VQE代价函数 (VQE Cost Function)
+name_zh: null
+latex: C(\boldsymbol{\theta}) = \langle\psi(\boldsymbol{\theta})|H|\psi(\boldsymbol{\theta})\rangle = \sum_i c_i \langle\psi(\boldsymbol{\theta})|P_i|\psi(\boldsymbol{\theta})\rangle
+derivation_files: []
+citations:
+- raw: Peruzzo et al., *Nat. Commun.* **5**, 4213 (2014)
+  verified: false
+- raw: McClean et al., *New J. Phys.* **18**, 023023 (2016).
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 05_variational_quantum

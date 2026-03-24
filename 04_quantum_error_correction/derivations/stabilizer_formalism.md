@@ -48,7 +48,9 @@ $\mathcal{G}_n$ 的重要性质：
 1. **封闭性**：$\mathcal{G}_n$ 中任意两个元素的乘积仍在 $\mathcal{G}_n$ 中
 2. **对易/反对易**：任意两个元素（忽略相位）要么对易要么反对易
 3. **自逆性**：忽略相位后，每个元素的平方等于 $\pm I^{\otimes n}$
-4. **阶**：$|\mathcal{G}_n| = 4 \cdot 4^n$（4 个相位选择 $\times$ $4^n$ 个 Pauli 串）
+4. **阶**：$|\mathcal{G}_n| = 4 \cdot 4^n = 2^{2n+2}$（4 个相位 $\{1,i,-1,-i\}$ $\times$ $4^n$ 个 Pauli 串）
+
+> **Convention Warning**: Preskill Ch.7 uses a different convention with real $Y = ZX$ (not $iXZ$) and only $\pm 1$ phases, giving $|G_n| = 2 \cdot 4^n = 2^{2n+1}$. The difference is a factor of 2 ($\pm i$ phases included or not). Both are standard. This file primarily uses the Gottesman convention ($|\mathcal{G}_n| = 2^{2n+2}$). For stabilizer codes, the convention difference does not affect the code space or distance — stabilizer elements always have $\pm 1$ phase regardless of convention.
 
 ### Step 2: Define the Stabilizer Group **[Gottesman, §3.2; Nielsen & Chuang, §10.5.1, p.456; Bacon, p.17]**
 
@@ -70,7 +72,7 @@ $$\mathcal{S} = \langle g_1, g_2, \ldots, g_r \rangle = \{ g_1^{a_1} g_2^{a_2} \
 
 由于每个 $g_i^2 = I$，所以 $\mathcal{S}$ 有 $2^r$ 个元素。这里"独立"意味着没有任何一个生成元可以由其他生成元的乘积得到。
 
-### Step 3: Stabilizer Group Defines the Codespace **[Gottesman, §3.2; Nielsen & Chuang, Theorem 10.3, p.457]**
+### Step 3: Stabilizer Group Defines the Codespace **[Gottesman, §3.2; Nielsen & Chuang, Section 10.5.1, p.456-457]**
 
 **核心定理**：给定稳定子群 $\mathcal{S} = \langle g_1, \ldots, g_r \rangle \leq \mathcal{G}_n$，定义码空间为：
 
@@ -175,7 +177,7 @@ $$\mathbf{s}(E_1 E_2) = \mathbf{s}(E_1) \oplus \mathbf{s}(E_2)$$
 1. $RE \in \mathcal{S}$：此时 $RE|\psi\rangle = |\psi\rangle$，**纠错成功**
 2. $RE$ 在稳定子的 normalizer $N(\mathcal{S})$ 中但不在 $\mathcal{S}$ 中：$RE$ 是一个非平凡的逻辑算子，会改变编码信息，**纠错失败**（逻辑错误）
 
-**Normalizer 的定义** **[Gottesman, §3.2; Nielsen & Chuang, Theorem 10.4, p.458]**：
+**Normalizer 的定义** **[Gottesman, §3.2; Nielsen & Chuang, Section 10.5.1, p.458]**：
 
 $$N(\mathcal{S}) = \{ E \in \mathcal{G}_n : E g E^\dagger \in \mathcal{S}, \; \forall g \in \mathcal{S} \}$$
 
@@ -199,7 +201,15 @@ $$d = \min_{E \in N(\mathcal{S}) \setminus \mathcal{S}} \text{wt}(E)$$
 - **检测**最多 $d - 1$ 个错误
 - **纠正**最多 $t = \lfloor (d-1)/2 \rfloor$ 个错误
 
-**码距与逻辑算子的关系**：$d$ 是最短逻辑算子的权重。要产生不可检测的逻辑错误，至少需要 $d$ 个物理量子比特同时出错。
+**纠错能力的严格证明** **[N&C, Theorem 10.8, p.465]**：
+
+设 $E_a, E_b$ 为权重 $\leq t = \lfloor(d-1)/2\rfloor$ 的 Pauli 错误，则 $\text{wt}(E_a^\dagger E_b) \leq 2t < d$。由码距定义，$E_a^\dagger E_b \notin N(\mathcal{S}) \setminus \mathcal{S}$。因此恰好有两种情况：
+1. $E_a^\dagger E_b \in \mathcal{S}$：两个错误的 syndrome 可能相同，但它们对码空间的作用一致（差一个稳定子），纠错仍成功。这就是**退化码**（degenerate code）的情形。
+2. $E_a^\dagger E_b \notin N(\mathcal{S})$：两个错误的 syndrome 不同，可以通过 syndrome 测量区分。
+
+> **Warning**: 常见的简化说法"权重 $< d$ 的错误有不同 syndrome"仅对非退化码成立。对退化码（如 Shor 9-bit code），不同错误可以有相同 syndrome 但仍可纠正——因为它们的乘积属于 $\mathcal{S}$。正确的判据是 $E_a^\dagger E_b \notin N(\mathcal{S}) \setminus \mathcal{S}$。
+
+**码距与逻辑算子的关系**：$d$ 是最短非平凡逻辑 Pauli 算子的权重。要产生不可检测的逻辑错误，至少需要 $d$ 个物理量子比特同时出错。
 
 ---
 
@@ -379,10 +389,13 @@ Chapter 10 "Quantum error-correction" covers the stabilizer formalism in depth i
 Let $S$ be an Abelian subgroup of the Pauli group $G_n$ such that $-I \notin S$. The stabilizer code $C(S)$ is the subspace of the $n$-qubit Hilbert space fixed by all elements of $S$:
 $$C(S) = \{|\psi\rangle : g|\psi\rangle = |\psi\rangle \text{ for all } g \in S\}$$
 
-### Theorem 10.3 (Stabilizer Codes Exist) **[Nielsen & Chuang, Theorem 10.3, p.457]**
+### Stabilizer Codes **[Nielsen & Chuang, Section 10.5.1, p.456-457]**
+
+> **Note**: N&C presents these as definitions/discussion in Section 10.5.1, NOT as numbered theorems. Earlier versions of this file incorrectly cited "Theorem 10.3" and "Theorem 10.4" which do not exist in N&C. The numbered theorems in N&C Ch.10 are: 10.1 (Knill-Laflamme), 10.2 (discretization), 10.6 (Clifford normalizer), 10.7 (Gottesman-Knill), 10.8 (stabilizer error correction).
+
 Let $S$ be an Abelian subgroup of $G_n$ not containing $-I$, with $n-k$ independent generators. Then $C(S)$ is a $2^k$-dimensional subspace encoding $k$ logical qubits into $n$ physical qubits.
 
-### Theorem 10.4 (Normalizer and Logical Operators) **[Nielsen & Chuang, Theorem 10.4, p.458]**
+### Normalizer and Logical Operators **[Nielsen & Chuang, Section 10.5.1, p.458; Gottesman, §3.2]**
 The normalizer $N(S)$ of $S$ in $G_n$ consists of all elements of $G_n$ that commute with every element of $S$:
 $$N(S) = \{g \in G_n : gsg^\dagger \in S \text{ for all } s \in S\}$$
 For the Pauli group, this equals the centralizer. Elements in $N(S) \setminus S$ are logical operators that act non-trivially on the codespace.
@@ -438,7 +451,9 @@ or equivalently $d \leq \lfloor(n-k)/2\rfloor + 1$.
 
 ### Fault-Tolerant Quantum Computation **[Nielsen & Chuang, Section 10.6, pp.470-499]**
 
-**Threshold Theorem** **[Nielsen & Chuang, Theorem 10.6, p.480]**: There exists a threshold error rate $p_{\text{th}} > 0$ such that if the error rate per gate $p < p_{\text{th}}$, then an arbitrary long quantum computation can be performed reliably using concatenated coding with polylogarithmic overhead.
+**Threshold Theorem** **[Nielsen & Chuang, Section 10.6.4, p.516 (unnumbered); Preskill Ch.7, §7.4]**: There exists a threshold error rate $p_{\text{th}} > 0$ such that if the error rate per gate $p < p_{\text{th}}$, then an arbitrary long quantum computation can be performed reliably using concatenated coding with polylogarithmic overhead.
+
+> **Note**: This is NOT N&C Theorem 10.6 (which is about Clifford gates generating the normalizer, p.462). The Threshold Theorem appears as an unnumbered named result in Section 10.6.4.
 
 **Transversal Gates** **[Nielsen & Chuang, p.474]**: A gate is transversal if it acts independently on corresponding qubits in each code block. Transversal gates are automatically fault-tolerant because they do not propagate errors within a block.
 

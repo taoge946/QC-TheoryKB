@@ -1,0 +1,26 @@
+# QC.QINFO.CAPACITY_HIERARCHY.01
+# Auto-generated from 03_quantum_info_theory/key_formulas.md (F3.26)
+
+id: QC.QINFO.CAPACITY_HIERARCHY.01
+legacy_alias: F3.26
+version: '01'
+claim_type: BOUND.UPPER
+domain: QC.QINFO
+artifact_type: DERIVATION
+name_en: Capacity Hierarchy
+name_zh: 容量层次
+latex: C_Q(\mathcal{N}) \leq C(\mathcal{N}) \leq C_{\mathrm{EA}}(\mathcal{N})
+derivation_files:
+- 03_quantum_info_theory/derivations/quantum_channel_capacity.md
+citations:
+- raw: Wilde, Ch.20-24
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 03_quantum_info_theory

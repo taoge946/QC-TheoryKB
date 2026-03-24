@@ -1,0 +1,26 @@
+# QC.QEC.MINIMUM_WEIGHT_PERFECT_MATCHING.01
+# Auto-generated from 04_quantum_error_correction/key_formulas.md (F4.8)
+
+id: QC.QEC.MINIMUM_WEIGHT_PERFECT_MATCHING.01
+legacy_alias: F4.8
+version: '01'
+claim_type: EQUIVALENCE
+domain: QC.QEC
+artifact_type: DERIVATION
+name_en: Minimum Weight Perfect Matching (MWPM) Decoder
+name_zh: null
+latex: '\hat{E} = \arg\min_{E: \sigma(E) = \mathbf{s}} \text{wt}(E)'
+derivation_files:
+- 04_quantum_error_correction/derivations/decoder_theory.md
+citations:
+- raw: Dennis et al., J. Math. Phys. 43, 4452 (2002)
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 04_quantum_error_correction

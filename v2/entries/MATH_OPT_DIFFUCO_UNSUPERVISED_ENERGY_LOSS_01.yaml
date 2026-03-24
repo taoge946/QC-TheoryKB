@@ -1,0 +1,27 @@
+# MATH.OPT.DIFFUCO_UNSUPERVISED_ENERGY_LOSS.01
+# Auto-generated from 10_optimization/key_formulas.md (F10.34)
+
+id: MATH.OPT.DIFFUCO_UNSUPERVISED_ENERGY_LOSS.01
+legacy_alias: F10.34
+version: '01'
+claim_type: CORRECTNESS
+domain: MATH.OPT
+artifact_type: DERIVATION
+name_en: DiffUCO Unsupervised Energy Loss
+name_zh: null
+latex: \mathcal{L}_{\text{DiffUCO}} = \mathbb{E}_{\mathcal{G}, t, \mathbf{x}_t}\left[H(\hat{\mathbf{x}}_0^{(t)}) + \lambda
+  \cdot \mathcal{P}(\hat{\mathbf{x}}_0^{(t)})\right]
+derivation_files:
+- 10_optimization/derivations/neural_co_theory.md
+citations:
+- raw: Sanokowski et al., NeurIPS 2024
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 10_optimization

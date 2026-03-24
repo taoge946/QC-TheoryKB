@@ -1,0 +1,26 @@
+# QC.QINFO.CONDITIONAL_ENTROPY_MUTUAL_INFORMATION.01
+# Auto-generated from 03_quantum_info_theory/key_formulas.md (F3.18)
+
+id: QC.QINFO.CONDITIONAL_ENTROPY_MUTUAL_INFORMATION.01
+legacy_alias: F3.18
+version: '01'
+claim_type: CORRECTNESS
+domain: QC.QINFO
+artifact_type: THEOREM
+name_en: Conditional Entropy & Mutual Information
+name_zh: 条件熵与互信息
+latex: \mathrm{H}(A|B)_\rho = \mathrm{H}(AB) - \mathrm{H}(B), \quad \mathrm{I}(A:B)_\rho = \mathrm{H}(A)+\mathrm{H}(B)-\mathrm{H}(AB)
+derivation_files:
+- 03_quantum_info_theory/derivations/entropy_inequalities.md
+citations:
+- raw: Watrous, Ch.5, Def.5.16, 5.18
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 03_quantum_info_theory

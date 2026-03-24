@@ -1,0 +1,25 @@
+# MATH.OPT.LAGRANGIAN_DUAL_FUNCTION.01
+# Auto-generated from 10_optimization/key_formulas.md (F10.19)
+
+id: MATH.OPT.LAGRANGIAN_DUAL_FUNCTION.01
+legacy_alias: F10.19
+version: '01'
+claim_type: BOUND.LOWER
+domain: MATH.OPT
+artifact_type: DERIVATION
+name_en: Lagrangian Dual Function
+name_zh: null
+latex: g(\lambda, \nu) = \inf_x \left\{ f_0(x) + \sum_i \lambda_i f_i(x) + \sum_i \nu_i h_i(x) \right\} \leq p^*, \quad \forall
+  \lambda \geq 0
+derivation_files:
+- 10_optimization/derivations/duality_kkt.md
+citations: []
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 10_optimization

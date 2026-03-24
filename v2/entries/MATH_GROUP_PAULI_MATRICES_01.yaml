@@ -1,0 +1,32 @@
+# MATH.GROUP.PAULI_MATRICES.01
+# Auto-generated from 06_group_theory/key_formulas.md (F6.1)
+
+id: MATH.GROUP.PAULI_MATRICES.01
+legacy_alias: F6.1
+version: '01'
+claim_type: IDENTITY
+domain: MATH.GROUP
+artifact_type: DEFINITION
+name_en: Pauli Matrices
+name_zh: null
+latex: 'I = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}, \quad
+
+  X = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}, \quad
+
+  Y = \begin{pmatrix} 0 & -i \\ i & 0 \end{pmatrix}, \quad
+
+  Z = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}'
+derivation_files:
+- 06_group_theory/derivations/pauli_group.md
+citations:
+- raw: Nielsen & Chuang Ch. 4
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 06_group_theory

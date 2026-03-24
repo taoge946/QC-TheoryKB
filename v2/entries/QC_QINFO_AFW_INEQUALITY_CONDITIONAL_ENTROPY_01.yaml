@@ -1,0 +1,26 @@
+# QC.QINFO.AFW_INEQUALITY_CONDITIONAL_ENTROPY.01
+# Auto-generated from 03_quantum_info_theory/key_formulas.md (F3.43)
+
+id: QC.QINFO.AFW_INEQUALITY_CONDITIONAL_ENTROPY.01
+legacy_alias: F3.43
+version: '01'
+claim_type: CORRECTNESS
+domain: QC.QINFO
+artifact_type: THEOREM
+name_en: AFW Inequality — Conditional Entropy Continuity
+name_zh: AFW 条件熵连续性
+latex: '|H(A|B)_\rho - H(A|B)_\sigma| \leq 2\varepsilon \log d_A + g_2(\varepsilon)'
+derivation_files:
+- 03_quantum_info_theory/derivations/entropy_inequalities.md
+citations:
+- raw: Wilde, Ch.11, Theorem 11.10.4
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 03_quantum_info_theory

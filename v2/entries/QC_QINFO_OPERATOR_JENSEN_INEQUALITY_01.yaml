@@ -1,0 +1,26 @@
+# QC.QINFO.OPERATOR_JENSEN_INEQUALITY.01
+# Auto-generated from 03_quantum_info_theory/key_formulas.md (F3.32)
+
+id: QC.QINFO.OPERATOR_JENSEN_INEQUALITY.01
+legacy_alias: F3.32
+version: '01'
+claim_type: BOUND.UPPER
+domain: QC.QINFO
+artifact_type: THEOREM
+name_en: Operator Jensen Inequality
+name_zh: 算符 Jensen 不等式
+latex: f \text{ operator concave} \Rightarrow \mathrm{Tr}(f(\sum p_k A_k))\geq\sum p_k\mathrm{Tr}(f(A_k))
+derivation_files:
+- 03_quantum_info_theory/derivations/entropy_inequalities.md
+citations:
+- raw: Watrous, Ch.5, Thm.5.7
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 03_quantum_info_theory

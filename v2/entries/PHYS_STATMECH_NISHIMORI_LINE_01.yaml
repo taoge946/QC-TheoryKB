@@ -1,0 +1,28 @@
+# PHYS.STATMECH.NISHIMORI_LINE.01
+# Auto-generated from 16_statistical_mechanics/key_formulas.md (F16.10)
+
+id: PHYS.STATMECH.NISHIMORI_LINE.01
+legacy_alias: F16.10
+version: '01'
+claim_type: IDENTITY
+domain: PHYS.STATMECH
+artifact_type: DERIVATION
+name_en: Nishimori Line（西森线）
+name_zh: null
+latex: e^{-2\beta J} = \frac{p}{1-p} \quad \Longleftrightarrow \quad \beta J = \frac{1}{2} \ln \frac{1-p}{p}
+derivation_files:
+- 16_statistical_mechanics/derivations/qec_stat_mech_mapping.md
+citations:
+- raw: Nishimori, Prog. Theor. Phys. 66, 1169 (1981)
+  verified: false
+- raw: Dennis et al. 2002, §3.3
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 16_statistical_mechanics

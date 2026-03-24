@@ -1,0 +1,27 @@
+# ML.DIFFUSION.ANDERSON_REVERSE_SDE_FORM.01
+# Auto-generated from 11_ml_theory/key_formulas.md (F11.27)
+
+id: ML.DIFFUSION.ANDERSON_REVERSE_SDE_FORM.01
+legacy_alias: F11.27
+version: '01'
+claim_type: EQUIVALENCE
+domain: ML.DIFFUSION
+artifact_type: THEOREM
+name_en: Anderson Reverse SDE (General Form)
+name_zh: null
+latex: d\mathbf{x} = \left\{\mathbf{f}(\mathbf{x},t) - \nabla\cdot[\mathbf{G}\mathbf{G}^\top] - \mathbf{G}\mathbf{G}^\top\nabla_\mathbf{x}\log
+  p_t(\mathbf{x})\right\}dt + \mathbf{G}(\mathbf{x},t)d\bar{\mathbf{w}}
+derivation_files:
+- 11_ml_theory/derivations/diffusion_models_math.md
+citations:
+- raw: Song et al., Score SDE, ICLR 2021
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 11_ml_theory

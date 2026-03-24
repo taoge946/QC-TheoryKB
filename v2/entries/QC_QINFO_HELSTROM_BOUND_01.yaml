@@ -1,0 +1,26 @@
+# QC.QINFO.HELSTROM_BOUND.01
+# Auto-generated from 03_quantum_info_theory/key_formulas.md (F3.14)
+
+id: QC.QINFO.HELSTROM_BOUND.01
+legacy_alias: F3.14
+version: '01'
+claim_type: BOUND.UPPER
+domain: QC.QINFO
+artifact_type: THEOREM
+name_en: Helstrom Bound
+name_zh: Helstrom 界
+latex: p_{\mathrm{opt}} = \frac{1}{2}\left(1 + \|p_1\rho_1 - p_0\rho_0\|_1\right)
+derivation_files:
+- 03_quantum_info_theory/derivations/quantum_data_processing.md
+citations:
+- raw: Watrous, Ch.4, Thm.4.3
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 03_quantum_info_theory

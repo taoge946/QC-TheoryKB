@@ -1,0 +1,26 @@
+# QC.QINFO.LOGARITHMIC_NEGATIVITY.01
+# Auto-generated from 03_quantum_info_theory/key_formulas.md (F3.29)
+
+id: QC.QINFO.LOGARITHMIC_NEGATIVITY.01
+legacy_alias: F3.29
+version: '01'
+claim_type: CORRECTNESS
+domain: QC.QINFO
+artifact_type: DERIVATION
+name_en: Logarithmic Negativity
+name_zh: 对数负性
+latex: E_N(\rho) = \log\|\rho^{T_B}\|_1
+derivation_files:
+- 03_quantum_info_theory/derivations/entanglement_theory.md
+citations:
+- raw: Watrous, Ch.7, Def.7.35
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 03_quantum_info_theory

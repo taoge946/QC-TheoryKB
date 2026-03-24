@@ -1,0 +1,26 @@
+# QC.VQA._NATURAL_GRADIENT.01
+# Auto-generated from 05_variational_quantum/key_formulas.md (F5.10)
+
+id: QC.VQA._NATURAL_GRADIENT.01
+legacy_alias: F5.10
+version: '01'
+claim_type: DERIVATION
+domain: QC.VQA
+artifact_type: DERIVATION
+name_en: 量子自然梯度 (Quantum Natural Gradient)
+name_zh: null
+latex: \boldsymbol{\theta}_{t+1} = \boldsymbol{\theta}_t - \eta \, F^{-1}(\boldsymbol{\theta}_t) \, \nabla_{\boldsymbol{\theta}}
+  C(\boldsymbol{\theta}_t)
+derivation_files: []
+citations:
+- raw: Stokes et al., *Quantum* **4**, 269 (2020).
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 05_variational_quantum

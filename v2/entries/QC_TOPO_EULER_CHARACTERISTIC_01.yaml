@@ -1,0 +1,28 @@
+# QC.TOPO.EULER_CHARACTERISTIC.01
+# Auto-generated from 08_topology/key_formulas.md (F8.4)
+
+id: QC.TOPO.EULER_CHARACTERISTIC.01
+legacy_alias: F8.4
+version: '01'
+claim_type: EQUIVALENCE
+domain: QC.TOPO
+artifact_type: DERIVATION
+name_en: Euler Characteristic
+name_zh: Euler 示性数
+latex: \chi = \sum_{n=0}^{d} (-1)^n \beta_n = \sum_{n=0}^{d} (-1)^n \dim C_n
+derivation_files:
+- 08_topology/derivations/euler_characteristic.md
+citations:
+- raw: Euler (1752)
+  verified: false
+- raw: Hatcher, Ch. 2
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 08_topology

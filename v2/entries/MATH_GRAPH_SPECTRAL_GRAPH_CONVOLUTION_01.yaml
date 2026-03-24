@@ -1,0 +1,26 @@
+# MATH.GRAPH.SPECTRAL_GRAPH_CONVOLUTION.01
+# Auto-generated from 07_graph_theory/key_formulas.md (F7.5)
+
+id: MATH.GRAPH.SPECTRAL_GRAPH_CONVOLUTION.01
+legacy_alias: F7.5
+version: '01'
+claim_type: IDENTITY
+domain: MATH.GRAPH
+artifact_type: DERIVATION
+name_en: Spectral Graph Convolution
+name_zh: 谱图卷积
+latex: x *_G g_\theta = U \, g_\theta(\Lambda) \, U^T x
+derivation_files:
+- 07_graph_theory/derivations/spectral_graph_theory.md
+citations:
+- raw: Wu et al. GNN Survey, §4.1
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 07_graph_theory

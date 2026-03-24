@@ -1,0 +1,28 @@
+# PHYS.STATMECH.MULTICRITICAL_NISHIMORI_POINT_BIASED.01
+# Auto-generated from 16_statistical_mechanics/key_formulas.md (F16.15)
+
+id: PHYS.STATMECH.MULTICRITICAL_NISHIMORI_POINT_BIASED.01
+legacy_alias: F16.15
+version: '01'
+claim_type: IDENTITY
+domain: PHYS.STATMECH
+artifact_type: DERIVATION
+name_en: Multicritical Nishimori Point for Biased Noise（偏置噪声的多临界 Nishimori 点）
+name_zh: null
+latex: H_2(p_x) + H_2(p_z) = 1
+derivation_files:
+- 16_statistical_mechanics/derivations/qec_stat_mech_mapping.md
+citations:
+- raw: Dennis et al. 2002, §5
+  verified: false
+- raw: Bombin et al., Phys. Rev. X 2, 021004 (2012)
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 16_statistical_mechanics

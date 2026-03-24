@@ -1,0 +1,25 @@
+# MATH.OPT.SDP_STANDARD_FORM.01
+# Auto-generated from 10_optimization/key_formulas.md (F10.24)
+
+id: MATH.OPT.SDP_STANDARD_FORM.01
+legacy_alias: F10.24
+version: '01'
+claim_type: IDENTITY
+domain: MATH.OPT
+artifact_type: DEFINITION
+name_en: SDP Standard Form
+name_zh: null
+latex: \min \; \text{tr}(CX), \quad \text{s.t.} \; \text{tr}(A_i X) = b_i, \; X \succeq 0
+derivation_files:
+- 10_optimization/derivations/convex_optimization_basics.md
+- 10_optimization/derivations/relaxation_methods.md
+citations: []
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 10_optimization

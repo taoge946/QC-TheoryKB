@@ -1,0 +1,26 @@
+# QC.QM.PARTIAL_TRACE.01
+# Auto-generated from 02_quantum_mechanics/key_formulas.md (F2.2)
+
+id: QC.QM.PARTIAL_TRACE.01
+legacy_alias: F2.2
+version: '01'
+claim_type: IDENTITY
+domain: QC.QM
+artifact_type: DEFINITION
+name_en: Partial Trace
+name_zh: 偏迹
+latex: \rho_A = \text{Tr}_B(\rho_{AB}) = \sum_j (I_A \otimes \langle j|_B)\, \rho_{AB}\, (I_A \otimes |j\rangle_B)
+derivation_files:
+- 02_quantum_mechanics/derivations/density_matrix_formalism.md
+citations:
+- raw: Nielsen & Chuang, Theorem 2.7, Eq. 2.178, p.105
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 02_quantum_mechanics

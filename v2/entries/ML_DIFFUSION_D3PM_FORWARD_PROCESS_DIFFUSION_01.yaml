@@ -1,0 +1,27 @@
+# ML.DIFFUSION.D3PM_FORWARD_PROCESS_DIFFUSION.01
+# Auto-generated from 11_ml_theory/key_formulas.md (F11.16)
+
+id: ML.DIFFUSION.D3PM_FORWARD_PROCESS_DIFFUSION.01
+legacy_alias: F11.16
+version: '01'
+claim_type: CORRECTNESS
+domain: ML.DIFFUSION
+artifact_type: DERIVATION
+name_en: D3PM Forward Process (Discrete Diffusion)
+name_zh: null
+latex: q(x_t | x_{t-1}) = \mathrm{Cat}(x_t;\; p = \mathbf{x}_{t-1} Q_t), \quad q(x_t | x_0) = \mathrm{Cat}(x_t;\; p = \mathbf{x}_0
+  \bar{Q}_t)
+derivation_files:
+- 11_ml_theory/derivations/discrete_diffusion_d3pm.md
+citations:
+- raw: Austin et al., D3PM, NeurIPS 2021
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 11_ml_theory

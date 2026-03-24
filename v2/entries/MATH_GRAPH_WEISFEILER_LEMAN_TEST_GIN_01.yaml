@@ -1,0 +1,28 @@
+# MATH.GRAPH.WEISFEILER_LEMAN_TEST_GIN.01
+# Auto-generated from 07_graph_theory/key_formulas.md (F7.9)
+
+id: MATH.GRAPH.WEISFEILER_LEMAN_TEST_GIN.01
+legacy_alias: F7.9
+version: '01'
+claim_type: BOUND.UPPER
+domain: MATH.GRAPH
+artifact_type: THEOREM
+name_en: Weisfeiler-Leman Test & GIN Theorem
+name_zh: WL 测试与 GIN 定理
+latex: 'c_v^{(l+1)} = \mathrm{HASH}\!\left(c_v^{(l)}, \{\!\{ c_u^{(l)} : u \in \mathcal{N}(v) \}\!\}\right)'
+derivation_files:
+- 07_graph_theory/derivations/wl_test_expressiveness.md
+citations:
+- raw: Xu et al. (GIN), 2019
+  verified: false
+- raw: Wu et al. GNN Survey, §4.2
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 07_graph_theory

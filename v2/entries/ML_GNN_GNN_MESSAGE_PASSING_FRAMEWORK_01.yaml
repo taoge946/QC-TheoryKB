@@ -1,0 +1,26 @@
+# ML.GNN.GNN_MESSAGE_PASSING_FRAMEWORK.01
+# Auto-generated from 11_ml_theory/key_formulas.md (F11.10)
+
+id: ML.GNN.GNN_MESSAGE_PASSING_FRAMEWORK.01
+legacy_alias: F11.10
+version: '01'
+claim_type: IDENTITY
+domain: ML.GNN
+artifact_type: DEFINITION
+name_en: GNN Message Passing Framework
+name_zh: null
+latex: m_v^{(l+1)} = \bigoplus_{u \in \mathcal{N}(v)} M^{(l)}\left(h_v^{(l)}, h_u^{(l)}, e_{uv}\right)
+derivation_files:
+- 11_ml_theory/derivations/gnn_message_passing.md
+citations:
+- raw: Gilmer et al., MPNN, ICML 2017
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 11_ml_theory

@@ -1,0 +1,25 @@
+# ML.ATTENTION.SELF_ATTENTION_MPNN_COMPLETE.01
+# Auto-generated from 11_ml_theory/key_formulas.md (F11.46)
+
+id: ML.ATTENTION.SELF_ATTENTION_MPNN_COMPLETE.01
+legacy_alias: F11.46
+version: '01'
+claim_type: EQUIVALENCE
+domain: ML.ATTENTION
+artifact_type: DERIVATION
+name_en: Self-Attention = MPNN on Complete Graph
+name_zh: null
+latex: h_v' = \sum_{u} \mathrm{softmax}\left(\frac{(h_v W^Q)(h_u W^K)^\top}{\sqrt{d_k}}\right) \cdot h_u W^V
+derivation_files:
+- 11_ml_theory/derivations/attention_mechanism.md
+- 11_ml_theory/derivations/gnn_message_passing.md
+citations: []
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 11_ml_theory

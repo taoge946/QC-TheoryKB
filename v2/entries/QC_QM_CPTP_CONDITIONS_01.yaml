@@ -1,0 +1,28 @@
+# QC.QM.CPTP_CONDITIONS.01
+# Auto-generated from 02_quantum_mechanics/key_formulas.md (F2.8)
+
+id: QC.QM.CPTP_CONDITIONS.01
+legacy_alias: F2.8
+version: '01'
+claim_type: CORRECTNESS
+domain: QC.QM
+artifact_type: THEOREM
+name_en: CPTP Conditions
+name_zh: 完全正、迹守恒条件
+latex: \text{Complete Positivity:} \quad (I_R \otimes \mathcal{E})(\rho_{RA}) \geq 0 \;\;\forall\; \rho_{RA} \geq 0
+derivation_files:
+- 02_quantum_mechanics/derivations/quantum_channels_kraus.md
+citations:
+- raw: Nielsen & Chuang, Box 8.2, p.368
+  verified: false
+- raw: Section 8.2.4, p.363
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 02_quantum_mechanics

@@ -1,0 +1,28 @@
+# PHYS.STATMECH.GAUGE_THEORY_PARTITION_FUNCTIONZ_2.01
+# Auto-generated from 16_statistical_mechanics/key_formulas.md (F16.11)
+
+id: PHYS.STATMECH.GAUGE_THEORY_PARTITION_FUNCTIONZ_2.01
+legacy_alias: F16.11
+version: '01'
+claim_type: IDENTITY
+domain: PHYS.STATMECH
+artifact_type: DERIVATION
+name_en: $Z_2$ Gauge Theory Partition Function（$Z_2$ 规范理论配分函数）
+name_zh: null
+latex: Z[J, \eta] = \sum_{\{\sigma_\ell\}} \exp\left(J \sum_P \eta_P \, u_P\right), \qquad u_P = \prod_{\ell \in P} \sigma_\ell
+derivation_files:
+- 16_statistical_mechanics/derivations/qec_stat_mech_mapping.md
+citations:
+- raw: Dennis et al. 2002, Eq. 3.10-3.11
+  verified: false
+- raw: Wegner, J. Math. Phys. 12, 2259 (1971)
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 16_statistical_mechanics

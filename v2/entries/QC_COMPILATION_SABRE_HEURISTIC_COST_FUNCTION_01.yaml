@@ -1,0 +1,26 @@
+# QC.COMPILATION.SABRE_HEURISTIC_COST_FUNCTION.01
+# Auto-generated from 13_quantum_compilation/key_formulas.md (F13.7)
+
+id: QC.COMPILATION.SABRE_HEURISTIC_COST_FUNCTION.01
+legacy_alias: F13.7
+version: '01'
+claim_type: DERIVATION
+domain: QC.COMPILATION
+artifact_type: DERIVATION
+name_en: SABRE Heuristic Cost Function
+name_zh: null
+latex: H_{\text{basic}}(\text{SWAP}) = \frac{1}{|F|} \sum_{\text{gate}(q_i, q_j) \in F} d_G(\pi'(q_i), \pi'(q_j))
+derivation_files:
+- 13_quantum_compilation/derivations/routing_algorithms.md
+citations:
+- raw: Li et al., ASPLOS 2019, Section 3
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 13_quantum_compilation

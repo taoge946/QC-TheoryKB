@@ -1,0 +1,26 @@
+# QC.QINFO.SCHATTEN_NORMS.01
+# Auto-generated from 03_quantum_info_theory/key_formulas.md (F3.2)
+
+id: QC.QINFO.SCHATTEN_NORMS.01
+legacy_alias: F3.2
+version: '01'
+claim_type: IDENTITY
+domain: QC.QINFO
+artifact_type: DERIVATION
+name_en: Schatten Norms
+name_zh: Schatten 范数
+latex: '\|X\|_1 = \mathrm{Tr}\sqrt{X^* X}, \quad \|X\|_\infty = \max\{\|Xu\| : \|u\|=1\}, \quad \|X\|_p = (\mathrm{Tr}(X^*X)^{p/2})^{1/p}'
+derivation_files:
+- 03_quantum_info_theory/derivations/classical_information_theory.md
+citations:
+- raw: Watrous, Ch.1, Def.1.1
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 03_quantum_info_theory

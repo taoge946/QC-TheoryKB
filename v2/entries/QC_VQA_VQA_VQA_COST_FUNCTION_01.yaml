@@ -1,0 +1,25 @@
+# QC.VQA.VQA_VQA_COST_FUNCTION.01
+# Auto-generated from 05_variational_quantum/key_formulas.md (F5.15)
+
+id: QC.VQA.VQA_VQA_COST_FUNCTION.01
+legacy_alias: F5.15
+version: '01'
+claim_type: IDENTITY
+domain: QC.VQA
+artifact_type: DEFINITION
+name_en: VQA通用代价函数 (General VQA Cost Function)
+name_zh: null
+latex: C(\vec{\theta}) = \sum_k f_k\left(\text{tr}[O_k U(\vec{\theta}) \rho_k U^\dagger(\vec{\theta})]\right)
+derivation_files: []
+citations:
+- raw: Cerezo et al. 2021, Eq.(2)
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 05_variational_quantum

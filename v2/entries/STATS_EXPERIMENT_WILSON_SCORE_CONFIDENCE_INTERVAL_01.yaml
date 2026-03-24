@@ -1,0 +1,28 @@
+# STATS.EXPERIMENT.WILSON_SCORE_CONFIDENCE_INTERVAL.01
+# Auto-generated from 17_experimental_methods/key_formulas.md (F17.2)
+
+id: STATS.EXPERIMENT.WILSON_SCORE_CONFIDENCE_INTERVAL.01
+legacy_alias: F17.2
+version: '01'
+claim_type: STATISTICAL_VALIDATION
+domain: STATS.EXPERIMENT
+artifact_type: IDENTITY
+name_en: Wilson Score Confidence Interval
+name_zh: Wilson 置信区间
+latex: \hat{F}_{\text{Wilson}} = \frac{\hat{F} + \frac{z^2}{2n}}{1 + \frac{z^2}{n}}, \qquad w = \frac{z}{1 + z^2/n}\sqrt{\frac{\hat{F}(1-\hat{F})}{n}
+  + \frac{z^2}{4n^2}}
+derivation_files: []
+citations:
+- raw: Wilson (1927), JASA
+  verified: false
+- raw: Brown, Cai & DasGupta (2001), Statistical Science
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 17_experimental_methods

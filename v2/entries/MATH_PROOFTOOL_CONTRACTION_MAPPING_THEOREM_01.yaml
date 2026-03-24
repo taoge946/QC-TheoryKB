@@ -1,0 +1,28 @@
+# MATH.PROOFTOOL.CONTRACTION_MAPPING_THEOREM.01
+# Auto-generated from 18_proof_techniques/key_formulas.md (F18.13)
+
+id: MATH.PROOFTOOL.CONTRACTION_MAPPING_THEOREM.01
+legacy_alias: F18.13
+version: '01'
+claim_type: BOUND.UPPER
+domain: MATH.PROOFTOOL
+artifact_type: THEOREM
+name_en: Contraction Mapping Theorem
+name_zh: 压缩映射/Banach 不动点定理
+latex: 'd(Tx, Ty) \leq \gamma \cdot d(x, y), \; 0 \leq \gamma < 1 \implies \exists! \, x^* = Tx^*, \; d(x_n, x^*) \leq \frac{\gamma^n}{1-\gamma} d(x_0, x_1)'
+derivation_files:
+- 18_proof_techniques/derivations/convergence_methods.md
+citations:
+- raw: Banach, 1922
+  verified: false
+- raw: Rudin, Functional Analysis
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 18_proof_techniques

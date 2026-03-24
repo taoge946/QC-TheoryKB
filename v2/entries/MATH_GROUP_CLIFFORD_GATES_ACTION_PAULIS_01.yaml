@@ -1,0 +1,26 @@
+# MATH.GROUP.CLIFFORD_GATES_ACTION_PAULIS.01
+# Auto-generated from 06_group_theory/key_formulas.md (F6.5)
+
+id: MATH.GROUP.CLIFFORD_GATES_ACTION_PAULIS.01
+legacy_alias: F6.5
+version: '01'
+claim_type: CORRECTNESS
+domain: MATH.GROUP
+artifact_type: DERIVATION
+name_en: Clifford Gates Action on Paulis
+name_zh: null
+latex: 'H: \; X \mapsto Z, \quad Z \mapsto X, \quad Y \mapsto -Y'
+derivation_files:
+- 06_group_theory/derivations/clifford_group.md
+citations:
+- raw: Aaronson & Gottesman (2004)
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 06_group_theory

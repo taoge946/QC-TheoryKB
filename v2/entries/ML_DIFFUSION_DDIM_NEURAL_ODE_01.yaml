@@ -1,0 +1,27 @@
+# ML.DIFFUSION.DDIM_NEURAL_ODE.01
+# Auto-generated from 11_ml_theory/key_formulas.md (F11.35)
+
+id: ML.DIFFUSION.DDIM_NEURAL_ODE.01
+legacy_alias: F11.35
+version: '01'
+claim_type: EQUIVALENCE
+domain: ML.DIFFUSION
+artifact_type: DERIVATION
+name_en: DDIM as Neural ODE
+name_zh: null
+latex: d\bar{x}(t) = \epsilon_\theta^{(t)}\!\left(\frac{\bar{x}(t)}{\sqrt{\sigma^2+1}}\right) d\sigma(t), \quad \bar{x} =
+  x/\sqrt{\alpha},\; \sigma = \sqrt{(1-\alpha)/\alpha}
+derivation_files:
+- 11_ml_theory/derivations/diffusion_models_math.md
+citations:
+- raw: Song et al., DDIM, ICLR 2021, Eq.(14)
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 11_ml_theory

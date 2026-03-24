@@ -1,0 +1,26 @@
+# PHYS.STATMECH.CORRELATION_LENGTH.01
+# Auto-generated from 16_statistical_mechanics/key_formulas.md (F16.7)
+
+id: PHYS.STATMECH.CORRELATION_LENGTH.01
+legacy_alias: F16.7
+version: '01'
+claim_type: IDENTITY
+domain: PHYS.STATMECH
+artifact_type: DEFINITION
+name_en: Correlation Length（关联长度）
+name_zh: null
+latex: \xi \sim |T - T_c|^{-\nu}
+derivation_files:
+- 16_statistical_mechanics/derivations/ising_model.md
+citations:
+- raw: Fisher, Rev. Mod. Phys. 46, 597 (1974)
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 16_statistical_mechanics

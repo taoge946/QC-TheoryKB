@@ -1,0 +1,26 @@
+# QC.ZX.CNOT_DECOMPOSITION_ZX.01
+# Auto-generated from 12_zx_calculus/key_formulas.md (F12.11)
+
+id: QC.ZX.CNOT_DECOMPOSITION_ZX.01
+legacy_alias: F12.11
+version: '01'
+claim_type: IDENTITY
+domain: QC.ZX
+artifact_type: DERIVATION
+name_en: CNOT Decomposition in ZX
+name_zh: CNOT 的 ZX 分解
+latex: \text{CNOT} = \tikz{Z}^{1,2}_0 \circ \tikz{X}^{2,1}_0 \quad \text{(控制比特用 Z-蜘蛛复制，目标比特用 X-蜘蛛合并)}
+derivation_files:
+- 12_zx_calculus/derivations/zx_basics.md
+citations:
+- raw: van de Wetering, arXiv:2012.13966, Sec.2.3
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 12_zx_calculus

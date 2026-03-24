@@ -1,0 +1,28 @@
+# QC.QM.POVM_MEASUREMENT.01
+# Auto-generated from 02_quantum_mechanics/key_formulas.md (F2.14)
+
+id: QC.QM.POVM_MEASUREMENT.01
+legacy_alias: F2.14
+version: '01'
+claim_type: IDENTITY
+domain: QC.QM
+artifact_type: DEFINITION
+name_en: POVM Measurement
+name_zh: POVM 测量
+latex: '\{M_m\}: \quad M_m \geq 0, \quad \sum_m M_m = I'
+derivation_files:
+- 02_quantum_mechanics/derivations/measurement_theory.md
+citations:
+- raw: Nielsen & Chuang, Postulate 3, p.84
+  verified: false
+- raw: Section 2.2.6, p.90
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 02_quantum_mechanics

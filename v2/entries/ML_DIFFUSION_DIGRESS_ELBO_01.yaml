@@ -1,0 +1,27 @@
+# ML.DIFFUSION.DIGRESS_ELBO.01
+# Auto-generated from 11_ml_theory/key_formulas.md (F11.42)
+
+id: ML.DIFFUSION.DIGRESS_ELBO.01
+legacy_alias: F11.42
+version: '01'
+claim_type: DERIVATION
+domain: ML.DIFFUSION
+artifact_type: DERIVATION
+name_en: DiGress ELBO
+name_zh: null
+latex: \log p_\theta(G) \geq \log p(n_G) + D_{\mathrm{KL}}[q(G^T|G) \| q_X \times q_E] + \sum_{t=2}^T \mathbb{E}_{q(G^t|G)}[D_{\mathrm{KL}}[q(G^{t-1}|G^t,G)
+  \| p_\theta(G^{t-1}|G^t)]] + \mathbb{E}_{q(G^1|G)}[\log p_\theta(G|G^1)]
+derivation_files:
+- 11_ml_theory/derivations/discrete_diffusion_d3pm.md
+citations:
+- raw: Vignac et al., DiGress, ICLR 2023, Appendix D
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 11_ml_theory

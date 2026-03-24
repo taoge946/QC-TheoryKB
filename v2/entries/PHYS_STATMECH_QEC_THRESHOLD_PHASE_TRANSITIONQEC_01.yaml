@@ -1,0 +1,28 @@
+# PHYS.STATMECH.QEC_THRESHOLD_PHASE_TRANSITIONQEC.01
+# Auto-generated from 16_statistical_mechanics/key_formulas.md (F16.12)
+
+id: PHYS.STATMECH.QEC_THRESHOLD_PHASE_TRANSITIONQEC.01
+legacy_alias: F16.12
+version: '01'
+claim_type: CONVERGENCE
+domain: PHYS.STATMECH
+artifact_type: DERIVATION
+name_en: QEC Threshold as Phase Transition（QEC 阈值 = 相变）
+name_zh: null
+latex: p < p_c \;\Longleftrightarrow\; \text{errors correctable (ordered phase)}
+derivation_files:
+- 16_statistical_mechanics/derivations/qec_stat_mech_mapping.md
+citations:
+- raw: Dennis et al., J. Math. Phys. 43, 4452 (2002)
+  verified: false
+- raw: 交叉参考 [04_qec/threshold_theorem.md, F4.6
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 16_statistical_mechanics

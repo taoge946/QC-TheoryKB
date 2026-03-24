@@ -1,0 +1,27 @@
+# ML.GEN.GAN_MINIMAX_OBJECTIVE.01
+# Auto-generated from 11_ml_theory/key_formulas.md (F11.47)
+
+id: ML.GEN.GAN_MINIMAX_OBJECTIVE.01
+legacy_alias: F11.47
+version: '01'
+claim_type: EQUIVALENCE
+domain: ML.GEN
+artifact_type: DERIVATION
+name_en: GAN Minimax Objective
+name_zh: null
+latex: \min_G \max_D \; V(D, G) = \mathbb{E}_{\mathbf{x} \sim p_{\text{data}}}[\log D(\mathbf{x})] + \mathbb{E}_{\mathbf{z}
+  \sim p_{\mathbf{z}}}[\log(1 - D(G(\mathbf{z})))]
+derivation_files:
+- 11_ml_theory/derivations/generative_models_comparison.md
+citations:
+- raw: Goodfellow et al., GAN, NeurIPS 2014
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 11_ml_theory

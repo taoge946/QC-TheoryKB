@@ -1,0 +1,26 @@
+# QC.QINFO.QUANTUM_RELATIVE_ENTROPY.01
+# Auto-generated from 03_quantum_info_theory/key_formulas.md (F3.17)
+
+id: QC.QINFO.QUANTUM_RELATIVE_ENTROPY.01
+legacy_alias: F3.17
+version: '01'
+claim_type: BOUND.LOWER
+domain: QC.QINFO
+artifact_type: DERIVATION
+name_en: Quantum Relative Entropy
+name_zh: 量子相对熵
+latex: \mathrm{D}(\rho\|\sigma) = \mathrm{Tr}(\rho\log\rho - \rho\log\sigma)
+derivation_files:
+- 03_quantum_info_theory/derivations/entropy_inequalities.md
+citations:
+- raw: Watrous, Ch.5, Def.5.3
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 03_quantum_info_theory

@@ -1,0 +1,26 @@
+# QC.TOPO.GENERAL_SURFACE_CODE_GENUS.01
+# Auto-generated from 08_topology/key_formulas.md (F8.11)
+
+id: QC.TOPO.GENERAL_SURFACE_CODE_GENUS.01
+legacy_alias: F8.11
+version: '01'
+claim_type: DERIVATION
+domain: QC.TOPO
+artifact_type: DERIVATION
+name_en: General Surface Code on Genus-$g$ Surface
+name_zh: 亏格-$g$ 曲面上的一般表面码
+latex: k = \dim H_1(\Sigma_g; \mathbb{F}_2) = 2g
+derivation_files:
+- 08_topology/derivations/topological_codes_connection.md
+citations:
+- raw: Freedman & Meyer, Found. Comput. Math. 1, 325 (2001)
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 08_topology

@@ -1,0 +1,28 @@
+# QC.QM.PAULI_MATRICES_ALGEBRA.01
+# Auto-generated from 02_quantum_mechanics/key_formulas.md (F2.10)
+
+id: QC.QM.PAULI_MATRICES_ALGEBRA.01
+legacy_alias: F2.10
+version: '01'
+claim_type: IDENTITY
+domain: QC.QM
+artifact_type: DEFINITION
+name_en: Pauli Matrices and Algebra
+name_zh: Pauli 矩阵及其代数
+latex: \sigma_x = \begin{pmatrix}0&1\\1&0\end{pmatrix}, \quad \sigma_y = \begin{pmatrix}0&-i\\i&0\end{pmatrix}, \quad \sigma_z
+  = \begin{pmatrix}1&0\\0&-1\end{pmatrix}
+derivation_files: []
+citations:
+- raw: Nielsen & Chuang, Section 2.1.3, p.65
+  verified: false
+- raw: Sakurai, Ch. 1
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 02_quantum_mechanics

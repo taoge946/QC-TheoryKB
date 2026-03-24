@@ -1,0 +1,27 @@
+# ML.DIFFUSION.VLB_WEIGHTED_LOSS_TERM.01
+# Auto-generated from 11_ml_theory/key_formulas.md (F11.20)
+
+id: ML.DIFFUSION.VLB_WEIGHTED_LOSS_TERM.01
+legacy_alias: F11.20
+version: '01'
+claim_type: DERIVATION
+domain: ML.DIFFUSION
+artifact_type: DERIVATION
+name_en: VLB Weighted Loss Term
+name_zh: null
+latex: L_{t-1} = \frac{\beta_t^2}{2\sigma_t^2\alpha_t(1-\bar{\alpha}_t)}\mathbb{E}_{\mathbf{x}_0, \boldsymbol{\epsilon}}\left[\|\boldsymbol{\epsilon}
+  - \boldsymbol{\epsilon}_\theta(\sqrt{\bar{\alpha}_t}\mathbf{x}_0 + \sqrt{1-\bar{\alpha}_t}\boldsymbol{\epsilon}, t)\|^2\right]
+derivation_files:
+- 11_ml_theory/derivations/diffusion_models_math.md
+citations:
+- raw: Ho et al., DDPM, NeurIPS 2020, Eq.(12)
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 11_ml_theory

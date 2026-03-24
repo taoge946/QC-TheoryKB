@@ -1,0 +1,27 @@
+# ML.GEN.KL_DIVERGENCE.01
+# Auto-generated from 11_ml_theory/key_formulas.md (F11.12)
+
+id: ML.GEN.KL_DIVERGENCE.01
+legacy_alias: F11.12
+version: '01'
+claim_type: IDENTITY
+domain: ML.GEN
+artifact_type: DEFINITION
+name_en: KL Divergence
+name_zh: null
+latex: D_{\mathrm{KL}}(q \| p) = \mathbb{E}_{q(x)}\left[\log \frac{q(x)}{p(x)}\right] = \int q(x) \log \frac{q(x)}{p(x)}\,
+  dx
+derivation_files:
+- 11_ml_theory/derivations/elbo_derivation.md
+citations:
+- raw: Kullback & Leibler, 1951
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 11_ml_theory

@@ -1,0 +1,28 @@
+# ML.RL.REINFORCE_GRADIENT.01
+# Auto-generated from 11_ml_theory/key_formulas.md (F11.49)
+
+id: ML.RL.REINFORCE_GRADIENT.01
+legacy_alias: F11.49
+version: '01'
+claim_type: IDENTITY
+domain: ML.RL
+artifact_type: THEOREM
+name_en: REINFORCE Policy Gradient
+name_zh: null
+latex: \nabla_\theta J(\theta) = \mathbb{E}_{\tau \sim \pi_\theta}\left[\sum_{t=0}^{T}(G_t - b(s_t))\nabla_\theta \log \pi_\theta(a_t|s_t)\right]
+derivation_files:
+- 11_ml_theory/derivations/reinforcement_learning_basics.md
+citations:
+- raw: Williams, 1992
+  verified: false
+- raw: Sutton et al., 2000
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 11_ml_theory

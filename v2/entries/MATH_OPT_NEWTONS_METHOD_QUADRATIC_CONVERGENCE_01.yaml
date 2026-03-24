@@ -1,0 +1,24 @@
+# MATH.OPT.NEWTONS_METHOD_QUADRATIC_CONVERGENCE.01
+# Auto-generated from 10_optimization/key_formulas.md (F10.21)
+
+id: MATH.OPT.NEWTONS_METHOD_QUADRATIC_CONVERGENCE.01
+legacy_alias: F10.21
+version: '01'
+claim_type: CONVERGENCE
+domain: MATH.OPT
+artifact_type: DERIVATION
+name_en: Newton's Method — Quadratic Convergence
+name_zh: null
+latex: \Delta x_{\text{nt}} = -[\nabla^2 f(x)]^{-1} \nabla f(x)
+derivation_files:
+- 10_optimization/derivations/gradient_methods.md
+citations: []
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 10_optimization

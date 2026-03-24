@@ -1,0 +1,24 @@
+# MATH.OPT.LP_RELAXATION.01
+# Auto-generated from 10_optimization/key_formulas.md (F10.8)
+
+id: MATH.OPT.LP_RELAXATION.01
+legacy_alias: F10.8
+version: '01'
+claim_type: BOUND.UPPER
+domain: MATH.OPT
+artifact_type: DERIVATION
+name_en: LP Relaxation
+name_zh: null
+latex: \min \; \mathbf{c}^\top \mathbf{x}, \quad \text{s.t.} \; A\mathbf{x} \leq \mathbf{b}, \; 0 \leq x_i \leq 1
+derivation_files:
+- 10_optimization/derivations/relaxation_methods.md
+citations: []
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 10_optimization

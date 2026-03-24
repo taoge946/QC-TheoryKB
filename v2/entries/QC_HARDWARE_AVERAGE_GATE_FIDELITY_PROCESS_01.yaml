@@ -1,0 +1,28 @@
+# QC.HARDWARE.AVERAGE_GATE_FIDELITY_PROCESS.01
+# Auto-generated from 15_quantum_hardware/key_formulas.md (F15.5)
+
+id: QC.HARDWARE.AVERAGE_GATE_FIDELITY_PROCESS.01
+legacy_alias: F15.5
+version: '01'
+claim_type: IDENTITY
+domain: QC.HARDWARE
+artifact_type: DERIVATION
+name_en: Average Gate Fidelity from Process Fidelity
+name_zh: null
+latex: F_{\text{avg}} = \frac{d\, F_{\text{pro}} + 1}{d + 1}
+derivation_files:
+- 15_quantum_hardware/derivations/benchmarking_metrics.md
+citations:
+- raw: Horodecki et al., PRA 60, 1888 (1999)
+  verified: false
+- raw: Nielsen, PLA 303, 249 (2002)
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 15_quantum_hardware

@@ -1,0 +1,24 @@
+# MATH.OPT.FENCHEL_CONJUGATE.01
+# Auto-generated from 10_optimization/key_formulas.md (F10.25)
+
+id: MATH.OPT.FENCHEL_CONJUGATE.01
+legacy_alias: F10.25
+version: '01'
+claim_type: IDENTITY
+domain: MATH.OPT
+artifact_type: DEFINITION
+name_en: Fenchel Conjugate
+name_zh: null
+latex: f^*(y) = \sup_x \left( y^\top x - f(x) \right), \qquad f(x) + f^*(y) \geq x^\top y \; \text{(Fenchel inequality)}
+derivation_files:
+- 10_optimization/derivations/convex_optimization_basics.md
+citations: []
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 10_optimization

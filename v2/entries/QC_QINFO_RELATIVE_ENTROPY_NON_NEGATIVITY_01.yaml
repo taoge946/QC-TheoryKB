@@ -1,0 +1,26 @@
+# QC.QINFO.RELATIVE_ENTROPY_NON_NEGATIVITY.01
+# Auto-generated from 03_quantum_info_theory/key_formulas.md (F3.39)
+
+id: QC.QINFO.RELATIVE_ENTROPY_NON_NEGATIVITY.01
+legacy_alias: F3.39
+version: '01'
+claim_type: EQUIVALENCE
+domain: QC.QINFO
+artifact_type: THEOREM
+name_en: Relative Entropy Non-Negativity — Master Inequality
+name_zh: 相对熵非负性
+latex: D(p\|q) \geq 0, \quad \text{等号} \iff p=q
+derivation_files:
+- 03_quantum_info_theory/derivations/classical_information_theory.md
+citations:
+- raw: Wilde, Ch.10, Theorem 10.6.1
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 03_quantum_info_theory

@@ -1,0 +1,30 @@
+# QC.QEC.STABILIZER_STATE_DEFINITION.01
+# Auto-generated from 04_quantum_error_correction/key_formulas.md (F4.2)
+
+id: QC.QEC.STABILIZER_STATE_DEFINITION.01
+legacy_alias: F4.2
+version: '01'
+claim_type: IDENTITY
+domain: QC.QEC
+artifact_type: DEFINITION
+name_en: Stabilizer State Definition
+name_zh: null
+latex: '|\psi\rangle = \frac{1}{2^k} \prod_{i=1}^{n-k} (I + g_i) |\psi_0\rangle'
+derivation_files:
+- 04_quantum_error_correction/derivations/stabilizer_formalism.md
+citations:
+- raw: Nielsen & Chuang, Theorem 10.3, p.457
+  verified: false
+- raw: Section 10.5.1, p.456
+  verified: false
+- raw: Gottesman, PhD thesis (1997)
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 04_quantum_error_correction

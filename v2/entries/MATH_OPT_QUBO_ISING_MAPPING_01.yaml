@@ -1,0 +1,27 @@
+# MATH.OPT.QUBO_ISING_MAPPING.01
+# Auto-generated from 10_optimization/key_formulas.md (F10.13)
+
+id: MATH.OPT.QUBO_ISING_MAPPING.01
+legacy_alias: F10.13
+version: '01'
+claim_type: IDENTITY
+domain: MATH.OPT
+artifact_type: DEFINITION
+name_en: QUBO (Quadratic Unconstrained Binary Optimization)
+name_zh: null
+latex: \min_{\mathbf{x} \in \{0,1\}^n} \mathbf{x}^\top Q \mathbf{x} = \min_{\mathbf{x} \in \{0,1\}^n} \sum_{i} Q_{ii} x_i
+  + \sum_{i < j} Q_{ij} x_i x_j
+derivation_files:
+- 10_optimization/derivations/qubo_ising_mapping.md
+citations:
+- raw: Kochenberger et al., *EJOR* 224 (2014)
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 10_optimization

@@ -1,0 +1,30 @@
+# QC.COMPILATION.CONNECTIVITY_GRAPH_COUPLING_MAP.01
+# Auto-generated from 13_quantum_compilation/key_formulas.md (F13.6)
+
+id: QC.COMPILATION.CONNECTIVITY_GRAPH_COUPLING_MAP.01
+legacy_alias: F13.6
+version: '01'
+claim_type: BOUND.LOWER
+domain: QC.COMPILATION
+artifact_type: DERIVATION
+name_en: Connectivity Graph / Coupling Map
+name_zh: null
+latex: \lambda_2(G) \leq \frac{n \cdot \delta_{\min}}{n - 1}
+derivation_files:
+- 13_quantum_compilation/derivations/qubit_routing_theory.md
+citations:
+- raw: IBM Quantum hardware specs
+  verified: false
+- raw: Brierley, 2015
+  verified: false
+- raw: Siraichi et al., CGO 2018
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 13_quantum_compilation

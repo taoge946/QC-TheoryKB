@@ -1,0 +1,28 @@
+# STATS.EXPERIMENT.PAIRED_T_TEST.01
+# Auto-generated from 17_experimental_methods/key_formulas.md (F17.3)
+
+id: STATS.EXPERIMENT.PAIRED_T_TEST.01
+legacy_alias: F17.3
+version: '01'
+claim_type: BOUND.LOWER
+domain: STATS.EXPERIMENT
+artifact_type: DERIVATION
+name_en: Paired t-test
+name_zh: 配对 t 检验
+latex: t = \frac{\bar{d}}{s_d / \sqrt{n}}, \qquad \bar{d} = \frac{1}{n}\sum_{i=1}^n d_i, \qquad s_d = \sqrt{\frac{1}{n-1}\sum_{i=1}^n
+  (d_i - \bar{d})^2}
+derivation_files: []
+citations:
+- raw: Student (1908)
+  verified: false
+- raw: 基础统计学教材
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 17_experimental_methods

@@ -1,0 +1,25 @@
+# QC.VQA._PLATEAU.01
+# Auto-generated from 05_variational_quantum/key_formulas.md (F5.8)
+
+id: QC.VQA._PLATEAU.01
+legacy_alias: F5.8
+version: '01'
+claim_type: LIMITATION
+domain: QC.VQA
+artifact_type: THEOREM
+name_en: 贫瘠高原 (Barren Plateau)
+name_zh: null
+latex: \text{Var}\left[\frac{\partial C}{\partial \theta_k}\right] \leq F(n), \quad F(n) \in O\left(\frac{1}{2^n}\right)
+derivation_files: []
+citations:
+- raw: McClean et al., *Nat. Commun.* **9**, 4812 (2018).
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 05_variational_quantum

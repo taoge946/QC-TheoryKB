@@ -1,0 +1,26 @@
+# MATH.GROUP.CLIFFORD_GROUP_DEFINITION.01
+# Auto-generated from 06_group_theory/key_formulas.md (F6.4)
+
+id: MATH.GROUP.CLIFFORD_GROUP_DEFINITION.01
+legacy_alias: F6.4
+version: '01'
+claim_type: CORRECTNESS
+domain: MATH.GROUP
+artifact_type: DEFINITION
+name_en: Clifford Group Definition
+name_zh: null
+latex: \mathcal{C}_n = \{ U \in U(2^n) \mid U \mathcal{P}_n U^\dagger = \mathcal{P}_n \} / U(1)
+derivation_files:
+- 06_group_theory/derivations/clifford_group.md
+citations:
+- raw: Gottesman (1998)
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 06_group_theory

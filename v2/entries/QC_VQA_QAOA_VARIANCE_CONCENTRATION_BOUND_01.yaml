@@ -1,0 +1,25 @@
+# QC.VQA.QAOA_VARIANCE_CONCENTRATION_BOUND.01
+# Auto-generated from 05_variational_quantum/key_formulas.md (F5.14)
+
+id: QC.VQA.QAOA_VARIANCE_CONCENTRATION_BOUND.01
+legacy_alias: F5.14
+version: '01'
+claim_type: BOUND.UPPER
+domain: QC.VQA
+artifact_type: THEOREM
+name_en: QAOA方差集中界 (QAOA Variance Concentration Bound)
+name_zh: null
+latex: \text{Var}[C(z)] \leq 2 \left[\frac{(v-1)^{2p+2} - 1}{(v-1) - 1}\right] \cdot m
+derivation_files: []
+citations:
+- raw: Farhi et al. 2014, Eq.(31)
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 05_variational_quantum

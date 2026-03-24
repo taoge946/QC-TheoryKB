@@ -1,0 +1,26 @@
+# QC.QINFO.SUBADDITIVITY_ARAKI_LIEB.01
+# Auto-generated from 03_quantum_info_theory/key_formulas.md (F3.22)
+
+id: QC.QINFO.SUBADDITIVITY_ARAKI_LIEB.01
+legacy_alias: F3.22
+version: '01'
+claim_type: BOUND.UPPER
+domain: QC.QINFO
+artifact_type: THEOREM
+name_en: Subadditivity & Araki-Lieb
+name_zh: 次可加性与 Araki-Lieb 不等式
+latex: '|\mathrm{H}(A)-\mathrm{H}(B)| \leq \mathrm{H}(AB) \leq \mathrm{H}(A)+\mathrm{H}(B)'
+derivation_files:
+- 03_quantum_info_theory/derivations/entropy_inequalities.md
+citations:
+- raw: Watrous, Ch.5, Cor.5.26, 5.27
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 03_quantum_info_theory

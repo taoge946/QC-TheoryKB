@@ -1,0 +1,26 @@
+# QC.QEC.TORIC_CODE_HAMILTONIAN.01
+# Auto-generated from 04_quantum_error_correction/key_formulas.md (F4.7)
+
+id: QC.QEC.TORIC_CODE_HAMILTONIAN.01
+legacy_alias: F4.7
+version: '01'
+claim_type: IDENTITY
+domain: QC.QEC
+artifact_type: DERIVATION
+name_en: Toric Code Hamiltonian
+name_zh: null
+latex: H = -J_s \sum_{s} A_s - J_p \sum_{p} B_p
+derivation_files:
+- 04_quantum_error_correction/derivations/surface_code_basics.md
+citations:
+- raw: Kitaev, Ann. Phys. 303, 2 (2003)
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 04_quantum_error_correction

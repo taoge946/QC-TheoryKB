@@ -1,0 +1,27 @@
+# PHYS.STATMECH.BOLTZMANN_DISTRIBUTIONBOLTZMANN_.01
+# Auto-generated from 16_statistical_mechanics/key_formulas.md (F16.4)
+
+id: PHYS.STATMECH.BOLTZMANN_DISTRIBUTIONBOLTZMANN_.01
+legacy_alias: F16.4
+version: '01'
+claim_type: IDENTITY
+domain: PHYS.STATMECH
+artifact_type: DERIVATION
+name_en: Boltzmann Distribution（Boltzmann 分布）
+name_zh: null
+latex: P(\{s\}) = \frac{e^{-\beta H(\{s\})}}{Z} = \frac{1}{Z} \exp\left(\beta J \sum_{\langle ij \rangle} s_i s_j + \beta
+  h \sum_i s_i\right)
+derivation_files:
+- 16_statistical_mechanics/derivations/ising_model.md
+citations:
+- raw: Boltzmann (1877)
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 16_statistical_mechanics

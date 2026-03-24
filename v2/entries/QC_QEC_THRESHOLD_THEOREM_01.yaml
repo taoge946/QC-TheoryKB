@@ -1,0 +1,32 @@
+# QC.QEC.THRESHOLD_THEOREM.01
+# Auto-generated from 04_quantum_error_correction/key_formulas.md (F4.6)
+
+id: QC.QEC.THRESHOLD_THEOREM.01
+legacy_alias: F4.6
+version: '01'
+claim_type: BOUND.LOWER
+domain: QC.QEC
+artifact_type: THEOREM
+name_en: Threshold Theorem
+name_zh: null
+latex: p_L \sim A \left( \frac{p}{p_{\text{th}}} \right)^{\lfloor d/2 \rfloor + 1}
+derivation_files:
+- 04_quantum_error_correction/derivations/threshold_theorem.md
+citations:
+- raw: Nielsen & Chuang, Theorem 10.6, p.480
+  verified: false
+- raw: Section 10.6, pp.470-499
+  verified: false
+- raw: Aharonov & Ben-Or (1997)
+  verified: false
+- raw: Dennis et al. (2002)
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 04_quantum_error_correction

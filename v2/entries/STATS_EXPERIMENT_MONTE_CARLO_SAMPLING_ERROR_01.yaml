@@ -1,0 +1,25 @@
+# STATS.EXPERIMENT.MONTE_CARLO_SAMPLING_ERROR.01
+# Auto-generated from 17_experimental_methods/key_formulas.md (F17.6)
+
+id: STATS.EXPERIMENT.MONTE_CARLO_SAMPLING_ERROR.01
+legacy_alias: F17.6
+version: '01'
+claim_type: BOUND.UPPER
+domain: STATS.EXPERIMENT
+artifact_type: IDENTITY
+name_en: Monte Carlo Sampling Error
+name_zh: 蒙特卡洛采样误差
+latex: \text{SE}(\hat{\mu}) = \frac{\sigma}{\sqrt{N}}, \qquad \text{CI}_{95\%} = \hat{\mu} \pm 1.96 \cdot \frac{\sigma}{\sqrt{N}}
+derivation_files: []
+citations:
+- raw: 基础概率论 (大数定律 + 中心极限定理)
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 17_experimental_methods

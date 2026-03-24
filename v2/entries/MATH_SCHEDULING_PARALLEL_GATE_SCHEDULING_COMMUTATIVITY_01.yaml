@@ -1,0 +1,29 @@
+# MATH.SCHEDULING.PARALLEL_GATE_SCHEDULING_COMMUTATIVITY.01
+# Auto-generated from 14_scheduling_theory/key_formulas.md (F14.7)
+
+id: MATH.SCHEDULING.PARALLEL_GATE_SCHEDULING_COMMUTATIVITY.01
+legacy_alias: F14.7
+version: '01'
+claim_type: DERIVATION
+domain: MATH.SCHEDULING
+artifact_type: DERIVATION
+name_en: Parallel Gate Scheduling — Commutativity Constraint（并行门调度 — 对易约束）
+name_zh: null
+latex: '[U_i, U_j] = 0 \;\text{ and } \;\mathrm{supp}(U_i) \cap \mathrm{supp}(U_j) = \emptyset \implies U_i, U_j \text{ can
+  be parallelized}'
+derivation_files:
+- 14_scheduling_theory/derivations/syndrome_scheduling.md
+citations:
+- raw: Aaronson & Gottesman, 2004
+  verified: false
+- raw: Nielsen & Chuang, §4.5
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 14_scheduling_theory

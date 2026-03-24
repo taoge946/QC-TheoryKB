@@ -1,0 +1,27 @@
+# MATH.GROUP.NORMALIZER_EQUALS_CENTRALIZER_PAULI.01
+# Auto-generated from 06_group_theory/key_formulas.md (F6.13)
+
+id: MATH.GROUP.NORMALIZER_EQUALS_CENTRALIZER_PAULI.01
+legacy_alias: F6.13
+version: '01'
+claim_type: EQUIVALENCE
+domain: MATH.GROUP
+artifact_type: DEFINITION
+name_en: Normalizer equals Centralizer for Pauli Group [Gottesman thesis, §3.2]
+name_zh: null
+latex: N_{\mathcal{G}}(S) = C_{\mathcal{G}}(S)
+derivation_files: []
+citations:
+- raw: Gottesman thesis, §3.2
+  verified: false
+- raw: Gottesman (1997)
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 06_group_theory

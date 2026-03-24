@@ -1,0 +1,28 @@
+# QC.QEC.STEANE_CODE.01
+# Auto-generated from 04_quantum_error_correction/key_formulas.md (F4.13)
+
+id: QC.QEC.STEANE_CODE.01
+legacy_alias: F4.13
+version: '01'
+claim_type: IDENTITY
+domain: QC.QEC
+artifact_type: DEFINITION
+name_en: Steane Code [[7, 1, 3]]
+name_zh: null
+latex: \text{CSS}(C_1, C_1^\perp) = [[7, \; 4 - 3, \; 3]] = [[7, 1, 3]]
+derivation_files:
+- 04_quantum_error_correction/derivations/css_codes.md
+citations:
+- raw: Nielsen & Chuang, Section 10.4.2, p.450-453
+  verified: false
+- raw: Steane, PRL 77, 793 (1996)
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 04_quantum_error_correction

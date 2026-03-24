@@ -1,0 +1,27 @@
+# STATS.EXPERIMENT.HYPERGEOMETRIC_TEST.01
+# Auto-generated from 17_experimental_methods/key_formulas.md (F17.8)
+
+id: STATS.EXPERIMENT.HYPERGEOMETRIC_TEST.01
+legacy_alias: F17.8
+version: '01'
+claim_type: STATISTICAL_VALIDATION
+domain: STATS.EXPERIMENT
+artifact_type: PROTOCOL
+name_en: Hypergeometric Test
+name_zh: 超几何检验
+latex: P(X = k) = \frac{\binom{K}{k}\binom{N-K}{n-k}}{\binom{N}{n}}
+derivation_files: []
+citations:
+- raw: Fisher (1935)
+  verified: false
+- raw: 基础组合概率
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 17_experimental_methods

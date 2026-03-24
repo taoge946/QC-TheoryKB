@@ -1,0 +1,26 @@
+# MATH.GROUP.COMMUTATION_ANTI_COMMUTATION_RELATIONS.01
+# Auto-generated from 06_group_theory/key_formulas.md (F6.3)
+
+id: MATH.GROUP.COMMUTATION_ANTI_COMMUTATION_RELATIONS.01
+legacy_alias: F6.3
+version: '01'
+claim_type: IDENTITY
+domain: MATH.GROUP
+artifact_type: IDENTITY
+name_en: Commutation and Anti-commutation Relations
+name_zh: null
+latex: '[X, Y] = 2iZ, \quad [Y, Z] = 2iX, \quad [Z, X] = 2iY'
+derivation_files:
+- 06_group_theory/derivations/pauli_group.md
+citations:
+- raw: Sakurai, Modern Quantum Mechanics
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 06_group_theory

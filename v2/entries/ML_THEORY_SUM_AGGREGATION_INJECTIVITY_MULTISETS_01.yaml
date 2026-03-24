@@ -1,0 +1,28 @@
+# ML.THEORY.SUM_AGGREGATION_INJECTIVITY_MULTISETS.01
+# Auto-generated from 11_ml_theory/key_formulas.md (F11.33)
+
+id: ML.THEORY.SUM_AGGREGATION_INJECTIVITY_MULTISETS.01
+legacy_alias: F11.33
+version: '01'
+claim_type: IDENTITY
+domain: ML.THEORY
+artifact_type: LEMMA
+name_en: Sum Aggregation Injectivity on Multisets
+name_zh: null
+latex: '\exists f: \mathcal{X} \to \mathbb{R}^n \text{ s.t. } h(X) = \sum_{x \in X} f(x) \text{ is injective on bounded-size
+  multisets}'
+derivation_files: []
+citations:
+- raw: 07_graph_theory/derivations/wl_test_expressiveness.md
+  verified: false
+- raw: Xu et al., GIN, ICLR 2019, Lemma 5
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 11_ml_theory

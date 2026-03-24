@@ -1,0 +1,28 @@
+# ML.GNN.GIN_UPDATE.01
+# Auto-generated from 11_ml_theory/key_formulas.md (F11.31)
+
+id: ML.GNN.GIN_UPDATE.01
+legacy_alias: F11.31
+version: '01'
+claim_type: EQUIVALENCE
+domain: ML.GNN
+artifact_type: IDENTITY
+name_en: GIN Update Rule
+name_zh: null
+latex: h_v^{(k)} = \mathrm{MLP}^{(k)}\!\left((1 + \epsilon^{(k)}) \cdot h_v^{(k-1)} + \sum_{u \in \mathcal{N}(v)} h_u^{(k-1)}\right)
+derivation_files:
+- 11_ml_theory/derivations/gnn_message_passing.md
+citations:
+- raw: ', [07_graph_theory/derivations/wl_test_expressiveness.md'
+  verified: false
+- raw: Xu et al., GIN, ICLR 2019, Eq.(4.1)
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 11_ml_theory

@@ -1,0 +1,27 @@
+# MATH.GROUP.NORMALIZER_SIZE_THESIS.01
+# Auto-generated from 06_group_theory/key_formulas.md (F6.14)
+
+id: MATH.GROUP.NORMALIZER_SIZE_THESIS.01
+legacy_alias: F6.14
+version: '01'
+claim_type: IDENTITY
+domain: MATH.GROUP
+artifact_type: DERIVATION
+name_en: Normalizer Size [Gottesman thesis, §3.2]
+name_zh: null
+latex: '|N(S)| = 4 \cdot 2^{n+k}'
+derivation_files: []
+citations:
+- raw: Gottesman thesis, §3.2
+  verified: false
+- raw: Gottesman (1997)
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 06_group_theory

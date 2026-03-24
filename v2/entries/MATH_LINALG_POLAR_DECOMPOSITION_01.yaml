@@ -1,0 +1,26 @@
+# MATH.LINALG.POLAR_DECOMPOSITION.01
+# Auto-generated from 01_linear_algebra/key_formulas.md (F1.10)
+
+id: MATH.LINALG.POLAR_DECOMPOSITION.01
+legacy_alias: F1.10
+version: '01'
+claim_type: IDENTITY
+domain: MATH.LINALG
+artifact_type: DERIVATION
+name_en: Polar Decomposition
+name_zh: 极分解
+latex: A = U|A|, \qquad |A| = \sqrt{A^\dagger A}
+derivation_files:
+- 01_linear_algebra/derivations/svd_and_polar_decomposition.md
+citations:
+- raw: Nielsen & Chuang, Theorem 2.3
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 01_linear_algebra

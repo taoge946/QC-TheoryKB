@@ -1,0 +1,26 @@
+# MATH.LINALG.COMMUTATOR_ANTI_COMMUTATOR.01
+# Auto-generated from 01_linear_algebra/key_formulas.md (F1.8)
+
+id: MATH.LINALG.COMMUTATOR_ANTI_COMMUTATOR.01
+legacy_alias: F1.8
+version: '01'
+claim_type: IDENTITY
+domain: MATH.LINALG
+artifact_type: IDENTITY
+name_en: Commutator and Anti-commutator
+name_zh: 对易子与反对易子
+latex: '[A, B] = AB - BA, \qquad \{A, B\} = AB + BA'
+derivation_files:
+- 01_linear_algebra/derivations/matrix_exponential.md
+citations:
+- raw: Sakurai, Section 1.4
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 01_linear_algebra

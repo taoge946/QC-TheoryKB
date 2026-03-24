@@ -1,0 +1,27 @@
+# ML.DIFFUSION.DIGRESS_MARGINAL_TRANSITION_MATRICES.01
+# Auto-generated from 11_ml_theory/key_formulas.md (F11.41)
+
+id: ML.DIFFUSION.DIGRESS_MARGINAL_TRANSITION_MATRICES.01
+legacy_alias: F11.41
+version: '01'
+claim_type: DERIVATION
+domain: ML.DIFFUSION
+artifact_type: THEOREM
+name_en: DiGress Marginal Transition Matrices
+name_zh: null
+latex: \mathbf{Q}^t_X = \alpha^t\mathbf{I} + \beta^t\,\mathbf{1}_a\,\mathbf{m}_X^\top, \quad \mathbf{Q}^t_E = \alpha^t\mathbf{I}
+  + \beta^t\,\mathbf{1}_b\,\mathbf{m}_E^\top
+derivation_files:
+- 11_ml_theory/derivations/discrete_diffusion_d3pm.md
+citations:
+- raw: Vignac et al., DiGress, ICLR 2023, Theorem 4.1
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 11_ml_theory

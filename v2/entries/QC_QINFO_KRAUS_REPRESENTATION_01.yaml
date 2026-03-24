@@ -1,0 +1,26 @@
+# QC.QINFO.KRAUS_REPRESENTATION.01
+# Auto-generated from 03_quantum_info_theory/key_formulas.md (F3.6)
+
+id: QC.QINFO.KRAUS_REPRESENTATION.01
+legacy_alias: F3.6
+version: '01'
+claim_type: IDENTITY
+domain: QC.QINFO
+artifact_type: DERIVATION
+name_en: Kraus Representation
+name_zh: Kraus 表示
+latex: \Phi(X) = \sum_k A_k X A_k^*
+derivation_files:
+- 03_quantum_info_theory/derivations/quantum_channel_capacity.md
+citations:
+- raw: Watrous, Ch.2, Thm.2.22
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 03_quantum_info_theory

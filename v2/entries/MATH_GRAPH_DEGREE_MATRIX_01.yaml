@@ -1,0 +1,26 @@
+# MATH.GRAPH.DEGREE_MATRIX.01
+# Auto-generated from 07_graph_theory/key_formulas.md (F7.2)
+
+id: MATH.GRAPH.DEGREE_MATRIX.01
+legacy_alias: F7.2
+version: '01'
+claim_type: IDENTITY
+domain: MATH.GRAPH
+artifact_type: DERIVATION
+name_en: Degree Matrix
+name_zh: 度矩阵
+latex: D = \mathrm{diag}(d_1, d_2, \ldots, d_n), \quad d_i = \sum_{j=1}^{n} A_{ij}
+derivation_files:
+- 07_graph_theory/derivations/spectral_graph_theory.md
+citations:
+- raw: Wu et al. GNN Survey, §2
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 07_graph_theory

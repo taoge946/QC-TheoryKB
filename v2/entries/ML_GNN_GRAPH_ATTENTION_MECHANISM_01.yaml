@@ -1,0 +1,27 @@
+# ML.GNN.GRAPH_ATTENTION_MECHANISM.01
+# Auto-generated from 11_ml_theory/key_formulas.md (F11.11)
+
+id: ML.GNN.GRAPH_ATTENTION_MECHANISM.01
+legacy_alias: F11.11
+version: '01'
+claim_type: DERIVATION
+domain: ML.GNN
+artifact_type: DERIVATION
+name_en: Graph Attention Mechanism
+name_zh: null
+latex: \alpha_{ij} = \frac{\exp\left(\mathrm{LeakyReLU}\left(a^T [W h_i \| W h_j]\right)\right)}{\sum_{k \in \mathcal{N}(i)}
+  \exp\left(\mathrm{LeakyReLU}\left(a^T [W h_i \| W h_k]\right)\right)}
+derivation_files:
+- 11_ml_theory/derivations/gnn_message_passing.md
+citations:
+- raw: Velickovic et al., GAT, ICLR 2018
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 11_ml_theory

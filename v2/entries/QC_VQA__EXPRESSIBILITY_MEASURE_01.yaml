@@ -1,0 +1,26 @@
+# QC.VQA._EXPRESSIBILITY_MEASURE.01
+# Auto-generated from 05_variational_quantum/key_formulas.md (F5.16)
+
+id: QC.VQA._EXPRESSIBILITY_MEASURE.01
+legacy_alias: F5.16
+version: '01'
+claim_type: IDENTITY
+domain: QC.VQA
+artifact_type: DEFINITION
+name_en: 拟设表达能力度量 (Ansatz Expressibility Measure)
+name_zh: null
+latex: \varepsilon_{\mathbb{U}} := \left\|\int_{\text{Haar}} dV \, V^{\otimes 2}(\cdot)(V^\dagger)^{\otimes 2} - \int_{\mathbb{U}}
+  dU \, U^{\otimes 2}(\cdot)(U^\dagger)^{\otimes 2}\right\|_2
+derivation_files: []
+citations:
+- raw: Tilly et al. 2022, §6], Sim et al. (2019), Holmes et al. (2022)
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 05_variational_quantum

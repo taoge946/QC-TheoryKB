@@ -1,0 +1,29 @@
+# QC.QINFO.SUPERADDITIVITY_SUPERACTIVATION.01
+# Auto-generated from 03_quantum_info_theory/key_formulas.md (F3.47)
+
+id: QC.QINFO.SUPERADDITIVITY_SUPERACTIVATION.01
+legacy_alias: F3.47
+version: '01'
+claim_type: IDENTITY
+domain: QC.QINFO
+artifact_type: THEOREM
+name_en: Superadditivity & Superactivation
+name_zh: 超可加性与超激活
+latex: \chi(\mathcal{N}^{\otimes 2}) > 2\chi(\mathcal{N}) \;\text{(Hastings 2009)}, \quad C_Q(\mathcal{N}_1)=C_Q(\mathcal{N}_2)=0
+  \;\text{but}\; C_Q(\mathcal{N}_1\otimes\mathcal{N}_2)>0
+derivation_files:
+- 03_quantum_info_theory/derivations/quantum_channel_capacity.md
+citations:
+- raw: Wilde, Ch.20, §20.5
+  verified: false
+- raw: Ch.24, §24.7
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 03_quantum_info_theory

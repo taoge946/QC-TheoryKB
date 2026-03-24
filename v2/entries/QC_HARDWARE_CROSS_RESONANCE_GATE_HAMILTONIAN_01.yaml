@@ -1,0 +1,29 @@
+# QC.HARDWARE.CROSS_RESONANCE_GATE_HAMILTONIAN.01
+# Auto-generated from 15_quantum_hardware/key_formulas.md (F15.7)
+
+id: QC.HARDWARE.CROSS_RESONANCE_GATE_HAMILTONIAN.01
+legacy_alias: F15.7
+version: '01'
+claim_type: IDENTITY
+domain: QC.HARDWARE
+artifact_type: DEFINITION
+name_en: Cross-Resonance (CR) Gate Hamiltonian
+name_zh: null
+latex: H_{\text{CR}} = \frac{\Omega}{2}\left(Z_c \otimes I_t + \frac{J}{\Delta}\, Z_c \otimes X_t\right) + \text{higher order
+  terms}
+derivation_files:
+- 15_quantum_hardware/derivations/superconducting_qubits.md
+citations:
+- raw: Rigetti & Devoret, PRB 81, 134507 (2010)
+  verified: false
+- raw: Chow et al., PRL 107, 080502 (2011)
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 15_quantum_hardware

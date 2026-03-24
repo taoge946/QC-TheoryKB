@@ -1,0 +1,28 @@
+# QC.ZX.PIVOT_RULE.01
+# Auto-generated from 12_zx_calculus/key_formulas.md (F12.14)
+
+id: QC.ZX.PIVOT_RULE.01
+legacy_alias: F12.14
+version: '01'
+claim_type: CORRECTNESS
+domain: QC.ZX
+artifact_type: IDENTITY
+name_en: Pivot Rule
+name_zh: 枢轴操作
+latex: \wedge_{uv}(G) = \tau_u \circ \tau_v \circ \tau_u (G)
+derivation_files:
+- 12_zx_calculus/derivations/zx_graph_states.md
+citations:
+- raw: Duncan et al., arXiv:1902.03178, Sec.4
+  verified: false
+- raw: van de Wetering, arXiv:2012.13966, Sec.5.2
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 12_zx_calculus

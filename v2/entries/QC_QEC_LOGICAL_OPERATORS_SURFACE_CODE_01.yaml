@@ -1,0 +1,26 @@
+# QC.QEC.LOGICAL_OPERATORS_SURFACE_CODE.01
+# Auto-generated from 04_quantum_error_correction/key_formulas.md (F4.9)
+
+id: QC.QEC.LOGICAL_OPERATORS_SURFACE_CODE.01
+legacy_alias: F4.9
+version: '01'
+claim_type: DERIVATION
+domain: QC.QEC
+artifact_type: DERIVATION
+name_en: Logical Operators for Surface Code
+name_zh: null
+latex: \bar{X} = \prod_{i \in \gamma_X} X_i, \qquad \bar{Z} = \prod_{j \in \gamma_Z} Z_j
+derivation_files:
+- 04_quantum_error_correction/derivations/surface_code_basics.md
+citations:
+- raw: Fowler et al., PRA 86, 032324 (2012)
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 04_quantum_error_correction

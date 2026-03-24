@@ -1,0 +1,26 @@
+# ML.DIFFUSION.EXACT_LOG_LIKELIHOOD_PROBABILITY.01
+# Auto-generated from 11_ml_theory/key_formulas.md (F11.23)
+
+id: ML.DIFFUSION.EXACT_LOG_LIKELIHOOD_PROBABILITY.01
+legacy_alias: F11.23
+version: '01'
+claim_type: DERIVATION
+domain: ML.DIFFUSION
+artifact_type: DERIVATION
+name_en: Exact Log-Likelihood via Probability Flow ODE
+name_zh: null
+latex: \log p_0(\mathbf{x}(0)) = \log p_T(\mathbf{x}(T)) + \int_0^T \nabla\cdot\tilde{\mathbf{f}}_\theta(\mathbf{x}(t), t)\,dt
+derivation_files:
+- 11_ml_theory/derivations/diffusion_models_math.md
+citations:
+- raw: Song et al., Score SDE, ICLR 2021
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 11_ml_theory

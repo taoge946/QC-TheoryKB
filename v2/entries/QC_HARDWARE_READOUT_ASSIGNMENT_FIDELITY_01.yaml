@@ -1,0 +1,28 @@
+# QC.HARDWARE.READOUT_ASSIGNMENT_FIDELITY.01
+# Auto-generated from 15_quantum_hardware/key_formulas.md (F15.8)
+
+id: QC.HARDWARE.READOUT_ASSIGNMENT_FIDELITY.01
+legacy_alias: F15.8
+version: '01'
+claim_type: IDENTITY
+domain: QC.HARDWARE
+artifact_type: DEFINITION
+name_en: Readout Assignment Fidelity
+name_zh: null
+latex: F_{\text{assign}} = 1 - \frac{P(1|0) + P(0|1)}{2}
+derivation_files:
+- 15_quantum_hardware/derivations/benchmarking_metrics.md
+citations:
+- raw: Krantz et al., §V
+  verified: false
+- raw: Gambetta et al., PRA 76, 012325 (2007)
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 15_quantum_hardware

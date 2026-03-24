@@ -1,0 +1,28 @@
+# QC.QM.VON_NEUMANN_ENTROPY.01
+# Auto-generated from 02_quantum_mechanics/key_formulas.md (F2.3)
+
+id: QC.QM.VON_NEUMANN_ENTROPY.01
+legacy_alias: F2.3
+version: '01'
+claim_type: IDENTITY
+domain: QC.QM
+artifact_type: DEFINITION
+name_en: Von Neumann Entropy
+name_zh: 冯·诺依曼熵
+latex: S(\rho) = -\text{Tr}(\rho \log \rho) = -\sum_i \lambda_i \log \lambda_i
+derivation_files:
+- 02_quantum_mechanics/derivations/von_neumann_entropy.md
+citations:
+- raw: Nielsen & Chuang, Eq. 11.51, p.510
+  verified: false
+- raw: Theorem 11.3, p.515
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 02_quantum_mechanics

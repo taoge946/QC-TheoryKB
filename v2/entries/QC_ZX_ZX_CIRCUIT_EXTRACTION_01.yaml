@@ -1,0 +1,28 @@
+# QC.ZX.ZX_CIRCUIT_EXTRACTION.01
+# Auto-generated from 12_zx_calculus/key_formulas.md (F12.15)
+
+id: QC.ZX.ZX_CIRCUIT_EXTRACTION.01
+legacy_alias: F12.15
+version: '01'
+claim_type: DERIVATION
+domain: QC.ZX
+artifact_type: DERIVATION
+name_en: ZX to Circuit Extraction
+name_zh: ZX 图到电路的提取
+latex: '\text{ZX-diagram} \xrightarrow{\text{gflow}} \text{layered extraction} \xrightarrow{\text{CNOT + }R_z\text{ + }H} \text{circuit}'
+derivation_files:
+- 12_zx_calculus/derivations/zx_circuit_optimization.md
+citations:
+- raw: Duncan et al., arXiv:1902.03178, Sec.5, Theorem 5.4
+  verified: false
+- raw: Backens et al., arXiv:2003.01674
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 12_zx_calculus

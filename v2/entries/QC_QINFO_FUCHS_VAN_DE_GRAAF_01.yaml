@@ -1,0 +1,26 @@
+# QC.QINFO.FUCHS_VAN_DE_GRAAF.01
+# Auto-generated from 03_quantum_info_theory/key_formulas.md (F3.13)
+
+id: QC.QINFO.FUCHS_VAN_DE_GRAAF.01
+legacy_alias: F3.13
+version: '01'
+claim_type: EQUIVALENCE
+domain: QC.QINFO
+artifact_type: DERIVATION
+name_en: Fuchs-van de Graaf Inequalities
+name_zh: Fuchs-van de Graaf 不等式
+latex: 1-\sqrt{F(\rho,\sigma)}\leq\frac{1}{2}\|\rho-\sigma\|_1\leq\sqrt{1-F(\rho,\sigma)}
+derivation_files:
+- 03_quantum_info_theory/derivations/sdp_quantum_info.md
+citations:
+- raw: Watrous, Ch.3, Thm.3.33
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 03_quantum_info_theory

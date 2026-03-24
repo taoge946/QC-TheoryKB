@@ -1,0 +1,28 @@
+# MATH.GRAPH.GRAPH_CUTS_MAX_FLOW.01
+# Auto-generated from 07_graph_theory/key_formulas.md (F7.11)
+
+id: MATH.GRAPH.GRAPH_CUTS_MAX_FLOW.01
+legacy_alias: F7.11
+version: '01'
+claim_type: IDENTITY
+domain: MATH.GRAPH
+artifact_type: THEOREM
+name_en: Graph Cuts & Max-Flow/Min-Cut
+name_zh: 图割与最大流最小割
+latex: \mathrm{NCut}(S, \bar{S}) = \frac{\mathrm{cut}(S, \bar{S})}{\mathrm{vol}(S)} + \frac{\mathrm{cut}(S, \bar{S})}{\mathrm{vol}(\bar{S})}
+derivation_files:
+- 07_graph_theory/derivations/graph_algorithms.md
+citations:
+- raw: Ford-Fulkerson
+  verified: false
+- raw: Wu et al. GNN Survey
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 07_graph_theory

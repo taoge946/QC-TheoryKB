@@ -1,0 +1,29 @@
+# QC.ZX.Z_SPIDER_DEFINITION.01
+# Auto-generated from 12_zx_calculus/key_formulas.md (F12.1)
+
+id: QC.ZX.Z_SPIDER_DEFINITION.01
+legacy_alias: F12.1
+version: '01'
+claim_type: EQUIVALENCE
+domain: QC.ZX
+artifact_type: DEFINITION
+name_en: Z-Spider Definition
+name_zh: Z-蜘蛛的线性映射
+latex: \tikz{Z}_\alpha^{m,n} := |0\rangle^{\otimes m}\langle 0|^{\otimes n} + e^{i\alpha} |1\rangle^{\otimes m}\langle 1|^{\otimes
+  n}
+derivation_files:
+- 12_zx_calculus/derivations/zx_basics.md
+citations:
+- raw: van de Wetering, arXiv:2012.13966, Eq.(1), Sec.2
+  verified: false
+- raw: Coecke & Duncan, arXiv:0906.4725
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 12_zx_calculus

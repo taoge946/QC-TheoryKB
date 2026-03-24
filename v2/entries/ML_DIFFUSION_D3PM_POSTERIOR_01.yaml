@@ -1,0 +1,26 @@
+# ML.DIFFUSION.D3PM_POSTERIOR.01
+# Auto-generated from 11_ml_theory/key_formulas.md (F11.17)
+
+id: ML.DIFFUSION.D3PM_POSTERIOR.01
+legacy_alias: F11.17
+version: '01'
+claim_type: DERIVATION
+domain: ML.DIFFUSION
+artifact_type: DERIVATION
+name_en: D3PM Posterior
+name_zh: null
+latex: q(x_{t-1} | x_t, x_0) \propto \mathbf{x}_0 \bar{Q}_{t-1} \odot \mathbf{x}_t Q_t^\top
+derivation_files:
+- 11_ml_theory/derivations/discrete_diffusion_d3pm.md
+citations:
+- raw: Austin et al., D3PM, NeurIPS 2021
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 11_ml_theory

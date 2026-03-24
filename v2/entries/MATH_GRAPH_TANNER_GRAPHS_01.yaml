@@ -1,0 +1,26 @@
+# MATH.GRAPH.TANNER_GRAPHS.01
+# Auto-generated from 07_graph_theory/key_formulas.md (F7.13)
+
+id: MATH.GRAPH.TANNER_GRAPHS.01
+legacy_alias: F7.13
+version: '01'
+claim_type: IDENTITY
+domain: MATH.GRAPH
+artifact_type: DERIVATION
+name_en: Tanner Graphs
+name_zh: Tanner 图
+latex: G = (V_{\mathrm{bit}} \cup V_{\mathrm{check}}, E), \quad (i,j) \in E \Leftrightarrow H_{ji} = 1
+derivation_files:
+- 07_graph_theory/derivations/tanner_graphs.md
+citations:
+- raw: Tanner, 1981
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 07_graph_theory

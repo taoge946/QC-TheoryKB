@@ -1,0 +1,26 @@
+# MATH.LINALG.SPECTRAL_DECOMPOSITION.01
+# Auto-generated from 01_linear_algebra/key_formulas.md (F1.1)
+
+id: MATH.LINALG.SPECTRAL_DECOMPOSITION.01
+legacy_alias: F1.1
+version: '01'
+claim_type: IDENTITY
+domain: MATH.LINALG
+artifact_type: DERIVATION
+name_en: Spectral Decomposition
+name_zh: 谱分解
+latex: A = \sum_{i} \lambda_i |e_i\rangle\langle e_i|
+derivation_files:
+- 01_linear_algebra/derivations/spectral_decomposition.md
+citations:
+- raw: Nielsen & Chuang, Theorem 2.1
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 01_linear_algebra

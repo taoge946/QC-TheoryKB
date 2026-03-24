@@ -1,0 +1,27 @@
+# ML.FLOW.CFM_EQUALS_FM.01
+# Auto-generated from 11_ml_theory/key_formulas.md (F11.37)
+
+id: ML.FLOW.CFM_EQUALS_FM.01
+legacy_alias: F11.37
+version: '01'
+claim_type: CORRECTNESS
+domain: ML.FLOW
+artifact_type: THEOREM
+name_en: Conditional Flow Matching
+name_zh: null
+latex: \mathcal{L}_{\mathrm{CFM}}(\theta) = \mathbb{E}_{t,\, q(x_1),\, p_t(x|x_1)} \|v_t(x;\theta) - u_t(x|x_1)\|^2, \quad
+  \nabla_\theta\mathcal{L}_{\mathrm{FM}} = \nabla_\theta\mathcal{L}_{\mathrm{CFM}}
+derivation_files:
+- 11_ml_theory/derivations/flow_matching.md
+citations:
+- raw: Lipman et al., Flow Matching, ICLR 2023, Theorem 2
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 11_ml_theory

@@ -1,0 +1,27 @@
+# QC.QEC.SYNDROME_MEASUREMENT.01
+# Auto-generated from 04_quantum_error_correction/key_formulas.md (F4.3)
+
+id: QC.QEC.SYNDROME_MEASUREMENT.01
+legacy_alias: F4.3
+version: '01'
+claim_type: EQUIVALENCE
+domain: QC.QEC
+artifact_type: DERIVATION
+name_en: Syndrome Measurement
+name_zh: null
+latex: s_i = \begin{cases} 0 & \text{if } g_i E |\psi\rangle = + E|\psi\rangle \\ 1 & \text{if } g_i E |\psi\rangle = - E|\psi\rangle
+  \end{cases}
+derivation_files:
+- 04_quantum_error_correction/derivations/stabilizer_formalism.md
+citations:
+- raw: Nielsen & Chuang, Section 10.5.2, p.459
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 04_quantum_error_correction

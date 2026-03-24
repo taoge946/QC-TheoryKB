@@ -1,0 +1,30 @@
+# QC.QM.QUANTUM_MUTUAL_INFORMATION.01
+# Auto-generated from 02_quantum_mechanics/key_formulas.md (F2.15)
+
+id: QC.QM.QUANTUM_MUTUAL_INFORMATION.01
+legacy_alias: F2.15
+version: '01'
+claim_type: BOUND.LOWER
+domain: QC.QM
+artifact_type: DERIVATION
+name_en: Quantum Mutual Information
+name_zh: 量子互信息
+latex: I(A:B) = S(\rho_A) + S(\rho_B) - S(\rho_{AB})
+derivation_files:
+- 02_quantum_mechanics/derivations/von_neumann_entropy.md
+citations:
+- raw: Nielsen & Chuang, Eq. 11.63-11.65, p.514
+  verified: false
+- raw: Theorem 11.4 (subadditivity), p.515
+  verified: false
+- raw: Theorem 11.8 (strong subadditivity), p.519
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 02_quantum_mechanics

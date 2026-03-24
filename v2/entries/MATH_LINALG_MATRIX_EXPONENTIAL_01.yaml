@@ -1,0 +1,26 @@
+# MATH.LINALG.MATRIX_EXPONENTIAL.01
+# Auto-generated from 01_linear_algebra/key_formulas.md (F1.5)
+
+id: MATH.LINALG.MATRIX_EXPONENTIAL.01
+legacy_alias: F1.5
+version: '01'
+claim_type: IDENTITY
+domain: MATH.LINALG
+artifact_type: DERIVATION
+name_en: Matrix Exponential
+name_zh: 矩阵指数
+latex: e^A = \sum_{n=0}^{\infty} \frac{A^n}{n!} = I + A + \frac{A^2}{2!} + \frac{A^3}{3!} + \cdots
+derivation_files:
+- 01_linear_algebra/derivations/matrix_exponential.md
+citations:
+- raw: Sakurai, Chapter 2
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 01_linear_algebra

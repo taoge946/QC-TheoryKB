@@ -1,0 +1,26 @@
+# QC.QINFO.PINSKERS_INEQUALITY.01
+# Auto-generated from 03_quantum_info_theory/key_formulas.md (F3.41)
+
+id: QC.QINFO.PINSKERS_INEQUALITY.01
+legacy_alias: F3.41
+version: '01'
+claim_type: EQUIVALENCE
+domain: QC.QINFO
+artifact_type: THEOREM
+name_en: Pinsker's Inequality
+name_zh: Pinsker 不等式
+latex: D(p\|q) \geq \frac{1}{2\ln 2}\|p-q\|_1^2
+derivation_files:
+- 03_quantum_info_theory/derivations/classical_information_theory.md
+citations:
+- raw: Wilde, Ch.10, Theorem 10.7.1
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 03_quantum_info_theory

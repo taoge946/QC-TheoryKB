@@ -1,0 +1,26 @@
+# QC.TOPO.CYCLE_SPACE_BOUNDARY_SPACE.01
+# Auto-generated from 08_topology/key_formulas.md (F8.6)
+
+id: QC.TOPO.CYCLE_SPACE_BOUNDARY_SPACE.01
+legacy_alias: F8.6
+version: '01'
+claim_type: IDENTITY
+domain: QC.TOPO
+artifact_type: DEFINITION
+name_en: Cycle Space and Boundary Space
+name_zh: $Z_n$ 和 $B_n$
+latex: 'Z_n = \ker \partial_n = \{ c \in C_n : \partial_n(c) = 0 \}'
+derivation_files:
+- 08_topology/derivations/homology_basics.md
+citations:
+- raw: Hatcher, Ch. 2
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 08_topology

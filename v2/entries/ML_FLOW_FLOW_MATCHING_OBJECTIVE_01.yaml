@@ -1,0 +1,26 @@
+# ML.FLOW.FLOW_MATCHING_OBJECTIVE.01
+# Auto-generated from 11_ml_theory/key_formulas.md (F11.36)
+
+id: ML.FLOW.FLOW_MATCHING_OBJECTIVE.01
+legacy_alias: F11.36
+version: '01'
+claim_type: IDENTITY
+domain: ML.FLOW
+artifact_type: DEFINITION
+name_en: Flow Matching Objective
+name_zh: null
+latex: \mathcal{L}_{\mathrm{FM}}(\theta) = \mathbb{E}_{t \sim \mathcal{U}[0,1],\, x \sim p_t(x)} \|v_t(x;\theta) - u_t(x)\|^2
+derivation_files:
+- 11_ml_theory/derivations/flow_matching.md
+citations:
+- raw: Lipman et al., Flow Matching, ICLR 2023, Eq.(4)
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 11_ml_theory

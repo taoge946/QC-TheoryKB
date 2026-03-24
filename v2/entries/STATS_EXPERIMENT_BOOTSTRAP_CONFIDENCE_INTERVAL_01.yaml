@@ -1,0 +1,28 @@
+# STATS.EXPERIMENT.BOOTSTRAP_CONFIDENCE_INTERVAL.01
+# Auto-generated from 17_experimental_methods/key_formulas.md (F17.7)
+
+id: STATS.EXPERIMENT.BOOTSTRAP_CONFIDENCE_INTERVAL.01
+legacy_alias: F17.7
+version: '01'
+claim_type: CORRECTNESS
+domain: STATS.EXPERIMENT
+artifact_type: DERIVATION
+name_en: Bootstrap Confidence Interval
+name_zh: Bootstrap 置信区间
+latex: \text{CI}_{\text{BCa}} = \left[\hat{\theta}^*_{(\alpha_1)}, \hat{\theta}^*_{(\alpha_2)}\right], \qquad \alpha_{1,2}
+  = \Phi\left(\hat{z}_0 + \frac{\hat{z}_0 + z_{\alpha/2}}{1 - \hat{a}(\hat{z}_0 + z_{\alpha/2})}\right)
+derivation_files: []
+citations:
+- raw: Efron (1979), Annals of Statistics
+  verified: false
+- raw: Efron & Tibshirani (1993), An Introduction to the Bootstrap
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 17_experimental_methods

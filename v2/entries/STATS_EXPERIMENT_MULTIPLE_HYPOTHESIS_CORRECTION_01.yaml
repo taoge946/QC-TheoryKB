@@ -1,0 +1,29 @@
+# STATS.EXPERIMENT.MULTIPLE_HYPOTHESIS_CORRECTION.01
+# Auto-generated from 17_experimental_methods/key_formulas.md (F17.10)
+
+id: STATS.EXPERIMENT.MULTIPLE_HYPOTHESIS_CORRECTION.01
+legacy_alias: F17.10
+version: '01'
+claim_type: CORRECTNESS
+domain: STATS.EXPERIMENT
+artifact_type: DERIVATION
+name_en: Multiple Hypothesis Correction
+name_zh: 多重假设检验校正
+latex: \alpha_{\text{adj}} = \frac{\alpha}{m}, \qquad \text{拒绝 } H_i \text{ 当 } p_i < \frac{\alpha}{m}
+derivation_files: []
+citations:
+- raw: Bonferroni (1936)
+  verified: false
+- raw: Holm (1979), Scandinavian J. Statistics
+  verified: false
+- raw: Benjamini & Hochberg (1995), JRSS-B
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 17_experimental_methods

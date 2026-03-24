@@ -1,0 +1,26 @@
+# ML.ATTENTION.SINUSOIDAL_POSITIONAL_ENCODING.01
+# Auto-generated from 11_ml_theory/key_formulas.md (F11.45)
+
+id: ML.ATTENTION.SINUSOIDAL_POSITIONAL_ENCODING.01
+legacy_alias: F11.45
+version: '01'
+claim_type: IDENTITY
+domain: ML.ATTENTION
+artifact_type: DEFINITION
+name_en: Sinusoidal Positional Encoding
+name_zh: null
+latex: PE_{(pos, 2i)} = \sin(pos/10000^{2i/d}), \quad PE_{(pos, 2i+1)} = \cos(pos/10000^{2i/d})
+derivation_files:
+- 11_ml_theory/derivations/attention_mechanism.md
+citations:
+- raw: Vaswani et al., NeurIPS 2017
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 11_ml_theory

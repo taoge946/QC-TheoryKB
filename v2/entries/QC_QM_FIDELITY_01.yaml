@@ -1,0 +1,28 @@
+# QC.QM.FIDELITY.01
+# Auto-generated from 02_quantum_mechanics/key_formulas.md (F2.4)
+
+id: QC.QM.FIDELITY.01
+legacy_alias: F2.4
+version: '01'
+claim_type: IDENTITY
+domain: QC.QM
+artifact_type: DEFINITION
+name_en: Fidelity
+name_zh: 保真度
+latex: F(\rho, \sigma) = \left( \text{Tr}\sqrt{\sqrt{\rho}\,\sigma\,\sqrt{\rho}} \right)^2
+derivation_files:
+- 02_quantum_mechanics/derivations/fidelity_and_trace_distance.md
+citations:
+- raw: Nielsen & Chuang, Eq. 9.52, p.409
+  verified: false
+- raw: Theorem 9.4 (Uhlmann), p.410
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 02_quantum_mechanics

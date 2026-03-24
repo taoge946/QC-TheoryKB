@@ -1,0 +1,28 @@
+# QC.COMPILATION.ROUTING_DISTANCE_LOWER_BOUND.01
+# Auto-generated from 13_quantum_compilation/key_formulas.md (F13.3)
+
+id: QC.COMPILATION.ROUTING_DISTANCE_LOWER_BOUND.01
+legacy_alias: F13.3
+version: '01'
+claim_type: BOUND.LOWER
+domain: QC.COMPILATION
+artifact_type: THEOREM
+name_en: Routing Distance Lower Bound
+name_zh: null
+latex: \text{SWAPs}_{\min}(q_i, q_j) = d_G(\pi(q_i), \pi(q_j)) - 1
+derivation_files:
+- 13_quantum_compilation/derivations/qubit_routing_theory.md
+citations:
+- raw: Cowtan et al., TCAD 2019
+  verified: false
+- raw: Childs et al., QIC 2019
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 13_quantum_compilation

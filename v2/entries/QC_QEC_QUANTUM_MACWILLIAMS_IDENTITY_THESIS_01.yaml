@@ -1,0 +1,27 @@
+# QC.QEC.QUANTUM_MACWILLIAMS_IDENTITY_THESIS.01
+# Auto-generated from 04_quantum_error_correction/key_formulas.md (F4.19)
+
+id: QC.QEC.QUANTUM_MACWILLIAMS_IDENTITY_THESIS.01
+legacy_alias: F4.19
+version: '01'
+claim_type: IDENTITY
+domain: QC.QEC
+artifact_type: IDENTITY
+name_en: Quantum MacWilliams Identity [Gottesman thesis, §7.2]
+name_zh: null
+latex: B(z) = \frac{1}{2^{n-k}} (1 + 3z)^n A\left(\frac{1-z}{1+3z}\right)
+derivation_files: []
+citations:
+- raw: Gottesman thesis, §7.2, Eq. 7.8
+  verified: false
+- raw: Shor & Laflamme (1997)
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 04_quantum_error_correction

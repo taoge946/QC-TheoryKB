@@ -1,0 +1,26 @@
+# MATH.SCHEDULING.RESOURCE_CONSTRAINED_SCHEDULING.01
+# Auto-generated from 14_scheduling_theory/key_formulas.md (F14.9)
+
+id: MATH.SCHEDULING.RESOURCE_CONSTRAINED_SCHEDULING.01
+legacy_alias: F14.9
+version: '01'
+claim_type: DERIVATION
+domain: MATH.SCHEDULING
+artifact_type: DERIVATION
+name_en: Resource-Constrained Scheduling（资源约束调度）
+name_zh: null
+latex: 'P \mid \text{res} \mid C_{\max}: \quad \sum_{i \in S_t} r_{ik} \leq R_k, \;\; \forall k, \forall t'
+derivation_files:
+- 14_scheduling_theory/derivations/scheduling_basics.md
+citations:
+- raw: Brucker, *Scheduling Algorithms*, 2007, Ch.8
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 14_scheduling_theory

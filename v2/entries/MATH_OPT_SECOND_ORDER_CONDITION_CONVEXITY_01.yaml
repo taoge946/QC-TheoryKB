@@ -1,0 +1,24 @@
+# MATH.OPT.SECOND_ORDER_CONDITION_CONVEXITY.01
+# Auto-generated from 10_optimization/key_formulas.md (F10.17)
+
+id: MATH.OPT.SECOND_ORDER_CONDITION_CONVEXITY.01
+legacy_alias: F10.17
+version: '01'
+claim_type: CORRECTNESS
+domain: MATH.OPT
+artifact_type: THEOREM
+name_en: Second-Order Condition for Convexity
+name_zh: null
+latex: f \text{ convex} \iff \nabla^2 f(x) \succeq 0, \quad \forall x \in \text{dom}(f)
+derivation_files:
+- 10_optimization/derivations/convex_optimization_basics.md
+citations: []
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 10_optimization

@@ -1,0 +1,28 @@
+# QC.COMPILATION.CIRCUIT_DEPTH_UNDER_ROUTING.01
+# Auto-generated from 13_quantum_compilation/key_formulas.md (F13.5)
+
+id: QC.COMPILATION.CIRCUIT_DEPTH_UNDER_ROUTING.01
+legacy_alias: F13.5
+version: '01'
+claim_type: DERIVATION
+domain: QC.COMPILATION
+artifact_type: DERIVATION
+name_en: Circuit Depth Under Routing Constraints
+name_zh: null
+latex: D_{\text{total}} = D_{\text{orig}} + 3 \cdot L_{\text{swap}} + D_{\text{scheduling}}
+derivation_files:
+- 13_quantum_compilation/derivations/circuit_compilation_complexity.md
+citations:
+- raw: Cheung et al., QIC 2007
+  verified: false
+- raw: Beals et al., Proc. Royal Soc. A, 2013
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 13_quantum_compilation

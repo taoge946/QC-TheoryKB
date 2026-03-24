@@ -1,0 +1,37 @@
+# Domain mapping: topic directory → (DOMAIN, SUBDOMAIN)
+# Used by generate_metadata.py and build_blocks_v2.py
+
+domain_map:
+  01_linear_algebra:           [MATH, LINALG]
+  02_quantum_mechanics:        [QC,   QM]
+  03_quantum_info_theory:      [QC,   QINFO]
+  04_quantum_error_correction: [QC,   QEC]
+  05_variational_quantum:      [QC,   VQA]
+  06_group_theory:             [MATH, GROUP]
+  07_graph_theory:             [MATH, GRAPH]
+  08_topology:                 [QC,   TOPO]
+  10_optimization:             [MATH, OPT]
+  11_ml_theory:                [ML,   THEORY]  # auto-refined to DIFFUSION/GNN/RL/FLOW/GEN
+  12_zx_calculus:              [QC,   ZX]
+  13_quantum_compilation:      [QC,   COMPILATION]
+  14_scheduling_theory:        [MATH, SCHEDULING]
+  15_quantum_hardware:         [QC,   HARDWARE]
+  16_statistical_mechanics:    [PHYS, STATMECH]
+  17_experimental_methods:     [STATS, EXPERIMENT]
+  18_proof_techniques:         [MATH, PROOFTOOL]
+
+ml_subdomain_map:
+  diffusion: DIFFUSION
+  score_matching: DIFFUSION
+  langevin: DIFFUSION
+  discrete_diffusion: DIFFUSION
+  discrete_score: DIFFUSION
+  flow_matching: FLOW
+  gnn: GNN
+  wl_test: GNN
+  reinforcement: RL
+  elbo: GEN
+  generative_models: GEN
+  variational_inference: GEN
+  attention: ATTENTION
+  optimization_algorithms: OPT

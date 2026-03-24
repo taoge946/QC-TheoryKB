@@ -1,0 +1,27 @@
+# ML.DIFFUSION.CONTINUOUS_TIME_ELBO_DISCRETE.01
+# Auto-generated from 11_ml_theory/key_formulas.md (F11.24)
+
+id: ML.DIFFUSION.CONTINUOUS_TIME_ELBO_DISCRETE.01
+legacy_alias: F11.24
+version: '01'
+claim_type: CORRECTNESS
+domain: ML.DIFFUSION
+artifact_type: DERIVATION
+name_en: Continuous-Time ELBO for Discrete Diffusion
+name_zh: null
+latex: \mathcal{L}_{\text{CT}}(\theta) = T\,\mathbb{E}_{t,q_t(x),r_t(\tilde{x}|x)}\left[\sum_{x' \neq x}\hat{R}_t^\theta(x,x')
+  - \mathcal{Z}^t(x)\log\hat{R}_t^\theta(\tilde{x},x)\right] + C
+derivation_files:
+- 11_ml_theory/derivations/discrete_score_matching.md
+citations:
+- raw: Campbell et al., NeurIPS 2022
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 11_ml_theory

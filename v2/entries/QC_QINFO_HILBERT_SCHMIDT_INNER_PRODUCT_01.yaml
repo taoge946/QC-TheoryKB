@@ -1,0 +1,26 @@
+# QC.QINFO.HILBERT_SCHMIDT_INNER_PRODUCT.01
+# Auto-generated from 03_quantum_info_theory/key_formulas.md (F3.1)
+
+id: QC.QINFO.HILBERT_SCHMIDT_INNER_PRODUCT.01
+legacy_alias: F3.1
+version: '01'
+claim_type: IDENTITY
+domain: QC.QINFO
+artifact_type: IDENTITY
+name_en: Hilbert-Schmidt Inner Product
+name_zh: Hilbert-Schmidt 内积
+latex: \langle X, Y \rangle = \mathrm{Tr}(X^* Y)
+derivation_files:
+- 03_quantum_info_theory/derivations/classical_information_theory.md
+citations:
+- raw: Watrous, Ch.1, Eq.1.1
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 03_quantum_info_theory

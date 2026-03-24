@@ -1,0 +1,28 @@
+# QC.VQA.PARAMETER_SHIFT_RULE.01
+# Auto-generated from 05_variational_quantum/key_formulas.md (F5.3)
+
+id: QC.VQA.PARAMETER_SHIFT_RULE.01
+legacy_alias: F5.3
+version: '01'
+claim_type: IDENTITY
+domain: QC.VQA
+artifact_type: IDENTITY
+name_en: 参数平移规则 (Parameter Shift Rule)
+name_zh: null
+latex: \frac{\partial}{\partial \theta_k} \langle H \rangle = \frac{1}{2}\left[\langle H \rangle_{\theta_k + \pi/2} - \langle
+  H \rangle_{\theta_k - \pi/2}\right]
+derivation_files: []
+citations:
+- raw: Mitarai et al., *Phys. Rev. A* **98**, 032309 (2018)
+  verified: false
+- raw: Schuld et al., *Phys. Rev. A* **99**, 032331 (2019).
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 05_variational_quantum

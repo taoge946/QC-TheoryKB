@@ -1,0 +1,26 @@
+# QC.QINFO.QUANTUM_ENTROPY_MINIMUM_MEASUREMENT.01
+# Auto-generated from 03_quantum_info_theory/key_formulas.md (F3.33)
+
+id: QC.QINFO.QUANTUM_ENTROPY_MINIMUM_MEASUREMENT.01
+legacy_alias: F3.33
+version: '01'
+claim_type: BOUND.LOWER
+domain: QC.QINFO
+artifact_type: DERIVATION
+name_en: Quantum Entropy as Minimum Measurement Entropy
+name_zh: 量子熵的测量最优性
+latex: H(\rho) = \min_{\{\Lambda_y\}} \left[ -\sum_y \mathrm{Tr}(\Lambda_y \rho) \log \mathrm{Tr}(\Lambda_y \rho) \right]
+derivation_files:
+- 03_quantum_info_theory/derivations/entropy_inequalities.md
+citations:
+- raw: Wilde, Ch.11, Theorem 11.1.1
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 03_quantum_info_theory

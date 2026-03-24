@@ -1,0 +1,26 @@
+# QC.HARDWARE.CLOPS_LAYER_OPERATIONS_PER.01
+# Auto-generated from 15_quantum_hardware/key_formulas.md (F15.10)
+
+id: QC.HARDWARE.CLOPS_LAYER_OPERATIONS_PER.01
+legacy_alias: F15.10
+version: '01'
+claim_type: IDENTITY
+domain: QC.HARDWARE
+artifact_type: DEFINITION
+name_en: CLOPS (Circuit Layer Operations Per Second)
+name_zh: null
+latex: \text{CLOPS} = \frac{M \times K \times S \times D}{t_{\text{wall}}}
+derivation_files:
+- 15_quantum_hardware/derivations/benchmarking_metrics.md
+citations:
+- raw: Wack et al., arXiv:2110.14108 (2021)
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 15_quantum_hardware

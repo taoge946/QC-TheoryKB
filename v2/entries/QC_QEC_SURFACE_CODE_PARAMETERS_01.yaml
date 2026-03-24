@@ -1,0 +1,28 @@
+# QC.QEC.SURFACE_CODE_PARAMETERS.01
+# Auto-generated from 04_quantum_error_correction/key_formulas.md (F4.5)
+
+id: QC.QEC.SURFACE_CODE_PARAMETERS.01
+legacy_alias: F4.5
+version: '01'
+claim_type: IDENTITY
+domain: QC.QEC
+artifact_type: DERIVATION
+name_en: Surface Code Parameters
+name_zh: null
+latex: '[[n, k, d]] = [[2L^2, \; 2, \; L]]'
+derivation_files:
+- 04_quantum_error_correction/derivations/surface_code_basics.md
+citations:
+- raw: Kitaev (1997)
+  verified: false
+- raw: Bravyi & Kitaev (1998)
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 04_quantum_error_correction

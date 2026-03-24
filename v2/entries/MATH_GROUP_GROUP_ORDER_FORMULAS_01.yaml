@@ -1,0 +1,26 @@
+# MATH.GROUP.GROUP_ORDER_FORMULAS.01
+# Auto-generated from 06_group_theory/key_formulas.md (F6.10)
+
+id: MATH.GROUP.GROUP_ORDER_FORMULAS.01
+legacy_alias: F6.10
+version: '01'
+claim_type: CORRECTNESS
+domain: MATH.GROUP
+artifact_type: IDENTITY
+name_en: Group Order Formulas
+name_zh: null
+latex: '|\mathcal{P}_n| = 4^{n+1}'
+derivation_files:
+- 06_group_theory/derivations/clifford_group.md
+citations:
+- raw: Nebe, Rains & Sloane (2001)
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 06_group_theory

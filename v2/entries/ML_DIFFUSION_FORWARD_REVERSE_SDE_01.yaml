@@ -1,0 +1,26 @@
+# ML.DIFFUSION.FORWARD_REVERSE_SDE.01
+# Auto-generated from 11_ml_theory/key_formulas.md (F11.8)
+
+id: ML.DIFFUSION.FORWARD_REVERSE_SDE.01
+legacy_alias: F11.8
+version: '01'
+claim_type: IDENTITY
+domain: ML.DIFFUSION
+artifact_type: IDENTITY
+name_en: SDE Formulation (Forward & Reverse)
+name_zh: null
+latex: dx = f(x, t)\, dt + g(t)\, dw
+derivation_files:
+- 11_ml_theory/derivations/diffusion_models_math.md
+citations:
+- raw: Song et al., Score-Based SDE, ICLR 2021
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 11_ml_theory

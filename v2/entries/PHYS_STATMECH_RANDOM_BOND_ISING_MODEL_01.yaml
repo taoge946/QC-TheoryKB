@@ -1,0 +1,29 @@
+# PHYS.STATMECH.RANDOM_BOND_ISING_MODEL.01
+# Auto-generated from 16_statistical_mechanics/key_formulas.md (F16.9)
+
+id: PHYS.STATMECH.RANDOM_BOND_ISING_MODEL.01
+legacy_alias: F16.9
+version: '01'
+claim_type: CONVERGENCE
+domain: PHYS.STATMECH
+artifact_type: DERIVATION
+name_en: Random-Bond Ising Model Hamiltonian（随机键 Ising 模型）
+name_zh: null
+latex: H = -\sum_{\langle ij \rangle} J_{ij} \, s_i s_j, \qquad J_{ij} = \begin{cases} +J & \text{with probability } 1 - p
+  \\ -J & \text{with probability } p \end{cases}
+derivation_files:
+- 16_statistical_mechanics/derivations/qec_stat_mech_mapping.md
+citations:
+- raw: Edwards & Anderson, J. Phys. F 5, 965 (1975)
+  verified: false
+- raw: Dennis et al. 2002, Eq. 3.6
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 16_statistical_mechanics

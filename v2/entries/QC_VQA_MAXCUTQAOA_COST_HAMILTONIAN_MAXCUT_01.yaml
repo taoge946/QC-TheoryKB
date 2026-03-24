@@ -1,0 +1,25 @@
+# QC.VQA.MAXCUTQAOA_COST_HAMILTONIAN_MAXCUT.01
+# Auto-generated from 05_variational_quantum/key_formulas.md (F5.6)
+
+id: QC.VQA.MAXCUTQAOA_COST_HAMILTONIAN_MAXCUT.01
+legacy_alias: F5.6
+version: '01'
+claim_type: IDENTITY
+domain: QC.VQA
+artifact_type: DEFINITION
+name_en: MaxCut的QAOA代价哈密顿量 (QAOA Cost Hamiltonian for MaxCut)
+name_zh: null
+latex: H_C = \frac{1}{2}\sum_{(i,j)\in E} (I - Z_i Z_j)
+derivation_files: []
+citations:
+- raw: Farhi, Goldstone, Gutmann, arXiv:1411.4028 (2014).
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 05_variational_quantum

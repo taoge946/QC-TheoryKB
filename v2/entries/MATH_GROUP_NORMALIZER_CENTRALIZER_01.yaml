@@ -1,0 +1,26 @@
+# MATH.GROUP.NORMALIZER_CENTRALIZER.01
+# Auto-generated from 06_group_theory/key_formulas.md (F6.11)
+
+id: MATH.GROUP.NORMALIZER_CENTRALIZER.01
+legacy_alias: F6.11
+version: '01'
+claim_type: CORRECTNESS
+domain: MATH.GROUP
+artifact_type: DERIVATION
+name_en: Normalizer and Centralizer
+name_zh: null
+latex: N_G(H) = \{ g \in G \mid gHg^{-1} = H \} \quad \text{(normalizer)}
+derivation_files:
+- 06_group_theory/derivations/group_theory_basics.md
+citations:
+- raw: Hungerford, Algebra
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 06_group_theory

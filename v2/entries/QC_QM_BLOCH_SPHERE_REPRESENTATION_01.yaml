@@ -1,0 +1,28 @@
+# QC.QM.BLOCH_SPHERE_REPRESENTATION.01
+# Auto-generated from 02_quantum_mechanics/key_formulas.md (F2.9)
+
+id: QC.QM.BLOCH_SPHERE_REPRESENTATION.01
+legacy_alias: F2.9
+version: '01'
+claim_type: IDENTITY
+domain: QC.QM
+artifact_type: DERIVATION
+name_en: Bloch Sphere Representation
+name_zh: Bloch 球表示
+latex: \rho = \frac{1}{2}\left(I + \vec{r} \cdot \vec{\sigma}\right) = \frac{1}{2}\begin{pmatrix} 1+r_z & r_x - ir_y \\ r_x
+  + ir_y & 1-r_z \end{pmatrix}
+derivation_files: []
+citations:
+- raw: Nielsen & Chuang, p.15, Eq. 1.15-1.16
+  verified: false
+- raw: Sakurai, Ch. 1
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 02_quantum_mechanics

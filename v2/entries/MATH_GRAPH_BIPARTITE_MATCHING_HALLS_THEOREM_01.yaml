@@ -1,0 +1,26 @@
+# MATH.GRAPH.BIPARTITE_MATCHING_HALLS_THEOREM.01
+# Auto-generated from 07_graph_theory/key_formulas.md (F7.14)
+
+id: MATH.GRAPH.BIPARTITE_MATCHING_HALLS_THEOREM.01
+legacy_alias: F7.14
+version: '01'
+claim_type: CORRECTNESS
+domain: MATH.GRAPH
+artifact_type: THEOREM
+name_en: Bipartite Matching & Hall's Theorem
+name_zh: 二部图匹配与 Hall 定理
+latex: '\text{Hall: } |N(S)| \geq |S| \;\forall S\subseteq U \iff \text{存在 } U\text{-完美匹配}'
+derivation_files:
+- 07_graph_theory/derivations/tanner_graphs.md
+citations:
+- raw: Edmonds, 1965
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 07_graph_theory

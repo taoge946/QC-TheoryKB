@@ -1,0 +1,27 @@
+# MATH.OPT.AM_ENCODER_CO.01
+# Auto-generated from 10_optimization/key_formulas.md (F10.31)
+
+id: MATH.OPT.AM_ENCODER_CO.01
+legacy_alias: F10.31
+version: '01'
+claim_type: DERIVATION
+domain: MATH.OPT
+artifact_type: DERIVATION
+name_en: AM Encoder (Transformer for CO)
+name_zh: null
+latex: \hat{\mathbf{h}}_i = \mathrm{BN}(\mathbf{h}_i^{(l-1)} + \mathrm{MHA}_i^l(\mathbf{h}_1^{(l-1)}, \ldots, \mathbf{h}_n^{(l-1)})),
+  \quad \mathbf{h}_i^{(l)} = \mathrm{BN}(\hat{\mathbf{h}}_i + \mathrm{FF}^l(\hat{\mathbf{h}}_i))
+derivation_files:
+- 10_optimization/derivations/neural_co_theory.md
+citations:
+- raw: Kool et al., ICLR 2019
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 10_optimization

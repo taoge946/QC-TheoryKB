@@ -1,0 +1,27 @@
+# QC.QINFO.RECOVERABILITY_THEOREM.01
+# Auto-generated from 03_quantum_info_theory/key_formulas.md (F3.37)
+
+id: QC.QINFO.RECOVERABILITY_THEOREM.01
+legacy_alias: F3.37
+version: '01'
+claim_type: CORRECTNESS
+domain: QC.QINFO
+artifact_type: THEOREM
+name_en: Recoverability Theorem
+name_zh: 可恢复性定理
+latex: D(\rho \| \sigma) - D(\mathcal{N}(\rho) \| \mathcal{N}(\sigma)) \geq -\log F\!\left(\rho, (\mathcal{R}_{\sigma,\mathcal{N}}
+  \circ \mathcal{N})(\rho)\right)
+derivation_files:
+- 03_quantum_info_theory/derivations/quantum_data_processing.md
+citations:
+- raw: Wilde, Ch.12, Theorem 12.1.1
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 03_quantum_info_theory

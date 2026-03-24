@@ -1,0 +1,27 @@
+# MATH.SCHEDULING.GRAPH_COLORING_SCHEDULING.01
+# Auto-generated from 14_scheduling_theory/key_formulas.md (F14.2)
+
+id: MATH.SCHEDULING.GRAPH_COLORING_SCHEDULING.01
+legacy_alias: F14.2
+version: '01'
+claim_type: EQUIVALENCE
+domain: MATH.SCHEDULING
+artifact_type: DERIVATION
+name_en: Graph Coloring as Scheduling（图着色作为调度）
+name_zh: null
+latex: '\text{Scheduling} \leftrightarrow \text{Coloring}: \quad \sigma: V \to \{1, \ldots, k\} \;\text{ s.t. } (u,v) \in
+  E \Rightarrow \sigma(u) \neq \sigma(v)'
+derivation_files:
+- 14_scheduling_theory/derivations/graph_coloring_theory.md
+citations:
+- raw: Welsh & Powell, 1967
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 14_scheduling_theory

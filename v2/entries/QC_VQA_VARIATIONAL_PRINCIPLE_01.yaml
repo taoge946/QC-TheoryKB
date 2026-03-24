@@ -1,0 +1,27 @@
+# QC.VQA.VARIATIONAL_PRINCIPLE.01
+# Auto-generated from 05_variational_quantum/key_formulas.md (F5.1)
+
+id: QC.VQA.VARIATIONAL_PRINCIPLE.01
+legacy_alias: F5.1
+version: '01'
+claim_type: BOUND.LOWER
+domain: QC.VQA
+artifact_type: THEOREM
+name_en: 变分原理 (Variational Principle)
+name_zh: null
+latex: E_0 \leq \langle\psi(\boldsymbol{\theta})|H|\psi(\boldsymbol{\theta})\rangle
+derivation_files: []
+citations:
+- raw: Rayleigh-Ritz variational principle
+  verified: false
+- raw: Peruzzo et al., *Nat. Commun.* **5**, 4213 (2014).
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 05_variational_quantum

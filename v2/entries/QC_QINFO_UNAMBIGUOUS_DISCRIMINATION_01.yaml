@@ -1,0 +1,26 @@
+# QC.QINFO.UNAMBIGUOUS_DISCRIMINATION.01
+# Auto-generated from 03_quantum_info_theory/key_formulas.md (F3.15)
+
+id: QC.QINFO.UNAMBIGUOUS_DISCRIMINATION.01
+legacy_alias: F3.15
+version: '01'
+claim_type: BOUND.LOWER
+domain: QC.QINFO
+artifact_type: THEOREM
+name_en: Unambiguous Discrimination
+name_zh: 无歧义判别
+latex: p_{\mathrm{unamb}} = 1 - F(\rho_0,\rho_1)
+derivation_files:
+- 03_quantum_info_theory/derivations/quantum_data_processing.md
+citations:
+- raw: Watrous, Ch.4, Thm.4.14
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 03_quantum_info_theory

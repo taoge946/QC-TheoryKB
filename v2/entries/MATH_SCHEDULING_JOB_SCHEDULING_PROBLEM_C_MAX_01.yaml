@@ -1,0 +1,26 @@
+# MATH.SCHEDULING.JOB_SCHEDULING_PROBLEM_C_MAX.01
+# Auto-generated from 14_scheduling_theory/key_formulas.md (F14.1)
+
+id: MATH.SCHEDULING.JOB_SCHEDULING_PROBLEM_C_MAX.01
+legacy_alias: F14.1
+version: '01'
+claim_type: BOUND.LOWER
+domain: MATH.SCHEDULING
+artifact_type: DERIVATION
+name_en: Job Scheduling Problem $P \| C_{\max}$（并行机调度最大完工时间）
+name_zh: null
+latex: 'P \| C_{\max}: \quad \min \; C_{\max} = \min_{\sigma} \; \max_{j=1,\ldots,m} \; \sum_{i: \sigma(i)=j} p_i'
+derivation_files:
+- 14_scheduling_theory/derivations/scheduling_basics.md
+citations:
+- raw: Graham et al., 1979, §4
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 14_scheduling_theory

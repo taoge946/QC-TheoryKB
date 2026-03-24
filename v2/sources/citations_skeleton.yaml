@@ -1,0 +1,1596 @@
+# Citation skeleton — needs manual review
+# 398 unique strings
+
+sources:
+  source_000:
+    raw_string: ', [07_graph_theory/derivations/wl_test_expressiveness.md'
+    type: unclassified
+    verified: false
+  source_001:
+    raw_string: 07_graph_theory/derivations/wl_test_expressiveness.md
+    type: unclassified
+    verified: false
+  source_002:
+    raw_string: '7.17'
+    type: unclassified
+    verified: false
+  source_003:
+    raw_string: Aaronson & Gottesman (2004)
+    type: unclassified
+    verified: false
+  source_004:
+    raw_string: Aaronson & Gottesman, 2004
+    type: unclassified
+    verified: false
+  source_005:
+    raw_string: Aharonov & Ben-Or (1997)
+    type: unclassified
+    verified: false
+  source_006:
+    raw_string: Alon & Spencer, "The Probabilistic Method"
+    type: unclassified
+    verified: false
+  source_007:
+    raw_string: Alon et al., SICOMP 1994
+    type: unclassified
+    verified: false
+  source_008:
+    raw_string: Appleby (2005)
+    type: unclassified
+    verified: false
+  source_009:
+    raw_string: Applegate et al., *The Traveling Salesman Problem* (2006)
+    type: unclassified
+    verified: false
+  source_010:
+    raw_string: Arute et al., Nature 574, 505 (2019), Supplementary §IV
+    type: unclassified
+    verified: false
+  source_011:
+    raw_string: Austin et al., D3PM, NeurIPS 2021
+    type: unclassified
+    verified: false
+  source_012:
+    raw_string: Azuma, 1967
+    type: unclassified
+    verified: false
+  source_013:
+    raw_string: Backens et al., arXiv:2003.01674
+    type: unclassified
+    verified: false
+  source_014:
+    raw_string: Backens, arXiv:1307.7025, Theorem 1
+    type: unclassified
+    verified: false
+  source_015:
+    raw_string: Banach, 1922
+    type: unclassified
+    verified: false
+  source_016:
+    raw_string: Banerjee et al., IEEE QCE 2020
+    type: unclassified
+    verified: false
+  source_017:
+    raw_string: Bartlett & Mendelson, 2002
+    type: unclassified
+    verified: false
+  source_018:
+    raw_string: Beals et al., Proc. Royal Soc. A, 2013
+    type: unclassified
+    verified: false
+  source_019:
+    raw_string: Bengio et al. 2021, §2.2, Eq.(2)-(3)
+    type: unclassified
+    verified: false
+  source_020:
+    raw_string: Benjamini & Hochberg (1995), JRSS-B
+    type: unclassified
+    verified: false
+  source_021:
+    raw_string: Bennett et al. (1996)
+    type: unclassified
+    verified: false
+  source_022:
+    raw_string: Bennett-DiVincenzo-Smolin, 1997
+    type: unclassified
+    verified: false
+  source_023:
+    raw_string: Bernstein, 1924
+    type: unclassified
+    verified: false
+  source_024:
+    raw_string: Beverland et al., 2021
+    type: unclassified
+    verified: false
+  source_025:
+    raw_string: Biometrics Bulletin
+    type: unclassified
+    verified: false
+  source_026:
+    raw_string: Blei et al., 2017
+    type: unclassified
+    verified: false
+  source_027:
+    raw_string: Blume-Kohout (2010), New J. Phys.
+    type: unclassified
+    verified: false
+  source_028:
+    raw_string: Boixo et al., Nat. Phys. 14, 595 (2018)
+    type: unclassified
+    verified: false
+  source_029:
+    raw_string: Boltzmann (1877)
+    type: unclassified
+    verified: false
+  source_030:
+    raw_string: Bombin et al., Phys. Rev. X 2, 021004 (2012)
+    type: unclassified
+    verified: false
+  source_031:
+    raw_string: Bomze et al., *Handbook of Combinatorial Optimization* (1999)
+    type: unclassified
+    verified: false
+  source_032:
+    raw_string: Bonferroni (1936)
+    type: unclassified
+    verified: false
+  source_033:
+    raw_string: Bonnet et al., SWAT 2018
+    type: unclassified
+    verified: false
+  source_034:
+    raw_string: Boole, 1847
+    type: unclassified
+    verified: false
+  source_035:
+    raw_string: Boucheron et al.
+    type: unclassified
+    verified: false
+  source_036:
+    raw_string: Bragg & Williams (1934)
+    type: unclassified
+    verified: false
+  source_037:
+    raw_string: Bravyi & Kitaev (1998)
+    type: unclassified
+    verified: false
+  source_038:
+    raw_string: Brierley, 2015
+    type: unclassified
+    verified: false
+  source_039:
+    raw_string: Broadbent & Hammersley, Proc. Camb. Phil. Soc. 53, 629 (1957)
+    type: unclassified
+    verified: false
+  source_040:
+    raw_string: Brooks' Theorem
+    type: unclassified
+    verified: false
+  source_041:
+    raw_string: Brooks, 1941
+    type: unclassified
+    verified: false
+  source_042:
+    raw_string: Brown, Cai & DasGupta (2001), Statistical Science
+    type: unclassified
+    verified: false
+  source_043:
+    raw_string: Brucker, *Scheduling Algorithms*, 2007, Ch.8
+    type: unclassified
+    verified: false
+  source_044:
+    raw_string: Calderbank & Shor (1996)
+    type: unclassified
+    verified: false
+  source_045:
+    raw_string: Calderbank et al. (1997)
+    type: unclassified
+    verified: false
+  source_046:
+    raw_string: Campbell et al., NeurIPS 2022
+    type: unclassified
+    verified: false
+  source_047:
+    raw_string: Cappart et al. 2023, §2.3, Eq.(1)
+    type: unclassified
+    verified: false
+  source_048:
+    raw_string: Cappart et al. 2023, §5.1], Sato et al. (2019)
+    type: unclassified
+    verified: false
+  source_049:
+    raw_string: Catoni, 2007
+    type: unclassified
+    verified: false
+  source_050:
+    raw_string: Cerezo et al. 2021, Eq.(2)
+    type: unclassified
+    verified: false
+  source_051:
+    raw_string: Ch.24, §24.7
+    type: unclassified
+    verified: false
+  source_052:
+    raw_string: Chernoff, 1952
+    type: unclassified
+    verified: false
+  source_053:
+    raw_string: Cheung et al., QIC 2007
+    type: unclassified
+    verified: false
+  source_054:
+    raw_string: Childs et al., 2019
+    type: unclassified
+    verified: false
+  source_055:
+    raw_string: Childs et al., QIC 2019
+    type: unclassified
+    verified: false
+  source_056:
+    raw_string: Choi (1975)
+    type: unclassified
+    verified: false
+  source_057:
+    raw_string: Chow et al., PRL 107, 080502 (2011)
+    type: unclassified
+    verified: false
+  source_058:
+    raw_string: Chung, Spectral Graph Theory, 1997
+    type: unclassified
+    verified: false
+  source_059:
+    raw_string: Coecke & Duncan, arXiv:0906.4725
+    type: unclassified
+    verified: false
+  source_060:
+    raw_string: Coecke & Duncan, arXiv:0906.4725, Sec.5
+    type: unclassified
+    verified: false
+  source_061:
+    raw_string: Coffman & Graham, 1972
+    type: unclassified
+    verified: false
+  source_062:
+    raw_string: Cohen (1988), Statistical Power Analysis for the Behavioral Sciences
+    type: unclassified
+    verified: false
+  source_063:
+    raw_string: Cowtan et al., TCAD 2019
+    type: unclassified
+    verified: false
+  source_064:
+    raw_string: Cross et al., PRA 100, 032328 (2019)
+    type: unclassified
+    verified: false
+  source_065:
+    raw_string: Defferrard et al. (ChebNet), 2016
+    type: unclassified
+    verified: false
+  source_066:
+    raw_string: Dennis et al. (2002)
+    type: unclassified
+    verified: false
+  source_067:
+    raw_string: Dennis et al. 2002, Eq. 3.10-3.11
+    type: unclassified
+    verified: false
+  source_068:
+    raw_string: Dennis et al. 2002, Eq. 3.6
+    type: unclassified
+    verified: false
+  source_069:
+    raw_string: Dennis et al. 2002, §3.3
+    type: unclassified
+    verified: false
+  source_070:
+    raw_string: Dennis et al. 2002, §5
+    type: unclassified
+    verified: false
+  source_071:
+    raw_string: Dennis et al., J. Math. Phys. 43, 4452 (2002)
+    type: unclassified
+    verified: false
+  source_072:
+    raw_string: Devetak & Shor, 2005
+    type: unclassified
+    verified: false
+  source_073:
+    raw_string: Diestel, *Graph Theory*, Theorem 5.2.4
+    type: unclassified
+    verified: false
+  source_074:
+    raw_string: Duncan et al., arXiv:1902.03178, Sec.4
+    type: unclassified
+    verified: false
+  source_075:
+    raw_string: Duncan et al., arXiv:1902.03178, Sec.5, Theorem 5.4
+    type: unclassified
+    verified: false
+  source_076:
+    raw_string: Edmonds, 1965
+    type: unclassified
+    verified: false
+  source_077:
+    raw_string: Edwards & Anderson, J. Phys. F 5, 965 (1975)
+    type: unclassified
+    verified: false
+  source_078:
+    raw_string: Efron & Tibshirani (1993), An Introduction to the Bootstrap
+    type: unclassified
+    verified: false
+  source_079:
+    raw_string: Efron (1979), Annals of Statistics
+    type: unclassified
+    verified: false
+  source_080:
+    raw_string: Ekert & Macchiavello (1996)
+    type: unclassified
+    verified: false
+  source_081:
+    raw_string: Eq. 8.8, p.360
+    type: unclassified
+    verified: false
+  source_082:
+    raw_string: Erdős & Lovász, 1975
+    type: unclassified
+    verified: false
+  source_083:
+    raw_string: Euler (1752)
+    type: unclassified
+    verified: false
+  source_084:
+    raw_string: Farhi et al. 2014, Eq.(10)-(11)
+    type: unclassified
+    verified: false
+  source_085:
+    raw_string: Farhi et al. 2014, Eq.(31)
+    type: unclassified
+    verified: false
+  source_086:
+    raw_string: Farhi, Goldstone, Gutmann, arXiv:1411.4028 (2014).
+    type: unclassified
+    verified: false
+  source_087:
+    raw_string: Farhi, Goldstone, Gutmann, arXiv:1411.4028 (2014). 对MaxCut在 $P=1$ 时 $r \geq 0.6924$。
+    type: unclassified
+    verified: false
+  source_088:
+    raw_string: Fisher (1935)
+    type: unclassified
+    verified: false
+  source_089:
+    raw_string: Fisher, *Management Science* 27 (1981)
+    type: unclassified
+    verified: false
+  source_090:
+    raw_string: Fisher, Rev. Mod. Phys. 46, 597 (1974)
+    type: unclassified
+    verified: false
+  source_091:
+    raw_string: Ford-Fulkerson
+    type: unclassified
+    verified: false
+  source_092:
+    raw_string: Fowler et al. (2012)
+    type: unclassified
+    verified: false
+  source_093:
+    raw_string: Fowler et al., PRA 86, 032324 (2012)
+    type: unclassified
+    verified: false
+  source_094:
+    raw_string: Freedman & Meyer, Found. Comput. Math. 1, 325 (2001)
+    type: unclassified
+    verified: false
+  source_095:
+    raw_string: Gambetta et al., PRA 76, 012325 (2007)
+    type: unclassified
+    verified: false
+  source_096:
+    raw_string: Garey & Johnson (1979)
+    type: unclassified
+    verified: false
+  source_097:
+    raw_string: Garey & Johnson, *Computers and Intractability* (1979)
+    type: unclassified
+    verified: false
+  source_098:
+    raw_string: Gibbs (1902)
+    type: unclassified
+    verified: false
+  source_099:
+    raw_string: Gilmer et al., MPNN, ICML 2017
+    type: unclassified
+    verified: false
+  source_100:
+    raw_string: Glover et al., *EJOR* 282 (2019)
+    type: unclassified
+    verified: false
+  source_101:
+    raw_string: Goemans & Williamson, JACM 42 (1995)
+    type: unclassified
+    verified: false
+  source_102:
+    raw_string: Golumbic, *Algorithmic Graph Theory and Perfect Graphs*, 1980, Ch.4
+    type: unclassified
+    verified: false
+  source_103:
+    raw_string: Goodfellow et al., GAN, NeurIPS 2014
+    type: unclassified
+    verified: false
+  source_104:
+    raw_string: Gottesman (1997)
+    type: unclassified
+    verified: false
+  source_105:
+    raw_string: Gottesman (1998)
+    type: unclassified
+    verified: false
+  source_106:
+    raw_string: Gottesman (1998), Aaronson & Gottesman (2004)
+    type: unclassified
+    verified: false
+  source_107:
+    raw_string: Gottesman thesis, §3.2
+    type: unclassified
+    verified: false
+  source_108:
+    raw_string: Gottesman thesis, §3.4
+    type: unclassified
+    verified: false
+  source_109:
+    raw_string: Gottesman thesis, §5.4
+    type: unclassified
+    verified: false
+  source_110:
+    raw_string: Gottesman thesis, §6.2, Eq. 6.1-6.2
+    type: unclassified
+    verified: false
+  source_111:
+    raw_string: Gottesman thesis, §7.1
+    type: unclassified
+    verified: false
+  source_112:
+    raw_string: Gottesman thesis, §7.1, Eq. 7.2
+    type: unclassified
+    verified: false
+  source_113:
+    raw_string: Gottesman thesis, §7.1, Eq. 7.5
+    type: unclassified
+    verified: false
+  source_114:
+    raw_string: Gottesman thesis, §7.2, Eq. 7.8
+    type: unclassified
+    verified: false
+  source_115:
+    raw_string: Gottesman, Ph.D. thesis (1997)
+    type: unclassified
+    verified: false
+  source_116:
+    raw_string: Gottesman, PhD thesis (1997)
+    type: unclassified
+    verified: false
+  source_117:
+    raw_string: Graham et al., 1979, §4
+    type: unclassified
+    verified: false
+  source_118:
+    raw_string: Graham, 1969, Theorem 1
+    type: unclassified
+    verified: false
+  source_119:
+    raw_string: Granade et al. (2016), New J. Phys.
+    type: unclassified
+    verified: false
+  source_120:
+    raw_string: Hadzihasanovic et al., arXiv:1805.05631
+    type: unclassified
+    verified: false
+  source_121:
+    raw_string: Hall, Lie Groups, Lie Algebras, Chapter 5
+    type: unclassified
+    verified: false
+  source_122:
+    raw_string: Hatcher, *Algebraic Topology*, Ch. 2
+    type: unclassified
+    verified: false
+  source_123:
+    raw_string: Hatcher, Ch. 2
+    type: unclassified
+    verified: false
+  source_124:
+    raw_string: Hatcher, Ch. 3
+    type: unclassified
+    verified: false
+  source_125:
+    raw_string: Hazan, "Introduction to Online Convex Optimization"
+    type: unclassified
+    verified: false
+  source_126:
+    raw_string: Helmholtz (1882)
+    type: unclassified
+    verified: false
+  source_127:
+    raw_string: Ho & Salimans, 2022
+    type: unclassified
+    verified: false
+  source_128:
+    raw_string: Ho et al., 2020
+    type: unclassified
+    verified: false
+  source_129:
+    raw_string: Ho et al., DDPM, NeurIPS 2020
+    type: unclassified
+    verified: false
+  source_130:
+    raw_string: Ho et al., DDPM, NeurIPS 2020, Eq.(12)
+    type: unclassified
+    verified: false
+  source_131:
+    raw_string: Hoeffding, 1963
+    type: unclassified
+    verified: false
+  source_132:
+    raw_string: Holm (1979), Scandinavian J. Statistics
+    type: unclassified
+    verified: false
+  source_133:
+    raw_string: Horn & Johnson, Chapter 7
+    type: unclassified
+    verified: false
+  source_134:
+    raw_string: Horn & Johnson, Section 0.9
+    type: unclassified
+    verified: false
+  source_135:
+    raw_string: Horn & Johnson, Section 4.2
+    type: unclassified
+    verified: false
+  source_136:
+    raw_string: Horn & Johnson, Theorem 7.3.5
+    type: unclassified
+    verified: false
+  source_137:
+    raw_string: Horodecki et al., PRA 60, 1888 (1999)
+    type: unclassified
+    verified: false
+  source_138:
+    raw_string: Horodecki-Oppenheim-Winter, 2005
+    type: unclassified
+    verified: false
+  source_139:
+    raw_string: Hu, 1961
+    type: unclassified
+    verified: false
+  source_140:
+    raw_string: Huang, Kueng, Preskill, *Nat. Phys.* **16**, 1050 (2020).
+    type: unclassified
+    verified: false
+  source_141:
+    raw_string: Hungerford, Algebra
+    type: unclassified
+    verified: false
+  source_142:
+    raw_string: Hyvarinen, 2005
+    type: unclassified
+    verified: false
+  source_143:
+    raw_string: IBM Quantum hardware specs
+    type: unclassified
+    verified: false
+  source_144:
+    raw_string: Ising, Z. Phys. 31, 253 (1925)
+    type: unclassified
+    verified: false
+  source_145:
+    raw_string: Ithier et al., PRB 72, 134519 (2005)
+    type: unclassified
+    verified: false
+  source_146:
+    raw_string: Jamiołkowski (1972)
+    type: unclassified
+    verified: false
+  source_147:
+    raw_string: Jensen & Toft, *Graph Coloring Problems* (1995)
+    type: unclassified
+    verified: false
+  source_148:
+    raw_string: Kandala et al., *Nature* **549**, 242 (2017).
+    type: unclassified
+    verified: false
+  source_149:
+    raw_string: Kesten, Comm. Math. Phys. 74, 41 (1980)
+    type: unclassified
+    verified: false
+  source_150:
+    raw_string: Kingma & Ba, Adam, ICLR 2015
+    type: unclassified
+    verified: false
+  source_151:
+    raw_string: Kingma & Ba, ICLR (2015)
+    type: unclassified
+    verified: false
+  source_152:
+    raw_string: Kingma & Welling, 2014
+    type: unclassified
+    verified: false
+  source_153:
+    raw_string: Kingma & Welling, VAE, ICLR 2014
+    type: unclassified
+    verified: false
+  source_154:
+    raw_string: Kipf & Welling, 2017
+    type: unclassified
+    verified: false
+  source_155:
+    raw_string: Kipf & Welling, GCN, ICLR 2017
+    type: unclassified
+    verified: false
+  source_156:
+    raw_string: Kipf & Welling, GCN, ICLR 2017, Eq.(2)
+    type: unclassified
+    verified: false
+  source_157:
+    raw_string: Kissinger & van de Wetering, arXiv:1904.04735
+    type: unclassified
+    verified: false
+  source_158:
+    raw_string: Kitaev (1997)
+    type: unclassified
+    verified: false
+  source_159:
+    raw_string: Kitaev, Ann. Phys. 303, 2 (2003)
+    type: unclassified
+    verified: false
+  source_160:
+    raw_string: Knill & Laflamme (1997)
+    type: unclassified
+    verified: false
+  source_161:
+    raw_string: Knill & Laflamme, PRA 55, 900 (1997)
+    type: unclassified
+    verified: false
+  source_162:
+    raw_string: Koch et al., PRA 76, 042319 (2007), Eqs. (2.2), (2.11), (2.18)
+    type: unclassified
+    verified: false
+  source_163:
+    raw_string: Kochenberger et al., *EJOR* 224 (2014)
+    type: unclassified
+    verified: false
+  source_164:
+    raw_string: Kool et al., ICLR 2019
+    type: unclassified
+    verified: false
+  source_165:
+    raw_string: Kramers & Wannier (1941)
+    type: unclassified
+    verified: false
+  source_166:
+    raw_string: Kramers & Wannier, Phys. Rev. 60, 252 (1941)
+    type: unclassified
+    verified: false
+  source_167:
+    raw_string: Krantz et al., Applied Physics Reviews 6, 021318 (2019), §IV.A
+    type: unclassified
+    verified: false
+  source_168:
+    raw_string: Krantz et al., §IV.B
+    type: unclassified
+    verified: false
+  source_169:
+    raw_string: Krantz et al., §V
+    type: unclassified
+    verified: false
+  source_170:
+    raw_string: Ku et al., PRL 125, 200504 (2020)
+    type: unclassified
+    verified: false
+  source_171:
+    raw_string: Kullback & Leibler, 1951
+    type: unclassified
+    verified: false
+  source_172:
+    raw_string: Le Cam, 1973
+    type: unclassified
+    verified: false
+  source_173:
+    raw_string: Levin, Peres & Wilmer, "Markov Chains and Mixing Times"
+    type: unclassified
+    verified: false
+  source_174:
+    raw_string: Li et al., ASPLOS 2019
+    type: unclassified
+    verified: false
+  source_175:
+    raw_string: Li et al., ASPLOS 2019, Section 3
+    type: unclassified
+    verified: false
+  source_176:
+    raw_string: Lindvall, "Lectures on the Coupling Method"
+    type: unclassified
+    verified: false
+  source_177:
+    raw_string: Lipman et al., Flow Matching, ICLR 2023, Eq.(12)-(14)
+    type: unclassified
+    verified: false
+  source_178:
+    raw_string: Lipman et al., Flow Matching, ICLR 2023, Eq.(4)
+    type: unclassified
+    verified: false
+  source_179:
+    raw_string: Lipman et al., Flow Matching, ICLR 2023, Theorem 2
+    type: unclassified
+    verified: false
+  source_180:
+    raw_string: Lipman et al., Flow Matching, ICLR 2023, Theorem 3
+    type: unclassified
+    verified: false
+  source_181:
+    raw_string: Lucas (2014)
+    type: unclassified
+    verified: false
+  source_182:
+    raw_string: Lucas, *Frontiers in Physics* 2, 5 (2014)
+    type: unclassified
+    verified: false
+  source_183:
+    raw_string: Magesan et al., PRL 106, 180504 (2011)
+    type: unclassified
+    verified: false
+  source_184:
+    raw_string: Maslov et al., 2008
+    type: unclassified
+    verified: false
+  source_185:
+    raw_string: McAllester, 1999
+    type: unclassified
+    verified: false
+  source_186:
+    raw_string: McClean et al., *Nat. Commun.* **9**, 4812 (2018).
+    type: unclassified
+    verified: false
+  source_187:
+    raw_string: McClean et al., *New J. Phys.* **18**, 023023 (2016).
+    type: unclassified
+    verified: false
+  source_188:
+    raw_string: McDiarmid, 1989
+    type: unclassified
+    verified: false
+  source_189:
+    raw_string: Meng et al., NeurIPS 2022
+    type: unclassified
+    verified: false
+  source_190:
+    raw_string: Miltzow et al., ESA 2016
+    type: unclassified
+    verified: false
+  source_191:
+    raw_string: Mitarai et al., *Phys. Rev. A* **98**, 032309 (2018)
+    type: unclassified
+    verified: false
+  source_192:
+    raw_string: Mitzenmacher & Upfal
+    type: unclassified
+    verified: false
+  source_193:
+    raw_string: Morris et al. (2019)
+    type: unclassified
+    verified: false
+  source_194:
+    raw_string: Mundada et al., PRA 100, 012331 (2019)
+    type: unclassified
+    verified: false
+  source_195:
+    raw_string: Murali et al., MICRO 2020
+    type: unclassified
+    verified: false
+  source_196:
+    raw_string: Nebe, Rains & Sloane (2001)
+    type: unclassified
+    verified: false
+  source_197:
+    raw_string: Nichol & Dhariwal, 2021
+    type: unclassified
+    verified: false
+  source_198:
+    raw_string: Nielsen & Chuang Ch. 4
+    type: unclassified
+    verified: false
+  source_199:
+    raw_string: Nielsen & Chuang, Box 8.2, p.368
+    type: unclassified
+    verified: false
+  source_200:
+    raw_string: Nielsen & Chuang, Eq. 10.57, p.444
+    type: unclassified
+    verified: false
+  source_201:
+    raw_string: Nielsen & Chuang, Eq. 11.51, p.510
+    type: unclassified
+    verified: false
+  source_202:
+    raw_string: Nielsen & Chuang, Eq. 11.63-11.65, p.514
+    type: unclassified
+    verified: false
+  source_203:
+    raw_string: Nielsen & Chuang, Eq. 8.101, p.378
+    type: unclassified
+    verified: false
+  source_204:
+    raw_string: Nielsen & Chuang, Eq. 9.1, p.399
+    type: unclassified
+    verified: false
+  source_205:
+    raw_string: Nielsen & Chuang, Eq. 9.52, p.409
+    type: unclassified
+    verified: false
+  source_206:
+    raw_string: Nielsen & Chuang, Exercise 4.17, p.184
+    type: unclassified
+    verified: false
+  source_207:
+    raw_string: Nielsen & Chuang, Postulate 3, p.84
+    type: unclassified
+    verified: false
+  source_208:
+    raw_string: Nielsen & Chuang, Postulate 4, p.94
+    type: unclassified
+    verified: false
+  source_209:
+    raw_string: Nielsen & Chuang, Section 10.4.2, p.450
+    type: unclassified
+    verified: false
+  source_210:
+    raw_string: Nielsen & Chuang, Section 10.4.2, p.450-453
+    type: unclassified
+    verified: false
+  source_211:
+    raw_string: Nielsen & Chuang, Section 10.5.2, p.459
+    type: unclassified
+    verified: false
+  source_212:
+    raw_string: Nielsen & Chuang, Section 2.1.3, p.65
+    type: unclassified
+    verified: false
+  source_213:
+    raw_string: Nielsen & Chuang, Section 2.1.7
+    type: unclassified
+    verified: false
+  source_214:
+    raw_string: Nielsen & Chuang, Section 2.1.9
+    type: unclassified
+    verified: false
+  source_215:
+    raw_string: Nielsen & Chuang, Section 2.2.5
+    type: unclassified
+    verified: false
+  source_216:
+    raw_string: Nielsen & Chuang, Section 2.4.3
+    type: unclassified
+    verified: false
+  source_217:
+    raw_string: Nielsen & Chuang, Theorem 10.1, p.436
+    type: unclassified
+    verified: false
+  source_218:
+    raw_string: Nielsen & Chuang, Theorem 10.2, p.444
+    type: unclassified
+    verified: false
+  source_219:
+    raw_string: Nielsen & Chuang, Theorem 10.3, p.457
+    type: unclassified
+    verified: false
+  source_220:
+    raw_string: Nielsen & Chuang, Theorem 10.6, p.480
+    type: unclassified
+    verified: false
+  source_221:
+    raw_string: Nielsen & Chuang, Theorem 2.1
+    type: unclassified
+    verified: false
+  source_222:
+    raw_string: Nielsen & Chuang, Theorem 2.3
+    type: unclassified
+    verified: false
+  source_223:
+    raw_string: Nielsen & Chuang, Theorem 2.5, p.101
+    type: unclassified
+    verified: false
+  source_224:
+    raw_string: Nielsen & Chuang, Theorem 2.7, Eq. 2.178, p.105
+    type: unclassified
+    verified: false
+  source_225:
+    raw_string: Nielsen & Chuang, Theorem 2.7, p.109
+    type: unclassified
+    verified: false
+  source_226:
+    raw_string: Nielsen & Chuang, Theorem 8.1, p.360
+    type: unclassified
+    verified: false
+  source_227:
+    raw_string: Nielsen & Chuang, Theorem 8.3, p.374
+    type: unclassified
+    verified: false
+  source_228:
+    raw_string: Nielsen & Chuang, p.15, Eq. 1.15-1.16
+    type: unclassified
+    verified: false
+  source_229:
+    raw_string: Nielsen & Chuang, §4.5
+    type: unclassified
+    verified: false
+  source_230:
+    raw_string: Nielsen, PLA 303, 249 (2002)
+    type: unclassified
+    verified: false
+  source_231:
+    raw_string: Nishimori, Prog. Theor. Phys. 66, 1169 (1981)
+    type: unclassified
+    verified: false
+  source_232:
+    raw_string: Niu & Todri-Sanial, DATE 2020
+    type: unclassified
+    verified: false
+  source_233:
+    raw_string: Onsager (1944)
+    type: unclassified
+    verified: false
+  source_234:
+    raw_string: Onsager, Phys. Rev. 65, 117 (1944)
+    type: unclassified
+    verified: false
+  source_235:
+    raw_string: PRA 85, 042311 (2012)
+    type: unclassified
+    verified: false
+  source_236:
+    raw_string: Pascanu et al., 2013
+    type: unclassified
+    verified: false
+  source_237:
+    raw_string: Peruzzo et al., *Nat. Commun.* **5**, 4213 (2014)
+    type: unclassified
+    verified: false
+  source_238:
+    raw_string: Peruzzo et al., *Nat. Commun.* **5**, 4213 (2014).
+    type: unclassified
+    verified: false
+  source_239:
+    raw_string: Poincaré (1895)
+    type: unclassified
+    verified: false
+  source_240:
+    raw_string: Preskill Lecture Notes
+    type: unclassified
+    verified: false
+  source_241:
+    raw_string: Provost & Vallee, *Commun. Math. Phys.* **76**, 289 (1980).
+    type: unclassified
+    verified: false
+  source_242:
+    raw_string: Rains (1997)
+    type: unclassified
+    verified: false
+  source_243:
+    raw_string: Rains (1999)
+    type: unclassified
+    verified: false
+  source_244:
+    raw_string: Rayleigh-Ritz variational principle
+    type: unclassified
+    verified: false
+  source_245:
+    raw_string: Rigetti & Devoret, PRB 81, 134507 (2010)
+    type: unclassified
+    verified: false
+  source_246:
+    raw_string: Roberts & Tweedie, 1996
+    type: unclassified
+    verified: false
+  source_247:
+    raw_string: Rudin, Functional Analysis
+    type: unclassified
+    verified: false
+  source_248:
+    raw_string: Sakurai, Ch. 1
+    type: unclassified
+    verified: false
+  source_249:
+    raw_string: Sakurai, Chapter 2
+    type: unclassified
+    verified: false
+  source_250:
+    raw_string: Sakurai, Modern Quantum Mechanics
+    type: unclassified
+    verified: false
+  source_251:
+    raw_string: Sakurai, Section 1.4
+    type: unclassified
+    verified: false
+  source_252:
+    raw_string: Sanokowski et al., NeurIPS 2024
+    type: unclassified
+    verified: false
+  source_253:
+    raw_string: Schrijver, *Combinatorial Optimization* (2003)
+    type: unclassified
+    verified: false
+  source_254:
+    raw_string: Schuld et al., *Phys. Rev. A* **99**, 032331 (2019).
+    type: unclassified
+    verified: false
+  source_255:
+    raw_string: Schulman et al., 2016
+    type: unclassified
+    verified: false
+  source_256:
+    raw_string: Schulman et al., PPO, 2017
+    type: unclassified
+    verified: false
+  source_257:
+    raw_string: Section 10.5.1, p.456
+    type: unclassified
+    verified: false
+  source_258:
+    raw_string: Section 10.6, pp.470-499
+    type: unclassified
+    verified: false
+  source_259:
+    raw_string: Section 2.1.7, p.71
+    type: unclassified
+    verified: false
+  source_260:
+    raw_string: Section 2.2.6, p.90
+    type: unclassified
+    verified: false
+  source_261:
+    raw_string: Section 8.2.4, p.363
+    type: unclassified
+    verified: false
+  source_262:
+    raw_string: Section 8.3.4, p.378
+    type: unclassified
+    verified: false
+  source_263:
+    raw_string: Shalev-Shwartz & Ben-David
+    type: unclassified
+    verified: false
+  source_264:
+    raw_string: Shor & Laflamme (1997)
+    type: unclassified
+    verified: false
+  source_265:
+    raw_string: Sipser & Spielman, 1996
+    type: unclassified
+    verified: false
+  source_266:
+    raw_string: Siraichi et al., CGO 2018
+    type: unclassified
+    verified: false
+  source_267:
+    raw_string: Song & Ermon, 2019
+    type: unclassified
+    verified: false
+  source_268:
+    raw_string: Song & Ermon, NeurIPS 2019
+    type: unclassified
+    verified: false
+  source_269:
+    raw_string: Song et al., DDIM, ICLR 2021, Eq.(12)
+    type: unclassified
+    verified: false
+  source_270:
+    raw_string: Song et al., DDIM, ICLR 2021, Eq.(14)
+    type: unclassified
+    verified: false
+  source_271:
+    raw_string: Song et al., Score SDE, ICLR 2021
+    type: unclassified
+    verified: false
+  source_272:
+    raw_string: Song et al., Score-Based SDE, ICLR 2021
+    type: unclassified
+    verified: false
+  source_273:
+    raw_string: Steane (1996)
+    type: unclassified
+    verified: false
+  source_274:
+    raw_string: Steane, PRL 77, 793 (1996)
+    type: unclassified
+    verified: false
+  source_275:
+    raw_string: Stokes et al., *Quantum* **4**, 269 (2020)
+    type: unclassified
+    verified: false
+  source_276:
+    raw_string: Stokes et al., *Quantum* **4**, 269 (2020).
+    type: unclassified
+    verified: false
+  source_277:
+    raw_string: Student (1908)
+    type: unclassified
+    verified: false
+  source_278:
+    raw_string: Sutton et al., 2000
+    type: unclassified
+    verified: false
+  source_279:
+    raw_string: Tanner, 1981
+    type: unclassified
+    verified: false
+  source_280:
+    raw_string: Theorem 11.3, p.515
+    type: unclassified
+    verified: false
+  source_281:
+    raw_string: Theorem 11.4 (subadditivity), p.515
+    type: unclassified
+    verified: false
+  source_282:
+    raw_string: Theorem 11.8 (strong subadditivity), p.519
+    type: unclassified
+    verified: false
+  source_283:
+    raw_string: Theorem 9.2 (contractivity), p.406
+    type: unclassified
+    verified: false
+  source_284:
+    raw_string: Theorem 9.3 (Helstrom), p.401
+    type: unclassified
+    verified: false
+  source_285:
+    raw_string: Theorem 9.4 (Uhlmann), p.410
+    type: unclassified
+    verified: false
+  source_286:
+    raw_string: Tilly et al. 2022, §6], Sim et al. (2019), Holmes et al. (2022)
+    type: unclassified
+    verified: false
+  source_287:
+    raw_string: Tilly et al. 2022, §7], McArdle et al. (2019), Stokes et al. (2020)
+    type: unclassified
+    verified: false
+  source_288:
+    raw_string: Tomita et al., 2014
+    type: unclassified
+    verified: false
+  source_289:
+    raw_string: Tropp, 2012, "User-Friendly Tail Bounds for Sums of Random Matrices"
+    type: unclassified
+    verified: false
+  source_290:
+    raw_string: Ullman, 1975
+    type: unclassified
+    verified: false
+  source_291:
+    raw_string: Vapnik & Chervonenkis, 1971
+    type: unclassified
+    verified: false
+  source_292:
+    raw_string: Vaswani et al., NeurIPS 2017
+    type: unclassified
+    verified: false
+  source_293:
+    raw_string: Vazirani (2001)
+    type: unclassified
+    verified: false
+  source_294:
+    raw_string: Vazirani, *Approximation Algorithms* (2001)
+    type: unclassified
+    verified: false
+  source_295:
+    raw_string: Velickovic et al., GAT, ICLR 2018
+    type: unclassified
+    verified: false
+  source_296:
+    raw_string: Veličković et al., GAT, ICLR 2018, Eq.(3)-(4)
+    type: unclassified
+    verified: false
+  source_297:
+    raw_string: Vershynin, "High-Dimensional Probability"
+    type: unclassified
+    verified: false
+  source_298:
+    raw_string: Vignac et al., DiGress, ICLR 2023, Appendix D
+    type: unclassified
+    verified: false
+  source_299:
+    raw_string: Vignac et al., DiGress, ICLR 2023, Theorem 4.1
+    type: unclassified
+    verified: false
+  source_300:
+    raw_string: Vignac et al., DiGress, ICLR 2023, §3.1
+    type: unclassified
+    verified: false
+  source_301:
+    raw_string: Vilmart, arXiv:1812.09114
+    type: unclassified
+    verified: false
+  source_302:
+    raw_string: Vincent, 2011
+    type: unclassified
+    verified: false
+  source_303:
+    raw_string: Wack et al., arXiv:2110.14108 (2021)
+    type: unclassified
+    verified: false
+  source_304:
+    raw_string: Watrous, *Theory of Quantum Information*, Chapter 2
+    type: unclassified
+    verified: false
+  source_305:
+    raw_string: Watrous, Ch.1, Def.1.1
+    type: unclassified
+    verified: false
+  source_306:
+    raw_string: Watrous, Ch.1, Eq.1.1
+    type: unclassified
+    verified: false
+  source_307:
+    raw_string: Watrous, Ch.1, Eq.1.15
+    type: unclassified
+    verified: false
+  source_308:
+    raw_string: Watrous, Ch.1, Prop.1.10
+    type: unclassified
+    verified: false
+  source_309:
+    raw_string: Watrous, Ch.1, Thm.1.13
+    type: unclassified
+    verified: false
+  source_310:
+    raw_string: Watrous, Ch.2
+    type: unclassified
+    verified: false
+  source_311:
+    raw_string: Watrous, Ch.2, Def.2.18, Thm.2.22, Prop.2.20
+    type: unclassified
+    verified: false
+  source_312:
+    raw_string: Watrous, Ch.2, Def.2.35
+    type: unclassified
+    verified: false
+  source_313:
+    raw_string: Watrous, Ch.2, Thm.2.22
+    type: unclassified
+    verified: false
+  source_314:
+    raw_string: Watrous, Ch.2, Thm.2.27
+    type: unclassified
+    verified: false
+  source_315:
+    raw_string: Watrous, Ch.3, Def.3.1, Thm.3.5
+    type: unclassified
+    verified: false
+  source_316:
+    raw_string: Watrous, Ch.3, Def.3.27, Thm.3.28
+    type: unclassified
+    verified: false
+  source_317:
+    raw_string: Watrous, Ch.3, Thm.3.33
+    type: unclassified
+    verified: false
+  source_318:
+    raw_string: Watrous, Ch.4, Thm.4.14
+    type: unclassified
+    verified: false
+  source_319:
+    raw_string: Watrous, Ch.4, Thm.4.3
+    type: unclassified
+    verified: false
+  source_320:
+    raw_string: Watrous, Ch.5, Cor.5.26, 5.27
+    type: unclassified
+    verified: false
+  source_321:
+    raw_string: Watrous, Ch.5, Def.5.1
+    type: unclassified
+    verified: false
+  source_322:
+    raw_string: Watrous, Ch.5, Def.5.16, 5.18
+    type: unclassified
+    verified: false
+  source_323:
+    raw_string: Watrous, Ch.5, Def.5.3
+    type: unclassified
+    verified: false
+  source_324:
+    raw_string: Watrous, Ch.5, Thm.5.13
+    type: unclassified
+    verified: false
+  source_325:
+    raw_string: Watrous, Ch.5, Thm.5.25
+    type: unclassified
+    verified: false
+  source_326:
+    raw_string: Watrous, Ch.5, Thm.5.7
+    type: unclassified
+    verified: false
+  source_327:
+    raw_string: Watrous, Ch.5, Thm.5.8
+    type: unclassified
+    verified: false
+  source_328:
+    raw_string: Watrous, Ch.6, Def.6.2, Thm.6.7
+    type: unclassified
+    verified: false
+  source_329:
+    raw_string: Watrous, Ch.6, Thm.6.24
+    type: unclassified
+    verified: false
+  source_330:
+    raw_string: Watrous, Ch.6, Thm.6.33
+    type: unclassified
+    verified: false
+  source_331:
+    raw_string: Watrous, Ch.7, Def.7.35
+    type: unclassified
+    verified: false
+  source_332:
+    raw_string: Watrous, Ch.7, Def.7.46
+    type: unclassified
+    verified: false
+  source_333:
+    raw_string: Watrous, Ch.7, Def.7.55, 7.60
+    type: unclassified
+    verified: false
+  source_334:
+    raw_string: Watrous, Ch.7, Thm.7.15
+    type: unclassified
+    verified: false
+  source_335:
+    raw_string: Watrous, Ch.7, Thm.7.8
+    type: unclassified
+    verified: false
+  source_336:
+    raw_string: Watrous, Chapter 1
+    type: unclassified
+    verified: false
+  source_337:
+    raw_string: Wegner, J. Math. Phys. 12, 2259 (1971)
+    type: unclassified
+    verified: false
+  source_338:
+    raw_string: Weiss (1907)
+    type: unclassified
+    verified: false
+  source_339:
+    raw_string: Welsh & Powell, 1967
+    type: unclassified
+    verified: false
+  source_340:
+    raw_string: Wilcoxon (1945)
+    type: unclassified
+    verified: false
+  source_341:
+    raw_string: Wilde, Ch.10, Section 10.1
+    type: unclassified
+    verified: false
+  source_342:
+    raw_string: Wilde, Ch.10, Theorem 10.6.1
+    type: unclassified
+    verified: false
+  source_343:
+    raw_string: Wilde, Ch.10, Theorem 10.6.3
+    type: unclassified
+    verified: false
+  source_344:
+    raw_string: Wilde, Ch.10, Theorem 10.7.1
+    type: unclassified
+    verified: false
+  source_345:
+    raw_string: Wilde, Ch.11, Exercise 11.5.3
+    type: unclassified
+    verified: false
+  source_346:
+    raw_string: Wilde, Ch.11, Section 11.5.2
+    type: unclassified
+    verified: false
+  source_347:
+    raw_string: Wilde, Ch.11, Theorem 11.1.1
+    type: unclassified
+    verified: false
+  source_348:
+    raw_string: Wilde, Ch.11, Theorem 11.10.3
+    type: unclassified
+    verified: false
+  source_349:
+    raw_string: Wilde, Ch.11, Theorem 11.10.4
+    type: unclassified
+    verified: false
+  source_350:
+    raw_string: Wilde, Ch.11, Theorem 11.5.2
+    type: unclassified
+    verified: false
+  source_351:
+    raw_string: Wilde, Ch.12, Theorem 12.1.1
+    type: unclassified
+    verified: false
+  source_352:
+    raw_string: Wilde, Ch.13, Theorem 13.3.1
+    type: unclassified
+    verified: false
+  source_353:
+    raw_string: Wilde, Ch.13, Theorem 13.4.1
+    type: unclassified
+    verified: false
+  source_354:
+    raw_string: Wilde, Ch.20, Thm.20.3.1
+    type: unclassified
+    verified: false
+  source_355:
+    raw_string: Wilde, Ch.20, §20.5
+    type: unclassified
+    verified: false
+  source_356:
+    raw_string: Wilde, Ch.20-24
+    type: unclassified
+    verified: false
+  source_357:
+    raw_string: Wilde, Ch.21, Thm.21.4.1
+    type: unclassified
+    verified: false
+  source_358:
+    raw_string: Wilde, Ch.24, Section 24.4
+    type: unclassified
+    verified: false
+  source_359:
+    raw_string: Wilde, Ch.24, Thm.24.3.1
+    type: unclassified
+    verified: false
+  source_360:
+    raw_string: Williams (1992), Kool et al. (2019)
+    type: unclassified
+    verified: false
+  source_361:
+    raw_string: Williams, 1992
+    type: unclassified
+    verified: false
+  source_362:
+    raw_string: Wilson (1927), JASA
+    type: unclassified
+    verified: false
+  source_363:
+    raw_string: Wu et al. GNN Survey
+    type: unclassified
+    verified: false
+  source_364:
+    raw_string: Wu et al. GNN Survey, §2
+    type: unclassified
+    verified: false
+  source_365:
+    raw_string: Wu et al. GNN Survey, §4.1
+    type: unclassified
+    verified: false
+  source_366:
+    raw_string: Wu et al. GNN Survey, §4.2
+    type: unclassified
+    verified: false
+  source_367:
+    raw_string: Xu et al. (GIN), 2019
+    type: unclassified
+    verified: false
+  source_368:
+    raw_string: Xu et al., GIN, ICLR 2019, Eq.(4.1)
+    type: unclassified
+    verified: false
+  source_369:
+    raw_string: Xu et al., GIN, ICLR 2019, Lemma 2 & Theorem 3
+    type: unclassified
+    verified: false
+  source_370:
+    raw_string: Xu et al., GIN, ICLR 2019, Lemma 5
+    type: unclassified
+    verified: false
+  source_371:
+    raw_string: Yang, Phys. Rev. 85, 808 (1952)
+    type: unclassified
+    verified: false
+  source_372:
+    raw_string: Yu, "Assouad, Fano, and Le Cam"
+    type: unclassified
+    verified: false
+  source_373:
+    raw_string: Zinkevich, 2003
+    type: unclassified
+    verified: false
+  source_374:
+    raw_string: Zulehner et al., DATE 2018
+    type: unclassified
+    verified: false
+  source_375:
+    raw_string: van de Wetering, arXiv:2012.13966, Eq.(1), Sec.2
+    type: unclassified
+    verified: false
+  source_376:
+    raw_string: van de Wetering, arXiv:2012.13966, Eq.(2), Sec.2
+    type: unclassified
+    verified: false
+  source_377:
+    raw_string: van de Wetering, arXiv:2012.13966, Rule ($\pi$)
+    type: unclassified
+    verified: false
+  source_378:
+    raw_string: van de Wetering, arXiv:2012.13966, Rule (b)
+    type: unclassified
+    verified: false
+  source_379:
+    raw_string: van de Wetering, arXiv:2012.13966, Rule (f)
+    type: unclassified
+    verified: false
+  source_380:
+    raw_string: van de Wetering, arXiv:2012.13966, Rule (h)
+    type: unclassified
+    verified: false
+  source_381:
+    raw_string: van de Wetering, arXiv:2012.13966, Rule (id)
+    type: unclassified
+    verified: false
+  source_382:
+    raw_string: van de Wetering, arXiv:2012.13966, Sec.2.3
+    type: unclassified
+    verified: false
+  source_383:
+    raw_string: van de Wetering, arXiv:2012.13966, Sec.3.2
+    type: unclassified
+    verified: false
+  source_384:
+    raw_string: van de Wetering, arXiv:2012.13966, Sec.4.1
+    type: unclassified
+    verified: false
+  source_385:
+    raw_string: van de Wetering, arXiv:2012.13966, Sec.5.1
+    type: unclassified
+    verified: false
+  source_386:
+    raw_string: van de Wetering, arXiv:2012.13966, Sec.5.2
+    type: unclassified
+    verified: false
+  source_387:
+    raw_string: van de Wetering, arXiv:2012.13966, Sec.6
+    type: unclassified
+    verified: false
+  source_388:
+    raw_string: 交叉参考 [04_qec/threshold_theorem.md, F4.6
+    type: unclassified
+    verified: false
+  source_389:
+    raw_string: 任何概率论教材
+    type: unclassified
+    verified: false
+  source_390:
+    raw_string: 基本定义
+    type: unclassified
+    verified: false
+  source_391:
+    raw_string: 基础概率论 (大数定律 + 中心极限定理)
+    type: unclassified
+    verified: false
+  source_392:
+    raw_string: 基础组合概率
+    type: unclassified
+    verified: false
+  source_393:
+    raw_string: 基础统计学
+    type: unclassified
+    verified: false
+  source_394:
+    raw_string: 基础统计学教材
+    type: unclassified
+    verified: false
+  source_395:
+    raw_string: 由 Markov 不等式应用于 $(X-\mu)^2$ 得到
+    type: unclassified
+    verified: false
+  source_396:
+    raw_string: 线性代数基本定理
+    type: unclassified
+    verified: false
+  source_397:
+    raw_string: 量子实验通用做法
+    type: unclassified
+    verified: false

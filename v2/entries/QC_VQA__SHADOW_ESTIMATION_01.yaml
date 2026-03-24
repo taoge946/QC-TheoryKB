@@ -1,0 +1,26 @@
+# QC.VQA._SHADOW_ESTIMATION.01
+# Auto-generated from 05_variational_quantum/key_formulas.md (F5.12)
+
+id: QC.VQA._SHADOW_ESTIMATION.01
+legacy_alias: F5.12
+version: '01'
+claim_type: BOUND.UPPER
+domain: QC.VQA
+artifact_type: THEOREM
+name_en: 经典影子估计 (Classical Shadow Estimation)
+name_zh: null
+latex: \hat{o}_i = \text{tr}(O_i \hat{\rho}), \quad \text{需要 } T = O\!\left(\frac{\log M}{\epsilon^2} \cdot \max_i \|O_i\|_{\text{shadow}}^2\right)
+  \text{ 次测量}
+derivation_files: []
+citations:
+- raw: Huang, Kueng, Preskill, *Nat. Phys.* **16**, 1050 (2020).
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 05_variational_quantum

@@ -1,0 +1,26 @@
+# PHYS.STATMECH.TRANSFER_MATRIX_METHOD_ISING1D.01
+# Auto-generated from 16_statistical_mechanics/key_formulas.md (F16.13)
+
+id: PHYS.STATMECH.TRANSFER_MATRIX_METHOD_ISING1D.01
+legacy_alias: F16.13
+version: '01'
+claim_type: IDENTITY
+domain: PHYS.STATMECH
+artifact_type: DERIVATION
+name_en: Transfer Matrix Method for 1D Ising（1D Ising 转移矩阵）
+name_zh: null
+latex: Z = \text{Tr}(T^N) = \lambda_+^N + \lambda_-^N
+derivation_files:
+- 16_statistical_mechanics/derivations/ising_model.md
+citations:
+- raw: Kramers & Wannier (1941)
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 16_statistical_mechanics

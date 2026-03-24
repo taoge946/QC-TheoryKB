@@ -1,0 +1,28 @@
+# MATH.PROOFTOOL.CHERNOFF_BOUND.01
+# Auto-generated from 18_proof_techniques/key_formulas.md (F18.4)
+
+id: MATH.PROOFTOOL.CHERNOFF_BOUND.01
+legacy_alias: F18.4
+version: '01'
+claim_type: BOUND.UPPER
+domain: MATH.PROOFTOOL
+artifact_type: THEOREM
+name_en: Chernoff Bound
+name_zh: Chernoff 界，乘法形式
+latex: P\left(X \geq (1+\delta)\mu\right) \leq \left(\frac{e^\delta}{(1+\delta)^{(1+\delta)}}\right)^\mu
+derivation_files:
+- 18_proof_techniques/derivations/concentration_inequalities.md
+citations:
+- raw: Chernoff, 1952
+  verified: false
+- raw: Mitzenmacher & Upfal
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 18_proof_techniques

@@ -1,0 +1,26 @@
+# MATH.GRAPH.EXPANDER_GRAPHS.01
+# Auto-generated from 07_graph_theory/key_formulas.md (F7.12)
+
+id: MATH.GRAPH.EXPANDER_GRAPHS.01
+legacy_alias: F7.12
+version: '01'
+claim_type: BOUND.UPPER
+domain: MATH.GRAPH
+artifact_type: DERIVATION
+name_en: Expander Graphs
+name_zh: 扩展图
+latex: \max(|\lambda_2|, |\lambda_n|) \leq \lambda, \quad \lambda_2 \geq 2\sqrt{d-1} - o(1) \;\text{(Alon-Boppana)}
+derivation_files:
+- 07_graph_theory/derivations/graph_algorithms.md
+citations:
+- raw: Sipser & Spielman, 1996
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 07_graph_theory

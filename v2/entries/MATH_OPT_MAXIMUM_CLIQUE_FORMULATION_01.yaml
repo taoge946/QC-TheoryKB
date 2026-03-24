@@ -1,0 +1,26 @@
+# MATH.OPT.MAXIMUM_CLIQUE_FORMULATION.01
+# Auto-generated from 10_optimization/key_formulas.md (F10.3)
+
+id: MATH.OPT.MAXIMUM_CLIQUE_FORMULATION.01
+legacy_alias: F10.3
+version: '01'
+claim_type: EQUIVALENCE
+domain: MATH.OPT
+artifact_type: IDENTITY
+name_en: Maximum Clique (MCl) Formulation
+name_zh: null
+latex: \max \sum_{i \in V} x_i, \quad \text{s.t.} \; x_i + x_j \leq 1 \; \forall (i,j) \notin E, \quad x_i \in \{0,1\}
+derivation_files:
+- 10_optimization/derivations/np_hard_problems.md
+citations:
+- raw: Bomze et al., *Handbook of Combinatorial Optimization* (1999)
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 10_optimization

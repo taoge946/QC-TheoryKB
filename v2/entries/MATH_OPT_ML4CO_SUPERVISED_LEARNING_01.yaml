@@ -1,0 +1,26 @@
+# MATH.OPT.ML4CO_SUPERVISED_LEARNING.01
+# Auto-generated from 10_optimization/key_formulas.md (F10.28)
+
+id: MATH.OPT.ML4CO_SUPERVISED_LEARNING.01
+legacy_alias: F10.28
+version: '01'
+claim_type: DERIVATION
+domain: MATH.OPT
+artifact_type: DERIVATION
+name_en: ML4CO监督学习目标 (ML4CO Supervised Learning)
+name_zh: null
+latex: \min_{\theta \in \mathbb{R}^p} \mathbb{E}_{X, Y \sim P} \, \ell(Y, f_\theta(X)) \quad \approx \quad \min_\theta \sum_{(x,y)
+  \in D_{\text{train}}} \frac{1}{|D_{\text{train}}|} \ell(y, f_\theta(x))
+derivation_files: []
+citations:
+- raw: Bengio et al. 2021, §2.2, Eq.(2)-(3)
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 10_optimization

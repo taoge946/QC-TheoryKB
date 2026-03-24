@@ -1,0 +1,26 @@
+# MATH.OPT.ISING_MODEL_QUBO_MAPPING.01
+# Auto-generated from 10_optimization/key_formulas.md (F10.14)
+
+id: MATH.OPT.ISING_MODEL_QUBO_MAPPING.01
+legacy_alias: F10.14
+version: '01'
+claim_type: EQUIVALENCE
+domain: MATH.OPT
+artifact_type: DERIVATION
+name_en: Ising Model ↔ QUBO Mapping
+name_zh: null
+latex: H_{\text{Ising}} = -\sum_{i<j} J_{ij} s_i s_j - \sum_{i} h_i s_i, \quad s_i \in \{-1, +1\}
+derivation_files:
+- 10_optimization/derivations/qubo_ising_mapping.md
+citations:
+- raw: Lucas, *Frontiers in Physics* 2, 5 (2014)
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 10_optimization

@@ -1,0 +1,26 @@
+# QC.QINFO.ADDITIVITY_MUTUAL_INFORMATION_CHANNELS.01
+# Auto-generated from 03_quantum_info_theory/key_formulas.md (F3.44)
+
+id: QC.QINFO.ADDITIVITY_MUTUAL_INFORMATION_CHANNELS.01
+legacy_alias: F3.44
+version: '01'
+claim_type: IDENTITY
+domain: QC.QINFO
+artifact_type: THEOREM
+name_en: Additivity of Mutual Information of Channels
+name_zh: 信道互信息可加性
+latex: I(\mathcal{N} \otimes \mathcal{M}) = I(\mathcal{N}) + I(\mathcal{M})
+derivation_files:
+- 03_quantum_info_theory/derivations/quantum_channel_capacity.md
+citations:
+- raw: Wilde, Ch.13, Theorem 13.3.1
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 03_quantum_info_theory

@@ -1,0 +1,28 @@
+# PHYS.STATMECH.ORDER_PARAMETER_MAGNETIZATION_.01
+# Auto-generated from 16_statistical_mechanics/key_formulas.md (F16.5)
+
+id: PHYS.STATMECH.ORDER_PARAMETER_MAGNETIZATION_.01
+legacy_alias: F16.5
+version: '01'
+claim_type: IDENTITY
+domain: PHYS.STATMECH
+artifact_type: DERIVATION
+name_en: Order Parameter — Magnetization（序参量 — 磁化强度）
+name_zh: null
+latex: m = \langle s_i \rangle = \frac{1}{N} \sum_i \langle s_i \rangle
+derivation_files:
+- 16_statistical_mechanics/derivations/ising_model.md
+citations:
+- raw: Onsager (1944)
+  verified: false
+- raw: Yang, Phys. Rev. 85, 808 (1952)
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 16_statistical_mechanics

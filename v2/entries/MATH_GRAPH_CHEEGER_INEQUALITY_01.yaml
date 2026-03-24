@@ -1,0 +1,27 @@
+# MATH.GRAPH.CHEEGER_INEQUALITY.01
+# Auto-generated from 07_graph_theory/key_formulas.md (F7.8)
+
+id: MATH.GRAPH.CHEEGER_INEQUALITY.01
+legacy_alias: F7.8
+version: '01'
+claim_type: EQUIVALENCE
+domain: MATH.GRAPH
+artifact_type: THEOREM
+name_en: Cheeger Inequality
+name_zh: Cheeger 不等式
+latex: \frac{\lambda_2}{2} \leq h(G) \leq \sqrt{2 \lambda_2}, \quad h(G) = \min_{S \subset V, |S| \leq n/2} \frac{|\partial
+  S|}{\min(|S|, |V \setminus S|)}
+derivation_files:
+- 07_graph_theory/derivations/spectral_graph_theory.md
+citations:
+- raw: Chung, Spectral Graph Theory, 1997
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 07_graph_theory

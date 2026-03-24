@@ -1,0 +1,29 @@
+# QC.ZX.BIALGEBRA_RULE.01
+# Auto-generated from 12_zx_calculus/key_formulas.md (F12.5)
+
+id: QC.ZX.BIALGEBRA_RULE.01
+legacy_alias: F12.5
+version: '01'
+claim_type: EQUIVALENCE
+domain: QC.ZX
+artifact_type: IDENTITY
+name_en: Bialgebra Rule
+name_zh: 双代数规则
+latex: \tikz{Z}^{2,1}_0 \circ \tikz{X}^{1,2}_0 = (\tikz{X}^{1,2}_0 \otimes \tikz{X}^{1,2}_0) \circ \tikz{X}^{2,2}_0 \circ
+  (\tikz{Z}^{2,1}_0 \otimes \tikz{Z}^{2,1}_0)
+derivation_files:
+- 12_zx_calculus/derivations/zx_rewrite_rules.md
+citations:
+- raw: van de Wetering, arXiv:2012.13966, Rule (b)
+  verified: false
+- raw: Coecke & Duncan, arXiv:0906.4725, Sec.5
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 12_zx_calculus

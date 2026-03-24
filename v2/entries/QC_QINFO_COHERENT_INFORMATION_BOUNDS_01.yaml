@@ -1,0 +1,26 @@
+# QC.QINFO.COHERENT_INFORMATION_BOUNDS.01
+# Auto-generated from 03_quantum_info_theory/key_formulas.md (F3.36)
+
+id: QC.QINFO.COHERENT_INFORMATION_BOUNDS.01
+legacy_alias: F3.36
+version: '01'
+claim_type: BOUND.UPPER
+domain: QC.QINFO
+artifact_type: THEOREM
+name_en: Coherent Information Bounds
+name_zh: 相干信息界
+latex: '|H(A|B)_\rho| \leq \log \dim(\mathcal{H}_A)'
+derivation_files:
+- 03_quantum_info_theory/derivations/quantum_capacity.md
+citations:
+- raw: Wilde, Ch.11, Theorem 11.5.2
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 03_quantum_info_theory

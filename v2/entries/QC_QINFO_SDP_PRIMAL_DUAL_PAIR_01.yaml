@@ -1,0 +1,27 @@
+# QC.QINFO.SDP_PRIMAL_DUAL_PAIR.01
+# Auto-generated from 03_quantum_info_theory/key_formulas.md (F3.11)
+
+id: QC.QINFO.SDP_PRIMAL_DUAL_PAIR.01
+legacy_alias: F3.11
+version: '01'
+claim_type: EQUIVALENCE
+domain: QC.QINFO
+artifact_type: DEFINITION
+name_en: SDP Primal-Dual Pair
+name_zh: 半定规划原始-对偶对
+latex: '\text{Primal: } \sup\{\langle A,X\rangle : \Phi(X)=B, X\geq 0\}, \quad \text{Dual: } \inf\{\langle B,Y\rangle : \Phi^*(Y)\geq
+  A, Y=Y^*\}'
+derivation_files:
+- 03_quantum_info_theory/derivations/sdp_quantum_info.md
+citations:
+- raw: Watrous, Ch.3, Def.3.1, Thm.3.5
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 03_quantum_info_theory

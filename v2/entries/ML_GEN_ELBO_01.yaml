@@ -1,0 +1,28 @@
+# ML.GEN.ELBO.01
+# Auto-generated from 11_ml_theory/key_formulas.md (F11.1)
+
+id: ML.GEN.ELBO.01
+legacy_alias: F11.1
+version: '01'
+claim_type: BOUND.LOWER
+domain: ML.GEN
+artifact_type: THEOREM
+name_en: ELBO (Evidence Lower BOund)
+name_zh: null
+latex: \log p(x) \geq \mathbb{E}_{q(z|x)}\left[\log p(x|z)\right] - D_{\mathrm{KL}}\left(q(z|x) \| p(z)\right) = \mathcal{L}_{\mathrm{ELBO}}
+derivation_files:
+- 11_ml_theory/derivations/elbo_derivation.md
+citations:
+- raw: Kingma & Welling, 2014
+  verified: false
+- raw: Blei et al., 2017
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 11_ml_theory

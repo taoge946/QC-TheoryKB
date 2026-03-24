@@ -1,0 +1,26 @@
+# QC.QINFO.SHANNON_ENTROPY.01
+# Auto-generated from 03_quantum_info_theory/key_formulas.md (F3.38)
+
+id: QC.QINFO.SHANNON_ENTROPY.01
+legacy_alias: F3.38
+version: '01'
+claim_type: BOUND.UPPER
+domain: QC.QINFO
+artifact_type: DERIVATION
+name_en: Shannon Entropy
+name_zh: Shannon 熵
+latex: H(X) = -\sum_x p_X(x) \log p_X(x)
+derivation_files:
+- 03_quantum_info_theory/derivations/classical_information_theory.md
+citations:
+- raw: Wilde, Ch.10, Section 10.1
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 03_quantum_info_theory

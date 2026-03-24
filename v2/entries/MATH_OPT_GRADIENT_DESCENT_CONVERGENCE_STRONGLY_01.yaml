@@ -1,0 +1,24 @@
+# MATH.OPT.GRADIENT_DESCENT_CONVERGENCE_STRONGLY.01
+# Auto-generated from 10_optimization/key_formulas.md (F10.20)
+
+id: MATH.OPT.GRADIENT_DESCENT_CONVERGENCE_STRONGLY.01
+legacy_alias: F10.20
+version: '01'
+claim_type: CONVERGENCE
+domain: MATH.OPT
+artifact_type: DERIVATION
+name_en: Gradient Descent Convergence — Strongly Convex Case
+name_zh: null
+latex: f(x^{(k)}) - f^* \leq \left(1 - \frac{m}{L}\right)^k \cdot (f(x^{(0)}) - f^*), \quad \kappa = L/m
+derivation_files:
+- 10_optimization/derivations/gradient_methods.md
+citations: []
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 10_optimization

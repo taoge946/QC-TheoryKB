@@ -1,0 +1,30 @@
+# MATH.SCHEDULING.SCHEDULING_PRECEDENCE_CONSTRAINTS.01
+# Auto-generated from 14_scheduling_theory/key_formulas.md (F14.10)
+
+id: MATH.SCHEDULING.SCHEDULING_PRECEDENCE_CONSTRAINTS.01
+legacy_alias: F14.10
+version: '01'
+claim_type: DERIVATION
+domain: MATH.SCHEDULING
+artifact_type: DERIVATION
+name_en: Scheduling with Precedence Constraints（带优先级约束的调度）
+name_zh: null
+latex: 'P \mid \text{prec} \mid C_{\max}: \quad i \prec j \implies C_i \leq S_j'
+derivation_files:
+- 14_scheduling_theory/derivations/scheduling_basics.md
+citations:
+- raw: Hu, 1961
+  verified: false
+- raw: Coffman & Graham, 1972
+  verified: false
+- raw: Ullman, 1975
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 14_scheduling_theory

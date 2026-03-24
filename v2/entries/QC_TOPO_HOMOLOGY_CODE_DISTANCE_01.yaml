@@ -1,0 +1,26 @@
+# QC.TOPO.HOMOLOGY_CODE_DISTANCE.01
+# Auto-generated from 08_topology/key_formulas.md (F8.9)
+
+id: QC.TOPO.HOMOLOGY_CODE_DISTANCE.01
+legacy_alias: F8.9
+version: '01'
+claim_type: EQUIVALENCE
+domain: QC.TOPO
+artifact_type: DERIVATION
+name_en: Homology and Code Distance
+name_zh: 同调类与码距
+latex: d = \min\left( d_X, \, d_Z \right)
+derivation_files:
+- 08_topology/derivations/topological_codes_connection.md
+citations:
+- raw: Kitaev, Ann. Phys. 303, 2 (2003)
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 08_topology

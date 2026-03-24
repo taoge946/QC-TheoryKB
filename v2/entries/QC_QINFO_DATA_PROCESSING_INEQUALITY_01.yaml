@@ -1,0 +1,26 @@
+# QC.QINFO.DATA_PROCESSING_INEQUALITY.01
+# Auto-generated from 03_quantum_info_theory/key_formulas.md (F3.20)
+
+id: QC.QINFO.DATA_PROCESSING_INEQUALITY.01
+legacy_alias: F3.20
+version: '01'
+claim_type: EQUIVALENCE
+domain: QC.QINFO
+artifact_type: THEOREM
+name_en: Data Processing Inequality
+name_zh: 数据处理不等式
+latex: \mathrm{D}(\Phi(\rho)\|\Phi(\sigma))\leq\mathrm{D}(\rho\|\sigma)
+derivation_files:
+- 03_quantum_info_theory/derivations/quantum_data_processing.md
+citations:
+- raw: Watrous, Ch.5, Thm.5.13
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 03_quantum_info_theory

@@ -1,0 +1,26 @@
+# QC.HARDWARE.QUANTUM_VOLUME.01
+# Auto-generated from 15_quantum_hardware/key_formulas.md (F15.9)
+
+id: QC.HARDWARE.QUANTUM_VOLUME.01
+legacy_alias: F15.9
+version: '01'
+claim_type: IDENTITY
+domain: QC.HARDWARE
+artifact_type: DERIVATION
+name_en: Quantum Volume
+name_zh: null
+latex: \text{QV} = 2^n
+derivation_files:
+- 15_quantum_hardware/derivations/benchmarking_metrics.md
+citations:
+- raw: Cross et al., PRA 100, 032328 (2019)
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 15_quantum_hardware

@@ -1,0 +1,34 @@
+# MATH.OPT.KKT_CONDITIONS_KUHN_TUCKER.01
+# Auto-generated from 10_optimization/key_formulas.md (F10.18)
+
+id: MATH.OPT.KKT_CONDITIONS_KUHN_TUCKER.01
+legacy_alias: F10.18
+version: '01'
+claim_type: CORRECTNESS
+domain: MATH.OPT
+artifact_type: THEOREM
+name_en: KKT Conditions (Karush-Kuhn-Tucker)
+name_zh: null
+latex: '\boxed{\begin{aligned}
+
+  & f_i(x^*) \leq 0, \quad h_i(x^*) = 0 \quad \text{(primal feasibility)} \\
+
+  & \lambda_i^* \geq 0 \quad \text{(dual feasibility)} \\
+
+  & \lambda_i^* f_i(x^*) = 0 \quad \text{(complementary slackness)} \\
+
+  & \nabla f_0(x^*) + \sum_i \lambda_i^* \nabla f_i(x^*) + \sum_i \nu_i^* \nabla h_i(x^*) = 0 \quad \text{(stationarity)}
+
+  \end{aligned}}'
+derivation_files:
+- 10_optimization/derivations/duality_kkt.md
+citations: []
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 10_optimization

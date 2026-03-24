@@ -1,0 +1,27 @@
+# MATH.OPT.GW_MAXCUT.01
+# Auto-generated from 10_optimization/key_formulas.md (F10.12)
+
+id: MATH.OPT.GW_MAXCUT.01
+legacy_alias: F10.12
+version: '01'
+claim_type: EQUIVALENCE
+domain: MATH.OPT
+artifact_type: DERIVATION
+name_en: SDP Relaxation — Goemans-Williamson for MaxCut
+name_zh: null
+latex: \max \frac{1}{4} \sum_{(i,j) \in E} w_{ij} \|\mathbf{v}_i - \mathbf{v}_j\|^2, \quad \text{s.t.} \; \|\mathbf{v}_i\|^2
+  = 1, \; \mathbf{v}_i \in \mathbb{R}^n
+derivation_files:
+- 10_optimization/derivations/relaxation_methods.md
+citations:
+- raw: Goemans & Williamson, JACM 42 (1995)
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 10_optimization

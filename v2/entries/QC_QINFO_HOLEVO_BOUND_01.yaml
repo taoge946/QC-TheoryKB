@@ -1,0 +1,28 @@
+# QC.QINFO.HOLEVO_BOUND.01
+# Auto-generated from 03_quantum_info_theory/key_formulas.md (F3.23)
+
+id: QC.QINFO.HOLEVO_BOUND.01
+legacy_alias: F3.23
+version: '01'
+claim_type: BOUND.UPPER
+domain: QC.QINFO
+artifact_type: THEOREM
+name_en: Holevo Capacity
+name_zh: Holevo 容量
+latex: \chi(\Phi) = \max_{p,\rho} \left[\mathrm{H}\!\left(\sum p_k\Phi(\rho_k)\right) - \sum p_k\mathrm{H}(\Phi(\rho_k))\right]
+derivation_files:
+- 03_quantum_info_theory/derivations/holevo_bound.md
+citations:
+- raw: Watrous, Ch.6, Def.6.2, Thm.6.7
+  verified: false
+- raw: Wilde, Ch.20, Thm.20.3.1
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 03_quantum_info_theory

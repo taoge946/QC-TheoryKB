@@ -1,0 +1,26 @@
+# MATH.PROOFTOOL.MATRIX_BERNSTEIN_INEQUALITY.01
+# Auto-generated from 18_proof_techniques/key_formulas.md (F18.9)
+
+id: MATH.PROOFTOOL.MATRIX_BERNSTEIN_INEQUALITY.01
+legacy_alias: F18.9
+version: '01'
+claim_type: BOUND.UPPER
+domain: MATH.PROOFTOOL
+artifact_type: THEOREM
+name_en: Matrix Bernstein Inequality
+name_zh: 矩阵 Bernstein 不等式
+latex: P\left(\left\|\sum_{i=1}^n X_i\right\| \geq t\right) \leq (d_1 + d_2) \cdot \exp\left(-\frac{t^2/2}{\sigma^2 + Lt/3}\right)
+derivation_files:
+- 18_proof_techniques/derivations/matrix_concentration.md
+citations:
+- raw: Tropp, 2012, "User-Friendly Tail Bounds for Sums of Random Matrices"
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 18_proof_techniques

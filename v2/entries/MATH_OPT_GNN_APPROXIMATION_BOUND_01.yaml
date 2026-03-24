@@ -1,0 +1,25 @@
+# MATH.OPT.GNN_APPROXIMATION_BOUND.01
+# Auto-generated from 10_optimization/key_formulas.md (F10.29)
+
+id: MATH.OPT.GNN_APPROXIMATION_BOUND.01
+legacy_alias: F10.29
+version: '01'
+claim_type: BOUND.UPPER
+domain: MATH.OPT
+artifact_type: THEOREM
+name_en: GNN近似比上界 (GNN Approximation Bound)
+name_zh: null
+latex: '\text{approx-ratio}_{\text{GNN}}(\text{MVC}) = 2'
+derivation_files: []
+citations:
+- raw: Cappart et al. 2023, §5.1], Sato et al. (2019)
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 10_optimization

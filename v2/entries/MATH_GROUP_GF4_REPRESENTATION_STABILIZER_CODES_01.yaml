@@ -1,0 +1,27 @@
+# MATH.GROUP.GF4_REPRESENTATION_STABILIZER_CODES.01
+# Auto-generated from 06_group_theory/key_formulas.md (F6.15)
+
+id: MATH.GROUP.GF4_REPRESENTATION_STABILIZER_CODES.01
+legacy_alias: F6.15
+version: '01'
+claim_type: CORRECTNESS
+domain: MATH.GROUP
+artifact_type: DERIVATION
+name_en: GF(4) Representation of Stabilizer Codes [Gottesman thesis, §3.4]
+name_zh: null
+latex: I \to 0, \quad X \to 1, \quad Z \to \omega, \quad Y \to \omega^2
+derivation_files: []
+citations:
+- raw: Gottesman thesis, §3.4
+  verified: false
+- raw: Calderbank et al. (1997)
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 06_group_theory

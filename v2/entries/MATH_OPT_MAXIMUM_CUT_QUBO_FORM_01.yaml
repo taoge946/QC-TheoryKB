@@ -1,0 +1,26 @@
+# MATH.OPT.MAXIMUM_CUT_QUBO_FORM.01
+# Auto-generated from 10_optimization/key_formulas.md (F10.5)
+
+id: MATH.OPT.MAXIMUM_CUT_QUBO_FORM.01
+legacy_alias: F10.5
+version: '01'
+claim_type: EQUIVALENCE
+domain: MATH.OPT
+artifact_type: DERIVATION
+name_en: Maximum Cut (MaxCut) — QUBO Form
+name_zh: null
+latex: \max \frac{1}{2} \sum_{(i,j) \in E} w_{ij}(1 - s_i s_j), \quad s_i \in \{-1, +1\}
+derivation_files:
+- 10_optimization/derivations/qubo_ising_mapping.md
+citations:
+- raw: Goemans & Williamson, JACM 42 (1995)
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 10_optimization

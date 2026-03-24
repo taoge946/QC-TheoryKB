@@ -1,0 +1,27 @@
+# MATH.OPT.RL_CO.01
+# Auto-generated from 10_optimization/key_formulas.md (F10.30)
+
+id: MATH.OPT.RL_CO.01
+legacy_alias: F10.30
+version: '01'
+claim_type: DERIVATION
+domain: MATH.OPT
+artifact_type: DERIVATION
+name_en: RL中的策略梯度 (REINFORCE for CO)
+name_zh: null
+latex: \nabla_\theta \mathcal{L} = \mathbb{E}_{\pi \sim p_\theta}\left[(L(\pi) - b(\mathcal{G})) \nabla_\theta \log p_\theta(\pi
+  | \mathcal{G})\right]
+derivation_files:
+- 10_optimization/derivations/neural_co_theory.md
+citations:
+- raw: Williams (1992), Kool et al. (2019)
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 10_optimization

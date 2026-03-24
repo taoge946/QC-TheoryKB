@@ -4,11 +4,21 @@
 > 这是论文理论分析中最常用的工具集——几乎所有"以高概率成立"的声明都源于此。
 > 每个定理附带量子计算/ML相关的具体应用示例。
 
+## Primary References
+
+- **[BLM13]** Boucheron, Lugosi, Massart. *Concentration Inequalities: A Nonasymptotic Theory of Independence*. Oxford, 2013. — 综合性现代教材，覆盖本文所有内容
+- **[Hoeffding63]** Hoeffding, W. "Probability Inequalities for Sums of Bounded Random Variables." *JASA* 58(301):13-30, 1963. — Hoeffding 不等式和引理的原始论文
+- **[McDiarmid89]** McDiarmid, C. "On the Method of Bounded Differences." *Surveys in Combinatorics*, London Math. Soc. Lecture Notes 141:148-188, 1989. — 有界差分法的经典参考
+- **[Azuma67]** Azuma, K. "Weighted Sums of Certain Dependent Random Variables." *Tôhoku Math. J.* 19(3):357-367, 1967.
+- **[Bennett62]** Bennett, G. "Probability Inequalities for the Sum of Independent Random Variables." *JASA* 57(297):33-45, 1962.
+- **[Bernstein46]** Bernstein, S. *The Theory of Probabilities*. 4th ed., Gastehizdat, Moscow, 1946. — 也见 [BLM13, §2.7-2.8]
+- **[Chernoff52]** Chernoff, H. "A Measure of Asymptotic Efficiency for Tests of a Hypothesis Based on the Sum of Observations." *Ann. Math. Statist.* 23(4):493-507, 1952.
+
 ---
 
 ## 1. Markov → Chebyshev → Chernoff Chain
 
-### 1.1 Markov Inequality (马尔可夫不等式) [F18.1]
+### 1.1 Markov Inequality (马尔可夫不等式) [F18.1] **[BLM13, Theorem 2.1, p.24]**
 
 **Statement**: 若 $X \geq 0$ 且 $\mathbb{E}[X] < \infty$，则对任意 $a > 0$：
 
@@ -26,7 +36,7 @@ $$\mathbb{E}[X] = \int_0^\infty x\, dF(x) \geq \int_a^\infty x\, dF(x) \geq a \i
 
 ---
 
-### 1.2 Chebyshev Inequality (切比雪夫不等式) [F18.2]
+### 1.2 Chebyshev Inequality (切比雪夫不等式) [F18.2] **[BLM13, §2.1, p.23]**
 
 **Statement**: 若 $\mathbb{E}[X] = \mu$，$\mathrm{Var}(X) = \sigma^2 < \infty$，则：
 
@@ -56,7 +66,7 @@ $$P(X \geq t) \leq \inf_{\lambda > 0} e^{-\lambda t} \mathbb{E}[e^{\lambda X}] =
 
 ---
 
-### 1.4 Chernoff Bound (Chernoff 界) [F18.4]
+### 1.4 Chernoff Bound (Chernoff 界) [F18.4] **[Chernoff52; BLM13, §2.4, p.28-30]**
 
 **Statement (乘法形式)**: 设 $X = \sum_{i=1}^n X_i$，$X_i$ 独立取 $\{0, 1\}$（Bernoulli），$\mu = \mathbb{E}[X]$。则：
 
@@ -94,9 +104,9 @@ $$P(X \geq (1+\delta)\mu) \leq e^{-\mu[(1+\delta)\ln(1+\delta) - \delta]} = \lef
 
 ---
 
-## 2. Hoeffding Inequality [F18.3]
+## 2. Hoeffding Inequality [F18.3] **[Hoeffding63, Theorem 1-2]**
 
-### 2.1 Hoeffding's Lemma (Hoeffding 引理)
+### 2.1 Hoeffding's Lemma (Hoeffding 引理) **[Hoeffding63, Lemma 1; BLM13, Lemma 2.2, p.25]**
 
 **Statement**: 若 $\mathbb{E}[X] = 0$，$a \leq X \leq b$，则：
 
@@ -142,9 +152,9 @@ $$P(S_n - \mathbb{E}[S_n] \geq t) \leq \exp\left(-\frac{2t^2}{\sum(b_i-a_i)^2}\r
 
 ---
 
-## 3. Bernstein Inequality [F18.5]
+## 3. Bernstein Inequality [F18.5] **[Bernstein46; BLM13, §2.7-2.8, pp.35-39]**
 
-### 3.1 Bennett's Inequality
+### 3.1 Bennett's Inequality **[Bennett62; BLM13, Theorem 2.9, p.35]**
 
 **Statement**: 设 $X_1, \ldots, X_n$ 独立、零均值，$X_i \leq b$，$\sigma^2 = \frac{1}{n}\sum \mathbb{E}[X_i^2]$。则：
 
@@ -182,7 +192,7 @@ $$P\left(\sum X_i \geq t\right) \leq \exp\left(-\frac{t^2/2}{V + bt/3}\right)$$
 
 ---
 
-## 4. McDiarmid Inequality [F18.6]
+## 4. McDiarmid Inequality [F18.6] **[McDiarmid89, Theorem 3.1; BLM13, Theorem 6.2, p.164]**
 
 **Statement**: 设 $X_1, \ldots, X_n$ 独立，$f: \mathcal{X}^n \to \mathbb{R}$ 满足有界差分条件：
 
@@ -206,7 +216,9 @@ $$Z_k - Z_{k-1} = \mathbb{E}[f | X_1,\ldots,X_k] - \mathbb{E}[f | X_1,\ldots,X_{
 
 $Z_k$ 只依赖于 $X_k$ 的实现值（其他都已固定或积分掉），而改变 $X_k$ 最多改变 $f$ 的值 $c_k$。
 
-**Step 3**: 对 Doob 鞅应用 Azuma-Hoeffding 不等式（下面推导）：
+**Step 3**: 关键：Doob 鞅差 $D_k = Z_k - Z_{k-1}$ 的**区间长度**（range）$\leq c_k$（不是 $|D_k| \leq c_k$）。对 Hoeffding 引理，区间长度 $c_k$ 给出 MGF 上界 $e^{\lambda^2 c_k^2/8}$（而非 $e^{\lambda^2 c_k^2/2}$）。
+
+> **Convention Note**: Azuma-Hoeffding（§5）用 $|D_k| \leq c_k$ 即对称界（区间长度 $2c_k$），得到 $\exp(-t^2/(2\sum c_k^2))$。McDiarmid 用区间长度 $\leq c_k$，得到 $\exp(-2t^2/\sum c_k^2)$。两者相差 4 倍不是错误，是假设强度不同 **[BLM13, Remark 6.1, p.165]**。
 
 $$P(f - \mathbb{E}[f] \geq t) = P(Z_n - Z_0 \geq t) \leq \exp\left(-\frac{2t^2}{\sum c_k^2}\right) \quad \square$$
 
@@ -226,7 +238,7 @@ $$P(|C - \mathbb{E}[C]| \geq t) \leq 2\exp\left(-\frac{2t^2}{|E| \cdot O(1)}\rig
 
 ---
 
-## 5. Azuma-Hoeffding Inequality [F18.7]
+## 5. Azuma-Hoeffding Inequality [F18.7] **[Azuma67; BLM13, Theorem 6.3, p.165]**
 
 **Statement**: 设 $\{M_k\}_{k=0}^n$ 是鞅（或超鞅），$|M_k - M_{k-1}| \leq c_k$。则：
 
@@ -268,7 +280,7 @@ $$P(M_n - M_0 \geq t) \leq e^{-t^2 / (2\sum c_k^2)} \quad \square$$
 
 ---
 
-## 6. Sub-Gaussian Framework [F18.8]
+## 6. Sub-Gaussian Framework [F18.8] **[BLM13, §2.5, pp.31-34]**
 
 ### 6.1 Definition and Equivalent Characterizations
 

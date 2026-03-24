@@ -1,0 +1,28 @@
+# QC.QINFO.NEGATIVE_CONDITIONAL_ENTROPY_STATE.01
+# Auto-generated from 03_quantum_info_theory/key_formulas.md (F3.34)
+
+id: QC.QINFO.NEGATIVE_CONDITIONAL_ENTROPY_STATE.01
+legacy_alias: F3.34
+version: '01'
+claim_type: CORRECTNESS
+domain: QC.QINFO
+artifact_type: THEOREM
+name_en: Negative Conditional Entropy & State Merging
+name_zh: 负条件熵与态合并
+latex: H(A|B)_{\Phi^+} = -\log 2 < 0
+derivation_files:
+- 03_quantum_info_theory/derivations/entropy_inequalities.md
+citations:
+- raw: Wilde, Ch.11, Section 11.5.2
+  verified: false
+- raw: Horodecki-Oppenheim-Winter, 2005
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 03_quantum_info_theory

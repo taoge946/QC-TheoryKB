@@ -1,0 +1,28 @@
+# QC.QINFO.PPT_CRITERION_PERES_HORODECKI.01
+# Auto-generated from 03_quantum_info_theory/key_formulas.md (F3.30)
+
+id: QC.QINFO.PPT_CRITERION_PERES_HORODECKI.01
+legacy_alias: F3.30
+version: '01'
+claim_type: CORRECTNESS
+domain: QC.QINFO
+artifact_type: THEOREM
+name_en: PPT Criterion — Peres-Horodecki
+name_zh: PPT 判据
+latex: \rho \in \mathrm{Sep} \Rightarrow (\mathrm{id}\otimes T)(\rho)\geq 0
+derivation_files:
+- 03_quantum_info_theory/derivations/entanglement_theory.md
+citations:
+- raw: Watrous, Ch.7, Thm.7.15
+  verified: false
+- raw: '7.17'
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 03_quantum_info_theory

@@ -1,0 +1,26 @@
+# ML.GEN.GAN_OPTIMAL_DISCRIMINATOR.01
+# Auto-generated from 11_ml_theory/key_formulas.md (F11.48)
+
+id: ML.GEN.GAN_OPTIMAL_DISCRIMINATOR.01
+legacy_alias: F11.48
+version: '01'
+claim_type: CORRECTNESS
+domain: ML.GEN
+artifact_type: THEOREM
+name_en: GAN Optimal Discriminator
+name_zh: null
+latex: D^*_G(\mathbf{x}) = \frac{p_{\text{data}}(\mathbf{x})}{p_{\text{data}}(\mathbf{x}) + p_g(\mathbf{x})}
+derivation_files:
+- 11_ml_theory/derivations/generative_models_comparison.md
+citations:
+- raw: Goodfellow et al., GAN, NeurIPS 2014
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 11_ml_theory

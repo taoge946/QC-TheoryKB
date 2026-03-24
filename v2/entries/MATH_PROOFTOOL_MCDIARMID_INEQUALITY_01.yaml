@@ -1,0 +1,26 @@
+# MATH.PROOFTOOL.MCDIARMID_INEQUALITY.01
+# Auto-generated from 18_proof_techniques/key_formulas.md (F18.6)
+
+id: MATH.PROOFTOOL.MCDIARMID_INEQUALITY.01
+legacy_alias: F18.6
+version: '01'
+claim_type: EQUIVALENCE
+domain: MATH.PROOFTOOL
+artifact_type: THEOREM
+name_en: McDiarmid Inequality
+name_zh: 有界差分不等式
+latex: P\left(f(X_1, \ldots, X_n) - \mathbb{E}[f] \geq t\right) \leq \exp\left(-\frac{2t^2}{\sum_{i=1}^n c_i^2}\right)
+derivation_files:
+- 18_proof_techniques/derivations/concentration_inequalities.md
+citations:
+- raw: McDiarmid, 1989
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 18_proof_techniques

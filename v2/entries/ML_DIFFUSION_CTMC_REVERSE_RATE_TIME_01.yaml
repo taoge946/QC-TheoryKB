@@ -1,0 +1,26 @@
+# ML.DIFFUSION.CTMC_REVERSE_RATE_TIME.01
+# Auto-generated from 11_ml_theory/key_formulas.md (F11.19)
+
+id: ML.DIFFUSION.CTMC_REVERSE_RATE_TIME.01
+legacy_alias: F11.19
+version: '01'
+claim_type: CORRECTNESS
+domain: ML.DIFFUSION
+artifact_type: DERIVATION
+name_en: CTMC Reverse Rate (Continuous-Time Discrete Diffusion)
+name_zh: null
+latex: \overleftarrow{R}_t(x_t, y) = R_t(y, x_t) \frac{p_t(y)}{p_t(x_t)}
+derivation_files:
+- 11_ml_theory/derivations/discrete_score_matching.md
+citations:
+- raw: Campbell et al., NeurIPS 2022
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 11_ml_theory

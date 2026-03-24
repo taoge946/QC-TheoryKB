@@ -1,0 +1,27 @@
+# MATH.OPT.ADAM_OPTIMIZER_UPDATE_RULE.01
+# Auto-generated from 10_optimization/key_formulas.md (F10.26)
+
+id: MATH.OPT.ADAM_OPTIMIZER_UPDATE_RULE.01
+legacy_alias: F10.26
+version: '01'
+claim_type: IDENTITY
+domain: MATH.OPT
+artifact_type: IDENTITY
+name_en: Adam Optimizer Update Rule
+name_zh: null
+latex: \hat{m}_t = \frac{m_t}{1-\beta_1^t}, \quad \hat{v}_t = \frac{v_t}{1-\beta_2^t}, \quad x_{t+1} = x_t - \alpha \frac{\hat{m}_t}{\sqrt{\hat{v}_t}
+  + \varepsilon}
+derivation_files:
+- 10_optimization/derivations/gradient_methods.md
+citations:
+- raw: Kingma & Ba, ICLR (2015)
+  verified: false
+used_to_prove: []
+depends_on: []
+proof_pattern: null
+assumptions: []
+failure_modes: []
+dont_use_when: []
+auto_generated: true
+review_status: UNREVIEWED
+topic_dir: 10_optimization
